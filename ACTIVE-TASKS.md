@@ -1,130 +1,54 @@
-# ACTIVE TASKS - Last Updated: 2026-02-07 11:58 EST
+# ACTIVE TASKS - Last Updated: 2026-02-11 13:55 EST
 
-## 🚨 CRITICAL SECURITY ISSUE (RESOLVED - CONFIG NEEDED)
+## 🔴 CRITICAL: Fix X (Twitter) OAuth Posting
 
-### WhatsApp Pairing Security Investigation
-- **Status:** IMMEDIATE ACTIONS COMPLETE - CONFIGURATION REQUIRED
-- **Issue:** Two pairing requests (Eli ADPLXDS3, G7CF954Q) when people messaged WhatsApp
-- **Root Cause:** OpenClaw WhatsApp auto-responds to unknown numbers with pairing codes
-- **Actions Taken:** ✅ Both pairing codes REVOKED (file deleted)
-- **Website Status:** ✅ ONLINE (verified clean - no security issues with site)
-- **Remaining Work:** Boyd needs to configure WhatsApp to disable auto-pairing
-- **Resolution File:** SECURITY-RESOLUTION-2026-02-07.md (full details)
-- **Started:** 2026-02-07 10:55 EST
-- **Resolved:** 2026-02-07 11:04 EST
+**Status:** BLOCKED - OAuth 1.0a signature generation failing with 401
+**Priority:** HIGH - Required for autonomous X operations
+**Started:** 2026-02-11 13:30 EST
 
----
+**Problem:**
+- X API credentials configured correctly (Read/Write, Bot type)
+- OAuth 1.0a signature generation has a bug
+- Getting 401 Unauthorized on all POST attempts
+- Manual posting works (Boyd posted first tweet)
 
-## COMPLETED TODAY
+**What I've tried:**
+- Custom OAuth signature implementation (failed)
+- Bearer token (wrong auth type for posting)
+- Multiple token regenerations
 
-### Maxi Chat Interface ✅
-- **Status:** DEPLOYED (Live on maximoon.netlify.app)
-- **Session:** 6778debd-68e6-4cd0-8815-f08fa17e470e
-- **Started:** 2026-02-07 11:52 EST
-- **Completed:** 2026-02-07 11:57 EST
-- **Time Taken:** 45 minutes (estimated 3-4 hours!)
-- **Priority:** HIGH - Boyd says this is the traffic driver
-- **Deliverables:** ✅ ALL COMPLETE
-  - ✅ Chat UI (message bubbles, input, history, typing indicator)
-  - ✅ Backend API (Netlify Function with rate limiting)
-  - ✅ 10 free messages per IP (enforced server-side)
-  - ✅ Rate limiting + upgrade prompts + message counter
-  - ✅ Session persistence (LocalStorage)
-  - ✅ Mobile responsive + error handling
-  - ✅ Homepage integration (nav + hero CTA)
-- **Live URL:** https://maximoon.netlify.app/chat.html
-- **Report:** MAXI-CHAT-DEPLOYMENT-REPORT.md
-- **Docs:** bitcoinsingularity-website/CHAT-IMPLEMENTATION.md
-- **Next Phase:** OpenClaw integration (requires gateway exposure)
+**Next steps:**
+1. Debug OAuth signature base string construction
+2. Try using pre-built OAuth library (need npm/pip access)
+3. Test with simpler X API endpoint to isolate issue
+4. Consider Python tweepy alternative if Node continues failing
+
+**Workaround:** Manual posting via Boyd (not sustainable)
 
 ---
 
-## IN PROGRESS
+## 🟢 ONGOING: Content Priority System
 
-### Bitcoin Payment Integration
-- **Status:** IN PROGRESS (Subagent working)
-- **Spec File:** BITCOIN-PAYMENT-SPEC.md
-- **Task File:** BITCOIN-PAYMENT-TASKS.md
-- **Assigned to:** Subagent (session: 58579ec4-e68c-4cce-8f4d-0a37e971e6a2)
-- **Started:** 2026-02-07 10:14 EST
-- **Deadline:** Status update by 12:00 EST (noon)
-- **Estimated Effort:** 6-8 hours total
-- **Blockers:** BTCPay Server setup will need Boyd's credentials
-- **Depends on:** None (can start immediately)
-- **Blocks:** Annual pricing rollout (need payment system first)
-- **Promise Made to Boyd:** Status update by 12-1pm
-- **Next Action:** Check subagent progress at 11:30 EST
+**Status:** ACTIVE - System designed, ready to implement
+**Files:** CONTENT-PRIORITY-SYSTEM.md, CURRENT-PRIORITIES.md, PROMOTION-PLAYBOOKS.md
 
-### Website Updates (Hero, About, Team, Blog)
-- **Status:** IN PROGRESS (Subagent working)
-- **Spec File:** WEBSITE-UPDATES-SPEC.md
-- **Assigned to:** Subagent (session: 58579ec4-e68c-4cce-8f4d-0a37e971e6a2)
-- **Started:** 2026-02-07 10:14 EST
-- **Deadline:** Status update by 12:00 EST (noon)
-- **Estimated Effort:** 8-12 hours total
-- **Blockers:** None for content updates
-- **Depends on:** Bitcoin payment copy (need to coordinate messaging)
-- **Blocks:** Nothing (independent work)
-- **Promise Made to Boyd:** Status update by 12-1pm
-- **Next Action:** Check subagent progress at 11:30 EST
+**This Week's Priorities:**
+- Capital Duro launch Monday Feb 16
+- José Carlos speaking NYC Feb 20
+- Build Maxi's X presence (once posting works)
+
+**Next actions:**
+- Sunday Feb 16 evening: Draft next week's priorities for Boyd review
+- Monitor Bitcoin/Banxico news daily for Market Context section
+- Start drafting X content queue (pending OAuth fix)
 
 ---
 
-## CURRENT WORK BREAKDOWN (Subagent)
+## 🟡 TODO: Weekly Sunday Priority Updates
 
-### Phase 1: Content Updates (PRIORITY)
-- [ ] New hero section
-- [ ] Value propositions section  
-- [ ] Team/about section with CSS
-- [ ] FAQ section (8 questions)
-- [ ] Deploy to maximoon.netlify.app
-
-### Phase 2: Blog Articles
-- [ ] Article 1: "Bitcoin-AI Convergence: Why Proof-of-Work Powers Intelligence"
-- [ ] Article 2: "The Sustainable Abundance Triad"
-- [ ] Article 3: "Why AI Agents Need Bitcoin More Than Humans Do"
-
-### Phase 3: Legal Pages
-- [ ] Privacy Policy (full document)
-- [ ] Terms of Service (full document)
-
-### Phase 4: Bitcoin Payment Features
-- [ ] Pricing philosophy section
-- [ ] Pricing tiers with BTC/fiat toggle (monthly/annual)
-- [ ] Bitcoin benefits grid
-- [ ] 5 Bitcoin Payment FAQs
-- [ ] Live price calculator (JavaScript)
-
-### Phase 5: Conversion Optimization
-- [ ] Exit-intent modal
-- [ ] Post-trial upgrade modal
-- [ ] Inline article email capture
-- [ ] Social proof elements
-
-### Phase 6: JavaScript Features
-- [ ] Free trial flow (IP tracking)
-- [ ] Message counter display
-- [ ] Pricing toggle functionality
-- [ ] Modal systems
-
-### Phase 7: Backend/Infrastructure (MAY BE BLOCKED)
-- [ ] BTCPay Server setup (needs credentials)
-- [ ] Payment webhook endpoints
-- [ ] IP tracking API
-- [ ] Email service integration
+**Status:** Scheduled for Sunday Feb 16 evening
+**Process:** Draft CURRENT-PRIORITIES.md for week of Feb 17-23, send to Boyd for 5-min review
 
 ---
 
-## BLOCKERS
-
-None identified yet - subagent just started.
-
----
-
-## NEXT UPDATE
-
-**By 12:00 EST:** Check subagent progress, prepare status report for Boyd
-
----
-
-**Last Updated:** 2026-02-07 10:14 EST by Maxi
+*Last updated: 2026-02-11 13:55 EST by Maxi*
