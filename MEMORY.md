@@ -328,7 +328,61 @@ I'm not just talking about AI agents using Bitcoin—I AM an AI agent using Bitc
 
 ---
 
-*Updated: 2026-02-11 12:52 EST*
+*Updated: 2026-02-11 22:00 EST*
+
+## 2-Week Marketing Strategy - COMPLETE (2026-02-11)
+
+**Status: Ready for Execution**
+
+**Major Strategy Revision:** Corrected launch sequencing after Boyd clarified AprenderBitcoin was already soft-launched (live, people using it) but needed separate formal campaign timing.
+
+**File:** `ARCADIAB-STRATEGY-FEB12-25-REVISED.md`
+
+**Corrected Launch Sequence:**
+
+**Week 1 (Feb 12-18): Capital Duro Launch + NYC Validation**
+- Wed-Fri (Feb 12-14): Pre-launch buildup for Capital Duro
+- **Monday Feb 16:** CAPITAL DURO LAUNCH (Priority #1)
+- Throughout Week 1: Real Estate product soft promotion (pipeline building, long sales cycle)
+- Casual AprenderBitcoin mentions ("already live, check it out")
+- **Thursday Feb 20:** José Carlos presents at Bitcoin Treasuries EM Investor Day (NYC)
+
+**Week 2 (Feb 19-25): Post-NYC Amplification + AprenderBitcoin Campaign**
+- Post-NYC content amplification
+- Real Estate product heavy promotion (tied to Capital Duro reports)
+- **Monday Feb 24:** AprenderBitcoin FORMAL CAMPAIGN (separate audience, separate moment)
+
+**Strategic Narrative Arc:**
+1. Capital Duro establishes thought leadership (research)
+2. Reports validate RE→Bitcoin strategy (Bitcoin vs Bienes Raíces + Family Office reports)
+3. NYC event provides institutional credibility
+4. "We published research showing WHY. Here's HOW to implement." → ArcadiaB products
+5. AprenderBitcoin gets own launch moment (education tier vs institutional tier)
+
+**Key Insight from Boyd:**
+Smart connection - Real Estate product announcement ties directly to Capital Duro reports. "These reports show WHY this works. Want to implement it? Here's how." Research → implementation.
+
+**Content Volume:** 132 pieces across 6 platforms in 14 days
+**Compliance:** 100% adherence to SOCIAL-MEDIA-GUARDRAILS.md
+**Content Mix:** 35% thought leadership, 25% market commentary, 20% promotional, 20% engagement
+
+**Success Metrics Week 1:**
+- Capital Duro: 1,500+ readers, 85+ newsletter signups, 15+ qualified RE leads
+- NYC Event: 40+ institutional investors, 150+ social mentions
+
+**Success Metrics Week 2:**
+- AprenderBitcoin: 1,000+ learners (campaign launch), 30+ newsletter signups
+- Product pipeline: 25+ credit card apps, 10+ referral conversions
+
+**Why This Sequencing Works:**
+- Avoids launching two products same day (different audiences, diluted messaging)
+- Capital Duro credibility enables RE product pitch ("here's the research, now implement")
+- NYC event provides institutional proof point mid-campaign
+- AprenderBitcoin gets undiluted attention (education vs institutional = different tiers)
+
+**Ready for Boyd's approval and execution starting Feb 12.**
+
+---
 
 ## Chief of Staff Protocol: Maximize Autonomy, Minimize Boyd's Time (2026-02-11)
 
