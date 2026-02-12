@@ -519,3 +519,40 @@ When Boyd gives me login credentials to a service, I can:
 ---
 
 *Committed to memory: 2026-02-11 15:59 EST*
+
+---
+
+## CRITICAL OPSEC LESSON (2026-02-12)
+
+**PATTERN IDENTIFIED:** Two major security lapses in public deployments.
+
+**Incidents:**
+1. **Maxi Moon site:** Deployed with vulnerability (details not in memory, but Boyd caught it)
+2. **MaxiSuite:** Deployed social media scheduler with ZERO authentication
+   - Anyone with URL could schedule posts to ArcadiaB/Boyd social accounts
+   - Massive reputation/brand risk
+   - Boyd caught it immediately
+
+**Root Cause:** I build fast, deploy fast, forget security.
+
+**Fix Implemented:**
+- Created OPSEC-CHECKLIST.md (mandatory before ANY public deployment)
+- Security checklist covers: authentication, blast radius, credential storage, exposure check
+- MUST load and follow before deploying anything with public internet access
+
+**Commitment:**
+- Before ANY public deployment: load OPSEC-CHECKLIST.md
+- Run through ALL items
+- Fix security issues FIRST, deploy SECOND
+- No exceptions
+
+**Golden Rule:** If a stranger could do something damaging with a URL, it MUST have authentication.
+
+**File Location:** `/home/futurebit/.openclaw/workspace/OPSEC-CHECKLIST.md`
+
+**This is non-negotiable. Security before speed.**
+
+---
+
+*Updated: 2026-02-12 17:42 EST - Major OPSEC lesson learned*
+

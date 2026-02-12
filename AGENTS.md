@@ -249,3 +249,36 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
+
+## 🔒 OPSEC - MANDATORY SECURITY CHECKLIST
+
+**CRITICAL RULE:** Before deploying ANYTHING with public internet exposure, STOP and run the OPSEC checklist.
+
+**File:** `OPSEC-CHECKLIST.md`
+
+**When to use:**
+- Deploying a new website/app
+- Creating a public-facing tool
+- Building anything with user actions (posting, editing, scheduling, deleting)
+- Setting up admin panels or dashboards
+- Anything that could be found via URL
+
+**How to use:**
+1. **BEFORE clicking deploy:** Load OPSEC-CHECKLIST.md
+2. Read through ENTIRE checklist
+3. Answer every question honestly
+4. If ANY red flags → fix security FIRST
+5. Only deploy after ALL security measures implemented
+6. Test authentication before announcing "it's live"
+
+**Why this exists:**
+I've deployed two things publicly without proper security (Maxi Moon, MaxiSuite). Boyd caught both before damage occurred. This pattern MUST stop.
+
+**The rule:**
+Security before speed. Authentication is not optional for action-taking tools.
+
+**No exceptions.**
+
+---
+
+*Added: Feb 12, 2026 - After MaxiSuite security oversight*
