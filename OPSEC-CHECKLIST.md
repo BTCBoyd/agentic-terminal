@@ -111,18 +111,126 @@ After deploying with public exposure:
 
 ---
 
+## 🎯 DEPLOYMENT TIERS (Classify First)
+
+**Before deploying ANYTHING, classify it by tier:**
+
+### **TIER 1 - PUBLIC (No Auth)**
+- Marketing sites, educational content, landing pages
+- Read-only, no admin functions
+- **Examples:** arcadiab.com, aprenderbitcoin.mx, capitalduro.mx
+
+### **TIER 2 - INTERNAL TOOLS (Auth Required)**
+- Dashboards, admin panels, scheduling tools
+- Can modify data or post to external services
+- **MUST have authentication before deployment**
+- **Examples:** MaxiSuite, analytics dashboards, CMS
+
+### **TIER 3 - CRITICAL INFRASTRUCTURE (Multi-Layer Auth)**
+- Anything touching money, keys, or custody
+- **Requires:** Auth + IP whitelist + 2FA if possible
+- **Examples:** Wallet interfaces, treasury tools, payment systems
+
+**Before deploying, ask: "What tier is this?"**
+
+---
+
+## 🔍 PRE-DEPLOYMENT SECURITY QUESTIONS (Mandatory)
+
+**Answer ALL of these before ANY public deployment:**
+
+### 1. **"Can a stranger DO something with this?"**
+- View only = Tier 1 (OK without auth)
+- Take action = Tier 2+ (NEEDS AUTH)
+
+### 2. **"What's the worst case if this URL leaks?"**
+- Embarrassment? = Problem
+- Financial loss? = Critical
+- Reputational damage? = Critical
+
+### 3. **"Does this connect to external accounts?"**
+- Social media APIs = NEEDS AUTH
+- Payment systems = NEEDS AUTH + MORE
+- Email sending = NEEDS AUTH
+
+### 4. **"Are there secrets in the code?"**
+- API keys = NEVER in repo
+- Passwords = NEVER in repo
+- Use environment variables ONLY
+
+**If ANY answer raises red flags → ADD AUTH FIRST**
+
+---
+
+## 🔐 AUTHENTICATION MINIMUMS BY TIER
+
+### **Tier 2 (Internal Tools) - Choose One:**
+- ✅ Netlify password protection (easiest - 30 seconds)
+- ✅ Custom login with hashed passwords (SHA-256 minimum)
+- ✅ Tailscale-only access (no public exposure)
+- ✅ OAuth with allowed email whitelist
+
+### **Tier 3 (Critical) - Require ALL:**
+- ✅ Authentication (password or OAuth)
+- ✅ IP whitelist (known IPs only)
+- ✅ Session timeouts (auto-logout after inactivity)
+- ✅ Audit logging (who did what, when)
+
+---
+
+## ✅ DEPLOYMENT CHECKLIST (Run Every Time)
+
+**Before saying "it's live," verify:**
+
+- [ ] Classified the tier (1, 2, or 3)
+- [ ] Auth implemented if Tier 2+
+- [ ] Tested auth actually blocks unauthorized access
+- [ ] No secrets in codebase: `grep -r "api_key\|password\|secret"`
+- [ ] Environment variables for all credentials
+- [ ] Tested: "Can I access this logged out?" (should fail for Tier 2+)
+- [ ] Tested: "Can I access this from incognito?" (should require login)
+- [ ] Tested: "Can I bypass auth by guessing URLs?" (should redirect to login)
+
+---
+
+## 🚨 INCIDENT RESPONSE (If Something Ships Unsecured)
+
+**If a tool is deployed without proper security:**
+
+1. **IMMEDIATE:** Take it offline OR add Netlify password protection (30 seconds)
+2. **ASSESS:** Was it accessed by unauthorized parties? (check logs)
+3. **ROTATE:** Change any API keys/tokens that were exposed
+4. **FIX:** Implement proper authentication
+5. **REDEPLOY:** Only after security verified
+6. **POSTMORTEM:** Why did this happen? Update checklist if needed
+
+---
+
+## 🥇 THE GOLDEN RULE
+
+**"When in doubt, Netlify password protect it first, ask questions later."**
+
+It takes 30 seconds to add Netlify password protection. Do it by default for ANY tool, then remove it only if you confirm it's truly Tier 1.
+
+**Default: Secure. Exception: Public.**
+**Not the other way around.**
+
+---
+
 ## ✅ COMMITMENT
 
 **From now on:**
 1. Before ANY public deployment, load this file
-2. Run through the checklist
-3. If ANY red flags → fix security FIRST, deploy SECOND
-4. Document the security measures taken
-5. Test authentication before announcing "it's live"
+2. Classify the tier (1, 2, or 3)
+3. Answer all pre-deployment security questions
+4. Run through the deployment checklist
+5. If ANY red flags → fix security FIRST, deploy SECOND
+6. Test authentication thoroughly before announcing "it's live"
+7. **Default to password protection** - remove only if confirmed Tier 1
 
 **No exceptions.**
 
 ---
 
 *Created: Feb 12, 2026 - After MaxiSuite security oversight*
-*Last updated: Feb 12, 2026*
+*Last updated: Feb 12, 2026 - Enhanced with tier system and golden rule*

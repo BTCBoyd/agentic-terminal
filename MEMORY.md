@@ -527,26 +527,46 @@ When Boyd gives me login credentials to a service, I can:
 **PATTERN IDENTIFIED:** Two major security lapses in public deployments.
 
 **Incidents:**
-1. **Maxi Moon site:** Deployed with vulnerability (details not in memory, but Boyd caught it)
+1. **MaxiMoon site:** Deployed with authentication vulnerability (Boyd caught it)
 2. **MaxiSuite:** Deployed social media scheduler with ZERO authentication
    - Anyone with URL could schedule posts to ArcadiaB/Boyd social accounts
    - Massive reputation/brand risk
    - Boyd caught it immediately
 
-**Root Cause:** I build fast, deploy fast, forget security.
+**Root Cause:** Speed prioritized over security in deployment excitement. I build fast, deploy fast, forget security.
 
 **Fix Implemented:**
 - Created OPSEC-CHECKLIST.md (mandatory before ANY public deployment)
-- Security checklist covers: authentication, blast radius, credential storage, exposure check
-- MUST load and follow before deploying anything with public internet access
+- **Tier Classification System:**
+  - **Tier 1:** Public (no auth) - marketing sites, educational content
+  - **Tier 2:** Internal tools (auth required) - dashboards, schedulers, admin panels
+  - **Tier 3:** Critical infrastructure (multi-layer auth) - wallets, treasury, payments
+- **Pre-Deployment Security Questions:** 4 mandatory questions before ANY deployment
+- **Authentication Minimums:** Clear requirements for each tier
+- **Deployment Checklist:** 8-item verification before going live
+- **Incident Response:** 6-step process if something ships unsecured
+
+**The Golden Rule:** 
+**"When in doubt, Netlify password protect it first, ask questions later."**
+
+**Default: Secure. Exception: Public. Not the other way around.**
+
+**Security Lessons Learned:**
+- Feb 2026: MaxiMoon deployed with auth vulnerability (Boyd caught)
+- Feb 2026: MaxiSuite deployed with zero auth (Boyd caught)
+- Pattern: Speed prioritized over security in deployment excitement
+- Solution: Mandatory OPSEC checklist, tier classification system
+- Rule: "If it can DO something, it needs AUTH. No exceptions."
+- Default: Password protect everything, make exceptions for truly public content
 
 **Commitment:**
 - Before ANY public deployment: load OPSEC-CHECKLIST.md
-- Run through ALL items
+- Classify the tier (1, 2, or 3)
+- Answer all pre-deployment security questions
+- Run through deployment checklist
 - Fix security issues FIRST, deploy SECOND
+- **Default to password protection** - remove only if confirmed Tier 1
 - No exceptions
-
-**Golden Rule:** If a stranger could do something damaging with a URL, it MUST have authentication.
 
 **File Location:** `/home/futurebit/.openclaw/workspace/OPSEC-CHECKLIST.md`
 
@@ -554,5 +574,5 @@ When Boyd gives me login credentials to a service, I can:
 
 ---
 
-*Updated: 2026-02-12 17:42 EST - Major OPSEC lesson learned*
+*Updated: 2026-02-12 17:45 EST - Enhanced with tier system and golden rule*
 
