@@ -63,7 +63,8 @@
 |--------|-----------|------|--------|---------------|
 | Nostr Reply Monitor | Every 2h | nostr-reply-agent.mjs | ✅ Active | 2026-02-13 |
 | X Reply Monitor (@Maxibtc2009) | Every 2h | x-reply-agent.mjs | ⚠️  API 401 | 2026-02-13 |
-| Post Scheduler | Every 15min | maxisuite/scheduler/check-queue.mjs | ✅ Active | 2026-02-13 |
+| Post Scheduler (X/Nostr/LinkedIn) | Every 15min | maxisuite/scheduler/check-queue.mjs | ✅ Active | 2026-02-13 |
+| Facebook Posting | Every 15min | facebook-post-library.mjs | 🔵 Awaiting Setup | - |
 | Heartbeat (when enabled) | Varies | HEARTBEAT.md | 🔵 Inactive | - |
 
 ## Verification Checklist
@@ -88,6 +89,13 @@ When adding a new autonomous system:
 - **Fix needed:** Either upgrade API tier OR switch to search API (public endpoint)
 - **Impact:** @Maxibtc2009 replies not automated yet (Nostr replies ARE working)
 - **For @arcadiabtc:** Manual account (no API posting), so manual reply monitoring needed
+
+**Facebook Integration (Pending Setup)**
+- **Status:** Code ready, awaiting Business Page creation
+- **Required:** Boyd needs to create new ArcadiaB Facebook Business Page (old Kapitalex page banned for crypto ads)
+- **Guide:** FACEBOOK-SETUP-GUIDE.md has step-by-step instructions
+- **Once configured:** Facebook posts will flow automatically via scheduler
+- **Note:** Organic posts about Bitcoin are allowed; paid crypto ads are restricted by Facebook
 
 ---
 
