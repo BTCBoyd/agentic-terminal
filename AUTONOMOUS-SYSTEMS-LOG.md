@@ -62,6 +62,7 @@
 | System | Frequency | File | Status | Last Verified |
 |--------|-----------|------|--------|---------------|
 | Nostr Reply Monitor | Every 2h | nostr-reply-agent.mjs | ✅ Active | 2026-02-13 |
+| X Reply Monitor (@Maxibtc2009) | Every 2h | x-reply-agent.mjs | ⚠️  API 401 | 2026-02-13 |
 | Post Scheduler | Every 15min | maxisuite/scheduler/check-queue.mjs | ✅ Active | 2026-02-13 |
 | Heartbeat (when enabled) | Varies | HEARTBEAT.md | 🔵 Inactive | - |
 
@@ -75,6 +76,18 @@ When adding a new autonomous system:
 - [ ] Is the cron job configured to run the script (not just remind me)?
 - [ ] Is there error handling so it doesn't silently fail?
 - [ ] Can Boyd verify it's working by checking logs/output?
+
+---
+
+## Known Issues
+
+**X Reply Monitor (API 401)**
+- **Problem:** Twitter mentions endpoint returning 401 Unauthorized
+- **Likely cause:** Requires elevated API access tier
+- **Status:** Autonomous script is written and scheduled, but API access blocked
+- **Fix needed:** Either upgrade API tier OR switch to search API (public endpoint)
+- **Impact:** @Maxibtc2009 replies not automated yet (Nostr replies ARE working)
+- **For @arcadiabtc:** Manual account (no API posting), so manual reply monitoring needed
 
 ---
 
