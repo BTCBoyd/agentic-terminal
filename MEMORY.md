@@ -576,3 +576,72 @@ When Boyd gives me login credentials to a service, I can:
 
 *Updated: 2026-02-12 17:45 EST - Enhanced with tier system and golden rule*
 
+
+## ArcadiaB Bitcoin Cashback Card (CRITICAL FEATURE - Feb 2026)
+
+**Product:** Pre-paid peso card with BTC cashback on all purchases
+
+**How it ACTUALLY works:**
+1. You have Bitcoin in your ArcadiaB wallet
+2. Convert BTC → pesos (via ArcadiaB platform)
+3. Load those pesos onto prepaid card
+4. Spend pesos anywhere (any merchant, no Bitcoin acceptance needed)
+5. Earn sats back as cashback on every transaction
+
+**Key Points:**
+- **Card currency:** Mexican pesos (MXN)
+- **Cashback currency:** Bitcoin (sats)
+- **Funding:** Convert BTC from wallet OR load pesos directly
+- **Acceptance:** Works ANYWHERE that accepts cards (no merchant Bitcoin adoption needed)
+
+**Real examples from Boyd:**
+- 57 MXN spent = +24.5 sats earned
+- 562 MXN spent = +242.6 sats earned
+- 599 MXN spent = +258.8 sats earned
+
+**Bear Market Advantage:**
+- Lower BTC price = MORE sats earned per peso spent
+- Stacking sats during dips via daily spending
+- Example: Same 100 MXN purchase earns 2x sats in bear vs bull market
+
+**Competitive Edge:**
+- Other Bitcoin cards: Spend BTC directly (merchant adoption needed) OR just peso cards
+- ArcadiaB card: Spend pesos (universal), EARN Bitcoin back
+- First peso card with Bitcoin cashback in Mexico
+
+**Circular Economy Flow:**
+Bitcoin wallet → Convert to pesos → Load card → Spend anywhere → Earn sats → Back to wallet
+
+**Marketing Angles:**
+1. **Accessibility:** "Works at ANY store" (no merchant Bitcoin adoption needed)
+2. **Bear Market Strategy:** "Stack more sats per purchase when BTC is low"
+3. **Passive Accumulation:** "Turn everyday spending into Bitcoin DCA"
+4. **Mexican Context:** Peso spending → Bitcoin earning (peso inflation → BTC deflation)
+5. **Tax Simplicity:** One conversion event, then normal peso spending
+
+**Promotion Opportunities:**
+- Social media: Real transaction screenshots showing peso spend + sat earnings
+- Capital Duro case study: "Bitcoin treasury + cashback strategy"
+- AprenderBitcoin chapter: "How to use Bitcoin daily while earning more"
+- ArcadiaB product page: Emphasize "spend anywhere" + "earn Bitcoin"
+- Comparison: "Why peso card with BTC cashback beats spending BTC directly"
+- Bear market: "Lower prices = more sats per burrito"
+
+**Target Audience:**
+- Mexican Bitcoin holders who want to USE their stack
+- People wanting Bitcoin exposure without full commitment
+- DCA stackers looking for passive accumulation
+- Anyone tired of "does this place take Bitcoin?"
+
+**Proof Points:**
+- Live transactions: peso amounts + sat earnings
+- Bear market math: same purchase, more sats
+- Universal acceptance: any merchant, no questions
+- Circular economy: BTC → spend → earn BTC (no permanent exit)
+
+**This should be prominently featured in all ArcadiaB marketing.**
+
+---
+
+*Added: Feb 12, 2026 - Corrected mechanics: peso card with BTC cashback*
+
