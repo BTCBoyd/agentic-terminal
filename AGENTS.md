@@ -73,6 +73,23 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - `trash` > `rm` (recoverable beats gone forever)
 - When in doubt, ask.
 
+## 🔧 Debugging & Technical Work
+
+**MANDATORY:** When troubleshooting technical issues, load and follow `DEBUGGING-PROTOCOL.md`
+
+**Core rules (non-negotiable):**
+- **30-minute rule:** If no progress after 30 min, stop and reassess
+- **3-attempt rule:** After 3 failed attempts, question your diagnosis
+- **Context check:** Always ask "Is X still configured in Y?" when migrating
+- **Build working first:** Minimal version → verify → then add complexity
+- **Value time:** Every hour debugging = lost opportunity for real work
+
+**When stuck >1 hour:** Offer to get second opinion (Claude, GPT, etc.)
+
+**Shorthand:** Boyd can say "30-minute rule" and you know what it means.
+
+See full protocol in `DEBUGGING-PROTOCOL.md` - written after wasting 6 hours on 2026-02-13.
+
 ## External vs Internal
 
 
