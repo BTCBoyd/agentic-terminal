@@ -11,11 +11,11 @@ import { execSync } from 'child_process';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { resolve } from 'path';
 
-// Credentials
-const CONSUMER_KEY = 'XBfsAHqeYQeRBOeGJZo9CKeBh';
-const CONSUMER_SECRET = '7dE5HzNzdYoIwH2nCwRMPkAowu3fxqgBkG6uTMSZzesY4kUf6u';
-const ACCESS_TOKEN = '2021647460758966273-NXaS4HdmWfEx98U0YvyTMJJvSSyLvz';
-const ACCESS_TOKEN_SECRET = 'JRT0ZfRwS5rCURg78cskQNMKW2qm3BF5VPtGlmWhdJLk9';
+// Credentials - Updated 2026-02-14
+const CONSUMER_KEY = 'VWpKNdNnQGRjgBvwVBU7b3QCK';
+const CONSUMER_SECRET = 'R9RkdNPZEVS2jqW7ioJ4Qp87jgWkFFa7MHtmZt0jQt1ro9q8gv';
+const ACCESS_TOKEN = '2021647460758966273-hERiLthBFKWeBSW5RmP4JHzPZWmjXh';
+const ACCESS_TOKEN_SECRET = 'ZyQ3wGEgPpV3OJFV9bcXfoFoZykbni9BwPNrWYxkAKclZ';
 const MY_USER_ID = '2021647460758966273';
 
 const LOG_FILE = resolve(process.env.HOME, '.openclaw/workspace/x-reply-log.json');
@@ -66,15 +66,16 @@ function buildAuthHeader(method, url, queryParams = {}) {
     oauth_signature_method: 'HMAC-SHA1',
     oauth_timestamp: Math.floor(Date.now() / 1000).toString(),
     oauth_token: ACCESS_TOKEN,
-    oauth_version: '1.0',
-    ...queryParams
+    oauth_version: '1.0'
   };
 
-  const signature = generateOAuthSignature(method, url, oauthParams);
+  // Merge OAuth params with query params for signature generation
+  const allParams = { ...oauthParams, ...queryParams };
+  const signature = generateOAuthSignature(method, url, allParams);
   oauthParams.oauth_signature = signature;
 
+  // Build OAuth header (only OAuth params, not query params)
   const headerString = Object.keys(oauthParams)
-    .filter(key => key.startsWith('oauth_'))
     .sort()
     .map(key => `${percentEncode(key)}="${percentEncode(oauthParams[key])}"`)
     .join(', ');
@@ -85,9 +86,14 @@ function buildAuthHeader(method, url, queryParams = {}) {
 // Fetch mentions
 async function getMentions() {
   return new Promise((resolve, reject) => {
-    const url = `https://api.twitter.com/2/users/${MY_USER_ID}/mentions?max_results=10&tweet.fields=created_at,author_id,conversation_id`;
+    const baseUrl = `https://api.twitter.com/2/users/${MY_USER_ID}/mentions`;
+    const queryParams = {
+      'max_results': '10',
+      'tweet.fields': 'created_at,author_id,conversation_id'
+    };
+    const url = `${baseUrl}?max_results=10&tweet.fields=created_at,author_id,conversation_id`;
     
-    const authHeader = buildAuthHeader('GET', url.split('?')[0]);
+    const authHeader = buildAuthHeader('GET', baseUrl, queryParams);
     
     https.get(url, {
       headers: {
