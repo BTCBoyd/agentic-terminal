@@ -1,0 +1,6 @@
+# Nostr Daily Automation
+# Morning window: 10:00 AM EST (8:00 AM MT) - posts 2-3 items
+0 10 * * * cd /home/futurebit/.openclaw/workspace && /usr/bin/node /home/futurebit/.openclaw/workspace/nostr-auto-post.mjs morning >> /home/futurebit/.openclaw/workspace/nostr-automation.log 2>&1
+
+# Evening window: 7:00 PM EST (5:00 PM MT) - posts 1-2 items
+0 19 * * * cd /home/futurebit/.openclaw/workspace && /usr/bin/node /home/futurebit/.openclaw/workspace/nostr-auto-post.mjs evening >> /home/futurebit/.openclaw/workspace/nostr-automation.log 2>&1

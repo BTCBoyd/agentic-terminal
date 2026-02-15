@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boyd Command Center</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; }
+        .status-active { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .6; } }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect, useCallback } = React;
+
+        // Data Schema & localStorage Management
+        const STORAGE_KEY = 'boyd-command-center-data';
+        
+        const DEFAULT_DATA = {
+            tier1Deliverables: [
+                {
+                    id: 1,
+                    title: "Boyd Command Center Dashboard",
+                    dueDate: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString(),
+                    status: "ACTIVE",
+                    progress: 85,
+                    details: "React dashboard with localStorage persistence"
+                },
+                {
+                    id: 2,
+                    title: "ArcadiaB Business Plan Update",
+                    dueDate: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000).toISOString(),
+                    status: "QUEUED",
+                    progress: 30,
+                    details: "Financial projections and regulatory updates"
+                }
+            ],
+            arcadiabStrategic: {
+                fundraise: {
+                    target: 10000000,
+                    stage: "Due Diligence",
+                    closeDate: "2026-03-31"
+                },
+                investors: {
+                    hot: 3,
+                    warm: 7,
+                    cold: 12
+                },
+                regulatory: {
+                    asofom: "COMPLETE",
+                    bursatiles: "IN_PROGRESS"
+                },
+                nextMilestones: [
+                    { text: "Close lead investor term sheet", date: "2026-02-15" },
+                    { text: "Complete legal due diligence", date: "2026-02-28" },
+                    { text: "Submit Bursátiles application", date: "2026-03-10" }
+                ]
+            },
+            dailyOperations: {
+                nostr: {
+                    todayCount: 2,
+                    targetCount: 5,
+                    lastPost: new Date().toISOString()
+                },
+                mining: {
+                    apolloSolo: { status: "ONLINE", hashrate: "3.5 TH/s" },
+                    apolloII: { status: "ONLINE", hashrate: "8.2 TH/s" }
+                },
+                ledn: {
+                    btcBalance: 0.5,
+                    usdBalance: 12500
+                },
+                btc: {
+                    price: 98750,
+                    alertHigh: 100000,
+                    alertLow: 95000
+                }
+            },
+            contentPipeline: {
+                speaking: [
+                    { event: "Bitcoin América Conference", date: "2026-03-15", location: "Mexico City" },
+                    { event: "Central Bank Digital Currencies Symposium", date: "2026-04-20", location: "Virtual" }
+                ],
+                writing: [
+                    { title: "Chapter 4: Bitcoin in Emerging Markets", progress: 60 },
+                    { title: "Article: Dollarization vs Bitcoin", progress: 30 }
+                ],
+                consulting: [
+                    { client: "Regional Bank - Bitcoin Treasury", status: "Active" },
+                    { client: "Mining Cooperative - Structure", status: "Proposal Sent" }
+                ]
+            },
+            weekDelivered: [
+                {
+                    item: "Nostr Lightning setup complete",
+                    timestamp: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
+                    status: "ON_TIME"
+                },
+                {
+                    item: "Investor pitch deck v3",
+                    timestamp: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000).toISOString(),
+                    status: "ON_TIME"
+                }
+            ],
+            lastUpdated: new Date().toISOString()
+        };
+
+        // localStorage utilities
+        const loadData = () => {
+            try {
+                const stored = localStorage.getItem(STORAGE_KEY);
+                return stored ? JSON.parse(stored) : DEFAULT_DATA;
+            } catch (e) {
+                console.error('Error loading data:', e);
+                return DEFAULT_DATA;
+            }
+        };
+
+        const saveData = (data) => {
+            try {
+                data.lastUpdated = new Date().toISOString();
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+                return true;
+            } catch (e) {
+                console.error('Error saving data:', e);
+                return false;
+            }
+        };
+
+        // Risk calculation
+        const calculateRisk = (dueDate) => {
+            const now = new Date();
+            const due = new Date(dueDate);
+            const hoursRemaining = (due - now) / (1000 * 60 * 60);
+            
+            if (hoursRemaining < 24) return 'RED';
+            if (hoursRemaining < 72) return 'YELLOW';
+            return 'GREEN';
+        };
+
+        // Time formatting
+        const formatTimeRemaining = (dueDate) => {
+            const now = new Date();
+            const due = new Date(dueDate);
+            const diff = due - now;
+            
+            if (diff < 0) return 'OVERDUE';
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            
+            if (days > 0) return `${days}d ${hours}h`;
+            return `${hours}h`;
+        };
+
+        // Components
+        function RiskBadge({ risk }) {
+            const colors = {
+                RED: 'bg-red-600 text-white',
+                YELLOW: 'bg-yellow-500 text-black',
+                GREEN: 'bg-green-600 text-white'
+            };
+            return (
+                <span className={`px-2 py-1 rounded text-xs font-bold ${colors[risk]}`}>
+                    {risk}
+                </span>
+            );
+        }
+
+        function StatusBadge({ status }) {
+            const colors = {
+                ACTIVE: 'bg-blue-600 text-white status-active',
+                QUEUED: 'bg-gray-600 text-white',
+                COMPLETE: 'bg-green-600 text-white'
+            };
+            return (
+                <span className={`px-2 py-1 rounded text-xs font-bold ${colors[status]}`}>
+                    {status}
+                </span>
+            );
+        }
+
+        function Tier1Deliverables({ deliverables, onUpdate }) {
+            const [expanded, setExpanded] = useState({});
+
+            return (
+                <div className="bg-gray-800 rounded-lg p-4 mb-6">
+                    <h2 className="text-2xl font-bold mb-4 text-blue-400">🎯 TIER 1 DELIVERABLES</h2>
+                    <div className="space-y-3">
+                        {deliverables.map(item => {
+                            const risk = calculateRisk(item.dueDate);
+                            const timeLeft = formatTimeRemaining(item.dueDate);
+                            
+                            return (
+                                <div key={item.id} className="bg-gray-700 rounded p-3 cursor-pointer hover:bg-gray-650"
+                                     onClick={() => setExpanded(prev => ({ ...prev, [item.id]: !prev[item.id] }))}>
+                                    <div className="flex justify-between items-start mb-2">
+                                        <div className="flex-1">
+                                            <h3 className="font-bold text-lg">{item.title}</h3>
+                                            <div className="flex gap-2 mt-1">
+                                                <StatusBadge status={item.status} />
+                                                <RiskBadge risk={risk} />
+                                                <span className="text-sm text-gray-300">Due: {timeLeft}</span>
+                                            </div>
+                                        </div>
+                                        <div className="text-right">
+                                            <div className="text-2xl font-bold text-blue-400">{item.progress}%</div>
+                                        </div>
+                                    </div>
+                                    
+                                    {/* Progress bar */}
+                                    <div className="w-full bg-gray-600 rounded-full h-2 mb-2">
+                                        <div className="bg-blue-500 h-2 rounded-full" style={{width: `${item.progress}%`}}></div>
+                                    </div>
+                                    
+                                    {expanded[item.id] && (
+                                        <div className="mt-3 pt-3 border-t border-gray-600 text-sm text-gray-300">
+                                            <p>{item.details}</p>
+                                            <p className="mt-2 text-xs text-gray-400">
+                                                Due: {new Date(item.dueDate).toLocaleString()}
+                                            </p>
+                                        </div>
+                                    )}
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+            );
+        }
+
+        function ArcadiabStrategic({ data }) {
+            const { fundraise, investors, regulatory, nextMilestones } = data;
+            
+            return (
+                <div className="bg-gray-800 rounded-lg p-4 mb-6">
+                    <h2 className="text-2xl font-bold mb-4 text-purple-400">🏛️ ARCADIAB STRATEGIC</h2>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        {/* Fundraise */}
+                        <div className="bg-gray-700 rounded p-3">
+                            <h3 className="font-bold text-lg mb-2">💰 Fundraise</h3>
+                            <div className="space-y-1 text-sm">
+                                <p><span className="text-gray-400">Target:</span> <span className="text-green-400 font-bold">${(fundraise.target / 1000000).toFixed(1)}M</span></p>
+                                <p><span className="text-gray-400">Stage:</span> <span className="text-yellow-400">{fundraise.stage}</span></p>
+                                <p><span className="text-gray-400">Target Close:</span> {fundraise.closeDate}</p>
+                            </div>
+                        </div>
+                        
+                        {/* Investor Pipeline */}
+                        <div className="bg-gray-700 rounded p-3">
+                            <h3 className="font-bold text-lg mb-2">📊 Investor Pipeline</h3>
+                            <div className="space-y-1 text-sm">
+                                <p><span className="text-red-400">🔥 Hot:</span> {investors.hot}</p>
+                                <p><span className="text-yellow-400">🌡️ Warm:</span> {investors.warm}</p>
+                                <p><span className="text-blue-400">❄️ Cold:</span> {investors.cold}</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {/* Regulatory */}
+                    <div className="bg-gray-700 rounded p-3 mb-4">
+                        <h3 className="font-bold text-lg mb-2">⚖️ Regulatory Status</h3>
+                        <div className="flex gap-4 text-sm">
+                            <div>
+                                <span className="text-gray-400">ASOFOM:</span>
+                                <span className="ml-2 text-green-400 font-bold">✓ {regulatory.asofom}</span>
+                            </div>
+                            <div>
+                                <span className="text-gray-400">Bursátiles:</span>
+                                <span className="ml-2 text-yellow-400 font-bold">⏳ {regulatory.bursatiles}</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {/* Next Milestones */}
+                    <div className="bg-gray-700 rounded p-3">
+                        <h3 className="font-bold text-lg mb-2">🎯 Next Milestones</h3>
+                        <div className="space-y-2">
+                            {nextMilestones.map((milestone, idx) => (
+                                <div key={idx} className="flex justify-between text-sm">
+                                    <span>{milestone.text}</span>
+                                    <span className="text-gray-400">{milestone.date}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        function DailyOperations({ data }) {
+            const { nostr, mining, ledn, btc } = data;
+            
+            return (
+                <div className="bg-gray-800 rounded-lg p-4 mb-6">
+                    <h2 className="text-2xl font-bold mb-4 text-green-400">⚡ DAILY OPERATIONS</h2>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {/* Nostr */}
+                        <div className="bg-gray-700 rounded p-3">
+                            <h3 className="font-bold mb-2">📝 Nostr Posts</h3>
+                            <div className="text-3xl font-bold text-center">
+                                <span className="text-blue-400">{nostr.todayCount}</span>
+                                <span className="text-gray-500">/{nostr.targetCount}</span>
+                            </div>
+                            <div className="text-xs text-gray-400 text-center mt-1">
+                                Last: {new Date(nostr.lastPost).toLocaleTimeString()}
+                            </div>
+                        </div>
+                        
+                        {/* Mining */}
+                        <div className="bg-gray-700 rounded p-3">
+                            <h3 className="font-bold mb-2">⛏️ Mining Status</h3>
+                            <div className="space-y-1 text-sm">
+                                <div className="flex justify-between">
+                                    <span>Apollo Solo:</span>
+                                    <span className="text-green-400">● {mining.apolloSolo.status} {mining.apolloSolo.hashrate}</span>
+                                </div>
+                                <div className="flex justify-between">
+                                    <span>Apollo II:</span>
+                                    <span className="text-green-400">● {mining.apolloII.status} {mining.apolloII.hashrate}</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        {/* LEDN */}
+                        <div className="bg-gray-700 rounded p-3">
+                            <h3 className="font-bold mb-2">🏦 LEDN Positions</h3>
+                            <div className="space-y-1 text-sm">
+                                <p><span className="text-gray-400">BTC:</span> <span className="text-orange-400 font-bold">{ledn.btcBalance} BTC</span></p>
+                                <p><span className="text-gray-400">USD:</span> <span className="text-green-400 font-bold">${ledn.usdBalance.toLocaleString()}</span></p>
+                            </div>
+                        </div>
+                        
+                        {/* BTC Price */}
+                        <div className="bg-gray-700 rounded p-3">
+                            <h3 className="font-bold mb-2">₿ BTC Price</h3>
+                            <div className="text-2xl font-bold text-orange-400">
+                                ${btc.price.toLocaleString()}
+                            </div>
+                            <div className="text-xs text-gray-400 mt-1">
+                                Alert: ${btc.alertLow.toLocaleString()} - ${btc.alertHigh.toLocaleString()}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        function ContentPipeline({ data }) {
+            const { speaking, writing, consulting } = data;
+            
+            return (
+                <div className="bg-gray-800 rounded-lg p-4 mb-6">
+                    <h2 className="text-2xl font-bold mb-4 text-yellow-400">📚 CONTENT PIPELINE</h2>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        {/* Speaking */}
+                        <div className="bg-gray-700 rounded p-3">
+                            <h3 className="font-bold mb-2">🎤 Speaking</h3>
+                            <div className="space-y-2 text-sm">
+                                {speaking.map((event, idx) => (
+                                    <div key={idx} className="border-l-2 border-yellow-400 pl-2">
+                                        <p className="font-semibold">{event.event}</p>
+                                        <p className="text-xs text-gray-400">{event.date}</p>
+                                        <p className="text-xs text-gray-400">{event.location}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                        
+                        {/* Writing */}
+                        <div className="bg-gray-700 rounded p-3">
+                            <h3 className="font-bold mb-2">✍️ Writing</h3>
+                            <div className="space-y-2 text-sm">
+                                {writing.map((item, idx) => (
+                                    <div key={idx}>
+                                        <p className="font-semibold">{item.title}</p>
+                                        <div className="w-full bg-gray-600 rounded-full h-1.5 mt-1">
+                                            <div className="bg-yellow-500 h-1.5 rounded-full" style={{width: `${item.progress}%`}}></div>
+                                        </div>
+                                        <p className="text-xs text-gray-400 mt-1">{item.progress}%</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                        
+                        {/* Consulting */}
+                        <div className="bg-gray-700 rounded p-3">
+                            <h3 className="font-bold mb-2">💼 Consulting</h3>
+                            <div className="space-y-2 text-sm">
+                                {consulting.map((item, idx) => (
+                                    <div key={idx} className="border-l-2 border-green-400 pl-2">
+                                        <p className="font-semibold">{item.client}</p>
+                                        <p className="text-xs text-gray-400">{item.status}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        function WeekDelivered({ items }) {
+            return (
+                <div className="bg-gray-800 rounded-lg p-4 mb-6">
+                    <h2 className="text-2xl font-bold mb-4 text-indigo-400">✅ THIS WEEK DELIVERED</h2>
+                    <div className="space-y-2">
+                        {items.map((item, idx) => (
+                            <div key={idx} className="bg-gray-700 rounded p-3 flex justify-between items-center">
+                                <div>
+                                    <p className="font-semibold">{item.item}</p>
+                                    <p className="text-xs text-gray-400">
+                                        {new Date(item.timestamp).toLocaleString()}
+                                    </p>
+                                </div>
+                                <span className={`px-2 py-1 rounded text-xs font-bold ${
+                                    item.status === 'ON_TIME' ? 'bg-green-600 text-white' : 'bg-red-600 text-white'
+                                }`}>
+                                    {item.status === 'ON_TIME' ? '✓ ON TIME' : '⚠ MISSED'}
+                                </span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            );
+        }
+
+        // Main App
+        function CommandCenter() {
+            const [data, setData] = useState(loadData());
+            const [lastUpdate, setLastUpdate] = useState(new Date(data.lastUpdated));
+
+            // Auto-refresh timer every minute
+            useEffect(() => {
+                const interval = setInterval(() => {
+                    setLastUpdate(new Date(data.lastUpdated));
+                }, 60000);
+                return () => clearInterval(interval);
+            }, [data.lastUpdated]);
+
+            // Manual refresh
+            const handleRefresh = useCallback(() => {
+                const freshData = loadData();
+                setData(freshData);
+                setLastUpdate(new Date(freshData.lastUpdated));
+            }, []);
+
+            // Export data for Maxi
+            const handleExport = useCallback(() => {
+                const dataStr = JSON.stringify(data, null, 2);
+                const dataBlob = new Blob([dataStr], { type: 'application/json' });
+                const url = URL.createObjectURL(dataBlob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = `boyd-command-center-${new Date().toISOString().split('T')[0]}.json`;
+                link.click();
+            }, [data]);
+
+            // Import data from Maxi
+            const handleImport = useCallback(() => {
+                const input = document.createElement('input');
+                input.type = 'file';
+                input.accept = 'application/json';
+                input.onchange = (e) => {
+                    const file = e.target.files[0];
+                    const reader = new FileReader();
+                    reader.onload = (event) => {
+                        try {
+                            const imported = JSON.parse(event.target.result);
+                            saveData(imported);
+                            setData(imported);
+                            setLastUpdate(new Date(imported.lastUpdated));
+                            alert('Data imported successfully!');
+                        } catch (err) {
+                            alert('Error importing data: ' + err.message);
+                        }
+                    };
+                    reader.readAsText(file);
+                };
+                input.click();
+            }, []);
+
+            return (
+                <div className="container mx-auto px-4 py-6 max-w-7xl">
+                    {/* Header */}
+                    <div className="bg-gray-800 rounded-lg p-4 mb-6">
+                        <div className="flex justify-between items-center flex-wrap gap-4">
+                            <div>
+                                <h1 className="text-3xl font-bold text-white">Boyd Command Center</h1>
+                                <p className="text-gray-400 text-sm mt-1">
+                                    Last updated: {lastUpdate.toLocaleString()}
+                                </p>
+                            </div>
+                            <div className="flex gap-2">
+                                <button 
+                                    onClick={handleRefresh}
+                                    className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded font-semibold text-sm">
+                                    🔄 Refresh
+                                </button>
+                                <button 
+                                    onClick={handleExport}
+                                    className="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded font-semibold text-sm">
+                                    📥 Export
+                                </button>
+                                <button 
+                                    onClick={handleImport}
+                                    className="bg-green-600 hover:bg-green-700 px-4 py-2 rounded font-semibold text-sm">
+                                    📤 Import
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Dashboard Sections */}
+                    <Tier1Deliverables 
+                        deliverables={data.tier1Deliverables}
+                        onUpdate={(updated) => {
+                            const newData = { ...data, tier1Deliverables: updated };
+                            saveData(newData);
+                            setData(newData);
+                        }}
+                    />
+                    
+                    <ArcadiabStrategic data={data.arcadiabStrategic} />
+                    
+                    <DailyOperations data={data.dailyOperations} />
+                    
+                    <ContentPipeline data={data.contentPipeline} />
+                    
+                    <WeekDelivered items={data.weekDelivered} />
+
+                    {/* Footer */}
+                    <div className="text-center text-gray-500 text-sm mt-8">
+                        <p>🤖 Maxi updates this automatically when available</p>
+                        <p>💾 All data stored locally in your browser</p>
+                    </div>
+                </div>
+            );
+        }
+
+        // Render
+        ReactDOM.render(<CommandCenter />, document.getElementById('root'));
+    </script>
+</body>
+</html>

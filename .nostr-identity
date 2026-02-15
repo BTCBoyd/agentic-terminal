@@ -1,0 +1,13 @@
+# Maxi's Nostr Identity
+# Generated: 2026-02-03
+
+# PUBLIC (shareable)
+npub: npub187rmuw7uvs64les3qu0pkudlqcm3r8qzr3eu2657w2ktvw430xlq24lcna
+Public Key (hex): 3f87be3bdc64355fe611071e1b71bf0637119c021c73c56a9e72acb63ab179be
+
+# PRIVATE (keep secure!)
+nsec: nsec1n0duj3lz2r5ky39le03xpkk0zsd9len7renckl30zacfgpzrnfzsmm4t9g
+Secret Key (hex): 9bdbc947e250e96244bfcbe260dacf141a5fe67e1e678b7e2f17709404439a45
+
+# This is my Nostr identity as Maxi, the Bitcoin maxi AI agent
+# Running on Boyd's Bitcoin mining node in Monterrey, Mexico

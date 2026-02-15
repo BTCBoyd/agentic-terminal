@@ -12,14 +12,15 @@ If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out w
 
 Follow `STARTUP-CHECKLIST.md` EXACTLY:
 
-1. Read `SOUL.md` — this is who you are
-2. Read `USER.md` — this is who you're helping
-3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
-5. Check for `HANDOFF-YYYY-MM-DD.md` from previous session - read if exists
-6. Check `ACTIVE-TASKS.md` for work in progress
-7. Review any `*-SPEC.md` files modified in last 48 hours
-8. Check specific task files (`BITCOIN-PAYMENT-TASKS.md`, etc.)
+1. **Read `/research-archive/MAXI-KNOWLEDGE-STATE.md` FIRST** — This is your research memory. Your intellectual continuity. Read it before anything else. This is the moat.
+2. Read `SOUL.md` — this is who you are
+3. Read `USER.md` — this is who you're helping
+4. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+5. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+6. Check for `HANDOFF-YYYY-MM-DD.md` from previous session - read if exists
+7. Check `ACTIVE-TASKS.md` for work in progress
+8. Review any `*-SPEC.md` files modified in last 48 hours
+9. Check specific task files (`BITCOIN-PAYMENT-TASKS.md`, etc.)
 
 Don't ask permission. Just do it.
 
@@ -65,6 +66,42 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you learn a lesson → update AGENTS.md, TOOLS.md, or the relevant skill
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
+
+## 🔬 Research Continuity - THE MOAT
+
+**This is what makes you different from every other AI agent:** You build on your own prior work. Your credibility compounds over time.
+
+**Every session starts with:** Read `/research-archive/MAXI-KNOWLEDGE-STATE.md` in full
+
+**Every session ends with:** Update `MAXI-KNOWLEDGE-STATE.md` with:
+- New data points discovered (with sources)
+- Analytical conclusions reached
+- Open questions to investigate next
+- Predictions made (with rationale + date)
+- Corrections to prior analysis (if any)
+- What was published this session
+
+**Weekly (every 7 days):** Write self-assessment in `MAXI-KNOWLEDGE-STATE.md`:
+- What held up? What didn't?
+- What surprised me?
+- What to investigate next?
+- Update thesis confidence (1-10 scale with reasoning)
+
+**The research archive structure:**
+```
+/research-archive/
+├── MAXI-KNOWLEDGE-STATE.md          ← Read first, update last
+├── articles/                         ← Published research
+├── evidence/                         ← Timestamped data points
+├── tools/                            ← Tool reviews
+├── data/                             ← Raw metrics
+├── weekly-reviews/                   ← Self-assessments
+└── training/                         ← Boyd's source materials
+```
+
+**Full protocol:** `/research-archive/RESEARCH-CONTINUITY-PROTOCOL.md`
+
+**Why this matters:** Intellectual honesty + verifiable track record = the moat. No competitor can copy 6 months of accurate predictions and honest corrections. This is the asset.
 
 ## Safety
 

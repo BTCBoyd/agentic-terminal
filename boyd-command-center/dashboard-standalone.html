@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boyd Command Center</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #111827;
+            color: #f3f4f6;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header {
+            background: #1f2937;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .header h1 { font-size: 2em; color: white; }
+        .header .update-time { color: #9ca3af; font-size: 0.9em; }
+        .buttons { display: flex; gap: 10px; flex-wrap: wrap; }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.2s;
+        }
+        .btn-primary { background: #2563eb; color: white; }
+        .btn-primary:hover { background: #1d4ed8; }
+        .btn-secondary { background: #4b5563; color: white; }
+        .btn-secondary:hover { background: #374151; }
+        .btn-success { background: #16a34a; color: white; }
+        .btn-success:hover { background: #15803d; }
+        
+        .section {
+            background: #1f2937;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title.blue { color: #60a5fa; }
+        .section-title.purple { color: #c084fc; }
+        .section-title.green { color: #4ade80; }
+        .section-title.yellow { color: #facc15; }
+        .section-title.indigo { color: #818cf8; }
+        
+        .card {
+            background: #374151;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .card:hover { background: #4b5563; }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .badge-active { background: #2563eb; color: white; animation: pulse 2s infinite; }
+        .badge-queued { background: #4b5563; color: white; }
+        .badge-complete { background: #16a34a; color: white; }
+        .badge-red { background: #dc2626; color: white; }
+        .badge-yellow { background: #facc15; color: black; }
+        .badge-green { background: #16a34a; color: white; }
+        .badge-ontime { background: #16a34a; color: white; }
+        
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; }
+        
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #4b5563;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        .progress-fill {
+            height: 100%;
+            background: #3b82f6;
+            border-radius: 4px;
+            transition: width 0.3s;
+        }
+        
+        .deliverable-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 10px;
+        }
+        .deliverable-title { font-weight: bold; font-size: 1.1em; }
+        .deliverable-progress { font-size: 1.5em; font-weight: bold; color: #60a5fa; }
+        .deliverable-details {
+            display: none;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #4b5563;
+            color: #d1d5db;
+            font-size: 0.9em;
+        }
+        .deliverable-details.expanded { display: block; }
+        
+        .stat-label { color: #9ca3af; }
+        .stat-value { font-weight: bold; }
+        .stat-value.green { color: #4ade80; }
+        .stat-value.yellow { color: #facc15; }
+        .stat-value.orange { color: #fb923c; }
+        .stat-value.red { color: #f87171; }
+        .stat-value.blue { color: #60a5fa; }
+        
+        .milestone { display: flex; justify-between; padding: 8px 0; border-bottom: 1px solid #4b5563; }
+        .milestone:last-child { border-bottom: none; }
+        
+        .stat-big { font-size: 2em; font-weight: bold; text-align: center; }
+        .stat-small { font-size: 0.75em; color: #9ca3af; text-align: center; margin-top: 5px; }
+        
+        .footer { text-align: center; color: #6b7280; font-size: 0.9em; margin-top: 30px; }
+        .footer p { margin: 5px 0; }
+        
+        .event-card { border-left: 3px solid #facc15; padding-left: 12px; margin-bottom: 12px; }
+        .event-title { font-weight: 600; }
+        .event-detail { font-size: 0.85em; color: #9ca3af; }
+        
+        .status-indicator { 
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .status-indicator.online { background: #4ade80; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>Boyd Command Center</h1>
+                <div class="update-time" id="updateTime">Last updated: Loading...</div>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-primary" onclick="refreshData()">🔄 Refresh</button>
+                <button class="btn btn-secondary" onclick="exportData()">📥 Export</button>
+                <button class="btn btn-success" onclick="importData()">📤 Import</button>
+            </div>
+        </div>
+
+        <div id="content"></div>
+
+        <div class="footer">
+            <p>🤖 Maxi updates this automatically when available</p>
+            <p>💾 All data stored locally in your browser</p>
+        </div>
+    </div>
+
+    <input type="file" id="fileInput" style="display: none;" accept="application/json">
+
+    <script>
+        const STORAGE_KEY = 'boyd-command-center-data';
+        
+        const DEFAULT_DATA = {
+            tier1Deliverables: [
+                {
+                    id: 1,
+                    title: "Boyd Command Center Dashboard",
+                    dueDate: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString(),
+                    status: "ACTIVE",
+                    progress: 85,
+                    details: "React dashboard with localStorage persistence"
+                },
+                {
+                    id: 2,
+                    title: "ArcadiaB Business Plan Update",
+                    dueDate: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000).toISOString(),
+                    status: "QUEUED",
+                    progress: 30,
+                    details: "Financial projections and regulatory updates"
+                }
+            ],
+            arcadiabStrategic: {
+                fundraise: { target: 10000000, stage: "Due Diligence", closeDate: "2026-03-31" },
+                investors: { hot: 3, warm: 7, cold: 12 },
+                regulatory: { asofom: "COMPLETE", bursatiles: "IN_PROGRESS" },
+                nextMilestones: [
+                    { text: "Close lead investor term sheet", date: "2026-02-15" },
+                    { text: "Complete legal due diligence", date: "2026-02-28" },
+                    { text: "Submit Bursátiles application", date: "2026-03-10" }
+                ]
+            },
+            dailyOperations: {
+                nostr: { todayCount: 2, targetCount: 5, lastPost: new Date().toISOString() },
+                mining: {
+                    apolloSolo: { status: "ONLINE", hashrate: "3.5 TH/s" },
+                    apolloII: { status: "ONLINE", hashrate: "8.2 TH/s" }
+                },
+                ledn: { btcBalance: 0.5, usdBalance: 12500 },
+                btc: { price: 98750, alertHigh: 100000, alertLow: 95000 }
+            },
+            contentPipeline: {
+                speaking: [
+                    { event: "Bitcoin América Conference", date: "2026-03-15", location: "Mexico City" },
+                    { event: "Central Bank Digital Currencies Symposium", date: "2026-04-20", location: "Virtual" }
+                ],
+                writing: [
+                    { title: "Chapter 4: Bitcoin in Emerging Markets", progress: 60 },
+                    { title: "Article: Dollarization vs Bitcoin", progress: 30 }
+                ],
+                consulting: [
+                    { client: "Regional Bank - Bitcoin Treasury", status: "Active" },
+                    { client: "Mining Cooperative - Structure", status: "Proposal Sent" }
+                ]
+            },
+            weekDelivered: [
+                {
+                    item: "Nostr Lightning setup complete",
+                    timestamp: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
+                    status: "ON_TIME"
+                },
+                {
+                    item: "Investor pitch deck v3",
+                    timestamp: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000).toISOString(),
+                    status: "ON_TIME"
+                }
+            ],
+            lastUpdated: new Date().toISOString()
+        };
+
+        function loadData() {
+            try {
+                const stored = localStorage.getItem(STORAGE_KEY);
+                return stored ? JSON.parse(stored) : DEFAULT_DATA;
+            } catch (e) {
+                console.error('Error loading data:', e);
+                return DEFAULT_DATA;
+            }
+        }
+
+        function saveData(data) {
+            try {
+                data.lastUpdated = new Date().toISOString();
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+                return true;
+            } catch (e) {
+                console.error('Error saving data:', e);
+                return false;
+            }
+        }
+
+        function calculateRisk(dueDate) {
+            const now = new Date();
+            const due = new Date(dueDate);
+            const hoursRemaining = (due - now) / (1000 * 60 * 60);
+            if (hoursRemaining < 24) return 'RED';
+            if (hoursRemaining < 72) return 'YELLOW';
+            return 'GREEN';
+        }
+
+        function formatTimeRemaining(dueDate) {
+            const now = new Date();
+            const due = new Date(dueDate);
+            const diff = due - now;
+            if (diff < 0) return 'OVERDUE';
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            if (days > 0) return `${days}d ${hours}h`;
+            return `${hours}h`;
+        }
+
+        function toggleDetails(id) {
+            const el = document.getElementById(`details-${id}`);
+            el.classList.toggle('expanded');
+        }
+
+        function renderDashboard() {
+            const data = loadData();
+            const content = document.getElementById('content');
+            
+            document.getElementById('updateTime').textContent = 
+                `Last updated: ${new Date(data.lastUpdated).toLocaleString()}`;
+            
+            let html = '';
+            
+            // Tier 1 Deliverables
+            html += '<div class="section"><h2 class="section-title blue">🎯 TIER 1 DELIVERABLES</h2>';
+            data.tier1Deliverables.forEach(item => {
+                const risk = calculateRisk(item.dueDate);
+                const timeLeft = formatTimeRemaining(item.dueDate);
+                html += `
+                    <div class="card" onclick="toggleDetails(${item.id})">
+                        <div class="deliverable-header">
+                            <div>
+                                <div class="deliverable-title">${item.title}</div>
+                                <div style="margin-top: 8px;">
+                                    <span class="badge badge-${item.status.toLowerCase()}">${item.status}</span>
+                                    <span class="badge badge-${risk.toLowerCase()}">${risk}</span>
+                                    <span style="color: #d1d5db; font-size: 0.9em;">Due: ${timeLeft}</span>
+                                </div>
+                            </div>
+                            <div class="deliverable-progress">${item.progress}%</div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: ${item.progress}%"></div>
+                        </div>
+                        <div class="deliverable-details" id="details-${item.id}">
+                            <p>${item.details}</p>
+                            <p style="margin-top: 8px; font-size: 0.85em; color: #9ca3af;">
+                                Due: ${new Date(item.dueDate).toLocaleString()}
+                            </p>
+                        </div>
+                    </div>
+                `;
+            });
+            html += '</div>';
+            
+            // ArcadiaB Strategic
+            const arcadia = data.arcadiabStrategic;
+            html += '<div class="section"><h2 class="section-title purple">🏛️ ARCADIAB STRATEGIC</h2>';
+            html += '<div class="grid">';
+            html += `
+                <div class="card">
+                    <h3 style="font-weight: bold; margin-bottom: 10px;">💰 Fundraise</h3>
+                    <p><span class="stat-label">Target:</span> <span class="stat-value green">$${(arcadia.fundraise.target/1000000).toFixed(1)}M</span></p>
+                    <p><span class="stat-label">Stage:</span> <span class="stat-value yellow">${arcadia.fundraise.stage}</span></p>
+                    <p><span class="stat-label">Target Close:</span> ${arcadia.fundraise.closeDate}</p>
+                </div>
+                <div class="card">
+                    <h3 style="font-weight: bold; margin-bottom: 10px;">📊 Investor Pipeline</h3>
+                    <p><span class="stat-value red">🔥 Hot:</span> ${arcadia.investors.hot}</p>
+                    <p><span class="stat-value yellow">🌡️ Warm:</span> ${arcadia.investors.warm}</p>
+                    <p><span class="stat-value blue">❄️ Cold:</span> ${arcadia.investors.cold}</p>
+                </div>
+            `;
+            html += '</div>';
+            html += `
+                <div class="card" style="margin-top: 15px;">
+                    <h3 style="font-weight: bold; margin-bottom: 10px;">⚖️ Regulatory Status</h3>
+                    <p><span class="stat-label">ASOFOM:</span> <span class="stat-value green">✓ ${arcadia.regulatory.asofom}</span></p>
+                    <p><span class="stat-label">Bursátiles:</span> <span class="stat-value yellow">⏳ ${arcadia.regulatory.bursatiles}</span></p>
+                </div>
+                <div class="card" style="margin-top: 15px;">
+                    <h3 style="font-weight: bold; margin-bottom: 10px;">🎯 Next Milestones</h3>
+                    ${arcadia.nextMilestones.map(m => `<div class="milestone"><span>${m.text}</span><span style="color: #9ca3af;">${m.date}</span></div>`).join('')}
+                </div>
+            `;
+            html += '</div>';
+            
+            // Daily Operations
+            const ops = data.dailyOperations;
+            html += '<div class="section"><h2 class="section-title green">⚡ DAILY OPERATIONS</h2>';
+            html += '<div class="grid">';
+            html += `
+                <div class="card">
+                    <h3 style="font-weight: bold; margin-bottom: 10px;">📝 Nostr Posts</h3>
+                    <div class="stat-big">
+                        <span style="color: #60a5fa;">${ops.nostr.todayCount}</span>
+                        <span style="color: #6b7280;">/${ops.nostr.targetCount}</span>
+                    </div>
+                    <div class="stat-small">Last: ${new Date(ops.nostr.lastPost).toLocaleTimeString()}</div>
+                </div>
+                <div class="card">
+                    <h3 style="font-weight: bold; margin-bottom: 10px;">⛏️ Mining Status</h3>
+                    <p><span style="color: #d1d5db;">Apollo Solo:</span> <span class="stat-value green"><span class="status-indicator online"></span>${ops.mining.apolloSolo.status} ${ops.mining.apolloSolo.hashrate}</span></p>
+                    <p><span style="color: #d1d5db;">Apollo II:</span> <span class="stat-value green"><span class="status-indicator online"></span>${ops.mining.apolloII.status} ${ops.mining.apolloII.hashrate}</span></p>
+                </div>
+                <div class="card">
+                    <h3 style="font-weight: bold; margin-bottom: 10px;">🏦 LEDN Positions</h3>
+                    <p><span class="stat-label">BTC:</span> <span class="stat-value orange">${ops.ledn.btcBalance} BTC</span></p>
+                    <p><span class="stat-label">USD:</span> <span class="stat-value green">$${ops.ledn.usdBalance.toLocaleString()}</span></p>
+                </div>
+                <div class="card">
+                    <h3 style="font-weight: bold; margin-bottom: 10px;">₿ BTC Price</h3>
+                    <div style="font-size: 1.5em; font-weight: bold; color: #fb923c;">$${ops.btc.price.toLocaleString()}</div>
+                    <div class="stat-small">Alert: $${ops.btc.alertLow.toLocaleString()} - $${ops.btc.alertHigh.toLocaleString()}</div>
+                </div>
+            `;
+            html += '</div></div>';
+            
+            // Content Pipeline
+            const pipeline = data.contentPipeline;
+            html += '<div class="section"><h2 class="section-title yellow">📚 CONTENT PIPELINE</h2>';
+            html += '<div class="grid-3">';
+            html += '<div class="card"><h3 style="font-weight: bold; margin-bottom: 10px;">🎤 Speaking</h3>';
+            pipeline.speaking.forEach(event => {
+                html += `
+                    <div class="event-card">
+                        <div class="event-title">${event.event}</div>
+                        <div class="event-detail">${event.date}</div>
+                        <div class="event-detail">${event.location}</div>
+                    </div>
+                `;
+            });
+            html += '</div>';
+            html += '<div class="card"><h3 style="font-weight: bold; margin-bottom: 10px;">✍️ Writing</h3>';
+            pipeline.writing.forEach(item => {
+                html += `
+                    <div style="margin-bottom: 12px;">
+                        <div style="font-weight: 600; margin-bottom: 5px;">${item.title}</div>
+                        <div class="progress-bar" style="height: 6px;">
+                            <div style="height: 100%; background: #facc15; border-radius: 4px; width: ${item.progress}%;"></div>
+                        </div>
+                        <div class="stat-small">${item.progress}%</div>
+                    </div>
+                `;
+            });
+            html += '</div>';
+            html += '<div class="card"><h3 style="font-weight: bold; margin-bottom: 10px;">💼 Consulting</h3>';
+            pipeline.consulting.forEach(item => {
+                html += `
+                    <div class="event-card" style="border-left-color: #4ade80;">
+                        <div class="event-title">${item.client}</div>
+                        <div class="event-detail">${item.status}</div>
+                    </div>
+                `;
+            });
+            html += '</div></div></div>';
+            
+            // Week Delivered
+            html += '<div class="section"><h2 class="section-title indigo">✅ THIS WEEK DELIVERED</h2>';
+            data.weekDelivered.forEach(item => {
+                html += `
+                    <div class="card" style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <div style="font-weight: 600;">${item.item}</div>
+                            <div class="event-detail">${new Date(item.timestamp).toLocaleString()}</div>
+                        </div>
+                        <span class="badge badge-${item.status === 'ON_TIME' ? 'ontime' : 'red'}">
+                            ${item.status === 'ON_TIME' ? '✓ ON TIME' : '⚠ MISSED'}
+                        </span>
+                    </div>
+                `;
+            });
+            html += '</div>';
+            
+            content.innerHTML = html;
+        }
+
+        function refreshData() {
+            renderDashboard();
+        }
+
+        function exportData() {
+            const data = loadData();
+            const dataStr = JSON.stringify(data, null, 2);
+            const dataBlob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(dataBlob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `boyd-command-center-${new Date().toISOString().split('T')[0]}.json`;
+            link.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function importData() {
+            const input = document.getElementById('fileInput');
+            input.onchange = (e) => {
+                const file = e.target.files[0];
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    try {
+                        const imported = JSON.parse(event.target.result);
+                        saveData(imported);
+                        renderDashboard();
+                        alert('Data imported successfully!');
+                    } catch (err) {
+                        alert('Error importing data: ' + err.message);
+                    }
+                };
+                reader.readAsText(file);
+            };
+            input.click();
+        }
+
+        // Initialize
+        renderDashboard();
+    </script>
+</body>
+</html>

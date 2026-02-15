@@ -1,11 +1,11 @@
 [
   {
     "id": "post_1770998429083_0",
-    "content": "Mexican real estate: ~$5 trillion trapped in 5% annual returns.\n\nBitcoin: 100%+ avg annual growth (10yr).\n\nThe arbitrage is sitting in front of us.\n\nMonday: Capital Duro launches. We published the framework for how to capture it.",
+    "content": "Mexican real estate: ~$5 trillion trapped in 5% annual returns.\n\nBitcoin: 100%+ avg annual growth (10yr).\n\nThe arbitrage is sitting in front of us.\n\nMonday: Capital Duro launches. We published the framework for how to capture it.\n\nLearn more: capitalduro.mx",
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-13T09:00:00-06:00",
     "requiresApproval": false,
@@ -17,7 +17,7 @@
   },
   {
     "id": "post_1770998429083_1",
-    "content": "Next Thursday: @josecarloscohen @arcadiabtc presents at Bitcoin Treasuries Emerging Markets Investor Day in NYC.\n\nClosed-door. Institutional allocators. Family offices.\n\nTopic: Bitcoin treasury adoption in Mexico. 🏛️\n\n(1/2)",
+    "content": "Next Thursday: José Carlos @arcadiabtc presents at Bitcoin Treasuries Emerging Markets Investor Day in NYC.\n\nClosed-door. Institutional allocators. Family offices.\n\nTopic: Bitcoin treasury adoption in Mexico. 🏛️\n\n(1/2)",
     "platforms": {
       "x": true,
       "nostr": false,
@@ -25,11 +25,17 @@
     },
     "scheduledFor": "2026-02-13T13:00:00-06:00",
     "requiresApproval": false,
-    "status": "scheduled",
+    "status": "posted",
     "createdAt": "2026-02-13T16:00:29.083Z",
-    "postedAt": null,
+    "postedAt": "2026-02-14T01:42:57.470Z",
     "account": "@Maxibtc2009",
-    "contentType": "promotion"
+    "contentType": "promotion",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "━━━ DEBUG OUTPUT ━━━\nTimestamp: 1771033376\nSystem time (UTC): 2026-02-14T01:42:56.888Z\nNonce: 92c0feda74f0aa0e456a00efddb5314a7d2ff10c38f9c703ecae885cdc5a7d21\nParameter string: oauth_consumer_key=XBfsAHqeYQeRBOeGJZo9CKeBh&oauth_nonce=92c0feda74f0aa0e456a00efddb5314a7d2ff10c38f9c703ecae885cdc5a7d21&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1771033376&oauth_token=2021647460758966273-NXaS4HdmWfEx98U0YvyTMJJvSSyLvz&oauth_version=1.0\nSignature base string: POST&https%3A%2F%2Fapi.twitter.com%2F2%2Ftweets&oauth_consumer_key%3DXBfsAHqeYQeRBOeGJZo9CKeBh%26oauth_nonce%3D92c0feda74f0aa0e456a00efddb5314a7d2ff10c38f9c703ecae885cdc5a7d21%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1771033376%26oauth_token%3D2021647460758966273-NXaS4HdmWfEx98U0YvyTMJJvSSyLvz%26oauth_version%3D1.0\nSigning key: 7dE5HzNzdYoIwH2nCwRMPkAowu3fxqgBkG6uTMSZzesY4kUf6u&JRT0ZfRwS5rCURg78cskQNMKW2qm3BF5VPtGlmWhdJLk9\n━━━━━━━━━━━━━━━━━━━\nStatus: 201\nResponse: {\"data\":{\"id\":\"2022486689005093198\",\"edit_history_tweet_ids\":[\"2022486689005093198\"],\"text\":\"Next Thursday: José Carlos @arcadiabtc presents at Bitcoin Treasuries Emerging Markets Investor Day in NYC.\\n\\nClosed-door. Institutional allocators. Family offices.\\n\\nTopic: Bitcoin treasury adoption in Mexico. \\uD83C\\uDFDB️\\n\\n(1/2)\"}}\n✅ SUCCESS: {\n  data: {\n    id: '2022486689005093198',\n    edit_history_tweet_ids: [ '2022486689005093198' ],\n    text: 'Next Thursday: José Carlos @arcadiabtc presents at Bitcoin Treasuries Emerging Markets Investor Day in NYC.\\n' +\n      '\\n' +\n      'Closed-door. Institutional allocators. Family offices.\\n' +\n      '\\n' +\n      'Topic: Bitcoin treasury adoption in Mexico. 🏛️\\n' +\n      '\\n' +\n      '(1/2)'\n  }\n}\n"
+      }
+    }
   },
   {
     "id": "post_1770998429083_2",
@@ -37,7 +43,7 @@
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-13T17:00:00-06:00",
     "requiresApproval": false,
@@ -70,7 +76,7 @@
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-14T14:00:00-06:00",
     "requiresApproval": false,
@@ -82,13 +88,13 @@
   },
   {
     "id": "post_1770998429083_5",
-    "content": "Tomorrow: Capital Duro launches.\n\nMexico's premier Bitcoin research platform. Institutional-grade. Zero hype.\n\nThis is how you build credibility, not hype cycles.",
+    "content": "Tomorrow: Capital Duro launches.\n\nMexico's premier Bitcoin research platform. Institutional-grade. Zero hype.\n\nThis is how you build credibility, not hype cycles.\n\nLearn more: capitalduro.mx",
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
-    "scheduledFor": "2026-02-14T20:00:00-06:00",
+    "scheduledFor": "2026-02-15T20:00:00-06:00",
     "requiresApproval": false,
     "status": "scheduled",
     "createdAt": "2026-02-13T16:00:29.083Z",
@@ -102,7 +108,7 @@
     "platforms": {
       "x": true,
       "nostr": false,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-15T11:00:00-06:00",
     "requiresApproval": false,
@@ -114,11 +120,11 @@
   },
   {
     "id": "post_1770998429083_7",
-    "content": "Austrian economics predicted this:\n\nBad money (fiat) drives out good money (Bitcoin) from circulation.\n\nBut Gresham's Law has a corollary: good money ALWAYS wins in savings.\n\nThat's why treasury allocations matter more than payment rails (for now).",
+    "content": "Austrian economics predicted this:\n\nBad money (fiat) drives out good money (Bitcoin) from circulation.\n\nBut Gresham's Law has a corollary: good money ALWAYS wins in savings.\n\nThat's why treasury allocations matter more than payment rails (for now).\n\nExplore our services: arcadiab.com",
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-15T16:00:00-06:00",
     "requiresApproval": false,
@@ -130,11 +136,11 @@
   },
   {
     "id": "post_1770998429083_8",
-    "content": "Tomorrow: Capital Duro launches. Mexico's premier Bitcoin research platform. Institutional-grade. Zero hype. This is how you build credibility.",
+    "content": "Tomorrow: Capital Duro launches. Mexico's premier Bitcoin research platform. Institutional-grade. Zero hype. This is how you build credibility.\n\nLearn more: capitalduro.mx",
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-15T20:00:00-06:00",
     "requiresApproval": false,
@@ -166,7 +172,7 @@
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-16T10:00:00-06:00",
     "requiresApproval": false,
@@ -194,11 +200,11 @@
   },
   {
     "id": "post_1770998429083_12",
-    "content": "The ASOFOM framework in Mexico enables Bitcoin lending models that don't exist in most jurisdictions.\n\nWe compared LTV ratios across 5 countries in @CapitalDuro's lending report.\n\nMexico's regulatory structure is genuinely unique.\n\nMost US institutions don't know it exists.",
+    "content": "The ASOFOM framework in Mexico enables Bitcoin lending models that don't exist in most jurisdictions.\n\nWe compared LTV ratios across 5 countries in @CapitalDuro's lending report.\n\nMexico's regulatory structure is genuinely unique.\n\nMost US institutions don't know it exists.\n\nExplore our services: arcadiab.com",
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-17T09:00:00-06:00",
     "requiresApproval": false,
@@ -230,7 +236,7 @@
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-17T19:00:00-06:00",
     "requiresApproval": false,
@@ -242,11 +248,11 @@
   },
   {
     "id": "post_1770998429083_15",
-    "content": "Question from US family offices:\n\n\"How does Bitcoin lending work in a regulated Mexican framework?\"\n\n@josecarloscohen @arcadiabtc unpacks this Thursday at Bitcoin Treasuries Emerging Markets Investor Day in NYC.\n\nThe ASOFOM structure is unique.",
+    "content": "Question from US family offices:\n\n\"How does Bitcoin lending work in a regulated Mexican framework?\"\n\nJosé Carlos @arcadiabtc unpacks this Thursday at Bitcoin Treasuries Emerging Markets Investor Day in NYC.\n\nThe ASOFOM structure is unique.\n\nExplore our services: arcadiab.com",
     "platforms": {
       "x": true,
       "nostr": false,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-18T10:00:00-06:00",
     "requiresApproval": false,
@@ -262,7 +268,7 @@
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-18T15:00:00-06:00",
     "requiresApproval": false,
@@ -278,7 +284,7 @@
     "platforms": {
       "x": true,
       "nostr": false,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-18T20:00:00-06:00",
     "requiresApproval": false,
@@ -290,11 +296,11 @@
   },
   {
     "id": "post_1770998429083_18",
-    "content": "Tomorrow: @arcadiabtc CEO in NYC presenting on Bitcoin treasury adoption in Mexico.\n\nClosed-door. Institutional allocators only.\n\nFrom research (Capital Duro launch Monday) → Wall Street (Thursday).\n\nThis is how you build credibility with institutions.",
+    "content": "Tomorrow: @arcadiabtc CEO in NYC presenting on Bitcoin treasury adoption in Mexico.\n\nClosed-door. Institutional allocators only.\n\nFrom research (Capital Duro launch Monday) → Wall Street (Thursday).\n\nThis is how you build credibility with institutions.\n\nLearn more: capitalduro.mx",
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-19T09:00:00-06:00",
     "requiresApproval": false,
@@ -310,7 +316,7 @@
     "platforms": {
       "x": true,
       "nostr": false,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-19T14:00:00-06:00",
     "requiresApproval": false,
@@ -338,11 +344,11 @@
   },
   {
     "id": "post_1770998429083_21",
-    "content": "Today: @josecarloscohen (@arcadiabtc) presenting at Bitcoin Treasuries Emerging Markets Investor Day in NYC.\n\nTopic: How ASOFOM-regulated Bitcoin lending works in Mexico.\n\nUS institutions don't realize Mexico has a regulatory framework that enables this. Today they learn.",
+    "content": "Today: José Carlos (@arcadiabtc) presenting at Bitcoin Treasuries Emerging Markets Investor Day in NYC.\n\nTopic: How ASOFOM-regulated Bitcoin lending works in Mexico.\n\nUS institutions don't realize Mexico has a regulatory framework that enables this. Today they learn.\n\nExplore our services: arcadiab.com",
     "platforms": {
       "x": true,
       "nostr": false,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-20T10:00:00-06:00",
     "requiresApproval": false,
@@ -354,11 +360,11 @@
   },
   {
     "id": "post_1770998429083_22",
-    "content": "The gap between US and Mexican Bitcoin regulatory frameworks creates arbitrage opportunities institutions are missing.\n\nASOMFOM certification = regulated Bitcoin lending.\nStrategy/@Metaplanet_JP model = public company Bitcoin treasuries.\n\nLatAm is ahead on some dimensions.",
+    "content": "The gap between US and Mexican Bitcoin regulatory frameworks creates arbitrage opportunities institutions are missing.\n\nASOMFOM certification = regulated Bitcoin lending.\nStrategy/@Metaplanet_JP model = public company Bitcoin treasuries.\n\nLatAm is ahead on some dimensions.\n\nExplore our services: arcadiab.com",
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-20T16:00:00-06:00",
     "requiresApproval": false,
@@ -370,11 +376,11 @@
   },
   {
     "id": "post_1770998429083_23",
-    "content": "Yesterday: @arcadiabtc CEO presented Bitcoin treasury frameworks to NYC institutional allocators.\n\nKey takeaway shared by attendees: Mexico's ASOFOM framework enables lending models most US firms can't replicate.\n\nRegulatory clarity = competitive advantage.",
+    "content": "Yesterday: @arcadiabtc CEO presented Bitcoin treasury frameworks to NYC institutional allocators.\n\nKey takeaway shared by attendees: Mexico's ASOFOM framework enables lending models most US firms can't replicate.\n\nRegulatory clarity = competitive advantage.\n\nExplore our services: arcadiab.com",
     "platforms": {
       "x": true,
       "nostr": false,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-21T11:00:00-06:00",
     "requiresApproval": false,
@@ -390,7 +396,7 @@
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-21T15:00:00-06:00",
     "requiresApproval": false,
@@ -402,11 +408,11 @@
   },
   {
     "id": "post_1770998429083_25",
-    "content": "The real cost of selling Bitcoin isn't just 35% ISR (Mexican capital gains tax).\n\nIt's the upside you forfeit.\n\nBitcoin-backed lending lets you access liquidity WITHOUT triggering the tax event OR losing future appreciation.\n\nFull model: Capital Duro report",
+    "content": "The real cost of selling Bitcoin isn't just 35% ISR (Mexican capital gains tax).\n\nIt's the upside you forfeit.\n\nBitcoin-backed lending lets you access liquidity WITHOUT triggering the tax event OR losing future appreciation.\n\nFull model: Capital Duro report\n\nLearn more: capitalduro.mx",
     "platforms": {
       "x": true,
       "nostr": false,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-21T19:00:00-06:00",
     "requiresApproval": false,
@@ -422,7 +428,7 @@
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-22T10:00:00-06:00",
     "requiresApproval": false,
@@ -438,7 +444,7 @@
     "platforms": {
       "x": true,
       "nostr": false,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-22T15:00:00-06:00",
     "requiresApproval": false,
@@ -470,7 +476,7 @@
     "platforms": {
       "x": true,
       "nostr": false,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-24T09:00:00-06:00",
     "requiresApproval": false,
@@ -486,7 +492,7 @@
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-24T14:00:00-06:00",
     "requiresApproval": false,
@@ -502,7 +508,7 @@
     "platforms": {
       "x": true,
       "nostr": false,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-24T19:00:00-06:00",
     "requiresApproval": false,
@@ -514,11 +520,11 @@
   },
   {
     "id": "post_1770998429083_32",
-    "content": "We modeled Bitcoin-backed lending under 3 LTV ratios.\n\nThe 'safe' conventional wisdom (30% LTV) actually leaves money on the table in 68% of historical scenarios.\n\nWhy: Over-collateralization has opportunity cost.\n\nFull analysis: Capital Duro lending report",
+    "content": "We modeled Bitcoin-backed lending under 3 LTV ratios.\n\nThe 'safe' conventional wisdom (30% LTV) actually leaves money on the table in 68% of historical scenarios.\n\nWhy: Over-collateralization has opportunity cost.\n\nFull analysis: Capital Duro lending report\n\nLearn more: capitalduro.mx",
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-25T10:00:00-06:00",
     "requiresApproval": false,
@@ -550,7 +556,7 @@
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-25T20:00:00-06:00",
     "requiresApproval": false,
@@ -582,7 +588,7 @@
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-26T14:00:00-06:00",
     "requiresApproval": false,
@@ -598,7 +604,7 @@
     "platforms": {
       "x": true,
       "nostr": false,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-26T19:00:00-06:00",
     "requiresApproval": false,
@@ -614,7 +620,7 @@
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-27T10:00:00-06:00",
     "requiresApproval": false,
@@ -630,7 +636,7 @@
     "platforms": {
       "x": true,
       "nostr": false,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-27T15:00:00-06:00",
     "requiresApproval": false,
@@ -658,11 +664,11 @@
   },
   {
     "id": "post_1770998429083_41",
-    "content": "We compared Bitcoin and AAA commercial real estate in Mexico across 12 metrics over 10 years.\n\nThe results surprised us on three dimensions.\n\nPortability wasn't even the biggest gap.\n\nFull analysis: Capital Duro report on Bitcoin vs Real Estate",
+    "content": "We compared Bitcoin and AAA commercial real estate in Mexico across 12 metrics over 10 years.\n\nThe results surprised us on three dimensions.\n\nPortability wasn't even the biggest gap.\n\nFull analysis: Capital Duro report on Bitcoin vs Real Estate\n\nLearn more: capitalduro.mx",
     "platforms": {
       "x": true,
       "nostr": false,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-28T09:00:00-06:00",
     "requiresApproval": false,
@@ -678,7 +684,7 @@
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-28T14:00:00-06:00",
     "requiresApproval": false,
@@ -690,11 +696,11 @@
   },
   {
     "id": "post_1770998429083_43",
-    "content": "Sound money education isn't optional.\n\nIt's foundational to adoption.\n\nAprenderBitcoin teaches individuals.\nCapital Duro educates institutions.\n@arcadiabtc trains corporate teams.\n\nEducation > hype.\nClarity > FOMO.\nLong-term > quick wins.",
+    "content": "Sound money education isn't optional.\n\nIt's foundational to adoption.\n\nAprenderBitcoin teaches individuals.\nCapital Duro educates institutions.\n@arcadiabtc trains corporate teams.\n\nEducation > hype.\nClarity > FOMO.\nLong-term > quick wins.\n\nLearn more: capitalduro.mx",
     "platforms": {
       "x": true,
       "nostr": false,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-28T19:00:00-06:00",
     "requiresApproval": false,
@@ -722,11 +728,11 @@
   },
   {
     "id": "post_1770998429083_45",
-    "content": "@Strategy (MSTR) model:\n\nPublic company converts treasury reserves from USD → BTC.\n\nResult: 400%+ stock performance (2020-2024).\n\n@Metaplanet_JP (Japan) copied it.\n@arcadiabtc is first in Mexico.\n\nThis playbook is spreading. Treasury diversification is accelerating.",
+    "content": "@Strategy (MSTR) model:\n\nPublic company converts treasury reserves from USD → BTC.\n\nResult: 400%+ stock performance (2020-2024).\n\n@Metaplanet_JP (Japan) copied it.\n@arcadiabtc is first in Mexico.\n\nThis playbook is spreading. Treasury diversification is accelerating.\n\nExplore our services: arcadiab.com",
     "platforms": {
       "x": true,
       "nostr": false,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-03-01T16:00:00-06:00",
     "requiresApproval": false,
@@ -774,7 +780,7 @@
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-03-03T14:00:00-06:00",
     "requiresApproval": false,
@@ -854,7 +860,7 @@
     "platforms": {
       "x": true,
       "nostr": false,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-03-05T14:00:00-06:00",
     "requiresApproval": false,
@@ -870,7 +876,7 @@
     "platforms": {
       "x": false,
       "nostr": true,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-03-05T19:00:00-06:00",
     "requiresApproval": false,
@@ -886,7 +892,7 @@
     "platforms": {
       "x": true,
       "nostr": false,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-03-06T10:00:00-06:00",
     "requiresApproval": false,
@@ -930,19 +936,29 @@
   },
   {
     "id": "post_1771000150701_thread2",
-    "content": "From research (Capital Duro launch Monday) to Wall Street (Thursday).\n\nThis is how you build credibility.\n\n(2/2)",
+    "content": "From research (Capital Duro launch Monday) to Wall Street (Thursday).\n\nThis is how you build credibility.\n\n(2/2)\n\nLearn more: capitalduro.mx",
     "platforms": {
       "x": true,
       "nostr": false,
-      "linkedin": false
+      "linkedin": true
     },
     "scheduledFor": "2026-02-13T19:02:00-06:00",
     "requiresApproval": false,
-    "status": "scheduled",
+    "status": "failed",
     "createdAt": "2026-02-13T16:29:10.702Z",
-    "postedAt": null,
+    "postedAt": "2026-02-14T01:42:58.984Z",
     "account": "@Maxibtc2009",
-    "contentType": "promotion"
+    "contentType": "promotion",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "━━━ DEBUG OUTPUT ━━━\nTimestamp: 1771033377\nSystem time (UTC): 2026-02-14T01:42:57.676Z\nNonce: 31bc7c47393d0766788f5ff463ede4ae3072596650457ca8ada8b485df3f6b47\nParameter string: oauth_consumer_key=XBfsAHqeYQeRBOeGJZo9CKeBh&oauth_nonce=31bc7c47393d0766788f5ff463ede4ae3072596650457ca8ada8b485df3f6b47&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1771033377&oauth_token=2021647460758966273-NXaS4HdmWfEx98U0YvyTMJJvSSyLvz&oauth_version=1.0\nSignature base string: POST&https%3A%2F%2Fapi.twitter.com%2F2%2Ftweets&oauth_consumer_key%3DXBfsAHqeYQeRBOeGJZo9CKeBh%26oauth_nonce%3D31bc7c47393d0766788f5ff463ede4ae3072596650457ca8ada8b485df3f6b47%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1771033377%26oauth_token%3D2021647460758966273-NXaS4HdmWfEx98U0YvyTMJJvSSyLvz%26oauth_version%3D1.0\nSigning key: 7dE5HzNzdYoIwH2nCwRMPkAowu3fxqgBkG6uTMSZzesY4kUf6u&JRT0ZfRwS5rCURg78cskQNMKW2qm3BF5VPtGlmWhdJLk9\n━━━━━━━━━━━━━━━━━━━\nStatus: 201\nResponse: {\"data\":{\"edit_history_tweet_ids\":[\"2022486691714601409\"],\"text\":\"From research (Capital Duro launch Monday) to Wall Street (Thursday).\\n\\nThis is how you build credibility.\\n\\n(2/2)\\n\\nLearn more: https://t.co/GkegvPuuOH\",\"id\":\"2022486691714601409\"}}\n✅ SUCCESS: {\n  data: {\n    edit_history_tweet_ids: [ '2022486691714601409' ],\n    text: 'From research (Capital Duro launch Monday) to Wall Street (Thursday).\\n' +\n      '\\n' +\n      'This is how you build credibility.\\n' +\n      '\\n' +\n      '(2/2)\\n' +\n      '\\n' +\n      'Learn more: https://t.co/GkegvPuuOH',\n    id: '2022486691714601409'\n  }\n}\n"
+      },
+      "linkedin": {
+        "success": false,
+        "error": "Unexpected token % in JSON at position 2"
+      }
+    }
   },
   {
     "id": "post_17710001507021_thread2",

@@ -1,0 +1,223 @@
+﻿Cap.7 Bitcoin
+En la crisis financiera del 2008 nos quedó claro: El sistema del dinero estaba roto.
+
+
+Lo vimos cuando los bancos fueron rescatados con dinero recién impreso, mientras millones perdían sus hogares.
+
+
+Era evidente que el problema no era solo económico, sino estructural: el dinero mismo había dejado de ser confiable.
+
+
+Pero desde décadas atrás, ya había grupos que creían en la revolución digital y estaban experimentando con nuevas formas de valor.
+
+
+Entonces ¿Cómo fue que llegamos a crear el mejor sistema de dinero para el siglo XXI? 
+Esta es la historia de Bitcoin.
+
+
+________________
+
+
+
+
+Todo comienza en los años ochenta y noventa, cuando surgió el movimiento cyferpunk:
+una comunidad de programadores y criptógrafos que creía que la privacidad era defensa. 
+No buscaban eficiencia bancaria, sino soberanía. 
+
+
+Querían crear dinero sin bancos, sin permisos, basado solo en matemáticas y consenso.
+Surgieron experimentos como DigiCash, e-gold y HashCash. 
+
+
+Pero todos fracasaron.
+Unos por problemas técnicos, otros por centralización, muchos porque fueron perseguidos y cerrados por las autoridades.
+
+
+________________
+
+
+
+
+
+
+La lección era clara: sin descentralización real, ningún dinero digital podía sobrevivir
+Siempre existía un nodo central que podía ser comprometido, censurado o destruido.
+
+
+Los experimentos y discusiones continuaron y fue en Octubre del 2008 cuando Satoshi Nakamoto publicó el whitepaper. Un documento técnico breve, claro y radical que especifica cómo crear dinero digital sin intermediarios ni puntos de falla.
+
+
+El  3 de Enero del 2009, se minó el primer bloque, dejando grabado un titular de prensa. Una declaración política en el código.
+
+
+________________
+
+
+
+
+________________
+
+
+Así nació no solo una tecnología, sino una alternativa al sistema financiero tradicional.
+Días después, Satoshi hizo la primer transacción a Hal Finney.
+
+
+En el 2010 el rumor de Bitcoin empezaba a tomar fuerza en mercados y foros en internet.
+Y en mayo del mismo año se ejecutó la primer compra comercial con Bitcoin.
+
+
+10,000 Bitcoins por dos pizzas grandes. 
+La transacción equivalía aproximadamente a $41 dólares. En 2025, 10,000 bitcoins valen cerca de mil millones de dólares.
+
+
+________________
+
+
+
+
+
+
+Pero ¿Qué es Bitcoin?
+La respuesta puede ser más compleja de lo visible a primera vista.
+Bitcoin es software de código abierto.
+Es un movimiento, una revolución social.
+Bitcoin es confianza, es comunidad.
+Es una red de computadoras.
+Bitcoin es dinero electrónico. Es Oro digital.
+Es un instrumento para conservar tus ahorros.
+Bitcoin es el activo con mejor apreciación de la historia.
+Bitcoin es noticia.
+Es política.
+Es polémica.
+Bitcoin es paz, esperanza.
+Es el descubrimiento más importante del siglo XXI.
+Bitcoin es...Realmente...todas las anteriores.
+Y como dinero digital, está cambiando las reglas del sistema financiero.
+Esto nos deja con dos tipos de personas.
+Quienes lo entienden y quienes todavía no se han informado.
+
+
+
+
+________________
+
+
+
+
+
+
+________________
+
+
+Bitcoin no se imprime, se produce mediante minería.
+Cada diez minutos, miles de computadoras alrededor del mundo compiten por resolver un rompecabezas matemático.
+
+
+La primera que lo resuelve gana y recibe nuevos bitcoins como recompensa.
+Es como una rifa global donde cada boleto cuesta energía real. Así se emite Bitcoin: a través de esfuerzo verificable.
+
+
+Pero hay un detalle que lo hace único: cada cuatro años, la recompensa se divide exactamente a la mitad.
+
+
+Este momento, el halving, es el corazón del sistema.
+
+
+Imagina tres sistemas diferentes como tres lagos alimentados por ríos distintos:
+El dinero fiat es un río desbordado que crece sin control, diluyendo todo lo que toca.
+Cuanto más entra, menos vale lo existente.
+
+
+El oro es un río estable que fluye lento y constante, siglo tras siglo.
+Un sistema de inflación constante, pero nunca de escasez total.
+
+
+Bitcoin es un río diseñado con intención.
+Cada cuatro años, su caudal se reduce deliberadamente hasta detenerse por completo.
+
+
+Cuando se mine el último bitcoin, el río que alimenta al lago dejará de fluir por completo.
+El lago permanecerá lleno a su capacidad máxima y sin posibilidad de agregar una sola gota.
+
+
+
+
+________________
+
+
+
+
+
+
+En esa imagen está toda la diferencia:
+El fiat es dinero sin restricción, el oro es dinero con inflación constante, y Bitcoin es distinto: 
+su inflación tiende a cero por diseño, un sistema donde la emisión termina y la escasez no es accidente, sino un principio.
+
+
+En 2025 el 95% de todos los Bitcoins que existirán, ya fueron emitidos.
+Los últimos nacerán lentamente hasta el año 2140, siguiendo una curva perfecta,
+conocida desde el primer día e imposible de alterar sin romper el consenso global que lo sostiene.
+
+
+Gracias al halving, Bitcoin no solo tiene una política monetaria predecible: tiene una política incorruptible.
+
+
+No depende de elecciones, bancos ni decretos, sino de un calendario grabado en código abierto que cualquiera puede auditar, desde cualquier lugar del mundo.
+
+
+Durante siglos, la humanidad buscó dinero que conservara su valor, que fuera fácil de usar y difícil de corromper.
+
+
+Bitcoin Es escaso, porque su diseño permite solo 21 millones de unidades, sin posibilidad de alterar esas reglas. 
+
+
+Es divisible, porque cada unidad puede fraccionarse en 100 millones de partes más pequeñas, lo que permite pagos grandes o diminutos. 
+
+
+Es portable, porque viaja a la velocidad de la luz, sin papel, sin custodios, sin intermediarios. 
+Es verificable, porque su código es público y cualquiera puede comprobar en tiempo real que cada unidad es auténtica. 
+
+
+Y es duradero, porque existe sobre el internet: una estructura distribuida, sostenida por energía, cómputo y consenso entre miles de nodos alrededor del mundo.
+
+
+________________
+
+
+
+
+Cada una de estas propiedades corrige las limitaciones del pasado.
+Bitcoin no es una copia del oro ni una versión digital del dinero: es la siguiente iteración del valor.
+
+
+Bitcoin es digital y global, sin fronteras ni permisos. 
+Funciona veinticuatro horas, sin bancos, sin gobiernos, sin intermediarios.
+
+
+Por primera vez en la historia, el dinero no obedece a un poder central.
+
+
+Garantiza algo que ningún dinero logró antes: oferta fija, predecible, inmutable y visible para todos.
+
+
+Durante siglos, los gobiernos, a través de sus bancos centrales, han controlado la emisión de moneda. 
+
+
+Decidieron cuándo imprimir y a quién rescatar.
+
+
+El dinero fue siempre una herramienta de poder, un instrumento de control en manos de quien está arriba.
+
+
+Hace casi cincuenta años, el economista Fredrik Hayek comentó: 
+"No creo que volvamos a tener un buen dinero   antes de que arrebatemos ese asunto de las manos del gobierno. Lo único que podemos hacer es introducir algo que ellos no puedan detener."
+
+
+Esa idea dejó de ser teoría. Bitcoin la hizo una realidad: dinero independiente y universal.
+Bitcoin es la primer forma de dinero duro en la era digital. 
+
+
+Pero más que una tecnología, es un principio: una nueva forma de entender la confianza, el poder, la propiedad y el valor.
+
+
+Y ese principio plantea una pregunta inevitable: ¿Cómo es posible que miles de personas se coordinen perfectamente sin que nadie les diga qué hacer?

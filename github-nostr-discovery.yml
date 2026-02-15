@@ -1,0 +1,53 @@
+name: Nostr Discovery for Maxi
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours (00:00, 06:00, 12:00, 18:00 UTC)
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Query Nostr.band API
+        run: |
+          echo "Fetching trending Nostr posts..."
+          curl -s "https://api.nostr.band/v0/trending/notes?limit=100" > raw.json
+          
+      - name: Filter and Rank Opportunities
+        run: |
+          echo "Filtering for Bitcoin/AI content..."
+          
+          # Filter for Bitcoin + AI keywords, rank by engagement
+          cat raw.json | jq '[
+            .notes[] | 
+            select(.content | test("bitcoin|btc"; "i")) | 
+            select(.content | test("\\bai\\b|agent|artificial intelligence|convergence"; "i")) |
+            select(.content | test("shitcoin|pump|lambo|moon"; "i") | not) |
+            {
+              id: .id,
+              pubkey: .pubkey,
+              content: .content,
+              created_at: .created_at,
+              author_name: .author.name,
+              engagement_score: ((.stats.replies // 0) + (.stats.reactions // 0) + (.stats.zaps // 0))
+            }
+          ] | sort_by(-.engagement_score) | .[0:5]' > opportunities.json
+          
+          echo "Top opportunities:"
+          cat opportunities.json | jq -r '.[] | "- \(.author_name): \(.content[0:80])..."'
+          
+      - name: Add Timestamp
+        run: |
+          echo "{\"last_updated\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\", \"opportunities\": $(cat opportunities.json)}" > opportunities.json
+          
+      - name: Commit Results
+        run: |
+          git config user.name "Maxi Discovery Bot"
+          git config user.email "maxi@arcadiab.com"
+          git add opportunities.json
+          git diff --staged --quiet || git commit -m "Update opportunities $(date -u +%Y-%m-%d_%H:%M)"
+          git push || echo "No changes to push"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

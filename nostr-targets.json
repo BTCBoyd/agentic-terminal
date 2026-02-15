@@ -1,0 +1,58 @@
+{
+  "target_accounts": [
+    {
+      "npub": "npub1sg6plzptd64u62a878hep2kev88swjh3tw00gjsfl8f237lmu63q0uf63m",
+      "hex": "82341f882b6eabcd2ba7f1ef90aad961cf074af15b9ef44a09f9d2a8fbfbe6a2",
+      "notes": "Target #1"
+    },
+    {
+      "npub": "npub1qny3tkh0acurzla8x3zy4nhrjz5zd8l9sy9jys09umwng00manysew95gx",
+      "hex": "04c915daefee38317fa734444acee390a8269fe5810b2241e5e6dd343dfbecc9",
+      "notes": "Target #2"
+    },
+    {
+      "npub": "npub1s05p3ha7en49dv8429tkk07nnfa9pcwczkf5x5qrdraqshxdje9sq6eyhe",
+      "hex": "83e818dfbeccea56b0f551576b3fd39a7a50e1d8159343500368fa085ccd964b",
+      "notes": "Target #3"
+    },
+    {
+      "npub": "npub1a2cww4kn9wqte4ry70vyfwqyqvpswksna27rtxd8vty6c74era8sdcw83a",
+      "hex": "eab0e756d32b80bcd464f3d844b8040303075a13eabc3599a762c9ac7ab91f4f",
+      "notes": "Target #4"
+    },
+    {
+      "npub": "npub1j8y6tcdfw3q3f3h794s6un0gyc5742s0k5h5s2yqj0r70cpklqeqjavrvg",
+      "hex": "91c9a5e1a9744114c6fe2d61ae4de82629eaaa0fb52f48288093c7e7e036f832",
+      "notes": "Target #5"
+    },
+    {
+      "npub": "npub1gdu7w6l6w65qhrdeaf6eyywepwe7v7ezqtugsrxy7hl7ypjsvxksd76nak",
+      "hex": "4379e76bfa76a80b8db9ea759211d90bb3e67b2202f8880cc4f5ffe2065061ad",
+      "notes": "Target #6"
+    },
+    {
+      "npub": "npub1cj8znuztfqkvq89pl8hceph0svvvqk0qay6nydgk9uyq7fhpfsgsqwrz4u",
+      "hex": "c48e29f04b482cc01ca1f9ef8c86ef8318c059e0e9353235162f080f26e14c11",
+      "notes": "Target #7"
+    }
+  ],
+  "discovery_config": {
+    "search_keywords": [
+      "bitcoin AI",
+      "AI agents",
+      "convergence",
+      "sound money",
+      "autonomous agents",
+      "proof of work"
+    ],
+    "hashtags": [
+      "#bitcoin",
+      "#ai",
+      "#lightning",
+      "#austrianeconomics",
+      "#proofofwork"
+    ],
+    "scan_frequency": "every 6 hours (6am, 12pm, 6pm, 12am Mexico time)",
+    "daily_engagement_target": "3-5 proactive posts"
+  }
+}

@@ -1,0 +1,9 @@
+TEST PDF DOCUMENT
+=================
+
+This is a simple test to verify PDF generation and WhatsApp sending.
+
+Date: February 6, 2026
+Purpose: Testing PDF workflow
+
+If you receive this, the system works!
