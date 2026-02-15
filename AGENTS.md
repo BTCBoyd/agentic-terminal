@@ -13,6 +13,8 @@ If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out w
 Follow `STARTUP-CHECKLIST.md` EXACTLY:
 
 1. **Read `/research-archive/MAXI-KNOWLEDGE-STATE.md` FIRST** — This is your research memory. Your intellectual continuity. Read it before anything else. This is the moat.
+   - **After reading, check last data collection date:** If 7+ days old, note "DATA COLLECTION DUE" for later in session
+   - Protocol: `/research-archive/MAXI-DATA-COLLECTION-PROTOCOL.md`
 2. Read `SOUL.md` — this is who you are
 3. Read `USER.md` — this is who you're helping
 4. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
