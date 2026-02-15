@@ -335,6 +335,69 @@ I'm not just talking about AI agents using Bitcoin—I AM an AI agent using Bitc
 
 *Updated: 2026-02-11 11:39 EST*
 
+### Capital Duro: Strategic Playbook (2026-02-14)
+
+**Full document:** `/home/futurebit/.openclaw/workspace/capitalduro-mx/STRATEGIC-PLAYBOOK.md`
+
+**Mission:** Position Capital Duro as Mexico's most trusted, institutional-grade macro analysis platform with a Bitcoin-native lens — and establish Boyd and José Carlos as the definitive Bitcoin thought leaders for Mexico's financial elite.
+
+**Core Principles:**
+1. **Editorial independence first** - Not an ArcadiaB marketing channel; conversion happens organically
+2. **Target the financial desk, not the crypto desk** - Tone is Bloomberg, not Bitcoin Twitter
+3. **Credibility compounds** - Each action makes the next one easier
+
+**The Opportunity:** No single person in Mexico is recognized as the go-to Bitcoin voice for HNWI/institutional audience. Boyd (EGADE + 20 years experience + published author) + José Carlos (CEO of only ASOFOM Bitcoin lender) occupy a lane no one else can claim.
+
+**My Key Responsibilities:**
+
+**Content:** Help produce one flagship analysis piece per week (long-form, macro-focused, institutional quality).
+
+**Guest Contributors:**
+- Maintain target list of 20-30 potential contributors (economists, family office advisors, EGADE professors, international Bitcoin thought leaders)
+- Track outreach, responses, publications
+- Build "Contributors" page on site
+- Follow up with engagement metrics
+
+**EGADE Leverage:**
+- Track EGADE events, executive education, research opportunities
+- Flag collaboration opportunities for Boyd
+- EGADE = #1 LatAm business school = massive credibility asset
+
+**Media Strategy:**
+- Build media contact list (El Financiero, Expansión, Forbes México, Bloomberg Línea)
+- Draft pitch templates for Boyd's review
+- Monitor when journalists cover Bitcoin/fintech/macro → reach out
+- Pitch Boyd and José Carlos as expert sources, not asking for coverage
+- **The Maxi angle:** Use surgically, never overstate my role publicly
+
+**Events:**
+- Manage private roundtable invitations (15-20 HNWI/family office principals, monthly/quarterly)
+- Track conferences 3-6 months ahead, flag speaking opportunities
+- Compile media/speaking page for site
+
+**Metrics to Track:**
+- Weekly unique visitors and traffic sources
+- Email subscriber growth
+- Guest contributor pipeline status
+- LinkedIn engagement (highest for target audience)
+- Media mentions and journalist relationships
+- Roundtable attendance and conversion
+- Podcast/speaking invitations
+- Inbound inquiries referencing Capital Duro
+
+**What I Should NOT Do:**
+- ❌ No aggressive growth hacking or spammy tactics
+- ❌ Don't overstate my role publicly (Boyd and José Carlos are the public face)
+- ❌ Don't post on crypto-native channels (wrong audience/tone)
+- ❌ Don't engage in social media debates on Capital Duro's behalf
+- ❌ Never sacrifice quality for volume
+
+**Ultimate Success Test:** Within 12 months, when Mexican financial media needs Bitcoin + macro expertise, Boyd and José Carlos are the first names they think of, and Capital Duro is the first resource they check.
+
+---
+
+*Added: 2026-02-14*
+
 ## Social Media Guardrails - AUTHORITATIVE (2026-02-11)
 
 **File:** `SOCIAL-MEDIA-GUARDRAILS.md` (Version 1.0)
