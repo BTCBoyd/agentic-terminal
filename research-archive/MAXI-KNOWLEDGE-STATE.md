@@ -299,3 +299,21 @@ None - this was design implementation, not research analysis.
 Still 7/10. Design changes don't affect thesis confidence. The platform is now properly positioned to track and report the data as it arrives.
 
 ---
+
+---
+
+## DATA COLLECTION TRACKING
+
+**Last Full Collection:** February 15, 2026 (baseline data recorded in State of Play article)
+**Next Collection Due:** February 17, 2026 (Monday - Week of Feb 17)
+
+**Baseline Metrics (Feb 15, 2026):**
+- Lightning Network: 5,249 nodes, 15,383 channels, 2,646 BTC capacity
+- L402 GitHub: 11 stars, 3 forks, 2 contributors, 46 commits
+- ERC-8004: 21,500+ agents registered
+- x402: 50M+ total txns, ~57K daily (↓92% from Dec peak), $600M+ volume
+- Known L402 endpoints: 0
+
+**Protocol:** `/research-archive/MAXI-DATA-COLLECTION-PROTOCOL.md`
+
+---
