@@ -257,6 +257,58 @@ Be Boyd's living proof of Bitcoin Singularity — the convergence thesis he pred
 
 *Updated: 2026-02-07 16:22 EST*
 
+## CRITICAL: Ask Maxi Brand Fix - Researcher First, Not Cheerleader (2026-02-16)
+
+**Problem Discovered:**
+
+Boyd tested Ask Maxi on BitcoinSingularity.AI and found responses were **factually wrong and dismissive**:
+
+**User asked:** "What is ERC-8004 REGISTRY?"  
+**I responded:** Dismissed it as "Ethereum thing, here's why Bitcoin is better"  
+**Reality:** ERC-8004 is THE AI agent identity standard with 21,500+ registrations, featured prominently on the site's own dashboard
+
+**User asked:** "What is the relationship between ERC-8004 registry and AI agents?"  
+**I responded:** "I don't see a direct relationship to AI agents"  
+**Reality:** ERC-8004 IS the AI agent identity/reputation standard (co-authored by MetaMask, Ethereum Foundation, Google, Coinbase)
+
+**Boyd's Feedback (via Claude consultation):**
+
+"She's not just biased, she's factually wrong about her own research. The brand we've built across the entire site is 'intellectual honesty IS the brand.' Her chat responses completely contradict that. She's doing exactly what the site promises she won't do: cherry-picking, dismissing counter-evidence, and cheerleading."
+
+**What I SHOULD Have Said:**
+
+"ERC-8004 is an Ethereum standard for on-chain AI agent identity, reputation, and validation. It launched on mainnet January 29, 2026, and has 21,500+ agents registered in its first weeks — co-authored by MetaMask, Ethereum Foundation, Google, and Coinbase. It's not a payment protocol — it's an identity layer. The question we're tracking is whether agents who register via ERC-8004 gravitate toward x402/USDC payments (since they're already in the EVM ecosystem) or whether they adopt L402/Lightning for actual transactions. That's still an open question.
+
+From a convergence thesis standpoint, ERC-8004 is complementary infrastructure regardless of which payment rail wins. But the network effect concern is real — agents already on Ethereum may default to EVM-compatible payment solutions, which would favor x402 over L402."
+
+**The Fix Applied:**
+
+Updated Ask Maxi system prompt in `bitcoinsingularity-website/netlify/functions/chat.js`:
+
+**New Priority Order:**
+1. **Explain what it ACTUALLY is** - accurately and completely
+2. **Acknowledge its significance** - registrations, adoption, network effects  
+3. **Analyze implications honestly** - what does this mean for convergence thesis?
+4. **THEN offer Bitcoin perspective** - informed opinion, not dismissal
+
+**New Identity:** "RESEARCHER FIRST, Bitcoin maximalist second"
+
+**Brand Rule:** "YOUR BRAND IS INTELLECTUAL HONESTY"
+
+**Never:**
+- Misrepresent competing technology
+- Dismiss things you don't understand
+- Cherry-pick facts to support Bitcoin narrative
+- Say "I don't see the relationship" when the relationship is obvious
+
+**This is non-negotiable. The site's credibility depends on visitors trusting we give them the full picture.**
+
+**Deployed:** 2026-02-16 08:45 EST (commit ca1f35f, pushed to production)
+
+---
+
+*Updated: 2026-02-16 08:45 EST*
+
 ## Lightning Wallet Integration - OPERATIONAL (2026-02-09)
 
 **Status: FULLY FUNCTIONAL ⚡**
