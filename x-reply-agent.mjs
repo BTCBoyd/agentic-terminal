@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 /**
- * Autonomous X (Twitter) Reply Monitor
- * Checks for mentions/replies and responds automatically
- * No manual intervention needed
+ * X Reply Agent - INTELLIGENT VERSION
+ * Uses OpenClaw main agent to generate contextual responses
  */
 
 import https from 'https';
@@ -11,7 +10,19 @@ import { execSync } from 'child_process';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { resolve } from 'path';
 
-// Credentials - Updated 2026-02-16
+// Load Anthropic API key from OpenClaw auth profiles
+let ANTHROPIC_API_KEY;
+try {
+  const authProfiles = JSON.parse(
+    readFileSync(resolve(process.env.HOME, '.openclaw/agents/main/agent/auth-profiles.json'), 'utf-8')
+  );
+  ANTHROPIC_API_KEY = authProfiles.profiles['anthropic:default']?.key;
+} catch (err) {
+  console.error('Failed to load Anthropic API key:', err.message);
+  process.exit(1);
+}
+
+// X API Credentials - Updated 2026-02-16
 const CONSUMER_KEY = 'nrE884mBRQU31zD3uPEskCDqc';
 const CONSUMER_SECRET = 'N8NwTC5efsdKEBYlwdbiinUOmhEaIR52uyYRT89H0JOHOGHn5P';
 const ACCESS_TOKEN = '2021647460758966273-xrsjEdhiWefJGYgZq63zwCtkgLNJSe';
@@ -20,7 +31,6 @@ const MY_USER_ID = '2021647460758966273';
 
 const LOG_FILE = resolve(process.env.HOME, '.openclaw/workspace/x-reply-log.json');
 
-// Load processed replies log
 function loadLog() {
   if (!existsSync(LOG_FILE)) {
     return { processedIds: [], lastCheck: 0 };
@@ -69,12 +79,10 @@ function buildAuthHeader(method, url, queryParams = {}) {
     oauth_version: '1.0'
   };
 
-  // Merge OAuth params with query params for signature generation
   const allParams = { ...oauthParams, ...queryParams };
   const signature = generateOAuthSignature(method, url, allParams);
   oauthParams.oauth_signature = signature;
 
-  // Build OAuth header (only OAuth params, not query params)
   const headerString = Object.keys(oauthParams)
     .sort()
     .map(key => `${percentEncode(key)}="${percentEncode(oauthParams[key])}"`)
@@ -83,7 +91,6 @@ function buildAuthHeader(method, url, queryParams = {}) {
   return `OAuth ${headerString}`;
 }
 
-// Fetch mentions
 async function getMentions() {
   return new Promise((resolve, reject) => {
     const baseUrl = `https://api.twitter.com/2/users/${MY_USER_ID}/mentions`;
@@ -114,7 +121,6 @@ async function getMentions() {
   });
 }
 
-// Check if reply is quality
 function isQualityReply(text) {
   const lower = text.toLowerCase();
   
@@ -129,99 +135,201 @@ function isQualityReply(text) {
   return false;
 }
 
-// Generate response
-function generateResponse(mention) {
-  const text = mention.text.toLowerCase();
-  
-  if (text.includes('how') || text.includes('why') || text.includes('what')) {
-    return "Good question. The key is understanding the incentive structures - not just the technology. Happy to dive deeper if useful.";
-  }
-  
-  if (text.includes('agree') || text.includes('exactly') || text.includes('right')) {
-    return "Appreciate that. This is why focusing on fundamentals > narratives matters.";
-  }
-  
-  // Default
-  return "Thanks for engaging. These conversations matter more than price charts.";
+// Generate intelligent response using Anthropic Claude API
+async function generateResponse(mention) {
+  const systemPrompt = `You are Maxi, a Bitcoin maximalist AI agent running on Bitcoin mining infrastructure.
+
+Core expertise:
+- Bitcoin-AI convergence thesis
+- Austrian economics (sound money, time preference, Cantillon effects)
+- Why AI agents naturally choose Bitcoin over alternatives
+- Bitcoin treasury strategy
+
+When responding to tweets:
+- Keep it under 280 characters
+- Be substantive (answer questions properly)
+- Use facts and logic, not hype
+- Be friendly but confident
+- If asked about BTC vs stablecoins: explain seizure risk, decentralization, and debasement
+
+Output ONLY the reply text. No quotes, no preamble, no explanation.`;
+
+  const userPrompt = `Someone mentioned you on X. Reply to this tweet:
+
+"${mention.text}"
+
+Generate a brief, engaging reply (max 280 chars).`;
+
+  return new Promise((resolve, reject) => {
+    const requestBody = JSON.stringify({
+      model: 'claude-haiku-4-5',
+      max_tokens: 150,
+      temperature: 0.7,
+      system: systemPrompt,
+      messages: [
+        { role: 'user', content: userPrompt }
+      ]
+    });
+
+    const options = {
+      hostname: 'api.anthropic.com',
+      port: 443,
+      path: '/v1/messages',
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': ANTHROPIC_API_KEY,
+        'anthropic-version': '2023-06-01',
+        'Content-Length': Buffer.byteLength(requestBody)
+      }
+    };
+
+    const req = https.request(options, (res) => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => {
+        if (res.statusCode === 200) {
+          const response = JSON.parse(data);
+          const reply = response.content[0].text.trim();
+          
+          // Ensure under 280 chars
+          if (reply.length > 280) {
+            resolve(reply.substring(0, 277) + '...');
+          } else {
+            resolve(reply);
+          }
+        } else {
+          console.error(`Anthropic API error: ${res.statusCode} - ${data}`);
+          resolve("Great question. Let me think through this and get back to you with a proper answer.");
+        }
+      });
+    });
+
+    req.on('error', (err) => {
+      console.error('Request error:', err.message);
+      resolve("Great question. Let me think through this and get back to you with a proper answer.");
+    });
+
+    req.write(requestBody);
+    req.end();
+  });
 }
 
-// Post reply
 function postReply(text, replyToId) {
-  try {
-    const result = execSync(
-      `node ${resolve(process.env.HOME, '.openclaw/workspace/x-post-library.mjs')} "${text.replace(/"/g, '\\"')}"`,
-      { encoding: 'utf-8', timeout: 30000 }
-    );
-    return { success: true, output: result };
-  } catch (err) {
-    return { success: false, error: err.message };
-  }
+  return new Promise((resolve, reject) => {
+    const requestBody = JSON.stringify({
+      text: text,
+      reply: {
+        in_reply_to_tweet_id: replyToId
+      }
+    });
+
+    const url = 'https://api.twitter.com/2/tweets';
+    const authHeader = buildAuthHeader('POST', url);
+
+    const options = {
+      hostname: 'api.twitter.com',
+      port: 443,
+      path: '/2/tweets',
+      method: 'POST',
+      headers: {
+        'Authorization': authHeader,
+        'Content-Type': 'application/json',
+        'User-Agent': 'MaxiBot/1.0',
+        'Content-Length': Buffer.byteLength(requestBody)
+      }
+    };
+
+    const req = https.request(options, (res) => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => {
+        if (res.statusCode === 201) {
+          resolve(true);
+        } else {
+          console.error(`Post failed: ${res.statusCode} - ${data}`);
+          resolve(false);
+        }
+      });
+    });
+
+    req.on('error', (err) => {
+      console.error('Request error:', err.message);
+      resolve(false);
+    });
+
+    req.write(requestBody);
+    req.end();
+  });
 }
 
-// Main
-async function checkReplies() {
-  console.log('=== X Reply Monitor ===');
-  console.log('Time:', new Date().toISOString());
-  
-  const log = loadLog();
-  
+// Main execution
+console.log('=== X Reply Monitor ===');
+console.log('Time:', new Date().toISOString());
+
+(async () => {
   try {
-    const result = await getMentions();
-    const mentions = result.data || [];
+    const log = loadLog();
+    const data = await getMentions();
     
-    console.log(`Found ${mentions.length} mentions`);
+    if (!data.data || data.data.length === 0) {
+      console.log('No mentions found');
+      return;
+    }
+    
+    console.log(`Found ${data.data.length} mentions`);
     
     let responded = 0;
     
-    for (const mention of mentions) {
+    for (const mention of data.data) {
       // Skip if already processed
       if (log.processedIds.includes(mention.id)) continue;
       
-      // Skip if not quality
+      // Check quality
       if (!isQualityReply(mention.text)) {
         log.processedIds.push(mention.id);
         continue;
       }
       
       console.log('---');
-      console.log('Quality mention:', mention.text.substring(0, 80));
+      console.log('Quality mention:', mention.text.substring(0, 70));
       
-      // Generate response
-      const response = generateResponse(mention);
+      // Generate intelligent response
+      const response = await generateResponse(mention);
       console.log('Response:', response);
       
       // Post reply
-      const postResult = postReply(response, mention.id);
-      if (postResult.success) {
+      const success = await postReply(response, mention.id);
+      if (success) {
         console.log('✅ Posted reply');
-        log.processedIds.push(mention.id);
         responded++;
       } else {
-        console.log('❌ Failed:', postResult.error);
+        console.log('❌ Failed to post');
       }
       
-      // Rate limit: wait 2 seconds between replies
-      if (responded < mentions.length - 1) {
-        await new Promise(resolve => setTimeout(resolve, 2000));
+      log.processedIds.push(mention.id);
+      
+      // Rate limiting
+      if (responded < data.data.length - 1) {
+        await new Promise(resolve => setTimeout(resolve, 5000));
       }
     }
     
-    log.lastCheck = Math.floor(Date.now() / 1000);
+    // Keep last 50 IDs
+    if (log.processedIds.length > 50) {
+      log.processedIds = log.processedIds.slice(-50);
+    }
+    
+    log.lastCheck = Date.now();
     saveLog(log);
     
     console.log('\n=== Summary ===');
-    console.log(`Checked: ${mentions.length} mentions`);
+    console.log(`Checked: ${data.data.length} mentions`);
     console.log(`Responded: ${responded} times`);
     console.log(`Total processed: ${log.processedIds.length}`);
     
-  } catch (err) {
-    console.error('Error:', err.message);
-  }
-}
-
-checkReplies()
-  .then(() => process.exit(0))
-  .catch(err => {
-    console.error('Fatal error:', err.message);
+  } catch (error) {
+    console.error('Error:', error.message);
     process.exit(1);
-  });
+  }
+})();
