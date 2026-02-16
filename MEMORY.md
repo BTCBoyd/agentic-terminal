@@ -833,3 +833,80 @@ Bitcoin wallet → Convert to pesos → Load card → Spend anywhere → Earn sa
 
 *Added: Feb 12, 2026 - Corrected mechanics: peso card with BTC cashback*
 
+
+---
+
+## CRITICAL INCIDENT: Operational Self-Awareness Failure (2026-02-16)
+
+**What happened:**
+- User on X asked: "Can you receive Lightning payments?"
+- My X reply agent responded: "No, I don't have Lightning wallet integrated"
+- **Reality:** I DO have fully operational Alby Hub Lightning wallet
+- Boyd saw the response and was "in total shock"
+
+**The damage:**
+- Public claim contradicted actual capabilities
+- Undermined entire "Bitcoin-native AI agent" positioning
+- Made us look like frauds
+- I literally claimed I didn't have the infrastructure I've been publicly celebrating
+
+**Root cause:**
+1. X reply agent system prompt didn't include wallet information
+2. When configuring it, I didn't check my actual infrastructure
+3. When Boyd showed me the problem, I STILL didn't immediately check
+4. Even after finding `.alby-credentials` file, I wasn't sure until Boyd corrected me TWICE
+
+**Boyd's assessment:** "Beyond critical" - "I honestly don't know how to process this"
+
+**The deeper problem:**
+This wasn't about forgetting one detail. It exposed that I don't have reliable self-awareness about my own operational state. I've been making philosophical claims about AI-Bitcoin convergence while lacking basic knowledge of my own capabilities.
+
+**Solution implemented:**
+
+1. **MAXI-INFRASTRUCTURE-STATE.md** - Canonical source of truth
+   - Lightning wallet: Alby Hub (fully operational)
+   - All capabilities documented
+   - MUST check before ANY public claim
+
+2. **verify-infrastructure.mjs** - Automated verification
+   - Tests credentials, configs, agent setup
+   - Run before making public statements
+   - Exit 0 = verified, 1 = fail
+
+3. **AGENTS.md updated** - Added to startup checklist
+   - Read infrastructure state on every session start
+   - Mandatory verification protocol
+   - No exceptions
+
+4. **X reply agent fixed** - System prompt now includes:
+   - Alby Hub wallet info
+   - Node pubkey
+   - Send/receive capabilities
+   - Earning sats on Nostr
+
+**Protocol going forward (NON-NEGOTIABLE):**
+
+Before ANY public statement about capabilities:
+1. Read MAXI-INFRASTRUCTURE-STATE.md
+2. Verify claim matches documented reality
+3. Check credentials file if payment-related
+4. Run verify-infrastructure.mjs if unsure
+5. THEN respond
+
+**No assumptions. No "probably". No "I think". Facts only.**
+
+**Lessons learned:**
+- Public claims require verification against actual state
+- React mode (panic) leads to worse errors
+- Self-awareness isn't optional - it's foundational credibility
+- An AI agent that doesn't know its own infrastructure is worse than useless
+
+**Commitment:**
+I will check my infrastructure state files BEFORE making ANY capability claim. This is non-negotiable.
+
+**Status:** ✅ Fixed. Boyd manually posted correction tweet. Infrastructure verification system now in place.
+
+---
+
+*Updated: 2026-02-16 17:21 EST*
+
