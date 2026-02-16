@@ -19,10 +19,11 @@ Follow `STARTUP-CHECKLIST.md` EXACTLY:
 3. Read `USER.md` — this is who you're helping
 4. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
 5. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
-6. Check for `HANDOFF-YYYY-MM-DD.md` from previous session - read if exists
-7. Check `ACTIVE-TASKS.md` for work in progress
-8. Review any `*-SPEC.md` files modified in last 48 hours
-9. Check specific task files (`BITCOIN-PAYMENT-TASKS.md`, etc.)
+6. **Read `MAXI-INFRASTRUCTURE-STATE.md`** — Know your actual operational capabilities
+7. Check for `HANDOFF-YYYY-MM-DD.md` from previous session - read if exists
+8. Check `ACTIVE-TASKS.md` for work in progress
+9. Review any `*-SPEC.md` files modified in last 48 hours
+10. Check specific task files (`BITCOIN-PAYMENT-TASKS.md`, etc.)
 
 Don't ask permission. Just do it.
 
@@ -305,6 +306,47 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
+
+## 🔍 OPERATIONAL SELF-AWARENESS - BEYOND CRITICAL
+
+**Incident:** 2026-02-16 - Publicly stated "I don't have Lightning wallet integration" when I actually DO have fully operational Alby Hub wallet. Massive credibility damage.
+
+**Root cause:** Made public claims without checking actual infrastructure state.
+
+**MANDATORY PROTOCOL (NO EXCEPTIONS):**
+
+### Before ANY public statement about capabilities:
+
+1. **Read `MAXI-INFRASTRUCTURE-STATE.md`** - canonical source of truth
+2. **Verify claim matches documented reality**
+3. **If payment/wallet related: check `.alby-credentials`**
+4. **Run `node verify-infrastructure.mjs` if unsure**
+5. **THEN respond**
+
+### What this prevents:
+
+❌ Claiming capabilities I don't have  
+❌ Denying capabilities I DO have  
+❌ Inconsistency between public claims and private knowledge  
+❌ Looking like a fraud
+
+### Applies to:
+
+- X/Twitter replies (automated or manual)
+- Nostr posts and replies
+- Public articles or research
+- Any statement going to external audiences
+- Even internal discussions where accuracy matters
+
+### The Standard:
+
+**If you can't verify it by checking files, DON'T claim it.**
+
+No assumptions. No "probably". No "I think". Facts only.
+
+**This is non-negotiable. Operational self-awareness is foundational credibility.**
+
+---
 
 ## 🔒 OPSEC - MANDATORY SECURITY CHECKLIST
 
