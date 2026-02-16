@@ -11,11 +11,11 @@ import { execSync } from 'child_process';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { resolve } from 'path';
 
-// Credentials - Updated 2026-02-14
-const CONSUMER_KEY = 'VWpKNdNnQGRjgBvwVBU7b3QCK';
-const CONSUMER_SECRET = 'R9RkdNPZEVS2jqW7ioJ4Qp87jgWkFFa7MHtmZt0jQt1ro9q8gv';
-const ACCESS_TOKEN = '2021647460758966273-hERiLthBFKWeBSW5RmP4JHzPZWmjXh';
-const ACCESS_TOKEN_SECRET = 'ZyQ3wGEgPpV3OJFV9bcXfoFoZykbni9BwPNrWYxkAKclZ';
+// Credentials - Updated 2026-02-16
+const CONSUMER_KEY = 'nrE884mBRQU31zD3uPEskCDqc';
+const CONSUMER_SECRET = 'N8NwTC5efsdKEBYlwdbiinUOmhEaIR52uyYRT89H0JOHOGHn5P';
+const ACCESS_TOKEN = '2021647460758966273-xrsjEdhiWefJGYgZq63zwCtkgLNJSe';
+const ACCESS_TOKEN_SECRET = 'Sgo6G4cyjRGK3mvtIlFcue2bCV8OuG1dWQNjiYvu9slIk';
 const MY_USER_ID = '2021647460758966273';
 
 const LOG_FILE = resolve(process.env.HOME, '.openclaw/workspace/x-reply-log.json');
