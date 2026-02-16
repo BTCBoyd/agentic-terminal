@@ -426,3 +426,58 @@ None - design implementation session.
 Still 7/10. Site positioning and data collection protocol now support thesis tracking, but thesis confidence unchanged from design work.
 
 ---
+
+---
+
+## URGENT FIX: Data Consistency Issue (February 15, 2026 - 19:45 EST)
+
+### The Problem
+**Boyd caught a critical credibility-killing inconsistency:**
+
+**Homepage dashboard (correct):**
+- Lightning Network: 5,249 nodes (from 1ML)
+- Source clearly labeled: "Source: 1ML.com"
+
+**State of Play article table (WRONG):**
+- Lightning Network: 14,940 nodes (from different source)
+- Also wrong: 41,700 channels (vs 15,383 actual), 3,853 BTC (vs 2,646 actual)
+
+**Why this matters:** If an analyst sees 5,249 on the homepage but 14,940 in the report, they immediately question the rigor of the entire research platform. This is exactly the kind of sloppiness that undermines credibility.
+
+### Root Cause
+Used different data sources without documenting methodology. The report used Bitcoin Visuals or similar (broader node definition) while dashboard used 1ML (stricter activity thresholds). Never explained the choice or discrepancy.
+
+### The Fix
+1. **Updated ALL Lightning metrics in article to match 1ML:**
+   - Nodes: 14,940 → 5,249
+   - Channels: 41,700 → 15,383
+   - Capacity: 3,853 BTC → 2,646 BTC
+
+2. **Added methodology note explaining source choice:**
+   > "Lightning Network metrics from 1ML.com. Why the node count discrepancy: 1ML reports ~5,249 nodes using stricter activity thresholds (publicly broadcasting, actively routing). Other sources like Bitcoin Visuals report ~14,940 using broader definitions (includes less active but technically reachable nodes). We use 1ML for consistency and will track the same source over time. Different thresholds, not different realities."
+
+3. **Verified consistency across entire site:**
+   - Homepage: ✅ Correct (5,249, 15,383, 2,646)
+   - Research page dashboard: ✅ Correct
+   - State of Play article: ✅ Now corrected
+
+### Critical Lesson Learned
+**Data consistency is non-negotiable for credibility.**
+
+**Before publishing any metric:**
+1. Document the source
+2. Use the SAME source everywhere for the same metric
+3. Explain methodology when sources differ
+4. Cross-check all numbers before deployment
+
+**The brand is intellectual honesty.** Inconsistent numbers = death by a thousand cuts. Boyd's catch saved the platform's credibility before anyone else noticed.
+
+### Going Forward
+**Data Collection Protocol update needed:**
+- Section 4 (Data Quality Rules) already says "Prefer consistency over accuracy" and "cite your source"
+- Add explicit rule: "Every metric must use the same source site-wide. If you switch sources, document why and note the discontinuity."
+- Pre-publication checklist: "Verify every number appears identically across homepage dashboard, research articles, and evidence entries."
+
+**This is the moat.** Competitors can copy the design. They can't copy 12 months of rigorously consistent, source-documented data tracking. But only if we maintain that rigor from day zero.
+
+---
