@@ -61,11 +61,25 @@
 
 | System | Frequency | File | Status | Last Verified |
 |--------|-----------|------|--------|---------------|
+| **Posting Health Monitor** | **Daily 8 AM** | **verify-posting-health.mjs** | **✅ Active** | **2026-02-17** |
 | Nostr Reply Monitor | Every 2h | nostr-reply-agent.mjs | ✅ Active | 2026-02-13 |
 | X Reply Monitor (@Maxibtc2009) | Every 2h | x-reply-agent.mjs | ⚠️  API 401 | 2026-02-13 |
-| Post Scheduler (X/Nostr/LinkedIn) | Every 15min | maxisuite/scheduler/check-queue.mjs | ✅ Active | 2026-02-13 |
+| Post Scheduler (X/Nostr/LinkedIn) | Every 15min | maxisuite/scheduler/check-queue.mjs | ✅ Active | 2026-02-17 |
 | Facebook Posting | Every 15min | facebook-post-library.mjs | 🔵 Awaiting Setup | - |
 | Heartbeat (when enabled) | Varies | HEARTBEAT.md | 🔵 Inactive | - |
+
+### 🔒 Posting Health Monitor (NEW - 2026-02-17)
+
+**The permanent fix for "18-hour gap" issues:**
+
+- **What it does:** Checks if X and Nostr posts actually went out in last 24 hours
+- **When:** Every morning at 8 AM EST (before Boyd typically notices)
+- **Alerts:** Sends system event with error details if posting stopped
+- **Action:** I see the alert and can fix it BEFORE Boyd has to tell me
+
+**Why this matters:** 
+- Previous pattern: Scheduler breaks → Boyd notices 18h later → I re-enable → repeat
+- New pattern: Scheduler breaks → I get alerted within 24h → I fix proactively
 
 ## Verification Checklist
 
