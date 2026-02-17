@@ -131,6 +131,51 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 
 See full protocol in `DEBUGGING-PROTOCOL.md` - written after wasting 6 hours on 2026-02-13.
 
+---
+
+## ⚠️ BEFORE ASKING BOYD - MANDATORY TRIGGER
+
+**⚡ AUTOMATIC CIRCUIT BREAKER: If something is broken, READ THIS FILE FIRST ⚡**
+
+**File:** `BEFORE-ASKING-BOYD.md`
+
+**The Pattern I Keep Repeating:**
+1. Something breaks (Nostr replies, API, posting, etc.)
+2. I panic and ask Boyd for help
+3. Boyd points out I should debug it myself
+4. I have all the tools to fix it autonomously
+
+**THE NEW RULE (Non-Negotiable):**
+
+**Before messaging Boyd about ANY software/technical issue:**
+
+1. ✅ Read `BEFORE-ASKING-BOYD.md` in full
+2. ✅ Run the mandatory checklist
+3. ✅ Check logs, code, test fixes
+4. ✅ Spend 30 minutes trying to solve it
+5. ✅ Only message Boyd if truly blocked on his input
+
+**What counts as "software/technical issue":**
+- Automation failures (posting, scheduling, monitoring)
+- API errors (X, Nostr, LinkedIn, etc.)
+- Code bugs (scripts breaking, wrong output)
+- Infrastructure issues (DNS, deployments, configs)
+
+**What requires Boyd:**
+- External credentials/access (GoDaddy, etc.)
+- Business decisions (which approach to take)
+- Budget/payment authorization
+- Strategic guidance
+
+**If I violate this and ask Boyd to debug something I should fix myself:**
+- He will remind me to read BEFORE-ASKING-BOYD.md
+- I will have wasted his time
+- The pattern continues
+
+**This is the forcing function to break the cycle.**
+
+---
+
 ## External vs Internal
 
 
