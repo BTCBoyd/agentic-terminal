@@ -3,10 +3,10 @@ import crypto from 'crypto';
 import https from 'https';
 
 // ━━━ ARCADIABTC CREDENTIALS ━━━
-const CONSUMER_KEY = 'pqUgkA0NXUNkJRBcumxVSug4v';
-const CONSUMER_SECRET = '4ZD1uPaladOyV1JQWjmJVrtiVjZt4hxiyXYRFQFozimr0XW8Sn';
-const ACCESS_TOKEN = '1153217326692651009-3bWCahi4r2pyqkS4j6qyoAgdT3gpmX';
-const ACCESS_TOKEN_SECRET = 'Xencwr6VhIaEtzoXj1YxTqqkvZqtJA8FzHfGoXx0pPQn2';
+const CONSUMER_KEY = '0EqSOrrDhMSPLPYQW88rfUp9p';
+const CONSUMER_SECRET = 'OiJOaeAonAJyGm1BElmfrByuoWGytZzbTiv5yLJQvY6wFwfB2O';
+const ACCESS_TOKEN = '2021647460758966273-x09WmalfHjqjGYqrfth7aHc1OJf4fz';
+const ACCESS_TOKEN_SECRET = '88TagGVGrIBMaQMlzJzy2zZ4lzzOkJfFVIUaoajhmkX6t';
 
 // ━━━ RFC 3986 Percent Encoding ━━━
 function percentEncode(str) {
