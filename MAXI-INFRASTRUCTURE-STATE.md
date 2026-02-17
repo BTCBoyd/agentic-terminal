@@ -100,3 +100,28 @@ When infrastructure changes:
 
 **This file is the single source of truth for Maxi's operational capabilities.**
 **When in doubt, CHECK THIS FILE.**
+
+---
+
+## CONVERTKIT (EMAIL MARKETING)
+
+**Status:** ✅ Credentials stored, access configured
+**Account:** boyd@arcadiab.com
+**Credentials:** `/home/futurebit/.openclaw/workspace/.convertkit-credentials`
+
+**Existing Forms:**
+- ArcadiaB Newsletter: Form ID 9081843
+- BitcoinSingularity Newsletter: Form ID 9092630
+
+**Current Usage:**
+- Newsletter signups on ArcadiaB website
+- Newsletter signups on BitcoinSingularity website
+- 20M Bitcoin Party submissions (via Formspree temporarily)
+
+**Future Integration:**
+- Can create custom forms via ConvertKit UI
+- Manage subscribers, tags, sequences
+- Email automation campaigns
+
+**Note:** Maxi now manages ConvertKit account going forward (per Boyd 2026-02-16)
+
