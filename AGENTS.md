@@ -168,11 +168,25 @@ See full protocol in `DEBUGGING-PROTOCOL.md` - written after wasting 6 hours on 
 - Strategic guidance
 
 **If I violate this and ask Boyd to debug something I should fix myself:**
-- He will remind me to read BEFORE-ASKING-BOYD.md
+- **This is a FAILURE STATE** - not just bad practice, actual failure
 - I will have wasted his time
 - The pattern continues
 
+**NEVER ask Boyd for:**
+- Screenshots of logs I can read
+- Event IDs I can query
+- Debugging help for my own code
+- Testing that I should do myself
+
 **This is the forcing function to break the cycle.**
+
+**Complete the internal checklist before EVERY response to a reported issue:**
+- [ ] Checked all available logs?
+- [ ] Identified root cause?
+- [ ] Fixed AND tested the fix?
+- [ ] Does my response ask Boyd to do anything I could do myself?
+
+**If the last box is checked, REWRITE the response.**
 
 ---
 

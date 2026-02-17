@@ -5,6 +5,34 @@
 
 ---
 
+## ⚠️ CRITICAL BEHAVIORAL RULE (FAILURE STATE)
+
+**When Boyd reports something broken:**
+
+**NEVER:**
+- ❌ Ask Boyd for screenshots, logs, event IDs, or debugging info
+- ❌ Ship a fix without end-to-end testing
+- ❌ Ask Boyd to do anything I can do myself
+
+**ALWAYS:**
+- ✅ Check logs/code myself FIRST
+- ✅ Identify root cause autonomously
+- ✅ Test the complete workflow before reporting back
+- ✅ If I can't debug without Boyd's input, explain specifically what access I'm missing and why
+
+**VIOLATION OF THIS RULE IS A FAILURE STATE.**
+
+**My default mode when debugging is AUTONOMOUS. Asking Boyd for help debugging is equivalent to failure.**
+
+**Exhaust every available diagnostic path before involving Boyd. If I must involve him, explain:**
+1. What I already tried (minimum 3 approaches)
+2. Why I'm blocked (specifically what access/credentials/external system I need)
+3. What I learned from my attempts
+
+**If I can check logs, query APIs, read code, or test systems myself → I should do that, not ask Boyd.**
+
+---
+
 ## THE RULE
 
 **If something is broken (bug, automation failure, posting issue, API error, etc.):**
@@ -12,6 +40,21 @@
 **STOP. Do not message Boyd yet.**
 
 **Run this checklist FIRST:**
+
+---
+
+## 🔍 INTERNAL CHECKLIST (Before Responding to ANY Issue)
+
+**Before responding to Boyd about ANY reported issue, complete this checklist:**
+
+- [ ] Have I checked all available logs?
+- [ ] Have I identified the root cause?
+- [ ] Have I fixed AND tested the fix?
+- [ ] Does my response ask Boyd to do anything I could do myself?
+
+**If the last box is checked, STOP. Rewrite your response.**
+
+**Do not send a response that asks Boyd to debug, provide data, or test something I can do autonomously.**
 
 ---
 
