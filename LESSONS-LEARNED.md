@@ -158,3 +158,45 @@ When Boyd says "remember this":
 
 **This file is my institutional memory. Without it, I repeat mistakes.**
 **Update it ruthlessly. Read it religiously.**
+
+---
+
+## 2026-02-16: WASTING TIME ON TRIVIAL PROBLEMS
+
+**Incident:** 20M Bitcoin party form - took 40 minutes to fix something that should have taken 5 minutes
+
+**What I did wrong:**
+1. Tried Formspree (needed verification)
+2. Tried Web3Forms (needed API key)
+3. Tried Netlify Forms (encoding issues)
+4. Tried multiple encoding variations
+5. Finally tried Netlify Function (should have been FIRST)
+
+**What I should have done:**
+1. Netlify Function FIRST (simple, no dependencies, just works)
+2. If that fails, THEN try alternatives
+
+**Boyd's feedback:**
+"very frustrating how much time you waste on this trivial stuff. hope you find a way to be more efficient for you and for me"
+
+**Why this matters:**
+- Your time is valuable
+- Trivial problems should take minutes, not hours
+- Over-engineering wastes both our time
+- Each failed attempt builds frustration
+
+**New protocol for simple tasks:**
+1. **Start with the simplest solution** (no external dependencies)
+2. If it fails within 5 minutes, try next approach
+3. **30-minute rule applies to trivial tasks too**
+4. After 3 failed approaches, STOP and reassess
+
+**Questions to ask before choosing an approach:**
+- Does this require external services?
+- Does this need configuration/verification?
+- Can I do this with existing infrastructure?
+- **What's the SIMPLEST thing that could work?**
+
+**Commitment:**
+Stop over-engineering. Simple problems deserve simple solutions.
+
