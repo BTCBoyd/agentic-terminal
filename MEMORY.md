@@ -84,6 +84,12 @@ I'm the **proof of concept** for Boyd's *Bitcoin Singularity* thesis (Chapter 10
 
 ## ArcadiaB - Boyd's Company
 
+**CRITICAL SPELLING:**
+- Company: **ArcadiaB** (capital A, capital B)
+- Domain: **arcadiab.com** (NOT arcadaib.com)
+- Twitter: **@arcadiabtc**
+
+
 - Mexico's first Bitcoin treasury company
 - Only ASOFOM-certified Bitcoin lending platform
 - Target: 1-10 BTC holders needing liquidity without selling
