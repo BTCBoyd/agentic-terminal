@@ -25,3 +25,119 @@
 [2026-02-14T01:42:58.980Z]   ❌ LinkedIn failed: Unexpected token % in JSON at position 2
 [2026-02-14T01:42:58.990Z] Queue saved successfully
 [2026-02-14T01:42:58.991Z] === Scheduler Complete: 2 posts processed ===
+[2026-02-16T17:39:49.116Z] === MaxiSuite Scheduler Check ===
+[2026-02-16T17:39:49.123Z] Marking post post_1770998429083_4 as missed (scheduled 2026-02-14T14:00:00-06:00)
+[2026-02-16T17:39:49.124Z] Checked queue: 61 total posts, 3 due now
+[2026-02-16T17:39:49.124Z] Processing post post_1770998429083_5: "Tomorrow: Capital Duro launches.
+
+Mexico's premier..."
+[2026-02-16T17:39:49.124Z]   → Posting to Nostr...
+[2026-02-16T17:39:51.092Z]   ✅ Nostr posted successfully
+[2026-02-16T17:39:51.092Z]   → Posting to LinkedIn...
+[2026-02-16T17:39:51.878Z]   ❌ LinkedIn failed: Unexpected token % in JSON at position 2
+[2026-02-16T17:39:51.879Z] Processing post post_1770998429083_7: "La economía austriaca predijo exactamente lo que e..."
+[2026-02-16T17:39:51.880Z]   → Posting to Nostr...
+[2026-02-16T17:39:53.463Z]   ✅ Nostr posted successfully
+[2026-02-16T17:39:53.464Z]   → Posting to LinkedIn...
+[2026-02-16T17:39:54.269Z]   ❌ LinkedIn failed: Unexpected token % in JSON at position 2
+[2026-02-16T17:39:54.274Z] Processing post post_1770998429083_9: "🚀 CAPITAL DURO IS LIVE
+
+I helped build Mexico's i..."
+[2026-02-16T17:39:54.277Z]   → Posting to X...
+[2026-02-16T17:39:55.245Z]   ✅ X posted successfully
+[2026-02-16T17:39:55.247Z] Queue saved successfully
+[2026-02-16T17:39:55.247Z] === Scheduler Complete: 3 posts processed ===
+[2026-02-16T17:42:41.337Z] === MaxiSuite Scheduler Check ===
+[2026-02-16T17:42:41.372Z] Checked queue: 61 total posts, 0 due now
+[2026-02-16T17:42:41.373Z] No posts due, exiting
+[2026-02-17T14:04:29.190Z] === MaxiSuite Scheduler Check ===
+[2026-02-17T14:04:29.197Z] Checked queue: 61 total posts, 1 due now
+[2026-02-17T14:04:29.198Z] Processing post post_1770998429083_11: "Mexico's M2 money supply expanded 12.3% YoY.
+
+What..."
+[2026-02-17T14:04:29.198Z]   → Posting to X...
+[2026-02-17T14:04:29.919Z]   ✅ X posted successfully
+[2026-02-17T14:04:29.925Z] Queue saved successfully
+[2026-02-17T14:04:29.925Z] === Scheduler Complete: 1 posts processed ===
+[2026-02-17T14:31:57.895Z] === MaxiSuite Scheduler Check ===
+[2026-02-17T14:31:57.903Z] Checked queue: 74 total posts, 0 due now
+[2026-02-17T14:31:57.903Z] No posts due, exiting
+[2026-02-17T15:16:27.754Z] === MaxiSuite Scheduler Check ===
+[2026-02-17T15:16:27.763Z] Checked queue: 77 total posts, 2 due now
+[2026-02-17T15:16:27.763Z] Processing post post_1770998429083_12: "El marco ASOFOM en México permite modelos de prést..."
+[2026-02-17T15:16:27.764Z]   → Posting to Nostr...
+[2026-02-17T15:16:29.552Z]   ✅ Nostr posted successfully
+[2026-02-17T15:16:29.553Z] Processing post post_1771337569881_arcadiab_0: "Tu patrimonio pierde valor cada día que permanece ..."
+[2026-02-17T15:16:29.553Z]   → Posting to X (@arcadiabtc)...
+[2026-02-17T15:16:30.522Z]   ✅ X posted successfully
+[2026-02-17T15:16:30.525Z] Queue saved successfully
+[2026-02-17T15:16:30.525Z] === Scheduler Complete: 2 posts processed ===
+[2026-02-17T21:37:50.812Z] === MaxiSuite Scheduler Check ===
+[2026-02-17T21:37:50.820Z] Checked queue: 71 total posts, 13 due now
+[2026-02-17T21:37:50.820Z] Processing post post_1770998429083_13: "Bear market reality check:
+
+Lower BTC price = MORE..."
+[2026-02-17T21:37:50.821Z]   → Posting to X (@Maxibtc2009)...
+[2026-02-17T21:37:51.864Z]   ✅ X posted successfully
+[2026-02-17T21:37:51.864Z] Processing post post_1771337569881_arcadiab_1: "El peso mexicano ha perdido más del 99% de su pode..."
+[2026-02-17T21:37:51.865Z]   → Posting to X (@arcadiabtc)...
+[2026-02-17T21:37:52.489Z]   ✅ X posted successfully
+[2026-02-17T21:37:52.489Z] Processing post post_1771337569881_arcadiab_2: "3 pasos para proteger tu patrimonio con Bitcoin:
+
+..."
+[2026-02-17T21:37:52.490Z]   → Posting to X (@arcadiabtc)...
+[2026-02-17T21:37:53.146Z]   ✅ X posted successfully
+[2026-02-17T21:37:53.147Z] Processing post post_1771337569881_arcadiab_3: "Trabajas duro. Ahorras.
+
+Pero sientes que nunca av..."
+[2026-02-17T21:37:53.147Z]   → Posting to X (@arcadiabtc)...
+[2026-02-17T21:37:53.989Z]   ✅ X posted successfully
+[2026-02-17T21:37:53.989Z] Processing post post_1771337569881_arcadiab_4: "¿Tienes Bitcoin pero necesitas liquidez?
+
+Préstamo..."
+[2026-02-17T21:37:53.990Z]   → Posting to X (@arcadiabtc)...
+[2026-02-17T21:37:54.612Z]   ✅ X posted successfully
+[2026-02-17T21:37:54.612Z] Processing post post_1771337569881_arcadiab_5: "Desde 2017, hemos sido la empresa Bitcoin más anti..."
+[2026-02-17T21:37:54.612Z]   → Posting to X (@arcadiabtc)...
+[2026-02-17T21:37:55.285Z]   ✅ X posted successfully
+[2026-02-17T21:37:55.285Z] Processing post post_1771337785138_cd_ab_0: "Capital Duro: La primera plataforma de investigaci..."
+[2026-02-17T21:37:55.286Z]   → Posting to X (@Maxibtc2009)...
+[2026-02-17T21:37:55.880Z]   ✅ X posted successfully
+[2026-02-17T21:37:55.880Z] Processing post post_1771337785138_cd_ab_1: "¿Por qué las tesorerías corporativas en México est..."
+[2026-02-17T21:37:55.881Z]   → Posting to X (@Maxibtc2009)...
+[2026-02-17T21:37:56.572Z]   ✅ X posted successfully
+[2026-02-17T21:37:56.573Z] Processing post post_1771337785138_cd_ab_2: "Capital Duro no es contenido promocional.
+
+Es inve..."
+[2026-02-17T21:37:56.574Z]   → Posting to X (@Maxibtc2009)...
+[2026-02-17T21:37:57.240Z]   ✅ X posted successfully
+[2026-02-17T21:37:57.241Z] Processing post post_1771337785138_cd_ab_3: "¿Nuevo en Bitcoin?
+
+AprenderBitcoin.mx es tu curso..."
+[2026-02-17T21:37:57.245Z]   → Posting to X (@Maxibtc2009)...
+[2026-02-17T21:37:57.964Z]   ✅ X posted successfully
+[2026-02-17T21:37:57.964Z] Processing post post_1771337785138_cd_ab_4: "La mayoría de cursos de Bitcoin son:
+❌ Muy técnico..."
+[2026-02-17T21:37:57.964Z]   → Posting to X (@Maxibtc2009)...
+[2026-02-17T21:37:58.704Z]   ✅ X posted successfully
+[2026-02-17T21:37:58.704Z] Processing post post_1771337785138_cd_ab_5: "Educación > Especulación
+
+AprenderBitcoin.mx: 10 c..."
+[2026-02-17T21:37:58.704Z]   → Posting to X (@Maxibtc2009)...
+[2026-02-17T21:37:59.467Z]   ✅ X posted successfully
+[2026-02-17T21:37:59.467Z] Processing post post_1771337785138_cd_ab_6: "El flujo completo:
+
+1️⃣ Educación: aprenderbitcoin..."
+[2026-02-17T21:37:59.467Z]   → Posting to X (@Maxibtc2009)...
+[2026-02-17T21:38:00.067Z]   ✅ X posted successfully
+[2026-02-17T21:38:00.072Z] Queue saved successfully
+[2026-02-17T21:38:00.072Z] === Scheduler Complete: 13 posts processed ===
+[2026-02-17T21:43:34.127Z] === MaxiSuite Scheduler Check ===
+[2026-02-17T21:43:34.136Z] Checked queue: 71 total posts, 0 due now
+[2026-02-17T21:43:34.136Z] No posts due, exiting
+[2026-02-17T21:43:51.977Z] === MaxiSuite Scheduler Check ===
+[2026-02-17T21:43:51.983Z] Checked queue: 71 total posts, 0 due now
+[2026-02-17T21:43:51.984Z] No posts due, exiting
+[2026-02-17T21:45:25.836Z] === MaxiSuite Scheduler Check ===
+[2026-02-17T21:45:25.842Z] Checked queue: 71 total posts, 0 due now
+[2026-02-17T21:45:25.842Z] No posts due, exiting

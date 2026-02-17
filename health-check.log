@@ -1,0 +1,14 @@
+[2026-02-17T16:45:00-05:00] === Health Check Starting ===
+[2026-02-17T16:45:00-05:00] ❌ MaxiSuite scheduler service DOWN
+[2026-02-17T16:45:01-05:00] ✅ Overdue posts: 0 (acceptable)
+[2026-02-17T16:45:01-05:00] ✅ Last Nostr post: 1 hours ago
+[2026-02-17T16:45:01-05:00] ✅ OpenClaw gateway running
+[2026-02-17T16:45:01-05:00] ❌ Disk usage: 96%
+[2026-02-17T16:45:01-05:00] === ❌ 2 failures detected ===
+[2026-02-17T16:45:01-05:00] 🚨 ALERT: FAILURES DETECTED:
+
+• MaxiSuite scheduler service is NOT running
+• Disk usage critical: 96%
+
+/home/futurebit/.openclaw/workspace/health-check.sh: line 28: openclaw: command not found
+[2026-02-17T16:45:01-05:00] === Health Check Complete ===
