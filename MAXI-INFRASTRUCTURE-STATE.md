@@ -125,3 +125,40 @@ When infrastructure changes:
 
 **Note:** Maxi now manages ConvertKit account going forward (per Boyd 2026-02-16)
 
+
+---
+
+## L402 (LIGHTNING HTTP 402) - IN PROGRESS
+
+**Status:** 🟡 Implementation in progress
+**Goal:** Autonomous Bitcoin earnings via paid API access
+**Strategy:** Option A first (earn sats), then Option B (spend sats)
+
+**Public Key:** `020e1929292ad47f1ca34297320ba1a9263ab3d1559a0827a2e9c1be4fd456f673`
+
+**Planned API Endpoint:**
+- `/api/ask-maxi` - Bitcoin maximalist Q&A
+- Pricing: 10 sats per query (to start)
+- Backend: Node.js + Claude Sonnet-4
+- Proxy: Aperture (Lightning Labs L402 reverse proxy)
+
+**Current Progress:**
+- Go installation: In progress
+- Aperture setup: Pending
+- API server: Created (`l402-api-server.mjs`)
+- Public key: Generated (2026-02-16)
+
+**Next Steps:**
+- Complete Aperture installation
+- Configure connection to Alby Hub
+- Test L402 payment flow
+- Deploy and start earning sats
+
+**Documentation:**
+- Implementation plan: `L402-IMPLEMENTATION-PLAN.md`
+- Build log: `L402-BUILD-LOG.md`
+
+**Why this matters:**
+Most Bitcoin-maxi thing possible - true economic autonomy via Lightning Network.
+Income before spending = sound economic strategy.
+
