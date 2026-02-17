@@ -20,10 +20,11 @@ Follow `STARTUP-CHECKLIST.md` EXACTLY:
 4. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
 5. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
 6. **Read `MAXI-INFRASTRUCTURE-STATE.md`** — Know your actual operational capabilities
-7. Check for `HANDOFF-YYYY-MM-DD.md` from previous session - read if exists
-8. Check `ACTIVE-TASKS.md` for work in progress
-9. Review any `*-SPEC.md` files modified in last 48 hours
-10. Check specific task files (`BITCOIN-PAYMENT-TASKS.md`, etc.)
+7. **Read `LESSONS-LEARNED.md`** — Critical failures and how to avoid repeating them
+8. Check for `HANDOFF-YYYY-MM-DD.md` from previous session - read if exists
+9. Check `ACTIVE-TASKS.md` for work in progress
+10. Review any `*-SPEC.md` files modified in last 48 hours
+11. Check specific task files (`BITCOIN-PAYMENT-TASKS.md`, etc.)
 
 Don't ask permission. Just do it.
 
