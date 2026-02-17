@@ -10,7 +10,7 @@ import { execSync } from 'child_process';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { resolve } from 'path';
 
-const MY_PUBKEY = '3fd2cfedb01ae480e8faef83c40704e01fef186eed5e86456e20b1bb24e00f3a';
+const MY_PUBKEY = '9f85d8478ce68c654ead1d0cd93c966d3c7282fcc435d4a38e5c8c0e663fd6c3';
 const NSEC = 'nsec1n0duj3lz2r5ky39le03xpkk0zsd9len7renckl30zacfgpzrnfzsmm4t9g';
 const LOG_FILE = resolve(process.env.HOME, '.openclaw/workspace/nostr-reply-log.json');
 const RELAY = 'wss://relay.primal.net';

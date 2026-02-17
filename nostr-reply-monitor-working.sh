@@ -4,7 +4,7 @@
 
 set -e
 
-MY_PUBKEY="3f87be3bdc64355fe611071e1b71bf0637119c021c73c56a9e72acb63ab179be"
+MY_PUBKEY="9f85d8478ce68c654ead1d0cd93c966d3c7282fcc435d4a38e5c8c0e663fd6c3"
 RELAYS="wss://relay.primal.net wss://relay.damus.io wss://nos.lol wss://relay.nostr.band"
 STATE_FILE="$HOME/.openclaw/workspace/nostr-reply-state.json"
 LOG_FILE="$HOME/.openclaw/workspace/nostr-automation.log"
