@@ -20,7 +20,7 @@
 
 **Pre-launch checklist:**
 - [x] GitHub Personal Access Token (for repo metrics) ✅ **RECEIVED 2026-02-18**
-- [ ] Etherscan API key (for ERC-8004 data)
+- [x] Etherscan API key (for ERC-8004 data) ✅ **RECEIVED 2026-02-18**
 - [ ] Substack account setup
 - [ ] First week of data collected (Feb 19-24)
 - [ ] Newsletter template finalized
