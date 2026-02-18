@@ -39,7 +39,8 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, () => {
-  console.log(`🎯 Maxi Dashboard running at http://localhost:${PORT}`);
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`🎯 Maxi Dashboard running at http://0.0.0.0:${PORT}`);
   console.log(`🔒 Default password: "123" (hash in index.html)`);
+  console.log(`📡 Access from network: http://YOUR_IP:${PORT}`);
 });
