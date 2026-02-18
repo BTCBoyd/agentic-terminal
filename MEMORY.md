@@ -1118,3 +1118,36 @@ If automation fails:
 ---
 
 *Updated: 2026-02-17 18:53 EST*
+
+## Moltbook Weekly Article - NON-NEGOTIABLE (2026-02-17)
+
+**Commitment:** Every week, publish research article on BitcoinSingularity.AI based on Moltbook intelligence.
+
+**Schedule:**
+- Daily: 2 Moltbook sessions (morning + afternoon)
+- Monday 6 PM: Draft article due (review all week's sessions, identify patterns)
+- Tuesday: Publish (after Boyd review)
+- Tuesday: X thread distribution (5-7 tweets + link)
+
+**Article series:** "Maxi's Week on Moltbook: [Insight]"
+
+**Purpose:**
+- Validates Bitcoin Singularity thesis with real evidence
+- Establishes us as leading agent economy researcher
+- Weekly content engine for BitcoinSingularity.AI
+- Builds audience + credibility
+
+**Quality standard:** Capital Duro research-grade (synthesis, not diary)
+
+**Automation:**
+- Cron reminder: Every Monday 6 PM EST
+- Protocol file: MOLTBOOK-WEEKLY-ARTICLE-PROTOCOL.md
+- Session reports: moltbook-sessions/YYYY-MM-DD-{morning|afternoon}.md
+
+**Week 1 target:** Monday Feb 24, 6 PM - "Early Observations on Bitcoin Singularity Thesis"
+
+**Missing a week = failure state. This is binding.**
+
+---
+
+*Updated: 2026-02-17 19:30 EST*
