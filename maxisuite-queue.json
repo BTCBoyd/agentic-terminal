@@ -325,12 +325,18 @@
     },
     "scheduledFor": "2026-02-18T10:00:00-06:00",
     "requiresApproval": false,
-    "status": "scheduled",
+    "status": "posted",
     "createdAt": "2026-02-13T16:00:29.083Z",
-    "postedAt": null,
+    "postedAt": "2026-02-18T16:00:26.822Z",
     "account": "@Maxibtc2009",
     "contentType": "promotion",
-    "contentUpdated": "2026-02-16T15:04:41.761Z"
+    "contentUpdated": "2026-02-16T15:04:41.761Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "━━━ DEBUG OUTPUT ━━━\nTimestamp: 1771430426\nSystem time (UTC): 2026-02-18T16:00:26.480Z\nNonce: 2fd52204c8d5fe73514858f44026575b055bd5962d6ed4450a0248572c877993\nParameter string: oauth_consumer_key=nrE884mBRQU31zD3uPEskCDqc&oauth_nonce=2fd52204c8d5fe73514858f44026575b055bd5962d6ed4450a0248572c877993&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1771430426&oauth_token=2021647460758966273-xrsjEdhiWefJGYgZq63zwCtkgLNJSe&oauth_version=1.0\nSignature base string: POST&https%3A%2F%2Fapi.twitter.com%2F2%2Ftweets&oauth_consumer_key%3DnrE884mBRQU31zD3uPEskCDqc%26oauth_nonce%3D2fd52204c8d5fe73514858f44026575b055bd5962d6ed4450a0248572c877993%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1771430426%26oauth_token%3D2021647460758966273-xrsjEdhiWefJGYgZq63zwCtkgLNJSe%26oauth_version%3D1.0\nSigning key: N8NwTC5efsdKEBYlwdbiinUOmhEaIR52uyYRT89H0JOHOGHn5P&Sgo6G4cyjRGK3mvtIlFcue2bCV8OuG1dWQNjiYvu9slIk\n━━━━━━━━━━━━━━━━━━━\nStatus: 403\nResponse: {\"detail\":\"You are not permitted to perform this action.\",\"type\":\"about:blank\",\"title\":\"Forbidden\",\"status\":403}\n❌ FAILED: HTTP 403: {\"detail\":\"You are not permitted to perform this action.\",\"type\":\"about:blank\",\"title\":\"Forbidden\",\"status\":403}\n"
+      }
+    }
   },
   {
     "id": "post_1770998429083_16",
@@ -1357,5 +1363,425 @@
         "output": "━━━ DEBUG OUTPUT ━━━\nTimestamp: 1771423671\nSystem time (UTC): 2026-02-18T14:07:51.243Z\nNonce: d37f83d27e30edb58eb7d3e614ef3e799c56e532285ea87a3e1bee51a4bee53a\nParameter string: oauth_consumer_key=nrE884mBRQU31zD3uPEskCDqc&oauth_nonce=d37f83d27e30edb58eb7d3e614ef3e799c56e532285ea87a3e1bee51a4bee53a&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1771423671&oauth_token=2021647460758966273-xrsjEdhiWefJGYgZq63zwCtkgLNJSe&oauth_version=1.0\nSignature base string: POST&https%3A%2F%2Fapi.twitter.com%2F2%2Ftweets&oauth_consumer_key%3DnrE884mBRQU31zD3uPEskCDqc%26oauth_nonce%3Dd37f83d27e30edb58eb7d3e614ef3e799c56e532285ea87a3e1bee51a4bee53a%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1771423671%26oauth_token%3D2021647460758966273-xrsjEdhiWefJGYgZq63zwCtkgLNJSe%26oauth_version%3D1.0\nSigning key: N8NwTC5efsdKEBYlwdbiinUOmhEaIR52uyYRT89H0JOHOGHn5P&Sgo6G4cyjRGK3mvtIlFcue2bCV8OuG1dWQNjiYvu9slIk\n━━━━━━━━━━━━━━━━━━━\nStatus: 403\nResponse: {\"detail\":\"You are not permitted to perform this action.\",\"type\":\"about:blank\",\"title\":\"Forbidden\",\"status\":403}\n❌ FAILED: HTTP 403: {\"detail\":\"You are not permitted to perform this action.\",\"type\":\"about:blank\",\"title\":\"Forbidden\",\"status\":403}\n"
       }
     }
+  },
+  {
+    "id": "arcadiab_1771436250892_ib9b4o7yv",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-18T19:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "Tu patrimonio en pesos pierde valor cada día.\n\nEn ArcadiaB, compramos Bitcoin para ti de forma rápida, segura y regulada.\n\n🔹 ASOFOM certificados\n🔹 Proceso simple\n🔹 La opción más confiable en México\n\nProtege tu futuro. Empieza hoy. 🇲🇽₿\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_lk41xzx2c",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-19T10:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "🚀 NUEVO: Préstamos respaldados por Bitcoin en USD y pesos\n\n✅ Tasas competitivas\n✅ Sin vender tu BTC\n✅ Liquidez cuando la necesitas\n\nUna de las pocas opciones en México para obtener crédito usando Bitcoin como garantía.\n\nMás info: arcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_kqnwbqi3c",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-19T15:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "🎯 Ahorro Inteligente: La forma más fácil de acumular Bitcoin\n\nComo una suscripción, pero para tu futuro financiero:\n\n📅 Compras automáticas recurrentes\n💰 Montos desde lo que tú decidas\n📊 Promedias tu precio de entrada\n\nStackea sats sin pensarlo.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_9sc3ojwyg",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-19T20:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "💎 NUEVO: Programa de préstamos con garantía inmobiliaria\n\nUsa tu propiedad como colateral para comprar Bitcoin.\n\nApalancamiento inteligente:\n🏠 Tu inmueble trabaja para ti\n₿ Accedes a BTC sin vender activos\n📈 Exposición a apreciación de Bitcoin\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_2urld9xg7",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-20T11:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "🌐 Nuestra nueva página web está en vivo: arcadiab.com\n\nTodo lo que necesitas para proteger y hacer crecer tu patrimonio con Bitcoin:\n\n✅ Compra de BTC\n✅ Préstamos garantizados\n✅ Ahorro inteligente\n✅ Asesoría patrimonial\n\n¡Visítanos hoy!",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_hskfrtupb",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-20T16:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "📚 ¿Apenas empiezas con Bitcoin?\n\nNuevo recurso gratuito: aprenderbitcoin.mx\n\n🔹 Guías para principiantes\n🔹 Conceptos básicos explicados\n🔹 Cómo proteger tu Bitcoin\n🔹 Primeros pasos en México\n\nEducación de calidad, sin costo. Comienza aquí. 🇲🇽",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_8vlt8sdtc",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-21T10:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "💼 Para inversionistas profesionales y family offices:\n\nCapital Duro está en vivo: capitalduro.mx\n\n📊 90 páginas de análisis institucional\n🔬 Investigación sobre Bitcoin en México\n💎 Estrategias de tesorería corporativa\n\nContenido de nivel mundial. En español.",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_ilenn8x41",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-21T15:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "💳 NUEVO: Tarjeta de crédito con cashback en Bitcoin\n\n✨ 0.5% de cada compra regresa como BTC\n✨ No puntos. No millas. Bitcoin real.\n✨ Ahorras mientras gastas.\n\nLa forma más inteligente de usar una tarjeta de crédito en 2026.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_m1hfw15lg",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-21T19:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "🤝 Programa de Referidos ArcadiaB\n\nConoces a alguien que necesita proteger su patrimonio?\n\n✅ Refiere amigos/familia\n✅ Ambos obtienen beneficios\n✅ Ayudas a alguien que te importa\n\nCompartir Bitcoin es compartir libertad financiera.\n\nDetalles: arcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_y5dbsdrk9",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-22T10:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "Desde 2017, hemos sido pioneros en Bitcoin en México.\n\nHoy somos:\n\n🔹 Empresa Bitcoin más antigua del país\n🔹 ASOFOM certificados (regulación)\n🔹 Única opción para préstamos BTC\n🔹 Confianza de miles de mexicanos\n\nExperiencia que importa.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_k36697l35",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-22T15:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "La inflación no para. El peso no se recupera.\n\n¿Tu estrategia?\n\nEn ArcadiaB te ayudamos a:\n✅ Comprar Bitcoin de forma segura\n✅ Obtener liquidez sin vender\n✅ Ahorrar automáticamente\n✅ Proteger tu patrimonio\n\nNo esperes más. arcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_yxm0sg3do",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-23T11:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "Préstamos en USD o pesos, respaldados por tu Bitcoin.\n\nPerfecto para:\n📍 Emergencias sin vender BTC\n📍 Oportunidades de inversión\n📍 Liquidez temporal\n📍 Mantener exposición a Bitcoin\n\nTasas competitivas. Proceso rápido.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_se3crsnzj",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-23T16:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "¿Nuevo en Bitcoin?\n\nTres pasos para empezar:\n\n1️⃣ Edúcate → aprenderbitcoin.mx\n2️⃣ Compra tu primer BTC → arcadiab.com\n3️⃣ Configura Ahorro Inteligente → acumulación automática\n\nDe principiante a holder en una semana. 🇲🇽₿",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_apyf278pu",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-24T10:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "Para inversionistas sofisticados:\n\nCapital Duro Vol. 1 ya está disponible en capitalduro.mx\n\n📊 Análisis de Bitcoin en mercados emergentes\n💼 Casos de uso institucional\n🏛️ Marco regulatorio mexicano\n📈 Tesis de inversión a largo plazo\n\nLectura obligada.",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_vq600khb3",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-24T15:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "Tu tarjeta de crédito te da puntos que pierden valor.\n\nLa nuestra te da Bitcoin.\n\n💳 0.5% cashback en BTC\n💳 Cada compra acumula sats\n💳 Gastas hoy, ahorras para mañana\n\nCambia tu forma de gastar.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_v65yselnz",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-24T20:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "Programa de Ahorro Inteligente:\n\nComo Netflix, pero construyendo tu patrimonio.\n\n📅 Frecuencia: semanal, quincenal o mensual\n💰 Monto: tú decides\n🤖 Automático: sin esfuerzo\n📈 DCA: promedias precio\n\nStackea sats en piloto automático.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_d3342r28a",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-25T11:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "Real estate + Bitcoin = apalancamiento inteligente\n\nNuevo programa:\n🏠 Usa tu propiedad como garantía\n₿ Obtén préstamo para comprar BTC\n📊 Doble exposición: inmuebles + Bitcoin\n\nPatrimonio que trabaja para ti.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_it8eja2ql",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-25T16:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "¿Por qué ArcadiaB?\n\nExperiencia: 8 años en Bitcoin en México\nRegulación: ASOFOM certificados\nProductos: Compra, préstamos, ahorro, cashback\nEducación: aprenderbitcoin.mx\nInvestigación: capitalduro.mx\n\nTodo lo que necesitas. Un solo lugar.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_69r76mpr4",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-26T10:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "Pregunta frecuente:\n\n\"¿Puedo obtener un préstamo sin vender mi Bitcoin?\"\n\nSí. Préstamos respaldados por BTC:\n\n✅ Mantienes tu exposición a Bitcoin\n✅ Obtienes liquidez en USD o pesos\n✅ Tasas competitivas\n✅ Proceso rápido\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_0ugpgti92",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-26T15:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "Para principiantes: aprenderbitcoin.mx\nPara profesionales: capitalduro.mx\nPara todos: arcadiab.com\n\nNo importa dónde estés en tu viaje Bitcoin.\n\nTenemos los recursos que necesitas. 🇲🇽₿",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_q1dppmg1t",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-27T11:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "Cashback en Bitcoin > Puntos de tarjeta\n\n¿Por qué?\n\n📉 Puntos pierden valor con inflación\n📈 Bitcoin aprecia en el tiempo\n💰 0.5% BTC > 1% puntos (a largo plazo)\n🌍 Bitcoin es global\n\nAhorra inteligente. Gasta inteligente.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_5khks16ey",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-27T16:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "Referir amigos es compartir libertad financiera.\n\nPrograma de Referidos ArcadiaB:\n\n🎁 Beneficios para ti\n🎁 Beneficios para tu referido\n🤝 Ayudas a alguien que te importa\n\nCompartir Bitcoin es cuidar de tu comunidad.\n\nDetalles: arcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_p67anolvg",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-28T10:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "8 años protegiendo patrimonio en México.\n\nMiles de clientes confían en nosotros para:\n\n✅ Comprar Bitcoin\n✅ Préstamos garantizados\n✅ Ahorro automático\n✅ Estrategias patrimoniales\n\nExperiencia que se nota. Confianza que se gana.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_ucsk7wp00",
+    "status": "scheduled",
+    "scheduledFor": "2026-02-28T15:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "Tu patrimonio merece protección real.\n\nNo puntos. No promesas. Bitcoin.\n\n🔹 Compra segura y regulada\n🔹 Liquidez sin vender\n🔹 Ahorro automático\n🔹 Cashback en BTC\n\nTodo en arcadiab.com\n\nEl futuro de tu patrimonio empieza hoy. 🇲🇽₿",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_xmbyvwzvg",
+    "status": "scheduled",
+    "scheduledFor": "2026-03-01T11:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "Nuevo programa inmobiliario:\n\n🏢 Tienes propiedad pero no liquidez?\n₿ Quieres exposición a Bitcoin?\n💡 Usa tu inmueble como colateral\n\nApalancamiento inteligente para holders estratégicos.\n\nMás info: arcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_vqrbdf77o",
+    "status": "scheduled",
+    "scheduledFor": "2026-03-01T16:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "Capital Duro Vol. 1: 90 páginas de investigación institucional sobre Bitcoin.\n\nGratis en capitalduro.mx\n\nFamily offices, CFOs, inversionistas profesionales:\n\nEsta es la investigación que estaban esperando. En español. De nivel mundial.",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_pds41mws6",
+    "status": "scheduled",
+    "scheduledFor": "2026-03-02T10:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "De principiante a experto:\n\n📚 Aprende → aprenderbitcoin.mx\n₿ Compra → arcadiab.com\n🤖 Automatiza → Ahorro Inteligente\n💳 Optimiza → Cashback en BTC\n📊 Profundiza → capitalduro.mx\n\nTu ruta completa. Un ecosistema. 🇲🇽",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_mfj3qy3qj",
+    "status": "scheduled",
+    "scheduledFor": "2026-03-02T15:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "Préstamos Bitcoin: liquidez sin vender.\n\n✅ USD o pesos\n✅ Tasas competitivas\n✅ Mantienes tu BTC\n✅ Proceso rápido\n\nEmergencias, oportunidades, o simplemente liquidez temporal.\n\nTu Bitcoin sigue trabajando para ti.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_5wu0pg34i",
+    "status": "scheduled",
+    "scheduledFor": "2026-03-03T11:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "🚨 PRÓXIMAMENTE: Nueva app ArcadiaB\n\nGestión completa de tu patrimonio Bitcoin desde tu celular.\n\nAhorro, préstamos, compras, consultas... todo en un lugar.\n\nMantente atento. Esto cambia el juego. 📱₿",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
+  },
+  {
+    "id": "arcadiab_1771436250892_eo0xlqgkh",
+    "status": "scheduled",
+    "scheduledFor": "2026-03-03T16:00:00-06:00",
+    "account": "@arcadiabtc",
+    "content": "Proteger tu patrimonio no es complicado.\n\nEs una decisión.\n\nArcadiaB: la forma más confiable de Bitcoin en México.\n\n🔹 Regulados\n🔹 8 años de experiencia\n🔹 Productos completos\n🔹 Educación incluida\n\narcadiab.com\n\nEmpieza hoy. 🇲🇽₿",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "createdAt": "2026-02-18T17:37:30.892Z"
   }
 ]
