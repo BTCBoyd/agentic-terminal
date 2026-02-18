@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxi Operations Dashboard</title>
+    <style>
+        /* Minimal styling - Maxi should restyle to match bitcoinsingularity.ai */
+        :root {
+            --green: #22c55e;
+            --yellow: #eab308;
+            --red: #ef4444;
+            --bg: #0f1115;
+            --surface: #1a1d24;
+            --surface-2: #24282f;
+            --text: #e4e4e7;
+            --text-muted: #71717a;
+            --border: #2e3238;
+            --orange: #f97316;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Auth overlay */
+        #auth-screen {
+            position: fixed; inset: 0;
+            background: var(--bg);
+            display: flex; align-items: center; justify-content: center;
+            z-index: 1000;
+            flex-direction: column; gap: 16px;
+        }
+        #auth-screen.hidden { display: none; }
+        #auth-screen input {
+            padding: 12px 20px; border-radius: 8px;
+            border: 1px solid var(--border); background: var(--surface);
+            color: var(--text); font-size: 16px; width: 280px;
+            text-align: center;
+        }
+        #auth-screen button {
+            padding: 10px 32px; border-radius: 8px;
+            border: none; background: var(--orange); color: #000;
+            font-weight: 600; cursor: pointer; font-size: 14px;
+        }
+        #auth-error { color: var(--red); font-size: 13px; display: none; }
+
+        /* Dashboard */
+        #dashboard { display: none; }
+        #dashboard.visible { display: block; }
+
+        header {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 32px; padding-bottom: 16px; border-bottom: 1px solid var(--border);
+        }
+        header h1 { font-size: 20px; font-weight: 600; }
+        .last-updated { font-size: 12px; color: var(--text-muted); }
+
+        /* Alerts banner */
+        .alerts-banner {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 8px; padding: 16px; margin-bottom: 24px;
+        }
+        .alerts-banner.clear {
+            background: rgba(34, 197, 94, 0.1);
+            border-color: rgba(34, 197, 94, 0.3);
+        }
+        .alerts-banner h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+        .alert-item { font-size: 14px; padding: 4px 0; }
+
+        /* Summary cards */
+        .summary-row {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 12px; margin-bottom: 28px;
+        }
+        .summary-card {
+            background: var(--surface); border-radius: 8px; padding: 16px;
+            border: 1px solid var(--border);
+        }
+        .summary-card .label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+        .summary-card .value { font-size: 28px; font-weight: 700; margin-top: 4px; }
+        .summary-card .sub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+        /* Queue gauge */
+        .queue-gauge {
+            background: var(--surface); border-radius: 8px; padding: 16px;
+            border: 1px solid var(--border); margin-bottom: 28px;
+        }
+        .queue-gauge h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px; color: var(--text-muted); }
+        .gauge-bar { height: 24px; background: var(--surface-2); border-radius: 4px; overflow: hidden; position: relative; }
+        .gauge-fill { height: 100%; border-radius: 4px; transition: width 0.5s ease; }
+        .gauge-labels { display: flex; justify-content: space-between; font-size: 11px; color: var(--text-muted); margin-top: 4px; }
+        .queue-channels { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 12px; }
+        .queue-channel { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: var(--surface-2); border-radius: 6px; }
+        .queue-channel .ch-name { font-size: 13px; }
+        .queue-channel .ch-count { font-size: 18px; font-weight: 600; }
+
+        /* Task sections */
+        .task-section { margin-bottom: 28px; }
+        .task-section h2 {
+            font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em;
+            color: var(--text-muted); margin-bottom: 12px; padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .task-row {
+            display: grid; grid-template-columns: 12px 1fr 140px 80px;
+            gap: 12px; align-items: center; padding: 10px 12px;
+            background: var(--surface); border-radius: 6px; margin-bottom: 4px;
+            border: 1px solid var(--border);
+        }
+        .task-row.overdue { border-color: rgba(239, 68, 68, 0.4); }
+        .task-row.warning { border-color: rgba(234, 179, 8, 0.3); }
+
+        .status-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+        .status-dot.green { background: var(--green); }
+        .status-dot.yellow { background: var(--yellow); }
+        .status-dot.red { background: var(--red); }
+
+        .task-name { font-size: 14px; font-weight: 500; }
+        .task-last { font-size: 12px; color: var(--text-muted); text-align: right; }
+        .task-age { font-size: 12px; font-weight: 600; text-align: right; }
+        .task-age.green { color: var(--green); }
+        .task-age.yellow { color: var(--yellow); }
+        .task-age.red { color: var(--red); }
+
+        /* Activity log */
+        .activity-log { background: var(--surface); border-radius: 8px; padding: 16px; border: 1px solid var(--border); }
+        .activity-log h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 12px; }
+        .log-entry { padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 13px; display: flex; justify-content: space-between; }
+        .log-entry:last-child { border-bottom: none; }
+        .log-time { color: var(--text-muted); font-size: 12px; }
+
+        /* Needs Boyd section */
+        .needs-boyd {
+            background: rgba(249, 115, 22, 0.1); border: 1px solid rgba(249, 115, 22, 0.3);
+            border-radius: 8px; padding: 16px; margin-bottom: 24px;
+        }
+        .needs-boyd h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; color: var(--orange); }
+        .needs-boyd .item { font-size: 14px; padding: 4px 0; }
+        .needs-boyd.empty { display: none; }
+
+        @media (max-width: 600px) {
+            .task-row { grid-template-columns: 10px 1fr 80px; }
+            .task-last { display: none; }
+            .summary-row { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+<!-- AUTH SCREEN -->
+<div id="auth-screen">
+    <h2>🔒 Maxi Ops Dashboard</h2>
+    <input type="password" id="auth-input" placeholder="Enter access key" autofocus />
+    <button onclick="authenticate()">Enter</button>
+    <div id="auth-error">Invalid key. Try again.</div>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard">
+    <header>
+        <div>
+            <h1>⚡ Maxi Operations Dashboard</h1>
+            <div class="last-updated" id="last-updated">Last data update: —</div>
+        </div>
+        <div style="font-size: 12px; color: var(--text-muted);">
+            Auto-refreshes every 5 min
+        </div>
+    </header>
+
+    <!-- NEEDS BOYD -->
+    <div class="needs-boyd" id="needs-boyd"></div>
+
+    <!-- ALERTS -->
+    <div class="alerts-banner" id="alerts-banner"></div>
+
+    <!-- SUMMARY CARDS -->
+    <div class="summary-row" id="summary-cards"></div>
+
+    <!-- CONTENT QUEUE GAUGE -->
+    <div class="queue-gauge" id="queue-section"></div>
+
+    <!-- TASK SECTIONS -->
+    <div id="task-sections"></div>
+
+    <!-- ACTIVITY LOG -->
+    <div class="activity-log" id="activity-log"></div>
+</div>
+
+<script>
+const ACCESS_KEY_HASH = "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3";
+const STATUS_JSON_URL = "./maxi-status.json";
+const REFRESH_INTERVAL = 300000;
+
+async function hashKey(key) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(key);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+async function authenticate() {
+    const input = document.getElementById('auth-input').value;
+    const hash = await hashKey(input);
+    if (hash === ACCESS_KEY_HASH) {
+        document.getElementById('auth-screen').classList.add('hidden');
+        document.getElementById('dashboard').classList.add('visible');
+        sessionStorage.setItem('maxi-dash-auth', 'true');
+        loadDashboard();
+    } else {
+        document.getElementById('auth-error').style.display = 'block';
+    }
+}
+
+async function checkUrlAuth() {
+    const params = new URLSearchParams(window.location.search);
+    const key = params.get('key');
+    if (key) {
+        const hash = await hashKey(key);
+        if (hash === ACCESS_KEY_HASH) {
+            document.getElementById('auth-screen').classList.add('hidden');
+            document.getElementById('dashboard').classList.add('visible');
+            loadDashboard();
+            return;
+        }
+    }
+    if (sessionStorage.getItem('maxi-dash-auth') === 'true') {
+        document.getElementById('auth-screen').classList.add('hidden');
+        document.getElementById('dashboard').classList.add('visible');
+        loadDashboard();
+    }
+}
+
+document.getElementById('auth-input').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') authenticate();
+});
+
+function loadDashboard() {
+    fetch(STATUS_JSON_URL)
+        .then(r => r.json())
+        .then(data => {
+            renderDashboard(data);
+            setInterval(() => {
+                fetch(STATUS_JSON_URL).then(r => r.json()).then(renderDashboard);
+            }, REFRESH_INTERVAL);
+        })
+        .catch(err => {
+            console.error('Failed to load dashboard data:', err);
+            document.getElementById('dashboard').innerHTML = '<p style="color:var(--red)">Failed to load dashboard data. Check console.</p>';
+        });
+}
+
+function renderDashboard(data) {
+    const now = new Date();
+    document.getElementById('last-updated').textContent =
+        `Last data update: ${formatDateTime(data.generated_at)}`;
+    renderNeedsBoyd(data.needs_boyd);
+    renderAlerts(data, now);
+    renderSummary(data, now);
+    renderQueueSection(data.content_queue);
+    renderTaskSections(data.tasks, now);
+    renderActivityLog(data.activity_log);
+}
+
+function renderNeedsBoyd(items) {
+    const el = document.getElementById('needs-boyd');
+    if (!items || items.length === 0) {
+        el.classList.add('empty');
+        return;
+    }
+    el.classList.remove('empty');
+    el.innerHTML = `
+        <h3>⚠️ Needs Boyd's Input</h3>
+        ${items.map(i => `<div class="item">→ ${i}</div>`).join('')}
+    `;
+}
+
+function renderAlerts(data, now) {
+    const el = document.getElementById('alerts-banner');
+    const overdue = [];
+    data.tasks.daily.forEach(t => {
+        const status = getTaskStatus(t, now);
+        if (status === 'red') overdue.push(t.name);
+    });
+    Object.entries(data.content_queue).forEach(([key, q]) => {
+        if (q.scheduled < q.min_threshold) {
+            overdue.push(`${formatChannelName(key)} queue below minimum (${q.scheduled}/${q.min_threshold})`);
+        }
+    });
+    const allTasks = [...data.tasks.daily, ...data.tasks.weekly, ...data.tasks.monthly];
+    const noCron = allTasks.filter(t => !t.has_cron);
+    noCron.forEach(t => overdue.push(`${t.name}: NO CRON JOB`));
+    if (overdue.length === 0) {
+        el.className = 'alerts-banner clear';
+        el.innerHTML = '<h3>✅ All Systems Operational</h3>';
+    } else {
+        el.className = 'alerts-banner';
+        el.innerHTML = `
+            <h3>🚨 ${overdue.length} Issue${overdue.length > 1 ? 's' : ''} Requiring Attention</h3>
+            ${overdue.map(o => `<div class="alert-item">⛔ ${o}</div>`).join('')}
+        `;
+    }
+}
+
+function renderSummary(data, now) {
+    const el = document.getElementById('summary-cards');
+    const allTasks = [...data.tasks.daily, ...data.tasks.weekly, ...data.tasks.monthly];
+    const greenCount = allTasks.filter(t => getTaskStatus(t, now) === 'green').length;
+    const yellowCount = allTasks.filter(t => getTaskStatus(t, now) === 'yellow').length;
+    const redCount = allTasks.filter(t => getTaskStatus(t, now) === 'red').length;
+    const neverCount = allTasks.filter(t => !t.last_executed).length;
+    const totalQueue = Object.values(data.content_queue).reduce((sum, q) => sum + q.scheduled, 0);
+    const cronCoverage = allTasks.filter(t => t.has_cron).length;
+    el.innerHTML = `
+        <div class="summary-card">
+            <div class="label">On Track</div>
+            <div class="value" style="color: var(--green)">${greenCount}</div>
+            <div class="sub">of ${allTasks.length} tasks</div>
+        </div>
+        <div class="summary-card">
+            <div class="label">Warning</div>
+            <div class="value" style="color: var(--yellow)">${yellowCount}</div>
+        </div>
+        <div class="summary-card">
+            <div class="label">Overdue</div>
+            <div class="value" style="color: var(--red)">${redCount}</div>
+        </div>
+        <div class="summary-card">
+            <div class="label">Never Executed</div>
+            <div class="value" style="color: var(--red)">${neverCount}</div>
+        </div>
+        <div class="summary-card">
+            <div class="label">Content Queue</div>
+            <div class="value">${totalQueue}</div>
+            <div class="sub">posts scheduled</div>
+        </div>
+        <div class="summary-card">
+            <div class="label">Cron Coverage</div>
+            <div class="value">${cronCoverage}/${allTasks.length}</div>
+            <div class="sub">${allTasks.length - cronCoverage === 0 ? 'all covered' : (allTasks.length - cronCoverage) + ' missing'}</div>
+        </div>
+    `;
+}
+
+function renderQueueSection(queue) {
+    const el = document.getElementById('queue-section');
+    let channelsHtml = '';
+    Object.entries(queue).forEach(([key, q]) => {
+        const pct = Math.min((q.scheduled / q.target) * 100, 100);
+        const color = q.scheduled < q.min_threshold ? 'var(--red)' :
+                      q.scheduled < q.target * 0.6 ? 'var(--yellow)' : 'var(--green)';
+        channelsHtml += `
+            <div class="queue-channel">
+                <div>
+                    <div class="ch-name">${formatChannelName(key)}</div>
+                    <div style="font-size: 11px; color: var(--text-muted)">min: ${q.min_threshold} / target: ${q.target}</div>
+                </div>
+                <div class="ch-count" style="color: ${color}">${q.scheduled}</div>
+            </div>
+        `;
+    });
+    const totalScheduled = Object.values(queue).reduce((s, q) => s + q.scheduled, 0);
+    const totalTarget = Object.values(queue).reduce((s, q) => s + q.target, 0);
+    const overallPct = Math.min((totalScheduled / totalTarget) * 100, 100);
+    const overallColor = overallPct < 30 ? 'var(--red)' : overallPct < 60 ? 'var(--yellow)' : 'var(--green)';
+    el.innerHTML = `
+        <h3>Content Queue Depth</h3>
+        <div class="gauge-bar">
+            <div class="gauge-fill" style="width: ${overallPct}%; background: ${overallColor}"></div>
+        </div>
+        <div class="gauge-labels">
+            <span>${totalScheduled} scheduled</span>
+            <span>target: ${totalTarget}</span>
+        </div>
+        <div class="queue-channels">${channelsHtml}</div>
+    `;
+}
+
+function renderTaskSections(tasks, now) {
+    const el = document.getElementById('task-sections');
+    el.innerHTML = '';
+    const sections = [
+        { key: 'daily', label: 'Daily Tasks', items: tasks.daily },
+        { key: 'weekly', label: 'Weekly Tasks', items: tasks.weekly },
+        { key: 'monthly', label: 'Monthly Tasks', items: tasks.monthly }
+    ];
+    sections.forEach(section => {
+        const sorted = [...section.items].sort((a, b) => {
+            const order = { red: 0, yellow: 1, green: 2 };
+            return order[getTaskStatus(a, now)] - order[getTaskStatus(b, now)];
+        });
+        let rowsHtml = sorted.map(task => {
+            const status = getTaskStatus(task, now);
+            const age = getTaskAge(task, now);
+            const lastExec = task.last_executed ? formatDateTime(task.last_executed) : 'NEVER';
+            const cronTag = task.has_cron ? '' : ' <span style="color:var(--red);font-size:11px;">[NO CRON]</span>';
+            const rowClass = status === 'red' ? 'overdue' : status === 'yellow' ? 'warning' : '';
+            return `
+                <div class="task-row ${rowClass}">
+                    <div class="status-dot ${status}"></div>
+                    <div class="task-name">${task.name}${cronTag}</div>
+                    <div class="task-last">${lastExec}</div>
+                    <div class="task-age ${status}">${age}</div>
+                </div>
+            `;
+        }).join('');
+        el.innerHTML += `
+            <div class="task-section">
+                <h2>${section.label}</h2>
+                ${rowsHtml}
+            </div>
+        `;
+    });
+}
+
+function renderActivityLog(log) {
+    const el = document.getElementById('activity-log');
+    if (!log || log.length === 0) {
+        el.innerHTML = '<h3>Recent Activity</h3><div style="color:var(--text-muted);font-size:13px;">No activity logged</div>';
+        return;
+    }
+    const sorted = [...log].sort((a, b) => new Date(b.completed_at) - new Date(a.completed_at));
+    const entries = sorted.slice(0, 15).map(entry => `
+        <div class="log-entry">
+            <span>✓ ${entry.task}</span>
+            <span class="log-time">${formatDateTime(entry.completed_at)}</span>
+        </div>
+    `).join('');
+    el.innerHTML = `<h3>Recent Activity (Last 15)</h3>${entries}`;
+}
+
+function getTaskStatus(task, now) {
+    if (!task.last_executed) return 'red';
+    const hoursSince = (now - new Date(task.last_executed)) / (1000 * 60 * 60);
+    const threshold = task.threshold_hours || 26;
+    if (hoursSince <= threshold) return 'green';
+    if (hoursSince <= threshold * 1.5) return 'yellow';
+    return 'red';
+}
+
+function getTaskAge(task, now) {
+    if (!task.last_executed) return 'NEVER';
+    const hoursSince = (now - new Date(task.last_executed)) / (1000 * 60 * 60);
+    if (hoursSince < 1) return `${Math.round(hoursSince * 60)}m ago`;
+    if (hoursSince < 24) return `${Math.round(hoursSince)}h ago`;
+    const days = Math.round(hoursSince / 24);
+    return `${days}d ago`;
+}
+
+function formatDateTime(isoStr) {
+    const d = new Date(isoStr);
+    const month = d.toLocaleDateString('en-US', { month: 'short' });
+    const day = d.getDate();
+    const time = d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
+    return `${month} ${day}, ${time}`;
+}
+
+function formatChannelName(key) {
+    const names = {
+        'arcadiab_x': 'ArcadiaB X',
+        'arcadiab_linkedin': 'ArcadiaB LinkedIn',
+        'arcadiab_facebook': 'ArcadiaB Facebook',
+        'maxi_x': 'Maxi X',
+        'maxi_nostr': 'Maxi Nostr',
+        'capital_duro': 'Capital Duro'
+    };
+    return names[key] || key;
+}
+
+checkUrlAuth();
+</script>
+</body>
+</html>

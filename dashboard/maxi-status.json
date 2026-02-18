@@ -1,0 +1,149 @@
+{
+  "generated_at": "2026-02-18T18:55:40.389Z",
+  "needs_boyd": [],
+  "content_queue": {
+    "arcadiab_x": {
+      "scheduled": 28,
+      "min_threshold": 8,
+      "target": 20
+    },
+    "arcadiab_linkedin": {
+      "scheduled": 0,
+      "min_threshold": 3,
+      "target": 6
+    },
+    "arcadiab_facebook": {
+      "scheduled": 0,
+      "min_threshold": 3,
+      "target": 6
+    },
+    "maxi_x": {
+      "scheduled": 21,
+      "min_threshold": 4,
+      "target": 10
+    },
+    "maxi_nostr": {
+      "scheduled": 19,
+      "min_threshold": 4,
+      "target": 10
+    },
+    "capital_duro": {
+      "scheduled": 0,
+      "min_threshold": 2,
+      "target": 5
+    }
+  },
+  "tasks": {
+    "daily": [
+      {
+        "name": "Check ArcadiaB post queue status",
+        "last_executed": "2026-02-18T00:00:00.000Z",
+        "has_cron": false,
+        "scheduled_time": "9 AM",
+        "threshold_hours": 26
+      },
+      {
+        "name": "Moltbook afternoon session",
+        "last_executed": "2026-02-17T00:00:00.000Z",
+        "has_cron": false,
+        "scheduled_time": "3",
+        "threshold_hours": 26
+      },
+      {
+        "name": "Moltbook weekly article draft",
+        "last_executed": null,
+        "has_cron": true,
+        "scheduled_time": "6 PM",
+        "threshold_hours": 26
+      },
+      {
+        "name": "Weekly dashboard data collection",
+        "last_executed": null,
+        "has_cron": true,
+        "scheduled_time": "9 AM",
+        "threshold_hours": 26
+      }
+    ],
+    "weekly": [
+      {
+        "name": "Bitcoin Singularity homepage evidence update",
+        "last_executed": "2026-02-15T00:00:00.000Z",
+        "has_cron": false,
+        "scheduled_day": "Monday",
+        "threshold_hours": 168
+      },
+      {
+        "name": "ArcadiaB content calendar (next week)",
+        "last_executed": null,
+        "has_cron": false,
+        "scheduled_day": "Friday",
+        "threshold_hours": 168
+      },
+      {
+        "name": "Check ArcadiaB queue for next week",
+        "last_executed": null,
+        "has_cron": false,
+        "scheduled_day": "Friday",
+        "threshold_hours": 168
+      },
+      {
+        "name": "Maxi's Agent Economics Report",
+        "last_executed": null,
+        "has_cron": false,
+        "scheduled_day": "Monday",
+        "threshold_hours": 168
+      },
+      {
+        "name": "Thesis confidence review",
+        "last_executed": "2026-02-17T00:00:00.000Z",
+        "has_cron": false,
+        "scheduled_day": "Monday",
+        "threshold_hours": 168
+      },
+      {
+        "name": "Competitive landscape scan",
+        "last_executed": null,
+        "has_cron": false,
+        "scheduled_day": "Monday",
+        "threshold_hours": 168
+      },
+      {
+        "name": "Newsletter subscriber metrics review",
+        "last_executed": null,
+        "has_cron": false,
+        "scheduled_day": "Monday",
+        "threshold_hours": 168
+      },
+      {
+        "name": "Update all Tools Directory entries",
+        "last_executed": "2026-02-18T00:00:00.000Z",
+        "has_cron": false,
+        "scheduled_day": "Monday",
+        "threshold_hours": 168
+      }
+    ],
+    "monthly": []
+  },
+  "activity_log": [
+    {
+      "task": "Check ArcadiaB post queue status",
+      "completed_at": "2026-02-18T00:00:00.000Z"
+    },
+    {
+      "task": "Update all Tools Directory entries",
+      "completed_at": "2026-02-18T00:00:00.000Z"
+    },
+    {
+      "task": "Moltbook afternoon session",
+      "completed_at": "2026-02-17T00:00:00.000Z"
+    },
+    {
+      "task": "Thesis confidence review",
+      "completed_at": "2026-02-17T00:00:00.000Z"
+    },
+    {
+      "task": "Bitcoin Singularity homepage evidence update",
+      "completed_at": "2026-02-15T00:00:00.000Z"
+    }
+  ]
+}
