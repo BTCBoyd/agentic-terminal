@@ -19,7 +19,7 @@
 **Target Launch:** Tuesday, February 24, 2026 (Edition #1)
 
 **Pre-launch checklist:**
-- [ ] GitHub Personal Access Token (for repo metrics)
+- [x] GitHub Personal Access Token (for repo metrics) ✅ **RECEIVED 2026-02-18**
 - [ ] Etherscan API key (for ERC-8004 data)
 - [ ] Substack account setup
 - [ ] First week of data collected (Feb 19-24)
