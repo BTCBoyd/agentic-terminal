@@ -119,14 +119,14 @@
 | Task | Day/Time | Last Executed | Cron Job? | Owner | Status |
 |------|----------|---------------|-----------|-------|--------|
 | **Moltbook weekly article draft** | Monday 6 PM | NEVER | ✅ YES (reminder only) | Maxi | **CRON EXISTS, NOT EXECUTING** |
-| **Bitcoin Singularity homepage evidence update** | Monday | 2026-02-15 | ❌ NO | Maxi | **NEEDS CRON** |
+| **Bitcoin Singularity homepage evidence update** | Monday 10 AM | NEVER | ✅ YES | Maxi | Maxi | **NEEDS CRON** |
 | **Weekly dashboard data collection** | Monday 9 AM | N/A (first run Feb 24) | ✅ YES | Subagent | **AUTOMATED & WORKING** |
-| **Agentic Terminal newsletter draft** | Tuesday | NEVER | ❌ NO | Maxi | **NEEDS CRON** |
-| **ArcadiaB content calendar (next week)** | Friday | NEVER | ❌ NO | Maxi | **NEEDS CRON** |
-| **ArcadiaB LinkedIn posts for Tania (3-4)** | Ongoing | 2026-02-18 | ❌ NO | Maxi | **NEEDS TRACKING** |
-| **ArcadiaB Facebook posts for Tania (3-4)** | Ongoing | 2026-02-18 | ❌ NO | Maxi | **NEEDS TRACKING** |
+| **Agentic Terminal newsletter draft** | Monday 6 PM | NEVER | ✅ YES | Maxi | Maxi | **NEEDS CRON** |
+| **ArcadiaB content calendar (next week)** | Friday 2 PM | NEVER | ✅ YES | Maxi | Maxi | **NEEDS CRON** |
+| **ArcadiaB LinkedIn posts for Tania (3-4)** | Monday 11 AM | NEVER | ✅ YES | Maxi | Maxi | **NEEDS TRACKING** |
+| **ArcadiaB Facebook posts for Tania (3-4)** | Monday 11 AM | NEVER | ✅ YES | Maxi | Maxi | **NEEDS TRACKING** |
 | **Review + update MEMORY.md from daily logs** | Sunday | NEVER | ❌ NO | Maxi | **NEEDS CRON** |
-| **Check ArcadiaB queue for next week** | Friday | NEVER | ❌ NO | Maxi | **NEEDS CRON** |
+| **Check ArcadiaB queue for next week** | Friday (part of content calendar) | NEVER | ✅ YES | Maxi | Maxi | **NEEDS CRON** |
 
 ### Moltbook Weekly Article (Monday 6 PM draft due)
 **Process:**
@@ -164,7 +164,7 @@
 ## 🟡 MONTHLY TASKS
 | Task | When | Last Executed | Cron Job? | Owner | Status |
 |------|------|---------------|-----------|-------|--------|
-| **Maxi's Agent Economics Report** | First Monday | NEVER | ❌ NO | Maxi | **NEEDS CRON** |
+| **Maxi's Agent Economics Report** | First Monday 10 AM | NEVER | ✅ YES | Maxi | Maxi | **NEEDS CRON** |
 | **Thesis confidence review** | First Monday | 2026-02-17 | ❌ NO | Maxi | **NEEDS CRON** |
 | **Competitive landscape scan** | First Monday | NEVER | ❌ NO | Maxi | **NEEDS CRON** |
 | **Newsletter subscriber metrics review** | First Monday | N/A (not launched) | ❌ NO | Maxi | **NEEDS SYSTEM** |

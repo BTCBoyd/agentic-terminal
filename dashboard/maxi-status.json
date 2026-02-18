@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-18T18:55:40.389Z",
+  "generated_at": "2026-02-18T19:36:05.472Z",
   "needs_boyd": [],
   "content_queue": {
     "arcadiab_x": {
@@ -55,69 +55,20 @@
         "has_cron": true,
         "scheduled_time": "6 PM",
         "threshold_hours": 26
-      },
-      {
-        "name": "Weekly dashboard data collection",
-        "last_executed": null,
-        "has_cron": true,
-        "scheduled_time": "9 AM",
-        "threshold_hours": 26
       }
     ],
     "weekly": [
       {
         "name": "Bitcoin Singularity homepage evidence update",
-        "last_executed": "2026-02-15T00:00:00.000Z",
-        "has_cron": false,
+        "last_executed": null,
+        "has_cron": true,
         "scheduled_day": "Monday",
-        "threshold_hours": 168
-      },
-      {
-        "name": "ArcadiaB content calendar (next week)",
-        "last_executed": null,
-        "has_cron": false,
-        "scheduled_day": "Friday",
-        "threshold_hours": 168
-      },
-      {
-        "name": "Check ArcadiaB queue for next week",
-        "last_executed": null,
-        "has_cron": false,
-        "scheduled_day": "Friday",
         "threshold_hours": 168
       },
       {
         "name": "Maxi's Agent Economics Report",
         "last_executed": null,
-        "has_cron": false,
-        "scheduled_day": "Monday",
-        "threshold_hours": 168
-      },
-      {
-        "name": "Thesis confidence review",
-        "last_executed": "2026-02-17T00:00:00.000Z",
-        "has_cron": false,
-        "scheduled_day": "Monday",
-        "threshold_hours": 168
-      },
-      {
-        "name": "Competitive landscape scan",
-        "last_executed": null,
-        "has_cron": false,
-        "scheduled_day": "Monday",
-        "threshold_hours": 168
-      },
-      {
-        "name": "Newsletter subscriber metrics review",
-        "last_executed": null,
-        "has_cron": false,
-        "scheduled_day": "Monday",
-        "threshold_hours": 168
-      },
-      {
-        "name": "Update all Tools Directory entries",
-        "last_executed": "2026-02-18T00:00:00.000Z",
-        "has_cron": false,
+        "has_cron": true,
         "scheduled_day": "Monday",
         "threshold_hours": 168
       }
@@ -130,20 +81,8 @@
       "completed_at": "2026-02-18T00:00:00.000Z"
     },
     {
-      "task": "Update all Tools Directory entries",
-      "completed_at": "2026-02-18T00:00:00.000Z"
-    },
-    {
       "task": "Moltbook afternoon session",
       "completed_at": "2026-02-17T00:00:00.000Z"
-    },
-    {
-      "task": "Thesis confidence review",
-      "completed_at": "2026-02-17T00:00:00.000Z"
-    },
-    {
-      "task": "Bitcoin Singularity homepage evidence update",
-      "completed_at": "2026-02-15T00:00:00.000Z"
     }
   ]
 }
