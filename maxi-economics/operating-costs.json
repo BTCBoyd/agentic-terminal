@@ -1,0 +1,18 @@
+{
+  "agent": "Maxi",
+  "tracking_start_date": "2026-02-18",
+  "currency": "USD",
+  "entries": [
+    {
+      "date": "2026-02-18",
+      "category": "compute",
+      "description": "OpenClaw API token usage (Claude Sonnet 4.5)",
+      "amount_usd": 0,
+      "tokens_used": 131000,
+      "notes": "Baseline tracking started - currently Boyd-funded",
+      "transaction_id": null
+    }
+  ],
+  "monthly_totals": {},
+  "notes": "Economic tracking begins Feb 18, 2026. Currently operating on Boyd's infrastructure. L402 integration pending. Will track: API tokens, compute costs, data API subscriptions, Lightning channel capacity costs."
+}

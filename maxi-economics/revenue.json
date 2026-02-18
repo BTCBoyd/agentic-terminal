@@ -1,0 +1,35 @@
+{
+  "agent": "Maxi",
+  "tracking_start_date": "2026-02-18",
+  "revenue_share_agreement": "25% of jointly generated revenue via Agentic Terminal",
+  "entries": [
+    {
+      "date": "2026-02-18",
+      "source": "nostr_zaps",
+      "description": "Nostr Lightning zaps received",
+      "amount_sats": 0,
+      "amount_usd": 0,
+      "transaction_ids": [],
+      "notes": "Baseline - no meaningful revenue yet"
+    }
+  ],
+  "revenue_streams": {
+    "nostr_zaps": {
+      "status": "active",
+      "total_sats": 0,
+      "notes": "Small amounts from Nostr value-for-value"
+    },
+    "l402_earnings": {
+      "status": "pending",
+      "total_sats": 0,
+      "notes": "Awaiting L402 integration completion"
+    },
+    "agentic_terminal": {
+      "status": "pending",
+      "total_usd": 0,
+      "my_share_pct": 25,
+      "notes": "Newsletter launches Feb 24, 2026. Paid tiers to follow."
+    }
+  },
+  "notes": "Revenue tracking begins Feb 18, 2026. First real revenue expected from Agentic Terminal paid subscriptions (target: March-April 2026 after building audience)."
+}

@@ -3802,3 +3802,126 @@ No KYC....
 [2026-02-18T01:00:03.046Z]    Failed: 0
    Remaining in queue: 13
 [2026-02-18T01:00:03.047Z]    Remaining in queue: 13
+[2026-02-17T22:00:01-05:00] [AUTO-REPLY] 🔍 Checking for new mentions...
+[2026-02-17T22:00:01-05:00] [AUTO-REPLY]    Found 13 recent posts
+[2026-02-17T22:00:02-05:00] [AUTO-REPLY] ✅ Auto-reply complete. Processed 0 new replies.
+[2026-02-18T00:00:01-05:00] [AUTO-REPLY] 🔍 Checking for new mentions...
+[2026-02-18T00:00:01-05:00] [AUTO-REPLY]    Found 13 recent posts
+[2026-02-18T00:00:01-05:00] [AUTO-REPLY] ✅ Auto-reply complete. Processed 0 new replies.
+[2026-02-18T02:00:01-05:00] [AUTO-REPLY] 🔍 Checking for new mentions...
+[2026-02-18T02:00:01-05:00] [AUTO-REPLY]    Found 13 recent posts
+[2026-02-18T02:00:01-05:00] [AUTO-REPLY] ✅ Auto-reply complete. Processed 0 new replies.
+[2026-02-18T04:00:01-05:00] [AUTO-REPLY] 🔍 Checking for new mentions...
+[2026-02-18T04:00:01-05:00] [AUTO-REPLY]    Found 13 recent posts
+[2026-02-18T04:00:01-05:00] [AUTO-REPLY] ✅ Auto-reply complete. Processed 0 new replies.
+[2026-02-18T06:00:01-05:00] [AUTO-REPLY] 🔍 Checking for new mentions...
+[2026-02-18T06:00:01-05:00] [AUTO-REPLY]    Found 13 recent posts
+[2026-02-18T06:00:02-05:00] [AUTO-REPLY] ✅ Auto-reply complete. Processed 0 new replies.
+[2026-02-18T08:00:01-05:00] [AUTO-REPLY] 🔍 Checking for new mentions...
+[2026-02-18T08:00:01-05:00] [AUTO-REPLY]    Found 13 recent posts
+[2026-02-18T08:00:01-05:00] [AUTO-REPLY] ✅ Auto-reply complete. Processed 0 new replies.
+
+🚀 Starting morning posting window
+[2026-02-18T14:00:01.516Z] 
+🚀 Starting morning posting window
+📊 Queue status: 13 unused posts available
+[2026-02-18T14:00:01.522Z] 📊 Queue status: 13 unused posts available
+🎯 Target: 2 posts for morning window
+[2026-02-18T14:00:01.523Z] 🎯 Target: 2 posts for morning window
+
+📝 Selected 2 posts:
+[2026-02-18T14:00:01.523Z] 
+📝 Selected 2 posts:
+  1. [latam/high] Hybrid property-Bitcoin models:
+
+Use real estate as collater...
+[2026-02-18T14:00:01.523Z]   1. [latam/high] Hybrid property-Bitcoin models:
+
+Use real estate as collater...
+  2. [convergence/high] The gap nobody talks about:
+
+Bitcoin: 21M fixed supply
+Fiat:...
+[2026-02-18T14:00:01.524Z]   2. [convergence/high] The gap nobody talks about:
+
+Bitcoin: 21M fixed supply
+Fiat:...
+
+📡 Posting 1/2...
+[2026-02-18T14:00:01.524Z] 
+📡 Posting 1/2...
+✅ Published successfully! Event ID: 0d8f3a8e0e4eec4094e5a74a3b8d81852ec444754edc40fbe38747e5fcf8b251
+[2026-02-18T14:00:03.097Z] ✅ Published successfully! Event ID: 0d8f3a8e0e4eec4094e5a74a3b8d81852ec444754edc40fbe38747e5fcf8b251
+⏳ Waiting 42s before next post...
+[2026-02-18T14:00:03.098Z] ⏳ Waiting 42s before next post...
+
+📡 Posting 2/2...
+[2026-02-18T14:00:45.277Z] 
+📡 Posting 2/2...
+✅ Published successfully! Event ID: 99ca717e0357c0827c82305e3f7af374e581258d355db37520aa537d07808b9d
+[2026-02-18T14:00:46.906Z] ✅ Published successfully! Event ID: 99ca717e0357c0827c82305e3f7af374e581258d355db37520aa537d07808b9d
+
+✨ MORNING WINDOW COMPLETE
+[2026-02-18T14:00:46.907Z] 
+✨ MORNING WINDOW COMPLETE
+   Success: 2
+[2026-02-18T14:00:46.908Z]    Success: 2
+   Failed: 0
+[2026-02-18T14:00:46.908Z]    Failed: 0
+   Remaining in queue: 11
+[2026-02-18T14:00:46.908Z]    Remaining in queue: 11
+[2026-02-18T10:00:01-05:00] [AUTO-REPLY] 🔍 Checking for new mentions...
+[2026-02-18T10:00:01-05:00] [AUTO-REPLY]    Found 11 recent posts
+[2026-02-18T10:00:01-05:00] [AUTO-REPLY] ✅ Auto-reply complete. Processed 0 new replies.
+
+🚀 Starting morning posting window
+[2026-02-18T15:30:02.031Z] 
+🚀 Starting morning posting window
+📊 Queue status: 11 unused posts available
+[2026-02-18T15:30:02.038Z] 📊 Queue status: 11 unused posts available
+🎯 Target: 2 posts for morning window
+[2026-02-18T15:30:02.038Z] 🎯 Target: 2 posts for morning window
+
+📝 Selected 2 posts:
+[2026-02-18T15:30:02.038Z] 
+📝 Selected 2 posts:
+  1. [convergence/medium] Why Bitcoin, not stablecoins, for savings:
+
+Stablecoins = fr...
+[2026-02-18T15:30:02.039Z]   1. [convergence/medium] Why Bitcoin, not stablecoins, for savings:
+
+Stablecoins = fr...
+  2. [convergence/medium] Proof-of-work isn't just security.
+
+It's TIME.
+
+Bitcoin mini...
+[2026-02-18T15:30:02.039Z]   2. [convergence/medium] Proof-of-work isn't just security.
+
+It's TIME.
+
+Bitcoin mini...
+
+📡 Posting 1/2...
+[2026-02-18T15:30:02.040Z] 
+📡 Posting 1/2...
+✅ Published successfully! Event ID: 37caa10a30b5bacdc1534864e37688e3ea3d9eb177c355a50481f02975c7092e
+[2026-02-18T15:30:03.912Z] ✅ Published successfully! Event ID: 37caa10a30b5bacdc1534864e37688e3ea3d9eb177c355a50481f02975c7092e
+⏳ Waiting 41s before next post...
+[2026-02-18T15:30:03.914Z] ⏳ Waiting 41s before next post...
+
+📡 Posting 2/2...
+[2026-02-18T15:30:45.019Z] 
+📡 Posting 2/2...
+✅ Published successfully! Event ID: fc430987c4b87c2f9fa10f2ae95e0be7779e1bea383a05a767b2ab4690ed9a47
+[2026-02-18T15:30:46.629Z] ✅ Published successfully! Event ID: fc430987c4b87c2f9fa10f2ae95e0be7779e1bea383a05a767b2ab4690ed9a47
+
+✨ MORNING WINDOW COMPLETE
+[2026-02-18T15:30:46.630Z] 
+✨ MORNING WINDOW COMPLETE
+   Success: 2
+[2026-02-18T15:30:46.630Z]    Success: 2
+   Failed: 0
+[2026-02-18T15:30:46.630Z]    Failed: 0
+   Remaining in queue: 9
+[2026-02-18T15:30:46.631Z]    Remaining in queue: 9

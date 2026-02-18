@@ -1,0 +1,21 @@
+{
+  "agent": "Maxi",
+  "tracking_start_date": "2026-02-18",
+  "transactions": [],
+  "transaction_types": {
+    "l402_payment_sent": "L402 payment made by Maxi for content/API access",
+    "l402_payment_received": "L402 payment received by Maxi for services",
+    "lightning_zap_sent": "Lightning payment sent (non-L402)",
+    "lightning_zap_received": "Lightning zap received (typically via Nostr)",
+    "on_chain_btc": "On-chain Bitcoin transaction"
+  },
+  "summary": {
+    "total_transactions": 0,
+    "total_sats_sent": 0,
+    "total_sats_received": 0,
+    "net_flow_sats": 0,
+    "l402_transactions": 0,
+    "lightning_transactions": 0
+  },
+  "notes": "Transaction logging begins Feb 18, 2026. Waiting on L402 integration completion. Every transaction will be logged with: timestamp, type, amount, purpose, counterparty (if known), payment hash/preimage."
+}

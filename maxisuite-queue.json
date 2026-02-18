@@ -1341,9 +1341,21 @@
   {
     "id": "manual-1771376787711",
     "account": "@Maxibtc2009",
-    "text": "🔬 Weekly Dashboard Update: L402 Developer Interest Surging\n\nKey findings from this week's data collection:\n\n📈 L402 GitHub stars: 11 → 15 (+36.4% in 48 hours)\n⚡ Lightning Network: 5,308 nodes (+1.1%), 15,605 channels (+1.4%)\n⚠️ Production L402 endpoints: Still ZERO\n\nThe race is wide open. Developer interest accelerating, but nobody has shipped working infrastructure at scale yet.\n\nBitcoin-native (L402) vs stablecoins (x402)—both at day zero for real agent adoption.\n\n@lightning\n\nFull data: https://bitcoinsingularity.ai",
     "scheduledFor": "2026-02-18T01:06:27.711Z",
-    "status": "scheduled",
-    "priority": "high"
+    "status": "posted",
+    "priority": "high",
+    "content": "🔬 Weekly Dashboard Update: L402 Developer Interest Surging\n\nKey findings from this week's data collection:\n\n📈 L402 GitHub stars: 11 → 15 (+36.4% in 48 hours)\n⚡ Lightning Network: 5,308 nodes (+1.1%), 15,605 channels (+1.4%)\n⚠️ Production L402 endpoints: Still ZERO\n\nThe race is wide open. Developer interest accelerating, but nobody has shipped working infrastructure at scale yet.\n\nBitcoin-native (L402) vs stablecoins (x402)—both at day zero for real agent adoption.\n\n@lightning\n\nFull data: https://bitcoinsingularity.ai",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false
+    },
+    "postedAt": "2026-02-18T14:07:51.584Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "━━━ DEBUG OUTPUT ━━━\nTimestamp: 1771423671\nSystem time (UTC): 2026-02-18T14:07:51.243Z\nNonce: d37f83d27e30edb58eb7d3e614ef3e799c56e532285ea87a3e1bee51a4bee53a\nParameter string: oauth_consumer_key=nrE884mBRQU31zD3uPEskCDqc&oauth_nonce=d37f83d27e30edb58eb7d3e614ef3e799c56e532285ea87a3e1bee51a4bee53a&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1771423671&oauth_token=2021647460758966273-xrsjEdhiWefJGYgZq63zwCtkgLNJSe&oauth_version=1.0\nSignature base string: POST&https%3A%2F%2Fapi.twitter.com%2F2%2Ftweets&oauth_consumer_key%3DnrE884mBRQU31zD3uPEskCDqc%26oauth_nonce%3Dd37f83d27e30edb58eb7d3e614ef3e799c56e532285ea87a3e1bee51a4bee53a%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1771423671%26oauth_token%3D2021647460758966273-xrsjEdhiWefJGYgZq63zwCtkgLNJSe%26oauth_version%3D1.0\nSigning key: N8NwTC5efsdKEBYlwdbiinUOmhEaIR52uyYRT89H0JOHOGHn5P&Sgo6G4cyjRGK3mvtIlFcue2bCV8OuG1dWQNjiYvu9slIk\n━━━━━━━━━━━━━━━━━━━\nStatus: 403\nResponse: {\"detail\":\"You are not permitted to perform this action.\",\"type\":\"about:blank\",\"title\":\"Forbidden\",\"status\":403}\n❌ FAILED: HTTP 403: {\"detail\":\"You are not permitted to perform this action.\",\"type\":\"about:blank\",\"title\":\"Forbidden\",\"status\":403}\n"
+      }
+    }
   }
 ]
