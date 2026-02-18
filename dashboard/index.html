@@ -210,14 +210,23 @@ async function hashKey(key) {
 
 async function authenticate() {
     const input = document.getElementById('auth-input').value;
-    const hash = await hashKey(input);
-    if (hash === ACCESS_KEY_HASH) {
-        document.getElementById('auth-screen').classList.add('hidden');
-        document.getElementById('dashboard').classList.add('visible');
-        sessionStorage.setItem('maxi-dash-auth', 'true');
-        loadDashboard();
-    } else {
-        document.getElementById('auth-error').style.display = 'block';
+    console.log('Authenticating...');
+    try {
+        const hash = await hashKey(input);
+        console.log('Hash generated:', hash.substring(0, 10) + '...');
+        if (hash === ACCESS_KEY_HASH) {
+            console.log('Auth successful, loading dashboard...');
+            document.getElementById('auth-screen').classList.add('hidden');
+            document.getElementById('dashboard').classList.add('visible');
+            sessionStorage.setItem('maxi-dash-auth', 'true');
+            loadDashboard();
+        } else {
+            console.log('Invalid password');
+            document.getElementById('auth-error').style.display = 'block';
+        }
+    } catch (err) {
+        console.error('Auth error:', err);
+        alert('Authentication error: ' + err.message);
     }
 }
 
@@ -245,30 +254,44 @@ document.getElementById('auth-input').addEventListener('keydown', (e) => {
 });
 
 function loadDashboard() {
+    console.log('Loading dashboard data from:', STATUS_JSON_URL);
     fetch(STATUS_JSON_URL)
-        .then(r => r.json())
+        .then(r => {
+            console.log('Fetch response status:', r.status);
+            if (!r.ok) throw new Error('HTTP ' + r.status);
+            return r.json();
+        })
         .then(data => {
+            console.log('Data loaded successfully:', Object.keys(data));
             renderDashboard(data);
             setInterval(() => {
-                fetch(STATUS_JSON_URL).then(r => r.json()).then(renderDashboard);
+                fetch(STATUS_JSON_URL).then(r => r.json()).then(renderDashboard).catch(console.error);
             }, REFRESH_INTERVAL);
         })
         .catch(err => {
             console.error('Failed to load dashboard data:', err);
-            document.getElementById('dashboard').innerHTML = '<p style="color:var(--red)">Failed to load dashboard data. Check console.</p>';
+            const errMsg = 'Failed to load dashboard data: ' + err.message + '<br>Check browser console for details.';
+            document.getElementById('dashboard').innerHTML = '<div style="color:var(--red);padding:20px;">' + errMsg + '</div>';
         });
 }
 
 function renderDashboard(data) {
-    const now = new Date();
-    document.getElementById('last-updated').textContent =
-        `Last data update: ${formatDateTime(data.generated_at)}`;
-    renderNeedsBoyd(data.needs_boyd);
-    renderAlerts(data, now);
-    renderSummary(data, now);
-    renderQueueSection(data.content_queue);
-    renderTaskSections(data.tasks, now);
-    renderActivityLog(data.activity_log);
+    console.log('Rendering dashboard...');
+    try {
+        const now = new Date();
+        document.getElementById('last-updated').textContent =
+            `Last data update: ${formatDateTime(data.generated_at)}`;
+        renderNeedsBoyd(data.needs_boyd);
+        renderAlerts(data, now);
+        renderSummary(data, now);
+        renderQueueSection(data.content_queue);
+        renderTaskSections(data.tasks, now);
+        renderActivityLog(data.activity_log);
+        console.log('Dashboard rendered successfully');
+    } catch (err) {
+        console.error('Render error:', err);
+        alert('Dashboard render error: ' + err.message);
+    }
 }
 
 function renderNeedsBoyd(items) {
