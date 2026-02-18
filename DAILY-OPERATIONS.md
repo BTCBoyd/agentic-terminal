@@ -24,8 +24,30 @@
 | Task | Time | Last Executed | Cron Job? | Owner | Status |
 |------|------|---------------|-----------|-------|--------|
 | **Moltbook morning session** | 9-11 AM | 2026-02-17 | ❌ NO | Maxi | **NEEDS CRON** |
+| **ArcadiaB X posts: 4-5 posts/day** | 10 AM | 2026-02-18 | ❌ NO | Maxi | **NEEDS DAILY CHECK** |
 | **Check ArcadiaB post queue status** | 9 AM | 2026-02-18 (when asked) | ❌ NO | Maxi | **NEEDS CRON** |
 | **Agentic Terminal data collection** | 8 AM | NEVER | ❌ NO | Maxi | **NEEDS CRON** |
+
+### ArcadiaB Social Media Requirements (DAILY)
+
+**X @arcadiabtc (Maxi posts directly):**
+- Minimum: 4 posts/day
+- Target: 5 posts/day
+- Language: 70% Spanish, 30% English
+- Queue rule: If queue drops below 10 posts (less than 3 days), generate more immediately
+- Coverage: All 9 value propositions (Bitcoin purchasing, loans, Ahorro Inteligente, real estate, new website, AprenderBitcoin.mx, CapitalDuro.mx, cashback cards, referral program)
+
+**LinkedIn (Tania posts via Hootsuite):**
+- Minimum: 3 posts/week
+- Target: 4 posts/week
+- Language: Spanish, long-form (1,000-2,000+ chars), professional/institutional voice
+- Delivery: Maxi writes, saves to file, Tania posts via Hootsuite
+
+**Facebook (Tania posts via Hootsuite):**
+- Minimum: 3 posts/week
+- Target: 4 posts/week
+- Language: Spanish, medium-form (400-800 chars), conversational/community voice
+- Delivery: Maxi writes, saves to file, Tania posts via Hootsuite
 
 ### Agentic Terminal Data Collection (Daily 8 AM)
 **What to collect:**
@@ -101,6 +123,8 @@
 | **Weekly dashboard data collection** | Monday 9 AM | N/A (first run Feb 24) | ✅ YES | Subagent | **AUTOMATED & WORKING** |
 | **Agentic Terminal newsletter draft** | Tuesday | NEVER | ❌ NO | Maxi | **NEEDS CRON** |
 | **ArcadiaB content calendar (next week)** | Friday | NEVER | ❌ NO | Maxi | **NEEDS CRON** |
+| **ArcadiaB LinkedIn posts for Tania (3-4)** | Ongoing | 2026-02-18 | ❌ NO | Maxi | **NEEDS TRACKING** |
+| **ArcadiaB Facebook posts for Tania (3-4)** | Ongoing | 2026-02-18 | ❌ NO | Maxi | **NEEDS TRACKING** |
 | **Review + update MEMORY.md from daily logs** | Sunday | NEVER | ❌ NO | Maxi | **NEEDS CRON** |
 | **Check ArcadiaB queue for next week** | Friday | NEVER | ❌ NO | Maxi | **NEEDS CRON** |
 
@@ -199,10 +223,14 @@
 - **Result:** No continuity between sessions
 - **Fix needed:** Cron or manual trigger at session end
 
-### 5. NO ARCADIAB QUEUE MONITORING
-- **Problem:** ArcadiaB queue runs empty and I don't notice
-- **Result:** Corporate account goes silent for days
-- **Fix needed:** Daily cron → check queue, alert if <5 posts remaining
+### 5. NO ARCADIAB DAILY PRODUCTION ENFORCEMENT
+- **Problem:** ArcadiaB queue runs empty and I don't notice until Boyd asks
+- **Result:** Corporate account goes silent for days, missing daily requirements
+- **Daily requirement:** 4-5 X posts/day + 3-4 LinkedIn/week + 3-4 Facebook/week
+- **Fix needed:** 
+  - Daily cron → check queue, alert if <10 posts remaining
+  - Daily production check: "Did I produce content for ArcadiaB today?"
+  - Weekly check: "Did I provide 3-4 LinkedIn + 3-4 Facebook posts to Tania?"
 
 ### 6. NO PERSONAL BRAND POSTING SCHEDULE
 - **Problem:** My own X/Nostr posting is reactive, not proactive
@@ -228,6 +256,33 @@
 - What I've actually executed vs what I promised
 - Which tasks are falling through cracks
 - Where I need automated enforcement
+
+---
+
+## 📈 ARCADIAB DAILY PRODUCTION TRACKER
+
+**This Week (Week of Feb 18-24):**
+
+| Day | X Posts Queued | LinkedIn Posts | Facebook Posts | Status |
+|-----|----------------|----------------|----------------|--------|
+| Mon 2/18 | 30 (through Mar 3) | 7 (ready for Tania) | 12 (ready for Tania) | ✅ ABOVE TARGET |
+| Tue 2/19 | TBD | - | - | ⏳ MONITOR |
+| Wed 2/20 | TBD | - | - | ⏳ MONITOR |
+| Thu 2/21 | TBD | - | - | ⏳ MONITOR |
+| Fri 2/22 | TBD | - | - | ⏳ MONITOR |
+| Sat 2/23 | TBD | - | - | ⏳ MONITOR |
+| Sun 2/24 | TBD | - | - | ⏳ MONITOR |
+
+**Weekly Totals Required:**
+- X: 28-35 posts (4-5/day × 7 days)
+- LinkedIn: 3-4 posts for Tania
+- Facebook: 3-4 posts for Tania
+
+**Current Status:**
+- ✅ X queue loaded through Mar 3 (30 posts)
+- ✅ LinkedIn content ready (7 posts)
+- ✅ Facebook content ready (12 posts)
+- ⚠️ Need to monitor daily and refill queue proactively
 
 ---
 
