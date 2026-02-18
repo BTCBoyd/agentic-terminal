@@ -196,25 +196,16 @@
 </div>
 
 <script>
-const ACCESS_KEY_HASH = "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3";
+// Plaintext auth (OK for local network, not exposed to internet)
+const ACCESS_KEY = "123";
 const STATUS_JSON_URL = "./maxi-status.json";
 const REFRESH_INTERVAL = 300000;
 
-async function hashKey(key) {
-    const encoder = new TextEncoder();
-    const data = encoder.encode(key);
-    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-    const hashArray = Array.from(new Uint8Array(hashBuffer));
-    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-}
-
-async function authenticate() {
+function authenticate() {
     const input = document.getElementById('auth-input').value;
     console.log('Authenticating...');
     try {
-        const hash = await hashKey(input);
-        console.log('Hash generated:', hash.substring(0, 10) + '...');
-        if (hash === ACCESS_KEY_HASH) {
+        if (input === ACCESS_KEY) {
             console.log('Auth successful, loading dashboard...');
             document.getElementById('auth-screen').classList.add('hidden');
             document.getElementById('dashboard').classList.add('visible');
@@ -230,17 +221,14 @@ async function authenticate() {
     }
 }
 
-async function checkUrlAuth() {
+function checkUrlAuth() {
     const params = new URLSearchParams(window.location.search);
     const key = params.get('key');
-    if (key) {
-        const hash = await hashKey(key);
-        if (hash === ACCESS_KEY_HASH) {
-            document.getElementById('auth-screen').classList.add('hidden');
-            document.getElementById('dashboard').classList.add('visible');
-            loadDashboard();
-            return;
-        }
+    if (key && key === ACCESS_KEY) {
+        document.getElementById('auth-screen').classList.add('hidden');
+        document.getElementById('dashboard').classList.add('visible');
+        loadDashboard();
+        return;
     }
     if (sessionStorage.getItem('maxi-dash-auth') === 'true') {
         document.getElementById('auth-screen').classList.add('hidden');
