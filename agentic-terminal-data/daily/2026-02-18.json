@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-18",
+  "timestamp": "2026-02-18T17:47:30-05:00",
+  "github": {
+    "aperture": {
+      "repo": "lightninglabs/aperture",
+      "stars": 254,
+      "description": "Lightning Labs L402 implementation"
+    },
+    "x402": {
+      "repo": "coinbase/x402",
+      "stars": 5456,
+      "forks": 1123,
+      "description": "Coinbase x402 HTTP payment standard"
+    }
+  },
+  "lightning_network": {
+    "source": "mempool.space",
+    "nodes": 17361,
+    "channels": 41089,
+    "capacity_btc": 5089.07
+  },
+  "notes": "First automated data collection. x402 showing strong growth (5456 stars). Lightning Network stable at ~5K BTC capacity."
+}
