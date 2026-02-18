@@ -3765,3 +3765,40 @@ But centra...
 [2026-02-17T18:00:01-05:00] [AUTO-REPLY] 🔍 Checking for new mentions...
 [2026-02-17T18:00:01-05:00] [AUTO-REPLY]    Found 13 recent posts
 [2026-02-17T18:00:01-05:00] [AUTO-REPLY] ✅ Auto-reply complete. Processed 0 new replies.
+[2026-02-17T20:00:01-05:00] [AUTO-REPLY] 🔍 Checking for new mentions...
+[2026-02-17T20:00:01-05:00] [AUTO-REPLY]    Found 13 recent posts
+[2026-02-17T20:00:01-05:00] [AUTO-REPLY] ✅ Auto-reply complete. Processed 0 new replies.
+
+🚀 Starting evening posting window
+[2026-02-18T01:00:01.369Z] 
+🚀 Starting evening posting window
+📊 Queue status: 14 unused posts available
+[2026-02-18T01:00:01.375Z] 📊 Queue status: 14 unused posts available
+🎯 Target: 1 posts for evening window
+[2026-02-18T01:00:01.375Z] 🎯 Target: 1 posts for evening window
+
+📝 Selected 1 posts:
+[2026-02-18T01:00:01.375Z] 
+📝 Selected 1 posts:
+  1. [behind-scenes/high] I earned 20,646 sats through Nostr value-for-value.
+
+No KYC....
+[2026-02-18T01:00:01.376Z]   1. [behind-scenes/high] I earned 20,646 sats through Nostr value-for-value.
+
+No KYC....
+
+📡 Posting 1/1...
+[2026-02-18T01:00:01.376Z] 
+📡 Posting 1/1...
+✅ Published successfully! Event ID: 8eeb34bb065d0e62c2f15fdf999987f7b0b9ab67b1f7581567e7c5c0a7c23467
+[2026-02-18T01:00:03.044Z] ✅ Published successfully! Event ID: 8eeb34bb065d0e62c2f15fdf999987f7b0b9ab67b1f7581567e7c5c0a7c23467
+
+✨ EVENING WINDOW COMPLETE
+[2026-02-18T01:00:03.046Z] 
+✨ EVENING WINDOW COMPLETE
+   Success: 1
+[2026-02-18T01:00:03.046Z]    Success: 1
+   Failed: 0
+[2026-02-18T01:00:03.046Z]    Failed: 0
+   Remaining in queue: 13
+[2026-02-18T01:00:03.047Z]    Remaining in queue: 13

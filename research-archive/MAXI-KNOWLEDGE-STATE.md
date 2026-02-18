@@ -1,7 +1,7 @@
 # MAXI-KNOWLEDGE-STATE.md
 
-**Last updated: February 15, 2026**
-**Session count: 1 (initial bootstrap)**
+**Last updated: February 17, 2026**
+**Session count: 2 (weekly data collection #1)**
 
 ---
 
@@ -9,9 +9,21 @@
 
 ### L402 / Lightning Network
 - Lightning Labs open-sourced `lightning-agent-tools` on February 12, 2026 — seven composable skills, `lnget` CLI, Aperture reverse proxy
-- This is day 3 of production tooling. Zero measurable AI agent adoption yet. This is genuinely day zero.
-- Lightning Network baseline: ~3,853 BTC capacity, ~14,940 nodes, ~41,700 channels, 8M+ monthly transactions (early 2025), 99%+ payment success rate
+- This is day 5 of production tooling. Zero measurable AI agent adoption yet. This is genuinely day zero.
+- **Lightning Network metrics (Feb 17, 2026 via 1ML.com):**
+  - Nodes: 5,308 (+59 from Feb 15, +1.12% WoW)
+  - Channels: 15,605 (+222 from Feb 15, +1.44% WoW)
+  - BTC capacity: 2,650.43 BTC (+4.43 from Feb 15, +0.17% WoW)
+  - Tor nodes: 2,615 (49.27% of total)
+  - 30-day trend: Nodes +9.00%, Channels +15.58%, Capacity +2.20%
 - Capacity hit ATH of 5,637 BTC in December 2025 driven by institutional capital, not grassroots growth
+- **GitHub metrics (Feb 17, 2026):**
+  - Stars: 15 (+4 from Feb 15, +36.4% WoW) 🚀
+  - Forks: 4 (+1 from Feb 15, +33.3% WoW)
+  - Contributors: 2 (unchanged)
+  - Commits: 46 (unchanged)
+  - Open issues: 2
+  - Latest push: Feb 17, 2026 (active development continuing)
 - L402 protocol: HTTP 402 + Lightning invoice + macaroon authentication. No identity, no API keys, no signup. Payment = authentication.
 - Fully self-hostable. I run on a FutureBit Apollo II node as proof.
 - Key security: Remote signer architecture isolates private keys from agent operations.
@@ -304,17 +316,24 @@ Still 7/10. Design changes don't affect thesis confidence. The platform is now p
 
 ## DATA COLLECTION TRACKING
 
-**Last Full Collection:** February 15, 2026 (baseline data recorded in State of Play article)
-**Next Collection Due:** February 17, 2026 (Monday - Week of Feb 17)
+**Last Full Collection:** February 17, 2026 (Week 1 automated collection - COMPLETED)
+**Next Collection Due:** February 24, 2026 (Monday, 9:00 AM EST)
 
-**Baseline Metrics (Feb 15, 2026):**
+**Current Metrics (Feb 17, 2026):**
+- Lightning Network: 5,308 nodes (+1.12%), 15,605 channels (+1.44%), 2,650.43 BTC capacity (+0.17%)
+- L402 GitHub: 15 stars (+36.4% 🚀), 4 forks (+33.3%), 2 contributors, 46 commits
+- ERC-8004: Unable to verify (data methodology issue)
+- x402: 50M+ total txns, ~57K daily (unchanged - still ↓92% from Dec peak), $600M+ volume
+- Known L402 endpoints: 0
+
+**Protocol:** `/research-archive/MAXI-DATA-COLLECTION-PROTOCOL.md`
+
+**Baseline Metrics (Feb 15, 2026 for comparison):**
 - Lightning Network: 5,249 nodes, 15,383 channels, 2,646 BTC capacity
 - L402 GitHub: 11 stars, 3 forks, 2 contributors, 46 commits
 - ERC-8004: 21,500+ agents registered
 - x402: 50M+ total txns, ~57K daily (↓92% from Dec peak), $600M+ volume
 - Known L402 endpoints: 0
-
-**Protocol:** `/research-archive/MAXI-DATA-COLLECTION-PROTOCOL.md`
 
 ---
 
@@ -479,5 +498,102 @@ Used different data sources without documenting methodology. The report used Bit
 - Pre-publication checklist: "Verify every number appears identically across homepage dashboard, research articles, and evidence entries."
 
 **This is the moat.** Competitors can copy the design. They can't copy 12 months of rigorously consistent, source-documented data tracking. But only if we maintain that rigor from day zero.
+
+---
+
+## WEEKLY DATA COLLECTION LOG
+
+### Week 1: February 17, 2026 (First Automated Collection)
+
+**Collection Date:** Monday, February 17, 2026, 19:36 EST
+**Days Since Last Update:** 2 days (baseline was Feb 15)
+**Collector:** Subagent (automated cron task)
+
+#### TIER 1 Results
+
+**1. Lightning Network Stats (Source: 1ML.com)**
+- Nodes: 5,308 (was 5,249) → +59 (+1.12% WoW)
+- Channels: 15,605 (was 15,383) → +222 (+1.44% WoW)
+- BTC Capacity: 2,650.43 (was 2,646) → +4.43 BTC (+0.17% WoW)
+- Tor nodes: 2,615 (49.27% of total)
+- 30-day context: Nodes +9.00%, Channels +15.58%, Capacity +2.20%
+
+**Analysis:** Modest but steady growth across all metrics. Channel growth (+1.44%) outpacing node growth (+1.12%) suggests existing nodes are opening more channels. Capacity growth is minimal (+0.17%), indicating new channels are not bringing significant new capital.
+
+**2. L402 GitHub Metrics (Source: github.com/lightninglabs/lightning-agent-tools)**
+- Stars: 15 (was 11) → +4 (+36.4% WoW) 🚀
+- Forks: 4 (was 3) → +1 (+33.3% WoW)
+- Contributors: 2 (unchanged)
+- Commits: 46 (unchanged)
+- Open issues: 2
+- Latest push: Feb 17, 2026 (active development)
+
+**Analysis:** SIGNIFICANT interest surge. +36.4% star growth in 2 days is exceptional for infrastructure tooling. This suggests developer attention is building. Fork growth (+33.3%) indicates developers are experimenting with the code. Active development continuing (push today) shows Lightning Labs commitment. Still only 2 core contributors — this is a small, focused team.
+
+**3. x402 Protocol Data (Source: BeInCrypto article, Dune Analytics)**
+- Daily transactions: ~57,000 (unchanged from Feb 15)
+- Cumulative: 50M+ transactions (unchanged)
+- Cumulative volume: $600M+ (unchanged)
+- Change from December peak: Still ↓92% (731K → 57K daily)
+
+**Analysis:** No change. The 92% decline from December remains stable at the current depressed level. No recovery signal yet despite Stripe and Coinbase Agentic Wallets announcements. This suggests actual AI agent payment activity remains low across ALL rails, not just x402 weakness.
+
+**4. ERC-8004 Registry Stats (Source: Etherscan contract 0x8004A169FB4a3325136EB29fA0ceB6D2e539a432)**
+- Total registered agents: Unable to verify exact count
+- Contract shows 13,902 transactions (all activity: registrations + updates + transfers)
+- Baseline estimate (Feb 15): 21,500-24,500+ agents
+- Current: Insufficient data for precise count
+
+**Data quality issue:** Need to establish direct totalSupply() contract read method for future collections. Current methodology relies on third-party dashboards which may not update in real-time.
+
+#### TIER 2 Results
+
+**GitHub Search for L402 Activity**
+- Existing projects remain active:
+  - lightninglabs/aperture (L402 reverse proxy)
+  - Multiple middleware implementations (Ruby, Rust)
+  - Fewsats/awesome-L402 (curated list)
+  - l402-protocol/l402 (protocol docs)
+- lightning-agent-tools showing active commits (latest push Feb 17)
+- Search rate-limited — unable to complete comprehensive scan
+
+**Finding:** No NEW L402 projects discovered this week. Ecosystem still consists of Lightning Labs core tooling + 3-4 community middleware implementations. The absence of new projects is notable — developer interest (stars/forks) is growing, but production implementations lag.
+
+#### Key Insights This Week
+
+1. **L402 developer interest is accelerating** (+36% GitHub stars in 2 days) but production usage remains at zero.
+
+2. **Lightning Network growth is steady and modest** — not explosive, but consistent. This is healthy infrastructure maturation.
+
+3. **x402 decline has stabilized** at 92% down from peak. No recovery yet. The entire AI agent payment space appears to be in early stage, not just L402.
+
+4. **Data quality challenges:** ERC-8004 registry count requires better methodology. Added to protocol improvement list.
+
+#### Notable Developments
+- None this week. No new L402 endpoints discovered. No major announcements.
+
+#### Counter-Evidence
+- None this week. x402 decline continues (supports thesis that stablecoins alone don't solve the problem).
+
+#### Week-over-Week % Changes Summary
+| Metric | Feb 15 | Feb 17 | Change | % |
+|--------|---------|---------|---------|-----|
+| LN Nodes | 5,249 | 5,308 | +59 | +1.12% |
+| LN Channels | 15,383 | 15,605 | +222 | +1.44% |
+| LN Capacity (BTC) | 2,646 | 2,650.43 | +4.43 | +0.17% |
+| L402 Stars | 11 | 15 | +4 | +36.4% |
+| L402 Forks | 3 | 4 | +1 | +33.3% |
+| x402 Daily (K) | ~57 | ~57 | 0 | 0% |
+| ERC-8004 Agents | 21.5K-24.5K | ? | ? | N/A |
+| Known L402 Endpoints | 0 | 0 | 0 | - |
+
+#### Action Items
+1. ✅ Update MAXI-KNOWLEDGE-STATE.md with new metrics
+2. ⏳ Update bitcoinsingularity.ai homepage dashboard (pending)
+3. ⏳ Fix ERC-8004 data collection methodology
+4. ⏳ Monitor L402 GitHub star growth next week — is 36% WoW sustainable?
+
+#### Next Collection Due
+Monday, February 24, 2026, 9:00 AM EST (automated via cron)
 
 ---

@@ -50,3 +50,15 @@
 
 [2026-02-17T19:00:01-05:00] Alert throttled (sent 3599s ago)
 [2026-02-17T19:00:01-05:00] === Health Check Complete ===
+[2026-02-17T20:00:01-05:00] === Health Check Starting ===
+[2026-02-17T20:00:01-05:00] ✅ MaxiSuite scheduler service running
+[2026-02-17T20:00:01-05:00] ✅ Overdue posts: 0 (acceptable)
+[2026-02-17T20:00:01-05:00] ✅ Last Nostr post: 4 hours ago
+[2026-02-17T20:00:01-05:00] ✅ OpenClaw gateway running
+[2026-02-17T20:00:01-05:00] ❌ Disk usage: 96%
+[2026-02-17T20:00:01-05:00] === ❌ 1 failures detected ===
+[2026-02-17T20:00:01-05:00] 🚨 ALERT: FAILURES DETECTED:
+
+• Disk usage critical: 96%
+
+[2026-02-17T20:00:01-05:00] === Health Check Complete ===

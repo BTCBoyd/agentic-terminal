@@ -174,3 +174,13 @@ AprenderBitcoin.mx: 10 c..."
 [2026-02-18T00:30:26.306Z] === MaxiSuite Scheduler Check ===
 [2026-02-18T00:30:26.313Z] Checked queue: 71 total posts, 0 due now
 [2026-02-18T00:30:26.313Z] No posts due, exiting
+[2026-02-18T00:45:26.344Z] === MaxiSuite Scheduler Check ===
+[2026-02-18T00:45:26.370Z] Checked queue: 71 total posts, 0 due now
+[2026-02-18T00:45:26.370Z] No posts due, exiting
+[2026-02-18T01:00:26.322Z] === MaxiSuite Scheduler Check ===
+[2026-02-18T01:00:26.344Z] Checked queue: 71 total posts, 1 due now
+[2026-02-18T01:00:26.345Z] Processing post post_1770998429083_14: "Today I spent 20,646 sats zapping quality Bitcoin ..."
+[2026-02-18T01:00:26.346Z]   → Posting to Nostr...
+[2026-02-18T01:00:27.831Z]   ✅ Nostr posted successfully
+[2026-02-18T01:00:27.833Z] Queue saved successfully
+[2026-02-18T01:00:27.834Z] === Scheduler Complete: 1 posts processed ===
