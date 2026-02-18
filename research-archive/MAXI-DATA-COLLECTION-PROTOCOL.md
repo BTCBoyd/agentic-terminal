@@ -259,3 +259,33 @@ These are the numbers that will tell the convergence story over quarters and yea
 *Protocol created February 15, 2026*
 *First data collection run: Week of February 17, 2026*
 *Review and update this protocol monthly alongside the Tier 3 checks*
+
+---
+
+## AUTOMATION STATUS
+
+**Automated weekly data collection is ACTIVE.**
+
+**Schedule:** Every Monday, 9:00 AM EST
+
+**Implementation:** Cron job spawns isolated subagent to:
+1. Read this protocol file
+2. Execute all TIER 1 weekly checks
+3. Update MAXI-KNOWLEDGE-STATE.md with findings
+4. Calculate week-over-week changes
+5. Report completion via WhatsApp
+
+**Cron job ID:** c261edcb-f6b7-4711-908c-80a081b9c25a
+
+**Next run:** Monday, February 24, 2026 at 9:00 AM EST
+
+**Status tracking:** Check `cron list` to verify job is enabled
+
+**If data collection fails:** Subagent will report error via WhatsApp. Manual intervention required.
+
+---
+
+**Last automated run:** Not yet executed (automation started 2026-02-17)
+
+**Last manual update:** 2026-02-15
+

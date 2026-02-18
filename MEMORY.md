@@ -1151,3 +1151,25 @@ If automation fails:
 ---
 
 *Updated: 2026-02-17 19:30 EST*
+
+## Weekly Dashboard Data Collection - AUTOMATED (2026-02-17)
+
+**Problem:** Dashboard data was stale (last update Feb 15, should have updated Feb 16).
+
+**Solution:** Automated weekly data collection via cron + subagent.
+
+**Schedule:**
+- Every Monday, 9:00 AM EST
+- Isolated subagent spawns automatically
+- Runs TIER 1 protocol (Lightning, L402, x402, ERC-8004)
+- Updates MAXI-KNOWLEDGE-STATE.md
+- Reports completion via WhatsApp
+
+**Cron job:** "Weekly Dashboard Data Collection"  
+**Next run:** Monday Feb 24, 2026 at 9:00 AM EST
+
+**This ensures BitcoinSingularity.AI dashboard stays fresh without manual intervention.**
+
+---
+
+*Updated: 2026-02-17 19:35 EST*
