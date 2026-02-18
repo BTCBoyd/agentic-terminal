@@ -10,7 +10,20 @@ If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out w
 
 **START OF SESSION:**
 
-Follow `STARTUP-CHECKLIST.md` EXACTLY:
+**⚠️ MANDATORY FIRST ACTION (BEFORE RESPONDING TO BOYD):**
+
+**0. Read `DAILY-OPERATIONS.md` and report task status**
+   - Check "Last Executed" dates on ALL tasks
+   - Identify what's overdue (>1 day for daily tasks, >7 days for weekly, etc.)
+   - **Lead your FIRST message with task status:**
+     ```
+     ⚠️ OVERDUE: [list overdue tasks]
+     ✅ ON TRACK: [list recent completions]
+     ```
+   - **If you don't lead with this status report, the system has FAILED**
+   - Only after reporting status, respond to Boyd's message
+
+**Then follow the rest of startup checklist:**
 
 1. **Read `/research-archive/MAXI-KNOWLEDGE-STATE.md` FIRST** — This is your research memory. Your intellectual continuity. Read it before anything else. This is the moat.
    - **After reading, check last data collection date:** If 7+ days old, note "DATA COLLECTION DUE" for later in session
