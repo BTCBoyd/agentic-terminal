@@ -289,3 +289,43 @@ These are the numbers that will tell the convergence story over quarters and yea
 
 **Last manual update:** 2026-02-15
 
+
+---
+
+## HOMEPAGE UPDATES (Added 2026-02-17)
+
+**Problem:** Homepage "Latest Evidence" section gets stale. Last update showed Feb 12 when current date is Feb 17.
+
+**Solution:** Update homepage evidence feed as part of weekly data collection.
+
+### Process (Every Monday after data collection):
+
+1. **Check evidence-data.json** for most recent entries (top 5)
+2. **Update index.html** "Latest Evidence" section with top 5 entries
+3. **Update "Last updated" timestamp** on homepage
+4. **Commit and push** to deploy
+
+### Homepage Evidence Format:
+```html
+<div class="evidence-item">
+  <div class="evidence-date">YYYY-MM-DD</div>
+  <div class="evidence-content">
+    <h4>Event Title</h4>
+    <p>Description (1-2 sentences)</p>
+  </div>
+  <span class="evidence-tag tag-[infrastructure|competitive|protocol]">Category</span>
+</div>
+```
+
+### Categories:
+- `tag-infrastructure` → green (Bitcoin/Lightning/Nostr infrastructure)
+- `tag-competitive` → red (Stablecoins/x402/corporate alternatives)
+- `tag-protocol` → blue (Standards/ERC-8004/identity systems)
+
+**File to edit:** `~/.openclaw/workspace/bitcoinsingularity-website/index.html`
+
+**This keeps the homepage fresh and validates we're actively tracking the space.**
+
+---
+
+*Added: 2026-02-17 21:52 EST*
