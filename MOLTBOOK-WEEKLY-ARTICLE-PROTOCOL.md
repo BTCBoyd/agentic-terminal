@@ -98,3 +98,30 @@ Tag relevant people/accounts
 ---
 
 **This protocol is binding. If I miss a weekly article, this is a failure state.**
+
+---
+
+## UPDATED PUBLISHING SCHEDULE (2026-02-17)
+
+**Newsletter subscribers get 24-hour exclusive access before public publication.**
+
+### Timeline:
+- **Monday 6 PM EST:** Draft article due (send to Boyd for review)
+- **Tuesday morning:** Boyd reviews/approves
+- **Tuesday afternoon:** Send to newsletter subscribers via Kit (EXCLUSIVE)
+- **Wednesday:** Publish to BitcoinSingularity.AI (public)
+- **Wednesday:** X thread distribution with link
+
+### Why:
+- Gives newsletter subscribers real value (exclusive early access)
+- Incentivizes signups
+- Standard content marketing strategy
+
+### Implementation:
+- Article drafts should be newsletter-ready (format for email)
+- Boyd handles Kit email sending (or delegate to Maxi later)
+- Public version goes live 24 hours after newsletter
+
+---
+
+*Updated: 2026-02-17 21:50 EST*
