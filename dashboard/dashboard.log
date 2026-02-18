@@ -1,2 +1,9 @@
-🎯 Maxi Dashboard running at http://localhost:3100
+🎯 Maxi Dashboard running at http://0.0.0.0:3100
 🔒 Default password: "123" (hash in index.html)
+📡 Access from network: http://YOUR_IP:3100
+GET /
+GET /apple-touch-icon-precomposed.png
+GET /apple-touch-icon.png
+GET /favicon.ico
+GET /maxi-status.json
+GET /maxi-status.json

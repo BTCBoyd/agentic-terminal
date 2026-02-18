@@ -66,41 +66,14 @@ function parseQueue() {
 }
 
 function parseTasks(content) {
-  const daily = [];
-  const weekly = [];
-  const monthly = [];
-  
-  // Parse task tables from DAILY-OPERATIONS.md
-  const taskRegex = /\|\s*\*\*(.*?)\*\*\s*\|\s*(.*?)\s*\|\s*(.*?)\s*\|\s*(.*?)\s*\|\s*(.*?)\s*\|/g;
-  let match;
-  
-  while ((match = taskRegex.exec(content)) !== null) {
-    const [_, name, freq, lastExec, hasCron, owner] = match;
-    
-    if (name === 'Task Name' || !name.trim()) continue; // Skip header
-    
-    const task = {
-      name: name.trim(),
-      last_executed: lastExec.includes('NEVER') ? null : parseLastExecuted(lastExec),
-      has_cron: hasCron.includes('YES')
-    };
-    
-    if (freq.includes('Daily') || freq.includes('9 AM') || freq.includes('PM')) {
-      task.scheduled_time = extractTime(freq);
-      task.threshold_hours = 26;
-      daily.push(task);
-    } else if (freq.includes('Weekly') || freq.includes('Monday') || freq.includes('Friday')) {
-      task.scheduled_day = extractDay(freq);
-      task.threshold_hours = 168;
-      weekly.push(task);
-    } else if (freq.includes('Monthly') || freq.includes('First')) {
-      task.scheduled_day = extractDay(freq);
-      task.threshold_hours = 744;
-      monthly.push(task);
-    }
+  // Read from dedicated task registry instead of parsing complex markdown
+  try {
+    const tasksRegistry = JSON.parse(readFileSync(resolve(WORKSPACE, 'dashboard/tasks-registry.json'), 'utf8'));
+    return tasksRegistry;
+  } catch (err) {
+    console.error('Failed to read tasks-registry.json, using empty:', err);
+    return { daily: [], weekly: [], monthly: [] };
   }
-  
-  return { daily, weekly, monthly };
 }
 
 function parseLastExecuted(str) {

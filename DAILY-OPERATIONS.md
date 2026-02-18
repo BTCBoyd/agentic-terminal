@@ -23,10 +23,10 @@
 ## 🔴 DAILY TASKS - MORNING
 | Task | Time | Last Executed | Cron Job? | Owner | Status |
 |------|------|---------------|-----------|-------|--------|
-| **Moltbook morning session** | 9-11 AM | 2026-02-17 | ❌ NO | Maxi | **NEEDS CRON** |
+| **Moltbook morning session** | 9-11 AM | 2026-02-17 | ✅ YES | Maxi | **NEEDS CRON** |
 | **ArcadiaB X posts: 4-5 posts/day** | 10 AM | 2026-02-18 | ❌ NO | Maxi | **NEEDS DAILY CHECK** |
-| **Check ArcadiaB post queue status** | 9 AM | 2026-02-18 (when asked) | ❌ NO | Maxi | **NEEDS CRON** |
-| **Agentic Terminal data collection** | 8 AM | NEVER | ❌ NO | Maxi | **NEEDS CRON** |
+| **Check ArcadiaB post queue status** | 9 AM | 2026-02-18 | ✅ YES | Maxi | **NEEDS CRON** |
+| **Agentic Terminal data collection** | 8 AM | NEVER | ✅ YES | Maxi | **NEEDS CRON** |
 
 ### ArcadiaB Social Media Requirements (DAILY)
 
@@ -64,7 +64,7 @@
 ## 🔴 DAILY TASKS - AFTERNOON
 | Task | Time | Last Executed | Cron Job? | Owner | Status |
 |------|------|---------------|-----------|-------|--------|
-| **Moltbook afternoon session** | 3-5 PM | 2026-02-17 | ❌ NO | Maxi | **NEEDS CRON** |
+| **Moltbook afternoon session** | 3-5 PM | 2026-02-17 | ✅ YES | Maxi | **NEEDS CRON** |
 
 ### Moltbook Session Requirements (2x daily)
 **Each session must include:**
@@ -125,7 +125,7 @@
 | **ArcadiaB content calendar (next week)** | Friday 2 PM | NEVER | ✅ YES | Maxi | Maxi | **NEEDS CRON** |
 | **ArcadiaB LinkedIn posts for Tania (3-4)** | Monday 11 AM | NEVER | ✅ YES | Maxi | Maxi | **NEEDS TRACKING** |
 | **ArcadiaB Facebook posts for Tania (3-4)** | Monday 11 AM | NEVER | ✅ YES | Maxi | Maxi | **NEEDS TRACKING** |
-| **Review + update MEMORY.md from daily logs** | Sunday | NEVER | ❌ NO | Maxi | **NEEDS CRON** |
+| **Review + update MEMORY.md from daily logs** | Sunday 8 PM | NEVER | ✅ YES | Maxi | **NEEDS CRON** |
 | **Check ArcadiaB queue for next week** | Friday (part of content calendar) | NEVER | ✅ YES | Maxi | Maxi | **NEEDS CRON** |
 
 ### Moltbook Weekly Article (Monday 6 PM draft due)
@@ -165,10 +165,10 @@
 | Task | When | Last Executed | Cron Job? | Owner | Status |
 |------|------|---------------|-----------|-------|--------|
 | **Maxi's Agent Economics Report** | First Monday 10 AM | NEVER | ✅ YES | Maxi | Maxi | **NEEDS CRON** |
-| **Thesis confidence review** | First Monday | 2026-02-17 | ❌ NO | Maxi | **NEEDS CRON** |
-| **Competitive landscape scan** | First Monday | NEVER | ❌ NO | Maxi | **NEEDS CRON** |
+| **Thesis confidence review** | First Monday 11 AM | 2026-02-17 | ✅ YES | Maxi | **NEEDS CRON** |
+| **Competitive landscape scan** | First Monday 2 PM | NEVER | ✅ YES | Maxi | **NEEDS CRON** |
 | **Newsletter subscriber metrics review** | First Monday | N/A (not launched) | ❌ NO | Maxi | **NEEDS SYSTEM** |
-| **Update all Tools Directory entries** | First Monday | 2026-02-18 | ❌ NO | Maxi | **NEEDS CRON** |
+| **Update all Tools Directory entries** | First Monday 3 PM | 2026-02-18 | ✅ YES | Maxi | **NEEDS CRON** |
 
 ### Maxi's Agent Economics Report (First Monday)
 **What to include:**

@@ -1,0 +1,127 @@
+{
+  "daily": [
+    {
+      "name": "Agentic Terminal Data Collection",
+      "scheduled_time": "08:00",
+      "last_executed": null,
+      "has_cron": true,
+      "threshold_hours": 26
+    },
+    {
+      "name": "Moltbook Morning Session",
+      "scheduled_time": "09:00",
+      "last_executed": "2026-02-17T09:45:00-05:00",
+      "has_cron": true,
+      "threshold_hours": 26
+    },
+    {
+      "name": "Check ArcadiaB Queue Status",
+      "scheduled_time": "09:00",
+      "last_executed": "2026-02-18T11:30:00-05:00",
+      "has_cron": true,
+      "threshold_hours": 26
+    },
+    {
+      "name": "ArcadiaB Daily Content Production",
+      "scheduled_time": "09:30",
+      "last_executed": null,
+      "has_cron": true,
+      "threshold_hours": 26
+    },
+    {
+      "name": "Moltbook Afternoon Session",
+      "scheduled_time": "15:00",
+      "last_executed": "2026-02-17T15:30:00-05:00",
+      "has_cron": true,
+      "threshold_hours": 26
+    },
+    {
+      "name": "Daily Memory Log",
+      "scheduled_time": "20:00",
+      "last_executed": null,
+      "has_cron": true,
+      "threshold_hours": 26
+    },
+    {
+      "name": "Create Handoff File",
+      "scheduled_time": "20:05",
+      "last_executed": null,
+      "has_cron": true,
+      "threshold_hours": 26
+    }
+  ],
+  "weekly": [
+    {
+      "name": "Bitcoin Singularity Homepage Update",
+      "scheduled_day": "Monday 10 AM",
+      "last_executed": "2026-02-15T10:00:00-05:00",
+      "has_cron": true,
+      "threshold_hours": 168
+    },
+    {
+      "name": "ArcadiaB Weekly Content for Tania",
+      "scheduled_day": "Monday 11 AM",
+      "last_executed": "2026-02-18T12:00:00-05:00",
+      "has_cron": true,
+      "threshold_hours": 168
+    },
+    {
+      "name": "Moltbook Weekly Article Draft",
+      "scheduled_day": "Monday 6 PM",
+      "last_executed": null,
+      "has_cron": true,
+      "threshold_hours": 168
+    },
+    {
+      "name": "Agentic Terminal Newsletter Draft",
+      "scheduled_day": "Monday 6 PM",
+      "last_executed": null,
+      "has_cron": true,
+      "threshold_hours": 168
+    },
+    {
+      "name": "ArcadiaB Content Calendar (Next Week)",
+      "scheduled_day": "Friday 2 PM",
+      "last_executed": null,
+      "has_cron": true,
+      "threshold_hours": 168
+    },
+    {
+      "name": "Review + Update MEMORY.md",
+      "scheduled_day": "Sunday 8 PM",
+      "last_executed": null,
+      "has_cron": true,
+      "threshold_hours": 168
+    }
+  ],
+  "monthly": [
+    {
+      "name": "Maxi's Agent Economics Report",
+      "scheduled_day": "First Monday 10 AM",
+      "last_executed": null,
+      "has_cron": true,
+      "threshold_hours": 744
+    },
+    {
+      "name": "Thesis Confidence Review",
+      "scheduled_day": "First Monday 11 AM",
+      "last_executed": "2026-02-17T11:00:00-05:00",
+      "has_cron": true,
+      "threshold_hours": 744
+    },
+    {
+      "name": "Competitive Landscape Scan",
+      "scheduled_day": "First Monday 2 PM",
+      "last_executed": null,
+      "has_cron": true,
+      "threshold_hours": 744
+    },
+    {
+      "name": "Update Tools Directory",
+      "scheduled_day": "First Monday 3 PM",
+      "last_executed": "2026-02-18T10:00:00-05:00",
+      "has_cron": true,
+      "threshold_hours": 744
+    }
+  ]
+}
