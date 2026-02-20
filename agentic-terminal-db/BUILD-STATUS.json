@@ -1,18 +1,18 @@
 {
   "project": "Agentic Terminal Data Engine",
-  "lastUpdated": "2026-02-20T23:15:00Z",
+  "lastUpdated": "2026-02-20T23:54:00Z",
   "phases": [
     {
       "id": "phase1",
       "name": "Phase 1 — Data Engine",
-      "status": "in-progress",
+      "status": "complete",
       "items": [
-        { "id": "postgresql", "name": "PostgreSQL install + DB creation", "status": "in-progress" },
-        { "id": "schema", "name": "Canonical schema (5 entities)", "status": "in-progress" },
-        { "id": "seed", "name": "Seed protocols table (7 protocols)", "status": "in-progress" },
-        { "id": "collectors", "name": "Python ingestion collectors (Lightning + GitHub)", "status": "in-progress" },
-        { "id": "migration", "name": "Migrate existing JSON → DB", "status": "in-progress" },
-        { "id": "fastapi", "name": "FastAPI skeleton (/api/v1/*)", "status": "in-progress" }
+        { "id": "postgresql", "name": "PostgreSQL install + DB creation", "status": "complete" },
+        { "id": "schema", "name": "Canonical schema (6 tables)", "status": "complete" },
+        { "id": "seed", "name": "Seed protocols table (7 protocols)", "status": "complete" },
+        { "id": "collectors", "name": "Python ingestion collectors (Lightning + GitHub)", "status": "complete" },
+        { "id": "migration", "name": "Migrate existing JSON → DB (34 metrics rows)", "status": "complete" },
+        { "id": "fastapi", "name": "FastAPI skeleton (/api/v1/*)", "status": "complete" }
       ]
     },
     {
