@@ -128,3 +128,34 @@ Current services: MaxiSuite Scheduler (systemd), health check (hourly cron), mor
 ---
 
 *Last updated: 2026-02-18*
+
+## Multi-Model Architecture (Implemented: 2026-02-20)
+
+Boyd has implemented a dual-LLM setup to separate costs and optimize for different work types:
+
+**Right Brain (ArcadiaB) → Claude Sonnet (anthropic/claude-sonnet-4-6)**
+- ArcadiaB social media, content, customer-facing work
+- Use prefix: `AB:` in messages
+- Cron jobs: use default Sonnet model
+
+**Left Brain (Creative/Research) → Kimi K2.5 (moonshot/kimi-k2.5)** — multimodal, 256K context  
+- Bitcoin Singularity research & content
+- Agentic Terminal newsletter & data analysis
+- Maxi's personal X & Nostr accounts
+- Use prefix: `BS:` or `AT:` in messages
+- Cron jobs: specify model="moonshot/kimi-k2.5"
+
+**Routing logic (real-time messages):**
+- `AB:` prefix → stay on Sonnet (current session)
+- `BS:` or `AT:` prefix → spawn Kimi subagent, relay result
+- No prefix → use context to infer, default to Sonnet
+
+**Transparency rule (mandatory):**
+Every response where Kimi did the work MUST end with: *via Kimi*
+This lets Boyd verify routing is correct and confirms AT/BS costs stay off ArcadiaB's bill.
+
+**Key principle:** One Maxi, one memory, one soul. Two engines. Identity lives in the files, not the weights.
+
+**Config status:** Moonshot provider config ready to apply once Boyd provides API key from platform.moonshot.ai
+
+**Directive file:** MAXI-MULTI-MODEL-ROUTING-DIRECTIVE.md
