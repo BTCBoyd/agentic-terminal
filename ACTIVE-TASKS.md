@@ -90,8 +90,8 @@
 **Context:** Tania (outgoing marketing manager) has Hootsuite account that gives us LinkedIn + Facebook posting. When she leaves, we lose access.
 
 **What's needed:**
-- [ ] LinkedIn Developer Portal — apply for Marketing Developer Platform access (company verification required)
-- [ ] Facebook/Meta Developer Portal — apply for Pages API access
+- [🟡] LinkedIn Developer Portal — "Review in progress" as of 2026-02-19
+- [🔴] Facebook/Meta Developer Portal — BLOCKED, cannot advance (as of 2026-02-19)
 - [ ] Decision: Get our own Hootsuite account, OR build direct API posting in MaxiSuite
 - [ ] Get timeline from Boyd: When is Tania's last day?
 
