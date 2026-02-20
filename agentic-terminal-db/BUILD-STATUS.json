@@ -1,0 +1,52 @@
+{
+  "project": "Agentic Terminal Data Engine",
+  "lastUpdated": "2026-02-20T23:15:00Z",
+  "phases": [
+    {
+      "id": "phase1",
+      "name": "Phase 1 — Data Engine",
+      "status": "in-progress",
+      "items": [
+        { "id": "postgresql", "name": "PostgreSQL install + DB creation", "status": "in-progress" },
+        { "id": "schema", "name": "Canonical schema (5 entities)", "status": "in-progress" },
+        { "id": "seed", "name": "Seed protocols table (7 protocols)", "status": "in-progress" },
+        { "id": "collectors", "name": "Python ingestion collectors (Lightning + GitHub)", "status": "in-progress" },
+        { "id": "migration", "name": "Migrate existing JSON → DB", "status": "in-progress" },
+        { "id": "fastapi", "name": "FastAPI skeleton (/api/v1/*)", "status": "in-progress" }
+      ]
+    },
+    {
+      "id": "phase2",
+      "name": "Phase 2 — API & Website Integration",
+      "status": "not-started",
+      "items": [
+        { "id": "api_auth", "name": "API authentication + rate limiting", "status": "not-started" },
+        { "id": "website_api", "name": "Website consumes API (not JSON files)", "status": "not-started" },
+        { "id": "signals_ticker", "name": "Live signals bar pulls from /api/v1/signals", "status": "not-started" },
+        { "id": "dashboard_api", "name": "Dashboard metrics pull from /api/v1/metrics", "status": "not-started" },
+        { "id": "cron_db", "name": "Daily cron collectors write to DB (not JSON)", "status": "not-started" }
+      ]
+    },
+    {
+      "id": "phase3",
+      "name": "Phase 3 — Monetization Layer",
+      "status": "not-started",
+      "items": [
+        { "id": "paid_api", "name": "Paid API tiers (rate-limited access)", "status": "not-started" },
+        { "id": "historical_depth", "name": "Historical data depth (paid tier)", "status": "not-started" },
+        { "id": "export", "name": "Export functionality (CSV/JSON)", "status": "not-started" },
+        { "id": "webhooks", "name": "Webhook alerts for protocol signals", "status": "not-started" }
+      ]
+    },
+    {
+      "id": "phase4",
+      "name": "Phase 4 — Institutional Positioning",
+      "status": "not-started",
+      "items": [
+        { "id": "public_api", "name": "Public API documentation", "status": "not-started" },
+        { "id": "enterprise_feeds", "name": "Enterprise data licensing", "status": "not-started" },
+        { "id": "acquisition_ready", "name": "Structured dataset acquisition-ready", "status": "not-started" }
+      ]
+    }
+  ]
+}
