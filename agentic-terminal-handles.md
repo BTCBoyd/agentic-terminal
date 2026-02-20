@@ -6,8 +6,8 @@
 ## Handle Status:
 
 ### Priority 1 (Claim Immediately):
-- [ ] X/Twitter: @agenticterminal
-- [ ] Substack: agenticterminal.substack.com
+- [x] X/Twitter: @AgenticTerminal ✅ LIVE (claimed by Boyd ~Feb 17-18, 2026)
+- [x] Substack: agenticterminal.substack.com ✅ LIVE
 - [ ] Beehiiv: agenticterminal (username)
 - [ ] GitHub: @agenticterminal (or agenticterminal org)
 

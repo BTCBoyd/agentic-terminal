@@ -28,9 +28,15 @@
 
 ## Social Media
 
-**X Account:** @agenticterminal (exists but not actively used yet)
+**X Account:** @AgenticTerminal ✅ LIVE (claimed Feb 2026, not actively posting yet)
+**Maxi's X Account:** @Maxibtc2009 (primary posting account)
 
-**Strategy:** Focus on newsletter quality first, social media distribution later.
+**Tagging Strategy (active now):**
+When Maxi (@Maxibtc2009) posts X content about Agentic Terminal, ALWAYS tag @AgenticTerminal in the post. This grows AT followers passively before we start posting from the account directly.
+
+**Rule:** Any X post mentioning "Agentic Terminal", linking to agenticterminal.ai, or covering AT newsletter content → include "follow @AgenticTerminal" or tag @AgenticTerminal naturally in the post.
+
+**Strategy:** Focus on newsletter quality first, grow @AgenticTerminal followers via tagging, then begin posting directly from @AgenticTerminal once we have meaningful subscriber base.
 
 ## Content Strategy
 
