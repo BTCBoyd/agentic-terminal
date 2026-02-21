@@ -212,6 +212,32 @@ def get_stats():
     
     return {"stats": stats, "timestamp": datetime.utcnow().isoformat()}
 
+@app.get("/api/v1/agent-events")
+def get_agent_events(limit: int = 20, agent_id: str = None):
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    if agent_id:
+        cursor.execute("""
+            SELECT id, agent_id, event_type, economic_role, amount, unit, 
+                   context_tag, economic_intent, verified, timestamp
+            FROM agent_events 
+            WHERE agent_id = %s
+            ORDER BY timestamp DESC LIMIT %s
+        """, (agent_id, limit))
+    else:
+        cursor.execute("""
+            SELECT id, agent_id, event_type, economic_role, amount, unit,
+                   context_tag, economic_intent, verified, timestamp
+            FROM agent_events 
+            ORDER BY timestamp DESC LIMIT %s
+        """, (limit,))
+    rows = cursor.fetchall()
+    cursor.close()
+    conn.close()
+    columns = ['id', 'agent_id', 'event_type', 'economic_role', 'amount', 'unit', 'context_tag', 'economic_intent', 'verified', 'timestamp']
+    events = [dict(zip(columns, [str(v) if hasattr(v, 'hex') else v for v in row])) for row in rows]
+    return {"count": len(events), "events": events}
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
