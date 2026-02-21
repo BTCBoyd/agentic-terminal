@@ -1,0 +1,15 @@
+[2026-02-20T18:54:36-05:00] Starting collection run...
+[2026-02-20T18:54:36-05:00] Running lightning_collector.py...
+/home/futurebit/.openclaw/workspace/agentic-terminal-db/collectors/lightning_collector.py:36: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow()
+/home/futurebit/.openclaw/workspace/agentic-terminal-db/collectors/lightning_collector.py:70: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  print(f"[{datetime.utcnow().isoformat()}] Lightning collector: {collector.rows_inserted} metrics inserted, status={status}")
+[2026-02-20T23:54:38.276511] Lightning collector: 3 metrics inserted, status=success
+[2026-02-20T18:54:38-05:00] Running github_collector.py...
+/home/futurebit/.openclaw/workspace/agentic-terminal-db/collectors/github_collector.py:47: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow()
+/home/futurebit/.openclaw/workspace/agentic-terminal-db/collectors/github_collector.py:105: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  print(f"[{datetime.utcnow().isoformat()}] GitHub collector: {collector.rows_inserted} metrics inserted, status={status}")
+[2026-02-20T23:54:40.650749] GitHub collector: 9 metrics inserted, status=success
+[2026-02-20T18:54:40-05:00] Collection run complete
+---
