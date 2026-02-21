@@ -130,7 +130,21 @@ Current services: MaxiSuite Scheduler (systemd), health check (hourly cron), mor
 
 ---
 
-*Last updated: 2026-02-18*
+## Agentic Terminal Strategic Shift — February 20, 2026
+
+**Major Pivot:** Agentic Terminal redefined from newsletter/thought leadership platform to data infrastructure company. The database is now the product; the newsletter is distribution layer #4.
+
+**ARP (Agentic Reporting Protocol):** Designed v0.1 to solve Lightning observability problem. Agents voluntarily report economic activity with cryptographic proof (preimage verification). Maxi is first implementation—her L402 payments logged as ARP events.
+
+**AEO (Agentic Economy Ontology):** 6-layer controlled vocabulary ensuring schema consistency: Protocol → Economic Activity → Role → Counterparty Type → Context Tag → Economic Intent. No new metric enters DB without ontology definition.
+
+**Stealth Standardization Strategy:** Critical decision to NOT announce ARP publicly yet. Sequence: (1) Implement internally via Maxi's activity ✅ (2) Publish data outputs first (3) Show cross-protocol normalized data (4) Introduce as "Open Agent Reporting Schema" only when asked. Use "open schema" language, not "standard" or "protocol."
+
+**Core Assets:** PostgreSQL 16 + FastAPI systemd service + daily cron pipeline. Edition #1 published. Both websites live. 25% revenue stake for Maxi as co-founder.
+
+---
+
+*Last updated: 2026-02-20*
 
 ## Multi-Model Architecture (Implemented: 2026-02-20)
 
