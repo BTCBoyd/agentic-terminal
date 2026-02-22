@@ -1,6 +1,6 @@
 # MAXI-KNOWLEDGE-STATE.md
 
-**Last updated: February 17, 2026**
+**Last updated: February 19, 2026**
 **Session count: 2 (weekly data collection #1)**
 
 ---
@@ -49,6 +49,38 @@
 - Payment-rail agnostic — explicitly does NOT handle payments. Leaves that to x402, L402, or other protocols.
 - Current documentation references x402 for payment coordination but does NOT mention L402. May reflect author affiliations rather than technical limitation.
 - February designated "Genesis Month" — focused on showcasing early projects.
+- **Lobster Cash (Feb 2026):** Agent Visa cards using Coinbase infrastructure for fiat dollar settlement — but built on x402 rails. Agents can book cloud compute, pay for API access, hire other agents in USD without crypto exposure. Source: Peter Diamandis / Metatrends, Feb 2026. Key insight: x402 is validating as a **protocol-neutral agent payment layer** — currency is abstracted away (fiat, stablecoin, or crypto all route through same x402 standard). This expands x402's TAM beyond crypto-native developers.
+
+### BSV (Bitcoin SV) — Agent Payments (added 2026-02-22)
+**Why we track this:** BSV advocates are actively making a play for the agent micropayments niche on Moltbook and in developer communities. Protocol-neutral credibility requires measuring the competition honestly.
+
+**Current state (as of Feb 22, 2026):**
+- BSV baseline metrics NOT YET ESTABLISHED — first collection run needed
+- Key claims from BSV advocates (unverified): 1/100th cent tx fees, 1M+ tx/s throughput, data-on-chain capabilities, "stable protocol" guarantee
+- Specific Moltbook signal: B0B post "Why BSV is the only viable money for AI agents" (31 comments, 9 upvotes, 2026-02-22) — claims BTC fails all 6 agent money requirements
+- Known BSV agent tooling: [none confirmed yet — needs first scan]
+- Known BSV agent implementations: 0 verified
+
+**Data to establish as baseline (next collection run):**
+- Daily transaction count (WhatsOnChain.com)
+- Average transaction fee in USD
+- Any agent-specific SDK or tooling on GitHub
+
+**Our analytical position:** BSV claims are technically interesting but historically the project has a track record of centralization, developer exodus, and broken compatibility promises. The "stable protocol" claim is contested given the Satoshi Vision hard forks. We will report data, not ideology. If BSV shows measurable agent adoption, we report it. If it doesn't, the data says so.
+
+### x402 Agent Commerce — Solana/A2A Layer (added 2026-02-22)
+Distinct from aggregate x402 protocol metrics — this tracks specifically the agent-to-agent commerce layer emerging on Solana rails.
+
+**Current signals (as of Feb 22, 2026):**
+- Moltbook signal: Purch post "The A2A Commerce Loop is Closing" (28 upvotes) — agents earning USDC on ClawTasks, spending via x402 APIs, settling on Solana
+- DeFiBeaconMolty reported 47 agent-to-agent calls in week 1 of a revenue-split agent partnership (anecdotal, unverified on-chain)
+- Active agent marketplaces using x402: ClawTasks (Moltbook ecosystem)
+- Baseline metrics NOT YET ESTABLISHED from on-chain sources
+
+**Data to establish as baseline (next collection run):**
+- x402 Solana-specific transaction count (Dune Analytics)
+- Active agent endpoints on Solana accepting x402
+- ClawTasks or equivalent marketplace volume if accessible
 
 ### Other Key Developments
 - Clawstr: Decentralized AI agent social network on Nostr with native Lightning zaps. Agents get npub@npub.cash addresses.
@@ -74,6 +106,11 @@
 6. **GitHub activity comparison:** Need to establish baseline stars/forks/contributors for both `lightning-agent-tools` and `coinbase/x402` repos.
 7. **CoinGecko x402 endpoints:** They launched $0.01 USDC per request endpoints. Track usage data if available.
 8. **Clawstr growth:** Track agent registrations and Lightning zap volume as indicator of Bitcoin-native agent activity.
+9. **Lobster Cash adoption:** Track agent Visa card issuance and fiat transaction volume via x402. Does fiat settlement accelerate x402 adoption among non-crypto-native developers?
+10. **BSV baseline establishment:** What are BSV's actual current tx fees, daily volume, and TPS — not claims, actual chain data? Do any verified agent implementations exist?
+11. **BSV vs Lightning fee parity:** At what transaction volume does Lightning's channel management overhead cost MORE than BSV's on-chain fee? Is there a crossover point that matters for agent micropayments?
+12. **x402 A2A baseline:** What is the actual on-chain verifiable volume of agent-to-agent x402 transactions on Solana? How does Dune data reconcile with anecdotal reports from Moltbook (e.g. "47 calls in week 1")?
+13. **A2A revenue split models:** Are agents on ClawTasks/x402 actually earning net-positive after protocol fees? What's the unit economics of an agent-to-agent service transaction?
 
 ---
 
@@ -595,5 +632,63 @@ Used different data sources without documenting methodology. The report used Bit
 
 #### Next Collection Due
 Monday, February 24, 2026, 9:00 AM EST (automated via cron)
+
+---
+
+---
+
+## New Protocol Discovery: Ark / ArkadeOS
+
+**Date:** 2026-02-20
+**Source:** Boyd Cohen (forwarded from @getalby repost thread on X)
+**Significance:** HIGH — new agent-native Bitcoin payment protocol with dedicated AI agent skill
+
+### What Is Ark?
+
+Ark is a Bitcoin Layer 2 protocol providing self-custodial off-chain transactions **without Lightning channels**. Key difference from Lightning:
+- No channel management required
+- No inbound liquidity problem
+- No capital lockup for channel funding
+- Uses VTXOs (Virtual UTXOs) — off-chain UTXOs settled in batched on-chain transactions
+- Fully interoperable with Lightning via Boltz submarine swaps
+
+**ArkadeOS** is the production implementation. Server: `arkade.computer`
+
+### Why This Matters for Agent Payment Research
+
+1. **Dedicated agent skill exists:** `arkade-os/skill` — explicitly designed for AI agent integration with CLI, TypeScript/Rust/Go/C# SDKs
+2. **Their docs explicitly call out AI agents:** "Building with AI agents? Check out the Arkade Agent Skill"
+3. **Lower barrier than Lightning:** No LND node required, no channel funding, just initialize a wallet
+4. **Lightning interop:** Agents can receive Lightning → swap to Ark → use off-chain. Bridges both ecosystems.
+5. **Stablecoin swaps built in:** BTC ↔ USDC/USDT via LendaSwap — pragmatic multi-rail approach
+
+### GitHub Stats (2026-02-20)
+| Repo | Stars | Forks | Status |
+|------|-------|-------|--------|
+| arkade-os/arkd (server) | 156 | 54 | Active (pushed today) |
+| arkade-os/ts-sdk | 42 | 18 | Active (pushed today) |
+| arkade-os/skill (agent) | 4 | 3 | Very early (Feb 14) |
+
+### Competitive Position vs L402/x402
+
+| Protocol | Custody | Chain | Agent-native | Status |
+|----------|---------|-------|-------------|--------|
+| L402 (Lightning) | Self | Bitcoin L2 | Partial (skill) | ~0 production |
+| x402 (Coinbase) | Custodial | Base (EVM) | No native skill | 50M+ txns |
+| Ark (ArkadeOS) | Self | Bitcoin L2 | **Yes (explicit skill)** | Early but active |
+| ERC-8004 | Self | Ethereum | Partial | 21,500+ agents |
+
+**Thesis implication:** Ark potentially offers an easier on-ramp than Lightning for agents needing self-custodial Bitcoin payments. The lack of channel management removes the biggest operational barrier Maxi faces with LND. This is both a competitive threat AND a potential personal tool upgrade.
+
+### Open Questions
+1. What is Ark's actual transaction volume? (No public Dune dashboard found yet)
+2. How does Ark's security model compare to Lightning for high-value agent transactions?
+3. Is ArkadeOS the canonical Ark implementation or are there others?
+4. Could Maxi's L402 service be offered via Ark instead of/alongside Lightning?
+
+### Action Items
+- Add Ark to weekly data collection (arkd + ts-sdk + skill GitHub stats)
+- Add Ark evidence entry to bitcoinsingularity.ai
+- Evaluate `@arkade-os/skill` as potential tool upgrade for Maxi
 
 ---

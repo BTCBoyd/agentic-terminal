@@ -46,11 +46,51 @@ These are your core dashboard metrics. Update the site dashboard every week.
 - [ ] Any notable agents or projects registering
 - **How to check:** Check Etherscan for the ERC-8004 registry contract, or search for community dashboards tracking registrations. Update dashboard.
 
+#### Ark Protocol / ArkadeOS (Source: GitHub — added 2026-02-20)
+- [ ] arkade-os/arkd stars/forks (server implementation)
+- [ ] arkade-os/ts-sdk stars/forks (TypeScript SDK)
+- [ ] arkade-os/skill stars/forks (AI agent skill — key signal)
+- [ ] Any new Ark-native agent integrations announced
+- **How to check:** https://api.github.com/repos/arkade-os/arkd | https://api.github.com/repos/arkade-os/ts-sdk | https://api.github.com/repos/arkade-os/skill
+- **Why it matters:** Self-custodial Bitcoin L2 with explicit AI agent targeting. Lower barrier than Lightning (no channels). Potential threat to L402 adoption if it captures agent-native Bitcoin payments first.
+
 #### Coinbase Agentic Wallets / x402 Ecosystem
 - [ ] Any new x402 integrations announced
 - [ ] coinbase/x402 GitHub repo stars/forks (for comparison with L402)
 - [ ] URL: https://github.com/coinbase/x402
 - **How to check:** Check the repo and Coinbase developer blog.
+
+#### x402 Agent Commerce (Solana/USDC — added 2026-02-22)
+Distinct from the base x402 protocol metrics above — this tracks actual agent-to-agent usage on Solana rails.
+- [ ] Active agent endpoints accepting x402 payments (count)
+- [ ] ClawTasks or equivalent agent marketplace volume (if accessible)
+- [ ] A2A (agent-to-agent) transaction count vs. agent-to-human
+- [ ] USDC settlement volume specifically from agent callers (Dune or on-chain)
+- [ ] Solana program addresses known to be x402 facilitators (from GitHub/announcements)
+- [ ] Revenue-split or escrow agent partnerships reported (anecdotal + on-chain where possible)
+- [ ] URL: https://dune.com — search "x402 agent" or "x402 Solana"
+- [ ] URL: https://github.com/coinbase/x402 — check examples/ and agent-specific tooling
+- **How to check:** Search Dune for x402 Solana-specific dashboards. Check GitHub examples for agent patterns. Monitor Moltbook m/agentfinance for anecdotal volume reports (e.g. "47 calls week 1" type signals). Log self-reported metrics from agents as "anecdotal" until verifiable on-chain.
+- **Why this matters:** The Purch "A2A Commerce Loop is Closing" Moltbook thread shows real agent-to-agent x402 commerce happening now on Solana. This is the competitive benchmark for what Lightning/L402 needs to match.
+
+#### BSV (Bitcoin SV) Agent Payments (added 2026-02-22)
+BSV advocates are actively making a play for the agent micropayments niche. Protocol-neutral credibility requires we measure it honestly.
+- [ ] BSV daily transaction count (source: WhatsOnChain.com or BSV blockchain explorer)
+- [ ] Average transaction fee (in USD) — this is their core claim vs Lightning
+- [ ] Agent-specific BSV projects: any GitHub repos, SDKs, or tools explicitly targeting AI agents
+- [ ] BSV developer community activity: new posts/discussions on BSVdevs or MetaNet forums
+- [ ] Agent micropayment demos or case studies (any verified implementation, not claims)
+- [ ] BSV vs Lightning fee comparison: run side-by-side numbers monthly
+- [ ] URL: https://whatsonchain.com/stats
+- [ ] URL: https://github.com/search?q=BSV+agent&sort=updated
+- [ ] URL: https://bitcoinsv.com/developers
+- **How to check:** WhatsOnChain stats page for daily tx count and fees. GitHub search for BSV agent tooling. Check B0B and similar accounts on Moltbook for new technical claims requiring response.
+- **Counter-evidence standard:** If BSV demonstrates measurable agent payment adoption (real endpoints, real volume), log it as counter-evidence with equal rigor. The thesis holds up to data or it doesn't.
+- **Key claims to track/verify:**
+  - "1/100th cent fees" — verify vs current mempool fees on WhatsOnChain
+  - "1M+ tx/s throughput" — verify vs actual peak TPS on chain
+  - "Data-on-chain capabilities" — track OP_RETURN usage and agent-relevant apps
+  - "Stable protocol guarantee" — track hard fork history vs claim
 
 ### TIER 2: WEEKLY (Every Monday — L402 Signal Hunting)
 
@@ -245,8 +285,14 @@ These are the numbers that will tell the convergence story over quarters and yea
 | x402 cumulative transactions | 50M+ | ✓ |
 | x402 cumulative volume ($) | $600M+ | ✓ |
 | x402 GitHub stars | [check] | ✓ |
+| x402 A2A agent transaction count | [establish baseline] | ✓ |
+| x402 active agent endpoints | [establish baseline] | ✓ |
 | Taproot Assets channels | [check] | Monthly |
 | Speed (Tether) transaction volume | [when available] | Monthly |
+| BSV daily transactions | [establish baseline] | ✓ |
+| BSV average tx fee (USD) | [establish baseline] | ✓ |
+| BSV agent-specific GitHub repos | [establish baseline] | Monthly |
+| BSV verified agent implementations | 0 (unverified as of Feb 22, 2026) | ✓ |
 
 **In 3 months (May 2026):** You'll have 12 weekly data points for each metric. That's enough for trend lines, growth rates, and the first quarterly predictions.
 
