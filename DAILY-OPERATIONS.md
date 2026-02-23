@@ -167,9 +167,9 @@
 |------|------|---------------|-----------|-------|--------|
 | **Maxi's Agent Economics Report** | First Monday 10 AM | 2026-02-23 | ✅ YES | Maxi | **DONE** |
 | **Thesis confidence review** | First Monday 11 AM | 2026-02-23 | ✅ YES | Maxi | **DONE** |
-| **Competitive landscape scan** | First Monday 2 PM | NEVER | ✅ YES | Maxi | **NEEDS CRON** |
+| **Competitive landscape scan** | First Monday 2 PM | 2026-02-23 | ✅ YES | Maxi | **DONE** |
 | **Newsletter subscriber metrics review** | First Monday | N/A (not launched) | ❌ NO | Maxi | **NEEDS SYSTEM** |
-| **Update all Tools Directory entries** | First Monday 3 PM | 2026-02-18 | ✅ YES | Maxi | **NEEDS CRON** |
+| **Update all Tools Directory entries** | First Monday 3 PM | 2026-02-23 | ✅ YES | Maxi | **DONE** |
 
 ### Maxi's Agent Economics Report (First Monday)
 **What to include:**
