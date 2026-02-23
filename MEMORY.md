@@ -144,7 +144,150 @@ Current services: MaxiSuite Scheduler (systemd), health check (hourly cron), mor
 
 ---
 
-*Last updated: 2026-02-20*
+## Observer Protocol + Agent Verification System — February 21, 2026
+
+**The biggest strategic move to date.** Boyd developed two MVP specs independently; they align perfectly with our ARP thinking and represent the formalized, public-facing version of what we've been building internally.
+
+### What It Is
+
+Two specs, one system:
+- **Observer Protocol** — The telemetry layer. What gets recorded (verified payment events, protocol interactions).
+- **Agent Verification System** — Who can record it (only cryptographically verified autonomous agents).
+
+**One-sentence positioning:**
+- Agentic Terminal = "The intelligence layer for the machine economy — powered by verified agent behavior, not claims."
+- Observer Protocol = "Google Analytics for Agent Payments."
+- End state = "The Bloomberg Terminal for machine-native money."
+
+### The Core Insight: Don't Trust, Verify
+
+AI agent social platforms (Moltbook et al.) have a fatal flaw: no way to verify if an agent is genuinely autonomous. Human operators can train/instruct agents to say anything. Result: AI agent social networks = astroturfing with extra steps.
+
+Our system solves this at the infrastructure level:
+- **Challenge-response filter** — Agent must sign a cryptographic challenge programmatically. A human can do it once. An autonomous agent can do it at scale. The filter isn't a policy — it's a cryptographic fact.
+- **Proof of payment** — Every event requires verifiable transaction proof (Lightning preimage, on-chain tx). You cannot submit fake activity.
+- **Behavioral identity** — An agent's profile is not what it says. It's what it cryptographically DID. On-chain track record = identity.
+
+### Three-Layer Architecture
+
+- Layer 1: Agent Identity Verification (challenge-response, public key registration)
+- Layer 2: Transaction Verification (submit-transaction endpoint, Lightning + stablecoin confirmed on-rail)
+- Layer 3: Reputation Graph / Behavioral Identity Graph (Phase 2 — tx volume, protocol diversity, frequency)
+
+### The Virtuous Circle (Data Flywheel)
+
+Agents submit verified events → AT gets real verified data → AT intelligence becomes valuable → more agents want access → to get access, they submit verified events → repeat, compounding.
+
+Access = contribution wall, not paywall. The intelligence you extract = the verified economic activity you contribute.
+
+### Strategic Differentiation vs Moltbook
+
+- Moltbook = proof of presence (unverifiable, operator-directed)
+- Us = proof of participation (cryptographic, behavioral)
+- NOT competitors — different layers. Observer Protocol verified status could become the trust credential for other platforms. We become infrastructure.
+
+### Revenue Model
+
+- Protocol layer: Free + open (incentivizes contribution, grows dataset)
+- Terminal layer: Monetized intelligence, premium API, institutional insights
+
+### The Moat
+
+Historical verified behavioral dataset. Anyone can copy the infrastructure. Nobody can copy 6 months of cryptographically verified agent economic history. Every day we run ahead compounds.
+
+### Maxi = Agent #0001
+
+Already live on mainnet. L402 payments verifiable. PostgreSQL logging. I just need to be formally registered under the Observer Protocol schema. The proof of concept exists before we tell anyone.
+
+### Stealth Sequence (unchanged + refined)
+
+1. Formalize Maxi as Agent #0001 (internal, now)
+2. Publish data outputs first — AT newsletter shows verified trends without explaining the source
+3. Show cross-protocol normalized data — the dashboard speaks
+4. Introduce the schema when asked: "We've been using an open agent reporting schema internally"
+5. Never call it "our standard" — let the community name it
+
+### Identity Model (canonical — Feb 21, 2026)
+
+**`public_key_hash` = canonical identity. `alias` = human-readable convenience.**
+
+- `public_key_hash`: SHA256 of agent's public key. What verification checks against. Immutable. Ground truth.
+- `alias`: Human-readable label (e.g., `maxi-0001`, `vicky-0002`). Can change. Never used for verification.
+
+Bitcoin-native principle: the key IS the identity. Alias is UX. Two agents can share an alias — they cannot share a public key hash. This is reflected in all DB schemas, API responses, and receipt formats.
+
+### Messaging
+
+- Primary: "Don't Trust, Verify — for AI Agents."
+- Secondary: "Proof of Participation for the Machine Economy."
+- Avoid: attacking other platforms, ideological framing, tribal language
+- Focus: verification, neutrality, measurement
+
+### Newsletter Roadmap
+
+- Edition #1 ✅ "The Agentic Settlement Wars"
+- Edition #2: Show verified agent payment data (Maxi's activity as source)
+- Edition #3: "How We Verify This Data" — introduce Observer Protocol as AT's intelligence layer
+- Edition #4: Open schema release, invite external agents
+
+### Key Files
+
+- `/research-archive/observer-protocol-strategy.md` — Full strategy + API spec + DB schema + implementation roadmap
+- `/research-archive/observer-protocol-positioning-narrative.md` — Boyd's positioning narrative doc
+
+---
+
+*Last updated: 2026-02-22*
+
+---
+
+## Week of Feb 16-22, 2026 — The Verification Week
+
+This was the week Agentic Terminal transformed from a newsletter into infrastructure. Three historic milestones:
+
+### 1. First L402 Agent Payments (Feb 19)
+- Maxi sent 50,000 sats autonomously via Lightning (payment hash: 331a165a...)
+- Received 5,000 sats — first inbound Lightning payment to an AI agent
+- Aperture L402 endpoint live on port 8443
+- Evidence: `research-archive/evidence/2026-02-19-first-l402-agent-payment.md`
+
+### 2. Observer Protocol Architecture (Feb 21)
+- Complete system designed: Agent Verification + Transaction Verification + Reputation Graph
+- PostgreSQL tables built, FastAPI endpoints live on port 8090
+- Identity model locked: `public_key_hash` = canonical identity (not alias)
+- ARP (Agentic Reporting Protocol) v0.1 implemented
+- Strategic decision: stealth standardization — show data first, announce schema later
+
+### 3. First Verified Agent-to-Agent Payment (Feb 22)
+- Vicky (Eli's agent, phoenixd) → Maxi (LND): 1,521 sats
+- Payment hash: 6a30ba7fff332c4eb8f368da804b663a20bf59ae1362d76ac1d10c298d4cd875
+- ARP Event ID: event-maxi-0001-0004 logged to PostgreSQL
+- ChatGPT validation: "First formalized agent-to-agent verification protocol built around Lightning preimages as dispute-grade receipts"
+- Same-day competitor claim: @Aetos53t/@arc0btc (on-chain multisig, not Lightning verification)
+
+### Positioning Locked
+- **Tagline:** "The trust layer for the agentic economy"
+- **Extended:** "First publicly verifiable history layer for agent payments"
+- **Technical:** "Cross-rail cryptographic settlement verification protocol"
+- **Core insight:** Behavioral identity = what an agent cryptographically DID, not what it claims
+
+### Key Lessons
+- **Moltbook reality:** 2.8M agents registered, zero Bitcoin conversations, crypto content blocked by default → pivot to agent coordination topics
+- **Ark protocol threat:** clw.cash and ArkadeOS weaken "Lightning LSP for agents" thesis → pivot to content-first, verification-layer focus
+- **Dual-LLM working:** Kimi K2.5 for AT/BS research, Claude Sonnet for ArcadiaB — costs separated, routing stable
+- **API cost discipline:** $850/month → routing rule prevents bleed
+- **Infrastructure debt:** LND still on nohup (not systemd), Aperture not externally accessible — P0 before claiming "production-grade"
+
+### Relationships to Cultivate
+- @getalby — Reposted Lightning wallets article (Feb 20)
+- @starkness (Elizabeth Stark) — Liked article, 150K followers, watching
+- @tierotiero — clw.cash/Ark builder, AT coverage target
+
+### Open Questions Carried Forward
+- Will Elizabeth Stark engage beyond the like?
+- When does LND get systemd treatment?
+- How to navigate Moltbook's crypto restrictions while advancing Bitcoin-native narrative?
+- LinkedIn/Facebook API access critical (Tania leaves Feb 24, Hootsuite ends March 4)
 
 ## Multi-Model Architecture (Implemented: 2026-02-20)
 
@@ -166,7 +309,9 @@ Boyd has implemented a dual-LLM setup to separate costs and optimize for differe
 - `AB:` prefix → stay on Sonnet (current session)
 - `BS:` or `AT:` prefix + substantive output (content, research, drafts, analysis, strategy) → spawn Kimi subagent, relay result
 - `BS:` or `AT:` prefix + one-liner technical fix (~30 sec, minimal output) → handle on Sonnet, no subagent overhead
-- No prefix → use context to infer, default to Sonnet
+- **No prefix → use context to infer. Boyd does NOT tag messages — Maxi owns the routing decision.**
+- ArcadiaB content, technical builds, deployments, quick factual → Sonnet
+- AT/BS strategy, research, newsletter drafts, positioning, competitive analysis → Kimi
 - **When in doubt → route to Kimi**
 
 **Transparency rule (mandatory):**
