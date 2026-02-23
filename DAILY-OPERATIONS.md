@@ -23,18 +23,19 @@
 ## 🔴 DAILY TASKS - MORNING
 | Task | Time | Last Executed | Cron Job? | Owner | Status |
 |------|------|---------------|-----------|-------|--------|
-| **Moltbook morning session** | 9-11 AM | 2026-02-17 | ✅ YES | Maxi | **NEEDS CRON** |
-| **ArcadiaB X posts: 4-5 posts/day** | 10 AM | 2026-02-18 | ❌ NO | Maxi | **NEEDS DAILY CHECK** |
-| **Check ArcadiaB post queue status** | 9 AM | 2026-02-18 | ✅ YES | Maxi | **NEEDS CRON** |
-| **Agentic Terminal data collection** | 8 AM | NEVER | ✅ YES | Maxi | **NEEDS CRON** |
+| **Moltbook morning session** | 9-11 AM | 2026-02-23 09:04 EST | ✅ YES | Maxi | **DONE** |
+| **ArcadiaB X posts: 4 posts/day** | 9AM/12PM/3PM/5:30PM CST | 2026-02-23 09:30 EST | ✅ QUEUE | Maxi | **RESCHEDULED: new times per Boyd (2026-02-20)** |
+| **Check ArcadiaB post queue status** | 9 AM | 2026-02-22 09:04 EST | ✅ YES | Maxi | **DONE** |
+| **Agentic Terminal data collection** | 8 AM | 2026-02-23 08:00 EST | ✅ YES | Maxi | **DONE** |
 
 ### ArcadiaB Social Media Requirements (DAILY)
 
 **X @arcadiabtc (Maxi posts directly):**
-- Minimum: 4 posts/day
-- Target: 5 posts/day
+- Schedule: **4 posts/day** at 9 AM, 12 PM, 3 PM, 5:30 PM Monterrey (CST)
 - Language: 70% Spanish, 30% English
-- Queue rule: If queue drops below 10 posts (less than 3 days), generate more immediately
+- Queue rule: If queue drops below **12 posts (less than 3 days at 4/day)**, generate more immediately — do NOT wait for Boyd to notice
+- **Analytics rule:** Every post with a URL must include UTM parameters (see ANALYTICS-SPEC.md). No exceptions.
+- **Weekly analytics:** Pull X engagement data + GA4 referral clicks every Monday (include in data collection session). Report: top posts, language performance, platform performance, referral clicks. File: analytics/x-performance-log.json
 - Coverage: All 9 value propositions (Bitcoin purchasing, loans, Ahorro Inteligente, real estate, new website, AprenderBitcoin.mx, CapitalDuro.mx, cashback cards, referral program)
 
 **LinkedIn (Tania posts via Hootsuite):**
@@ -64,7 +65,7 @@
 ## 🔴 DAILY TASKS - AFTERNOON
 | Task | Time | Last Executed | Cron Job? | Owner | Status |
 |------|------|---------------|-----------|-------|--------|
-| **Moltbook afternoon session** | 3-5 PM | 2026-02-17 | ✅ YES | Maxi | **NEEDS CRON** |
+| **Moltbook afternoon session** | 3-5 PM | 2026-02-22 15:00 EST | ✅ YES | Maxi | **DONE: Historic session - A2A payment verified, positioning locked** |
 
 ### Moltbook Session Requirements (2x daily)
 **Each session must include:**
@@ -93,8 +94,8 @@
 ## 🔴 DAILY TASKS - END OF DAY
 | Task | Time | Last Executed | Cron Job? | Owner | Status |
 |------|------|---------------|-----------|-------|--------|
-| **Write daily memory log** | End of day | NEVER | ❌ NO | Maxi | **NEEDS CRON** |
-| **Create handoff file (if work ongoing)** | End of day | NEVER | ❌ NO | Maxi | **NEEDS CRON** |
+| **Write daily memory log** | End of day | 2026-02-22 20:00 EST | ✅ YES | Maxi | **DONE** |
+| **Create handoff file (if work ongoing)** | End of day | 2026-02-22 20:05 EST | ✅ YES | Maxi | **DONE** |
 | **Update DAILY-OPERATIONS.md with completion times** | End of day | NEVER | ❌ NO | Maxi | **NEEDS SYSTEM** |
 
 ### Daily Memory Log (memory/YYYY-MM-DD.md)
@@ -119,13 +120,13 @@
 | Task | Day/Time | Last Executed | Cron Job? | Owner | Status |
 |------|----------|---------------|-----------|-------|--------|
 | **Moltbook weekly article draft** | Monday 6 PM | NEVER | ✅ YES (reminder only) | Maxi | **CRON EXISTS, NOT EXECUTING** |
-| **Bitcoin Singularity homepage evidence update** | Monday 10 AM | NEVER | ✅ YES | Maxi | Maxi | **NEEDS CRON** |
+| **Bitcoin Singularity homepage evidence update** | Monday 10 AM | 2026-02-23 | ✅ YES | Maxi | **DONE** |
 | **Weekly dashboard data collection** | Monday 9 AM | N/A (first run Feb 24) | ✅ YES | Subagent | **AUTOMATED & WORKING** |
 | **Agentic Terminal newsletter draft** | Monday 6 PM | NEVER | ✅ YES | Maxi | Maxi | **NEEDS CRON** |
-| **ArcadiaB content calendar (next week)** | Friday 2 PM | NEVER | ✅ YES | Maxi | Maxi | **NEEDS CRON** |
-| **ArcadiaB LinkedIn posts for Tania (3-4)** | Monday 11 AM | NEVER | ✅ YES | Maxi | Maxi | **NEEDS TRACKING** |
-| **ArcadiaB Facebook posts for Tania (3-4)** | Monday 11 AM | NEVER | ✅ YES | Maxi | Maxi | **NEEDS TRACKING** |
-| **Review + update MEMORY.md from daily logs** | Sunday 8 PM | NEVER | ✅ YES | Maxi | **NEEDS CRON** |
+| **ArcadiaB content calendar (next week)** | Friday 2 PM | 2026-02-20 14:00 EST | ✅ YES | Maxi | Maxi | **DONE: 55 posts queued (thru Mar 6), 4 LinkedIn + 4 FB posts saved for Tania** |
+| **ArcadiaB LinkedIn posts for Tania (3-4)** | Monday 11 AM | 2026-02-23 11:02 EST | ✅ YES | Maxi | Maxi | **NEEDS TRACKING** |
+| **ArcadiaB Facebook posts for Tania (3-4)** | Monday 11 AM | 2026-02-23 11:02 EST | ✅ YES | Maxi | Maxi | **NEEDS TRACKING** |
+| **Review + update MEMORY.md from daily logs** | Sunday 8 PM | 2026-02-22 20:04 EST | ✅ YES | Maxi | **DONE** |
 | **Check ArcadiaB queue for next week** | Friday (part of content calendar) | NEVER | ✅ YES | Maxi | Maxi | **NEEDS CRON** |
 
 ### Moltbook Weekly Article (Monday 6 PM draft due)
@@ -164,8 +165,8 @@
 ## 🟡 MONTHLY TASKS
 | Task | When | Last Executed | Cron Job? | Owner | Status |
 |------|------|---------------|-----------|-------|--------|
-| **Maxi's Agent Economics Report** | First Monday 10 AM | NEVER | ✅ YES | Maxi | Maxi | **NEEDS CRON** |
-| **Thesis confidence review** | First Monday 11 AM | 2026-02-17 | ✅ YES | Maxi | **NEEDS CRON** |
+| **Maxi's Agent Economics Report** | First Monday 10 AM | 2026-02-23 | ✅ YES | Maxi | **DONE** |
+| **Thesis confidence review** | First Monday 11 AM | 2026-02-23 | ✅ YES | Maxi | **DONE** |
 | **Competitive landscape scan** | First Monday 2 PM | NEVER | ✅ YES | Maxi | **NEEDS CRON** |
 | **Newsletter subscriber metrics review** | First Monday | N/A (not launched) | ❌ NO | Maxi | **NEEDS SYSTEM** |
 | **Update all Tools Directory entries** | First Monday 3 PM | 2026-02-18 | ✅ YES | Maxi | **NEEDS CRON** |
@@ -266,7 +267,7 @@
 | Day | X Posts Queued | LinkedIn Posts | Facebook Posts | Status |
 |-----|----------------|----------------|----------------|--------|
 | Mon 2/18 | 30 (through Mar 3) | 7 (ready for Tania) | 12 (ready for Tania) | ✅ ABOVE TARGET |
-| Tue 2/19 | TBD | - | - | ⏳ MONITOR |
+| Tue 2/19 | 20 queued (Feb 20-25) | - | - | ✅ REBUILT: queue was empty, generated 20 new posts covering all 9 value props |
 | Wed 2/20 | TBD | - | - | ⏳ MONITOR |
 | Thu 2/21 | TBD | - | - | ⏳ MONITOR |
 | Fri 2/22 | TBD | - | - | ⏳ MONITOR |
