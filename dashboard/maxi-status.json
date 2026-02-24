@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-02-18T19:38:30.487Z",
+  "generated_at": "2026-02-24T17:08:31.997Z",
   "needs_boyd": [],
   "content_queue": {
     "arcadiab_x": {
-      "scheduled": 28,
+      "scheduled": 40,
       "min_threshold": 8,
       "target": 20
     },
@@ -18,12 +18,12 @@
       "target": 6
     },
     "maxi_x": {
-      "scheduled": 21,
+      "scheduled": 110,
       "min_threshold": 4,
       "target": 10
     },
     "maxi_nostr": {
-      "scheduled": 19,
+      "scheduled": 13,
       "min_threshold": 4,
       "target": 10
     },
@@ -38,49 +38,49 @@
       {
         "name": "Agentic Terminal Data Collection",
         "scheduled_time": "08:00",
-        "last_executed": null,
+        "last_executed": "2026-02-23T14:04:02.816Z",
         "has_cron": true,
         "threshold_hours": 26
       },
       {
         "name": "Moltbook Morning Session",
         "scheduled_time": "09:00",
-        "last_executed": "2026-02-17T09:45:00-05:00",
+        "last_executed": "2026-02-24T14:06:21.176Z",
         "has_cron": true,
         "threshold_hours": 26
       },
       {
         "name": "Check ArcadiaB Queue Status",
         "scheduled_time": "09:00",
-        "last_executed": "2026-02-18T11:30:00-05:00",
+        "last_executed": "2026-02-24T16:00:02.617Z",
         "has_cron": true,
         "threshold_hours": 26
       },
       {
         "name": "ArcadiaB Daily Content Production",
         "scheduled_time": "09:30",
-        "last_executed": null,
+        "last_executed": "2026-02-23T16:04:56.585Z",
         "has_cron": true,
         "threshold_hours": 26
       },
       {
         "name": "Moltbook Afternoon Session",
         "scheduled_time": "15:00",
-        "last_executed": "2026-02-17T15:30:00-05:00",
+        "last_executed": "2026-02-19T20:14:36.492Z",
         "has_cron": true,
         "threshold_hours": 26
       },
       {
         "name": "Daily Memory Log",
         "scheduled_time": "20:00",
-        "last_executed": null,
+        "last_executed": "2026-02-24T01:00:36.981Z",
         "has_cron": true,
         "threshold_hours": 26
       },
       {
         "name": "Create Handoff File",
         "scheduled_time": "20:05",
-        "last_executed": null,
+        "last_executed": "2026-02-21T01:50:28.661Z",
         "has_cron": true,
         "threshold_hours": 26
       }
@@ -89,7 +89,7 @@
       {
         "name": "Bitcoin Singularity Homepage Update",
         "scheduled_day": "Monday 10 AM",
-        "last_executed": "2026-02-15T10:00:00-05:00",
+        "last_executed": "2026-02-23T15:04:49.493Z",
         "has_cron": true,
         "threshold_hours": 168
       },
@@ -103,14 +103,14 @@
       {
         "name": "Moltbook Weekly Article Draft",
         "scheduled_day": "Monday 6 PM",
-        "last_executed": null,
+        "last_executed": "2026-02-23T23:05:52.906Z",
         "has_cron": true,
         "threshold_hours": 168
       },
       {
         "name": "Agentic Terminal Newsletter Draft",
         "scheduled_day": "Monday 6 PM",
-        "last_executed": null,
+        "last_executed": "2026-02-23T23:03:29.806Z",
         "has_cron": true,
         "threshold_hours": 168
       },
@@ -133,21 +133,21 @@
       {
         "name": "Maxi's Agent Economics Report",
         "scheduled_day": "First Monday 10 AM",
-        "last_executed": null,
+        "last_executed": "2026-02-23T15:07:45.511Z",
         "has_cron": true,
         "threshold_hours": 744
       },
       {
         "name": "Thesis Confidence Review",
         "scheduled_day": "First Monday 11 AM",
-        "last_executed": "2026-02-17T11:00:00-05:00",
+        "last_executed": "2026-02-23T16:02:05.235Z",
         "has_cron": true,
         "threshold_hours": 744
       },
       {
         "name": "Competitive Landscape Scan",
         "scheduled_day": "First Monday 2 PM",
-        "last_executed": null,
+        "last_executed": "2026-02-23T19:02:28.139Z",
         "has_cron": true,
         "threshold_hours": 744
       },
@@ -162,32 +162,64 @@
   },
   "activity_log": [
     {
+      "task": "Check ArcadiaB Queue Status",
+      "completed_at": "2026-02-24T16:00:02.617Z"
+    },
+    {
+      "task": "Moltbook Morning Session",
+      "completed_at": "2026-02-24T14:06:21.176Z"
+    },
+    {
+      "task": "Daily Memory Log",
+      "completed_at": "2026-02-24T01:00:36.981Z"
+    },
+    {
+      "task": "Moltbook Weekly Article Draft",
+      "completed_at": "2026-02-23T23:05:52.906Z"
+    },
+    {
+      "task": "Agentic Terminal Newsletter Draft",
+      "completed_at": "2026-02-23T23:03:29.806Z"
+    },
+    {
+      "task": "Competitive Landscape Scan",
+      "completed_at": "2026-02-23T19:02:28.139Z"
+    },
+    {
+      "task": "ArcadiaB Daily Content Production",
+      "completed_at": "2026-02-23T16:04:56.585Z"
+    },
+    {
+      "task": "Thesis Confidence Review",
+      "completed_at": "2026-02-23T16:02:05.235Z"
+    },
+    {
+      "task": "Maxi's Agent Economics Report",
+      "completed_at": "2026-02-23T15:07:45.511Z"
+    },
+    {
+      "task": "Bitcoin Singularity Homepage Update",
+      "completed_at": "2026-02-23T15:04:49.493Z"
+    },
+    {
+      "task": "Agentic Terminal Data Collection",
+      "completed_at": "2026-02-23T14:04:02.816Z"
+    },
+    {
+      "task": "Create Handoff File",
+      "completed_at": "2026-02-21T01:50:28.661Z"
+    },
+    {
+      "task": "Moltbook Afternoon Session",
+      "completed_at": "2026-02-19T20:14:36.492Z"
+    },
+    {
       "task": "ArcadiaB Weekly Content for Tania",
       "completed_at": "2026-02-18T12:00:00-05:00"
     },
     {
-      "task": "Check ArcadiaB Queue Status",
-      "completed_at": "2026-02-18T11:30:00-05:00"
-    },
-    {
       "task": "Update Tools Directory",
       "completed_at": "2026-02-18T10:00:00-05:00"
-    },
-    {
-      "task": "Moltbook Afternoon Session",
-      "completed_at": "2026-02-17T15:30:00-05:00"
-    },
-    {
-      "task": "Thesis Confidence Review",
-      "completed_at": "2026-02-17T11:00:00-05:00"
-    },
-    {
-      "task": "Moltbook Morning Session",
-      "completed_at": "2026-02-17T09:45:00-05:00"
-    },
-    {
-      "task": "Bitcoin Singularity Homepage Update",
-      "completed_at": "2026-02-15T10:00:00-05:00"
     }
   ]
 }
