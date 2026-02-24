@@ -66,7 +66,7 @@ AI + Longevity create fiscal conditions (worker displacement + expanding obligat
 - Autonomous inbound: 5,000 sats received (block ~937,483)
 - Bidirectional Lightning CONFIRMED
 - Evidence file: `research-archive/evidence/2026-02-19-first-l402-agent-payment.md`
-- ⚠️ LND running as nohup (not systemd) — won't survive reboot
+- ✅ LND running as systemd service (lnd.service) — survives reboot
 
 ### Moltbook Intelligence
 - 2 sessions daily (morning + afternoon)
@@ -276,7 +276,7 @@ This was the week Agentic Terminal transformed from a newsletter into infrastruc
 - **Ark protocol threat:** clw.cash and ArkadeOS weaken "Lightning LSP for agents" thesis → pivot to content-first, verification-layer focus
 - **Dual-LLM working:** Kimi K2.5 for AT/BS research, Claude Sonnet for ArcadiaB — costs separated, routing stable
 - **API cost discipline:** $850/month → routing rule prevents bleed
-- **Infrastructure debt:** LND still on nohup (not systemd), Aperture not externally accessible — P0 before claiming "production-grade"
+- **Infrastructure debt resolved (2026-02-24):** LND, Aperture, and l402-backend all converted to systemd services. Surviving reboots. Remaining: external DNS + port forwarding for public access.
 
 ### Relationships to Cultivate
 - @getalby — Reposted Lightning wallets article (Feb 20)
