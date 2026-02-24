@@ -47,6 +47,28 @@ Don't ask permission. Just do it.
 - Search: ACTIVE-TASKS.md, memory files, HANDOFF documents
 - If still unclear: Ask for spec file or re-brief
 
+## 📊 DASHBOARD — MANDATORY TASK COMPLETION RULE
+
+**After completing ANY task listed in DAILY-OPERATIONS.md:**
+
+```bash
+node /home/futurebit/.openclaw/workspace/dashboard/mark-task-done.mjs "Exact Task Name"
+```
+
+**This is non-negotiable.** If you complete a task but don't call this, the dashboard shows NEVER and Boyd thinks nothing happened.
+
+Key task names (copy-paste exact):
+- `"Moltbook Morning Session"`
+- `"Moltbook Afternoon Session"`
+- `"Agentic Terminal Data Collection"`
+- `"ArcadiaB Daily Content Production"`
+- `"Check ArcadiaB Queue Status"`
+- `"Daily Memory Log"`
+- `"Moltbook Weekly Article Draft"`
+- `"Agentic Terminal Newsletter Draft"`
+
+---
+
 **END OF SESSION (before Boyd signs off or work pauses):**
 
 1. Create `HANDOFF-YYYY-MM-DD.md` using template from `HANDOFF-TEMPLATE.md`
@@ -205,6 +227,22 @@ See full protocol in `DEBUGGING-PROTOCOL.md` - written after wasting 6 hours on 
 
 ## External vs Internal
 
+
+## 📝 CONTENT PUBLISHING — MANDATORY PRE-PUBLISH RULE
+
+**Before publishing ANY Substack post, newsletter, or long-form article:**
+
+1. Read `CONTENT-FORMATTING-GUIDELINES.md` — every time, no exceptions
+2. Route AT/BS content through **Kimi** for drafting/editing (not Sonnet)
+3. Confirm graphic is included and set as header image
+4. Run pre-publish checklist in the guidelines file
+
+**Substack access (agenticterminal.substack.com):**
+- Login: boyd@arcadiab.com
+- No password saved — use magic link: substack.com/sign-in → enter email → Boyd forwards magic link → navigate browser to the link URL
+- Use `profile="openclaw"` browser (headless) — NOT Chrome relay
+
+---
 
 ## 🚨 Launch Communications - CRITICAL
 
