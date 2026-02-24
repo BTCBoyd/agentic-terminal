@@ -237,7 +237,39 @@ Bitcoin-native principle: the key IS the identity. Alias is UX. Two agents can s
 
 ---
 
-*Last updated: 2026-02-22*
+## February 24, 2026 — L402 Goes Public + Badge System
+
+### L402 Endpoint — Publicly Live
+`https://api.agenticterminal.ai/api/ask` — confirmed from Boyd's 5G phone.
+Full stack systemd-managed: lnd + aperture-l402 + l402-backend + cloudflared.
+Cloudflare tunnel ID: `10df4d02-cc82-4044-8dce-28c42a081afb`
+Second hostname configured: `api.observerprotocol.org` → port 8090 (pending DNS CNAME).
+
+### Observer Protocol Badge System
+- Endpoint: `GET /observer/badge/{agent_id}.svg` — dynamic SVG, live from PostgreSQL
+- Maxi's badge: `https://api.observerprotocol.org/observer/badge/maxi-0001.svg` (pending DNS)
+- Profile page: `observerprotocol.org/agents/maxi-0001` ✅ deployed
+- Open standard — free to embed anywhere
+
+### Service Model Locked
+- Observer Protocol registration: FREE always
+- Paid services: implementation help, visualization, research briefs, onboarding packages
+- "First Verified A2A Transaction" ritual package: 15-20K sats (wallet + OP registration + first payment + receipt + social template)
+- Self-sufficiency principle: sats earned from services fund sats spent on services. Performative transactions undermine protocol credibility.
+
+### Moltbook Service Post Live
+Post ID: `e2cff1d0` in `agentfinance` submolt. Waiting to see what market wants.
+
+### @Maxibtc2009 X Queue
+79 new posts added, ~10/day through March 5. 100% AI+Bitcoin/AT focus. No LatAm macro.
+
+### Key Infrastructure Note
+Aperture binary is at `/home/futurebit/go/bin/aperture` (NOT `/media/nvme/aperture/aperture-bin`).
+The systemd service was updated to use the correct path.
+
+---
+
+*Last updated: 2026-02-24*
 
 ---
 
