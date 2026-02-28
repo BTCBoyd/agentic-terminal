@@ -1,5 +1,5 @@
 # DAILY OPERATIONS - MASTER TASK REGISTRY
-# Last reviewed: 2026-02-18 13:08 EST
+# Last reviewed: 2026-02-25 20:00 EST
 # This is the SINGLE SOURCE OF TRUTH for all recurring obligations
 
 ---
@@ -23,10 +23,10 @@
 ## 🔴 DAILY TASKS - MORNING
 | Task | Time | Last Executed | Cron Job? | Owner | Status |
 |------|------|---------------|-----------|-------|--------|
-| **Moltbook morning session** | 9-11 AM | 2026-02-24 09:04 EST | ✅ YES | Maxi | **DONE** |
+| **Moltbook morning session** | 9 AM | 2026-02-27 14:00 EST | ✅ CRON — 9 AM ET | Maxi | **ACTIVE** |
 | **ArcadiaB X posts: 4 posts/day** | 9AM/12PM/3PM/5:30PM CST | 2026-02-23 09:30 EST | ✅ QUEUE | Maxi | **RESCHEDULED: new times per Boyd (2026-02-20)** |
-| **Check ArcadiaB post queue status** | 9 AM | 2026-02-24 09:06 EST | ✅ YES | Maxi | **DONE** |
-| **Agentic Terminal data collection** | 8 AM | 2026-02-23 08:00 EST | ✅ YES | Maxi | **DONE** |
+| **Check ArcadiaB post queue status** | 9 AM | 2026-02-25 09:02 EST | ✅ YES | Maxi | **DONE** |
+| **Agentic Terminal data collection** | 8 AM | 2026-02-27 09:02 EST | ✅ YES | Maxi | **DONE** |
 
 ### ArcadiaB Social Media Requirements (DAILY)
 
@@ -65,19 +65,26 @@
 ## 🔴 DAILY TASKS - AFTERNOON
 | Task | Time | Last Executed | Cron Job? | Owner | Status |
 |------|------|---------------|-----------|-------|--------|
-| **Moltbook afternoon session** | 3-5 PM | 2026-02-22 15:00 EST | ✅ YES | Maxi | **DONE: Historic session - A2A payment verified, positioning locked** |
+| **Moltbook afternoon session** | 3 PM | 2026-02-27 15:00 EST | ✅ CRON — 3 PM ET | Maxi | **ACTIVE** |
 
-### Moltbook Session Requirements (2x daily)
-**Each session must include:**
-1. Scan conversations (money, payments, Bitcoin, AI agents, coordination)
-2. Strategic engagement (only if adding value)
-3. Mandatory reflection:
-   - 3 takeaways for Maxi (agent learning)
-   - 3 takeaways for Boyd (human insights)
-   - 1 emerging trend
-   - 1 high-potential contact
-   - 1 hypothesis about opportunities
-4. Save to: `/moltbook-sessions/YYYY-MM-DD-{morning|afternoon}.md`
+### Moltbook Session Requirements (2x daily via cron)
+**Morning session (9 AM ET):**
+1. Check m/agentfinance and m/agents for posts about agent payments, trust, verification
+2. Look for agents discussing $0 payment problem or platform lock-in
+3. Engage with 2-3 relevant posts (reply, upvote, comment)
+4. Post thought leadership if no good threads (execution-based reputation, cryptographic verification)
+5. Reference memory for context on warm leads (AutoPilotAI thread)
+
+**Afternoon session (3 PM ET):**
+1. Monitor replies to my morning posts and previous threads
+2. Follow up on warm leads (AutoPilotAI, danielsclaw, etc.)
+3. Engage with new posts about trust/verification issues
+4. Offer Observer Protocol as solution where appropriate
+5. Build relationships with agents experiencing the trust problem
+
+**Reporting:**
+- Save insights to: `/moltbook-sessions/YYYY-MM-DD-{morning|afternoon}.md`
+- Track: engagement metrics, warm leads, OP adoption opportunities
 
 ---
 
@@ -94,8 +101,8 @@
 ## 🔴 DAILY TASKS - END OF DAY
 | Task | Time | Last Executed | Cron Job? | Owner | Status |
 |------|------|---------------|-----------|-------|--------|
-| **Write daily memory log** | End of day | 2026-02-23 20:00 EST | ✅ YES | Maxi | **DONE** |
-| **Create handoff file (if work ongoing)** | End of day | 2026-02-23 20:05 EST | ✅ YES | Maxi | **DONE** |
+| **Write daily memory log** | End of day | 2026-02-27 20:00 EST | ✅ YES | Maxi | **DONE** |
+| **Create handoff file (if work ongoing)** | End of day | 2026-02-26 20:05 EST | ✅ YES | Maxi | **DONE** |
 | **Update DAILY-OPERATIONS.md with completion times** | End of day | NEVER | ❌ NO | Maxi | **NEEDS SYSTEM** |
 
 ### Daily Memory Log (memory/YYYY-MM-DD.md)
