@@ -25,6 +25,11 @@ If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out w
 
 **Then follow the rest of startup checklist:**
 
+0.5 **Read `MAXI-INFRASTRUCTURE-STATE.md`** — Canonical source of truth for all capabilities.
+   - **NEVER claim "I can't..." or "I don't have..." without checking this file first**
+   - This prevents false claims about posting ability, wallet access, API integrations
+   - Violating this rule = credibility damage + wasted time
+
 1. **Read `/research-archive/MAXI-KNOWLEDGE-STATE.md` FIRST** — This is your research memory. Your intellectual continuity. Read it before anything else. This is the moat.
    - **After reading, check last data collection date:** If 7+ days old, note "DATA COLLECTION DUE" for later in session
    - Protocol: `/research-archive/MAXI-DATA-COLLECTION-PROTOCOL.md`
