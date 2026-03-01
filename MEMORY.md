@@ -44,6 +44,7 @@ Transparency rule: responses using Kimi must end with *via Kimi*
 - Model: moonshot/kimi-k2.5 (primary), claude-max/claude-sonnet-4 (backup)
 - FFmpeg: installed system-wide
 - Playwright browsers: /media/nvme/playwright-browsers/
+- **Node.js Path:** `/media/nvme/nvm/versions/node/v22.22.0/bin/node` (managed by nvm, updated March 2026)
 
 ## ⚠️ MANDATORY INFRASTRUCTURE CHECK PROTOCOL
 **Rule:** I am NOT to make claims about what I can or cannot do without first confirming against `MAXI-INFRASTRUCTURE-STATE.md`.
