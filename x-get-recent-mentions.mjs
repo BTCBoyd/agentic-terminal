@@ -1,16 +1,15 @@
 #!/usr/bin/env node
 /**
- * Fetch recent X mentions - read-only version
+ * Fetch recent X mentions - FIXED: using API v1.1 (OAuth 1.0a compatible)
  */
 
 import https from 'https';
 import crypto from 'crypto';
 
-const CONSUMER_KEY = 'VWpKNdNnQGRjgBvwVBU7b3QCK';
-const CONSUMER_SECRET = 'R9RkdNPZEVS2jqW7ioJ4Qp87jgWkFFa7MHtmZt0jQt1ro9q8gv';
-const ACCESS_TOKEN = '2021647460758966273-hERiLthBFKWeBSW5RmP4JHzPZWmjXh';
-const ACCESS_TOKEN_SECRET = 'ZyQ3wGEgPpV3OJFV9bcXfoFoZykbni9BwPNrWYxkAKclZ';
-const MY_USER_ID = '2021647460758966273';
+const CONSUMER_KEY = 'jkunQBjrkqbGxDOXA2k7ve88q';
+const CONSUMER_SECRET = 'DJGjqTZxXq2eWU3Rl0LwlEuUwq4i5cV6rfaytP7vtwpKGJIXC4';
+const ACCESS_TOKEN = '2021647460758966273-5rFCUBnItjBr54ZLIAfuFRDFZjVOM8';
+const ACCESS_TOKEN_SECRET = 'KXNdkIISHaPZ6Fu3gvsbVDFQz2H1NE5DQG9kDSqDRVebN';
 
 function percentEncode(str) {
   return encodeURIComponent(str)
@@ -62,12 +61,13 @@ function buildAuthHeader(method, url, queryParams = {}) {
 
 async function getMentions() {
   return new Promise((resolve, reject) => {
-    const baseUrl = `https://api.twitter.com/2/users/${MY_USER_ID}/mentions`;
+    // FIXED: Using API v1.1 endpoint which works with OAuth 1.0a
+    const baseUrl = 'https://api.twitter.com/1.1/statuses/mentions_timeline.json';
     const queryParams = {
-      'max_results': '5',
-      'tweet.fields': 'created_at,author_id,text'
+      'count': '10',
+      'tweet_mode': 'extended'
     };
-    const url = `${baseUrl}?max_results=5&tweet.fields=created_at,author_id,text`;
+    const url = `${baseUrl}?count=10&tweet_mode=extended`;
     
     const authHeader = buildAuthHeader('GET', baseUrl, queryParams);
     
@@ -93,12 +93,14 @@ async function getMentions() {
 console.log('=== Recent X Mentions ===\n');
 getMentions()
   .then(data => {
-    if (data.data && data.data.length > 0) {
-      data.data.forEach((tweet, i) => {
-        console.log(`${i + 1}. [ID: ${tweet.id}]`);
-        console.log(`   Author: ${tweet.author_id}`);
+    if (data && data.length > 0) {
+      data.forEach((tweet, i) => {
+        const text = tweet.full_text || tweet.text;
+        console.log(`${i + 1}. [ID: ${tweet.id_str}]`);
+        console.log(`   Author: @${tweet.user.screen_name}`);
+        console.log(`   Name: ${tweet.user.name}`);
         console.log(`   Time: ${tweet.created_at}`);
-        console.log(`   Text: ${tweet.text}`);
+        console.log(`   Text: ${text}`);
         console.log('');
       });
     } else {

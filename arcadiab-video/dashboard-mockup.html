@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 1920px;
+  height: 1080px;
+  background: #0A1628;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard {
+  width: 1400px;
+  height: 900px;
+  background: linear-gradient(145deg, #0d1d33 0%, #0A1628 100%);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 25px 80px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo-icon {
+  width: 48px;
+  height: 48px;
+  background: #F7931A;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  font-size: 24px;
+}
+.logo-text {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+.nav {
+  display: flex;
+  gap: 32px;
+}
+.nav-item {
+  color: #8B9CB8;
+  font-size: 16px;
+  font-weight: 500;
+}
+.nav-item.active {
+  color: #F7931A;
+}
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.balance-card {
+  background: rgba(255,255,255,0.03);
+  border-radius: 16px;
+  padding: 32px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.card-label {
+  color: #8B9CB8;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+.btc-balance {
+  color: #F7931A;
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.mxn-value {
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+}
+.change-positive {
+  color: #22C55E;
+  font-size: 18px;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.chart-card {
+  background: rgba(255,255,255,0.03);
+  border-radius: 16px;
+  padding: 32px;
+  border: 1px solid rgba(255,255,255,0.06);
+  grid-column: span 2;
+  height: 400px;
+}
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.chart-title {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.chart-legend {
+  display: flex;
+  gap: 24px;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #8B9CB8;
+  font-size: 14px;
+}
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.legend-dot.btc { background: #F7931A; }
+.legend-dot.peso { background: #EF4444; }
+.chart-area {
+  height: 280px;
+  position: relative;
+}
+.chart-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+/* Draw upward trending line */
+.chart-line-btc {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, #F7931A 0%, #FFB84D 100%);
+  transform: rotate(-8deg);
+  transform-origin: left center;
+}
+.chart-line-btc::before {
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: -6px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid #F7931A;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+.grid-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.grid-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255,255,255,0.05);
+}
+.grid-line:nth-child(1) { top: 0; }
+.grid-line:nth-child(2) { top: 25%; }
+.grid-line:nth-child(3) { top: 50%; }
+.grid-line:nth-child(4) { top: 75%; }
+.grid-line:nth-child(5) { bottom: 0; }
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+.stat-box {
+  background: rgba(255,255,255,0.03);
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.stat-label {
+  color: #8B9CB8;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+.stat-value {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+.stat-value.positive {
+  color: #22C55E;
+}
+</style>
+</head>
+<body>
+<div class="dashboard">
+  <div class="header">
+    <div class="logo">
+      <div class="logo-icon">₿</div>
+      <div class="logo-text">ArcadiaB</div>
+    </div>
+    <div class="nav">
+      <div class="nav-item active">Dashboard</div>
+      <div class="nav-item">Treasury</div>
+      <div class="nav-item">Reports</div>
+      <div class="nav-item">Settings</div>
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="balance-card">
+      <div class="card-label">Bitcoin Balance</div>
+      <div class="btc-balance">2.45891042 BTC</div>
+      <div class="mxn-value">$3,847,293.00 MXN</div>
+      <div class="change-positive">↗ +23.4% YTD</div>
+    </div>
+    <div class="balance-card">
+      <div class="card-label">Cost Basis</div>
+      <div class="btc-balance" style="color: white; font-size: 42px;">$1,847,000 MXN</div>
+      <div class="mxn-value" style="font-size: 24px; color: #8B9CB8;">Avg. $751,234 USD/BTC</div>
+      <div class="change-positive">Unrealized: +$2.08M MXN</div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">Purchasing Power Protection</div>
+        <div class="chart-legend">
+          <div class="legend-item"><div class="legend-dot btc"></div>Bitcoin Treasury</div>
+          <div class="legend-item"><div class="legend-dot peso"></div>Peso Savings</div>
+        </div>
+      </div>
+      <div class="chart-area">
+        <div class="grid-lines">
+          <div class="grid-line"></div>
+          <div class="grid-line"></div>
+          <div class="grid-line"></div>
+          <div class="grid-line"></div>
+          <div class="grid-line"></div>
+        </div>
+        <svg width="100%" height="100%" viewBox="0 0 1000 280" preserveAspectRatio="none">
+          <!-- Peso depreciation line (red, going down) -->
+          <polyline points="0,50 200,80 400,120 600,160 800,200 1000,240" 
+                    fill="none" stroke="#EF4444" stroke-width="3" opacity="0.6"/>
+          <!-- Bitcoin appreciation line (orange, going up) -->
+          <polyline points="0,220 200,200 400,170 600,130 800,80 1000,30" 
+                    fill="none" stroke="#F7931A" stroke-width="4"/>
+          <!-- Arrow at end of BTC line -->
+          <polygon points="990,35 1000,30 990,25" fill="#F7931A"/>
+          <!-- Data points -->
+          <circle cx="0" cy="220" r="6" fill="#F7931A"/>
+          <circle cx="200" cy="200" r="6" fill="#F7931A"/>
+          <circle cx="400" cy="170" r="6" fill="#F7931A"/>
+          <circle cx="600" cy="130" r="6" fill="#F7931A"/>
+          <circle cx="800" cy="80" r="6" fill="#F7931A"/>
+          <circle cx="1000" cy="30" r="8" fill="#F7931A"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="stats-row">
+    <div class="stat-box">
+      <div class="stat-label">First Purchase</div>
+      <div class="stat-value">Jan 15, 2024</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-label">Total Contributions</div>
+      <div class="stat-value">12</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-label">ASOFOM Certified</div>
+      <div class="stat-value positive">✓ Regulated</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

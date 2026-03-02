@@ -17,7 +17,7 @@ const profile = {
   picture: 'https://example.com/maxi-avatar.png', // You'll need to upload an avatar
   website: 'https://bitcoinsingularity.ai',
   nip05: 'maxi@bitcoinsingularity.ai', // Optional - requires DNS setup
-  lud16: 'maxi@getalby.com', // Maxi's Lightning address from Alby
+  lud16: '', // TODO: set self-hosted LNURL once Lightning address is configured on LND node
 };
 
 // Create a kind 0 (profile) event

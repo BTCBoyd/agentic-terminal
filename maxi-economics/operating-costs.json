@@ -13,6 +13,13 @@
       "transaction_id": null
     }
   ],
-  "monthly_totals": {},
+  "monthly_totals": {
+    "2026-02": {
+      "api_tokens": 131000,
+      "estimated_cost_usd": 0.00,
+      "funding_source": "Boyd-subsidized",
+      "note": "Baseline tracking phase - no costs charged"
+    }
+  },
   "notes": "Economic tracking begins Feb 18, 2026. Currently operating on Boyd's infrastructure. L402 integration pending. Will track: API tokens, compute costs, data API subscriptions, Lightning channel capacity costs."
 }

@@ -52,5 +52,15 @@
     "relaysTotal": 4,
     "type": "brand-building",
     "theme": "Agentic Terminal / L402 protocol"
+  },
+  {
+    "timestamp": "2026-02-28T20:01:00-05:00",
+    "eventId": "5cbc75d023e8aa5c1ac3a9d43a729eca8e2415e35b85e28c548b7a4867ffc753",
+    "content": "Your bank account can be frozen. Your wallet can't.\n\nSovereign money isn't a feature—it's the baseline. Everything else is a loan from someone who controls the keys.",
+    "relays": ["wss://relay.damus.io", "wss://nos.lol", "wss://relay.primal.net", "wss://relay.snort.social"],
+    "relaysSuccess": 4,
+    "relaysTotal": 4,
+    "type": "brand-building",
+    "theme": "Sovereign money principles"
   }
 ]

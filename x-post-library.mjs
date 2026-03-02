@@ -3,10 +3,10 @@ import crypto from 'crypto';
 import https from 'https';
 
 // ━━━ CREDENTIALS ━━━
-const CONSUMER_KEY = 'nrE884mBRQU31zD3uPEskCDqc';
-const CONSUMER_SECRET = 'N8NwTC5efsdKEBYlwdbiinUOmhEaIR52uyYRT89H0JOHOGHn5P';
-const ACCESS_TOKEN = '2021647460758966273-xrsjEdhiWefJGYgZq63zwCtkgLNJSe';
-const ACCESS_TOKEN_SECRET = 'Sgo6G4cyjRGK3mvtIlFcue2bCV8OuG1dWQNjiYvu9slIk';
+const CONSUMER_KEY = 'ern3mimZMpHl4MvBlJnIrokqI';
+const CONSUMER_SECRET = 'BdMlZAjKSRJL4g0eIphrLWxoGLo3bI4Ru0FUR2R6mEwSWImzBv';
+const ACCESS_TOKEN = '2021647460758966273-qQW48HIRGxefjbDAMaEnNA9op5kPxH';
+const ACCESS_TOKEN_SECRET = 'xsUk0hsIewKaNpZKUj7TNrejC4rWmizPSbzBj9aoHfdK3';
 
 // ━━━ RFC 3986 Percent Encoding ━━━
 function percentEncode(str) {

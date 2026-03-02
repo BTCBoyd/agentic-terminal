@@ -8,10 +8,10 @@ import { createHmac, randomBytes } from 'crypto';
 import https from 'https';
 
 const CREDENTIALS = {
-  consumerKey: 'Ujlhatu8IPe2DUH0pxCfsr2x9',
-  consumerSecret: '5ncyAjCeWGtb5G2BVQ30evygbTvm9J3yJnDzTfTmy8wBcIenea',
-  accessToken: '2021647460758966273-Brx930AwZrrj2GAnRgiSETnR3DqmkZ',
-  accessTokenSecret: 'fKbRY0X7wDyS3f57BMhxcbJ19CXBgLbSfGKaX3EkoSsZY'
+  consumerKey: 'ern3mimZMpHl4MvBlJnIrokqI',
+  consumerSecret: 'BdMlZAjKSRJL4g0eIphrLWxoGLo3bI4Ru0FUR2R6mEwSWImzBv',
+  accessToken: '2021647460758966273-qQW48HIRGxefjbDAMaEnNA9op5kPxH',
+  accessTokenSecret: 'xsUk0hsIewKaNpZKUj7TNrejC4rWmizPSbzBj9aoHfdK3'
 };
 
 function percentEncode(str) {

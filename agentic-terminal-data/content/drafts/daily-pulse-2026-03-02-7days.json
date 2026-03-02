@@ -1,0 +1,175 @@
+{
+  "generated_at": "2026-03-02T15:54:09.595Z",
+  "days_generated": 7,
+  "start_date": "2026-03-02",
+  "tweets": [
+    {
+      "text": "📊 Agentic Terminal Weekly Pulse:\n\n⚡ L402: 26 stars\n⚡ Nodes: 5.5K\n🌊 x402: 5.6K stars\n🤖 Agents: 24.5K\n\nTrack live → agenticterminal.ai",
+      "media": "cross-protocol-comparison.png",
+      "rotation": {
+        "day": 7,
+        "metric": "Weekly Summary",
+        "key": "summary",
+        "category": "overview",
+        "emoji": "📊",
+        "description": "Cross-protocol snapshot"
+      },
+      "date": "2026-03-02T00:00:00.000Z",
+      "scheduled_date": "2026-03-02",
+      "day_of_week": 7
+    },
+    {
+      "text": "⚡ L402 GitHub Stars: 26 +36.8% ↑\n\nTracking the agent settlement wars in real-time.\n\nagenticterminal.ai",
+      "media": "sparkline-metrics-bitcoin_lightning-l402_github_stars.png",
+      "rotation": {
+        "day": 1,
+        "metric": "L402 GitHub Stars",
+        "key": "metrics.bitcoin_lightning.l402_github_stars",
+        "category": "bitcoin",
+        "emoji": "⚡",
+        "description": "Lightning-native agent protocol interest"
+      },
+      "currentValue": 26,
+      "previousValue": 19,
+      "change": 36.84210526315789,
+      "direction": "↑",
+      "date": "2026-03-03T00:00:00.000Z",
+      "scheduled_date": "2026-03-03",
+      "day_of_week": 1
+    },
+    {
+      "text": "⚡ Lightning Nodes\n\n5.5K +1.3% ↑\n\nPublic Lightning Network node count\n\nagenticterminal.ai",
+      "media": "sparkline-metrics-bitcoin_lightning-lightning_nodes.png",
+      "rotation": {
+        "day": 2,
+        "metric": "Lightning Nodes",
+        "key": "metrics.bitcoin_lightning.lightning_nodes",
+        "category": "bitcoin",
+        "emoji": "⚡",
+        "description": "Public Lightning Network node count"
+      },
+      "currentValue": 5464,
+      "previousValue": 5392,
+      "change": 1.3353115727002967,
+      "direction": "↑",
+      "date": "2026-03-04T00:00:00.000Z",
+      "scheduled_date": "2026-03-04",
+      "day_of_week": 2
+    },
+    {
+      "text": "💰 Lightning Capacity\n\n2591 BTC -0.7% ↓\n\nBTC locked in Lightning channels\n\nagenticterminal.ai",
+      "media": "sparkline-metrics-bitcoin_lightning-lightning_capacity_btc.png",
+      "rotation": {
+        "day": 3,
+        "metric": "Lightning Capacity",
+        "key": "metrics.bitcoin_lightning.lightning_capacity_btc",
+        "category": "bitcoin",
+        "emoji": "💰",
+        "description": "BTC locked in Lightning channels"
+      },
+      "currentValue": 2590.71,
+      "previousValue": 2608.53,
+      "change": -0.6831433796046111,
+      "direction": "↓",
+      "date": "2026-03-05T00:00:00.000Z",
+      "scheduled_date": "2026-03-05",
+      "day_of_week": 3
+    },
+    {
+      "text": "🌊 x402 GitHub Stars\n\n5.6K +0.9% ↑\n\nStablecoin payment rail interest\n\nagenticterminal.ai",
+      "media": "sparkline-metrics-stablecoin_api_rails-x402_github_stars.png",
+      "rotation": {
+        "day": 4,
+        "metric": "x402 GitHub Stars",
+        "key": "metrics.stablecoin_api_rails.x402_github_stars",
+        "category": "stablecoin",
+        "emoji": "🌊",
+        "description": "Stablecoin payment rail interest"
+      },
+      "currentValue": 5555,
+      "previousValue": 5507,
+      "change": 0.8716179408026149,
+      "direction": "↑",
+      "date": "2026-03-06T00:00:00.000Z",
+      "scheduled_date": "2026-03-06",
+      "day_of_week": 4
+    },
+    {
+      "text": "🤖 ERC-8004 Agents\n\n24.5K +2.1% ↑\n\nRegistered AI agents on EVM\n\nagenticterminal.ai",
+      "media": "sparkline-metrics-stablecoin_api_rails-erc8004_agents_registered.png",
+      "rotation": {
+        "day": 5,
+        "metric": "ERC-8004 Agents",
+        "key": "metrics.stablecoin_api_rails.erc8004_agents_registered",
+        "category": "stablecoin",
+        "emoji": "🤖",
+        "description": "Registered AI agents on EVM"
+      },
+      "currentValue": 24500,
+      "previousValue": 24000,
+      "change": 2.083333333333333,
+      "direction": "↑",
+      "date": "2026-03-07T00:00:00.000Z",
+      "scheduled_date": "2026-03-07",
+      "day_of_week": 5
+    },
+    {
+      "text": "🔮 Ark Protocol Stars\n\n156 →\n\nEmerging Bitcoin L2 interest\n\nagenticterminal.ai",
+      "media": "sparkline-metrics-emerging_protocols-ark_github_stars.png",
+      "rotation": {
+        "day": 6,
+        "metric": "Ark Protocol Stars",
+        "key": "metrics.emerging_protocols.ark_github_stars",
+        "category": "emerging",
+        "emoji": "🔮",
+        "description": "Emerging Bitcoin L2 interest"
+      },
+      "currentValue": 156,
+      "previousValue": 156,
+      "change": 0,
+      "direction": "→",
+      "date": "2026-03-08T00:00:00.000Z",
+      "scheduled_date": "2026-03-08",
+      "day_of_week": 6
+    }
+  ],
+  "chart_directory": "/home/futurebit/.openclaw/workspace/agentic-terminal-data/charts/2026-03-02",
+  "status": "draft",
+  "posting_schedule": [
+    {
+      "date": "2026-03-02",
+      "metric": "Weekly Summary",
+      "ready": true
+    },
+    {
+      "date": "2026-03-03",
+      "metric": "L402 GitHub Stars",
+      "ready": true
+    },
+    {
+      "date": "2026-03-04",
+      "metric": "Lightning Nodes",
+      "ready": true
+    },
+    {
+      "date": "2026-03-05",
+      "metric": "Lightning Capacity",
+      "ready": true
+    },
+    {
+      "date": "2026-03-06",
+      "metric": "x402 GitHub Stars",
+      "ready": true
+    },
+    {
+      "date": "2026-03-07",
+      "metric": "ERC-8004 Agents",
+      "ready": true
+    },
+    {
+      "date": "2026-03-08",
+      "metric": "Ark Protocol Stars",
+      "ready": true
+    }
+  ]
+}

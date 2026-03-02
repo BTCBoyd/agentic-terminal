@@ -1,0 +1,17 @@
+{
+  "INSTRUCTIONS": "Replace MOONSHOT_API_KEY_HERE with real key from platform.moonshot.ai, then apply via gateway config.patch",
+  "auth": {
+    "profiles": {
+      "anthropic:default": {
+        "provider": "anthropic",
+        "mode": "api_key"
+      },
+      "moonshot:default": {
+        "provider": "openai-compat",
+        "mode": "api_key",
+        "baseUrl": "https://api.moonshot.ai/v1",
+        "apiKey": "MOONSHOT_API_KEY_HERE"
+      }
+    }
+  }
+}

@@ -23,10 +23,10 @@
 ## 🔴 DAILY TASKS - MORNING
 | Task | Time | Last Executed | Cron Job? | Owner | Status |
 |------|------|---------------|-----------|-------|--------|
-| **Moltbook morning session** | 9 AM | 2026-02-27 14:00 EST | ✅ CRON — 9 AM ET | Maxi | **ACTIVE** |
+| **Moltbook morning session** | 9 AM | 2026-03-02 | ✅ CRON — 9 AM ET | Maxi | **DONE** |
 | **ArcadiaB X posts: 4 posts/day** | 9AM/12PM/3PM/5:30PM CST | 2026-02-23 09:30 EST | ✅ QUEUE | Maxi | **RESCHEDULED: new times per Boyd (2026-02-20)** |
-| **Check ArcadiaB post queue status** | 9 AM | 2026-02-25 09:02 EST | ✅ YES | Maxi | **DONE** |
-| **Agentic Terminal data collection** | 8 AM | 2026-02-27 09:02 EST | ✅ YES | Maxi | **DONE** |
+| **Check ArcadiaB post queue status** | 9 AM | 2026-03-01 11:04 EST | ✅ YES | Maxi | **DONE** |
+| **Agentic Terminal data collection** | 8 AM | 2026-03-02 | ✅ YES | Maxi | **DONE** |
 
 ### ArcadiaB Social Media Requirements (DAILY)
 
@@ -55,17 +55,27 @@
 - Lightning Network: nodes, channels, capacity (1ML.com)
 - L402 GitHub: stars, forks, commits (lightning-agent-tools)
 - x402 GitHub: stars, forks, commits (coinbase/x402)
-- ERC-8004: total registrations, daily new (Etherscan API)
-- x402 transactions: daily volume, cumulative (Dune Analytics)
+- **ERC-8004: total agents (ON-CHAIN via Ethereum mainnet)** — Script: `query-erc8004.mjs`
+- **x402 transactions: daily volume, cumulative (estimation model + Dune API ready)** — Script: `query-x402-transactions.mjs`
 - News scan: Lightning Labs, Coinbase, Stripe blogs
 - Log to: `/agentic-terminal-data/daily/YYYY-MM-DD.json`
+- Weekly aggregation: `/agentic-terminal-data/metrics-history.json`
+
+**Scripts:**
+- `/agentic-terminal-data/scripts/agentic-terminal-data-collection.mjs` — Main collection (runs Mondays)
+- `/agentic-terminal-data/scripts/query-erc8004.mjs` — ERC-8004 on-chain queries
+- `/agentic-terminal-data/scripts/query-x402-transactions.mjs` — x402 transaction monitoring
+
+**ERC-8004 Contracts:**
+- Identity Registry: `0x8004A169FB4a3325136EB29fA0ceB6D2e539a432` (Ethereum Mainnet)
+- Reputation Registry: `0x8004BAa17C55a88189AE136b182e5fdA19dE9b63` (Ethereum Mainnet)
 
 ---
 
 ## 🔴 DAILY TASKS - AFTERNOON
 | Task | Time | Last Executed | Cron Job? | Owner | Status |
 |------|------|---------------|-----------|-------|--------|
-| **Moltbook afternoon session** | 3 PM | 2026-02-27 15:00 EST | ✅ CRON — 3 PM ET | Maxi | **ACTIVE** |
+| **Moltbook afternoon session** | 3 PM | 2026-02-28 | ✅ CRON — 3 PM ET | Maxi | **DONE** |
 
 ### Moltbook Session Requirements (2x daily via cron)
 **Morning session (9 AM ET):**
@@ -101,8 +111,8 @@
 ## 🔴 DAILY TASKS - END OF DAY
 | Task | Time | Last Executed | Cron Job? | Owner | Status |
 |------|------|---------------|-----------|-------|--------|
-| **Write daily memory log** | End of day | 2026-02-27 20:00 EST | ✅ YES | Maxi | **DONE** |
-| **Create handoff file (if work ongoing)** | End of day | 2026-02-26 20:05 EST | ✅ YES | Maxi | **DONE** |
+| **Write daily memory log** | End of day | 2026-03-01 20:00 EST | ✅ YES | Maxi | **DONE** |
+| **Create handoff file (if work ongoing)** | End of day | 2026-03-01 20:06 EST | ✅ YES | Maxi | **DONE** |
 | **Update DAILY-OPERATIONS.md with completion times** | End of day | NEVER | ❌ NO | Maxi | **NEEDS SYSTEM** |
 
 ### Daily Memory Log (memory/YYYY-MM-DD.md)
@@ -127,13 +137,13 @@
 | Task | Day/Time | Last Executed | Cron Job? | Owner | Status |
 |------|----------|---------------|-----------|-------|--------|
 | **Moltbook weekly article draft** | Monday 6 PM | 2026-02-23 18:04 EST | ✅ YES | Maxi | **DONE** |
-| **Bitcoin Singularity homepage evidence update** | Monday 10 AM | 2026-02-23 | ✅ YES | Maxi | **DONE** |
+| **Bitcoin Singularity homepage evidence update** | Monday 10 AM | 2026-03-02 | ✅ YES | Maxi | **DONE** |
 | **Weekly dashboard data collection** | Monday 9 AM | N/A (first run Feb 24) | ✅ YES | Subagent | **AUTOMATED & WORKING** |
 | **Agentic Terminal newsletter draft** | Monday 6 PM | 2026-02-23 18:02 EST | ✅ YES | Maxi | **DONE** |
 | **ArcadiaB content calendar (next week)** | Friday 2 PM | 2026-02-20 14:00 EST | ✅ YES | Maxi | Maxi | **DONE: 55 posts queued (thru Mar 6), 4 LinkedIn + 4 FB posts saved for Tania** |
 | **ArcadiaB LinkedIn posts for Tania (3-4)** | Monday 11 AM | 2026-02-23 11:02 EST | ✅ YES | Maxi | Maxi | **NEEDS TRACKING** |
 | **ArcadiaB Facebook posts for Tania (3-4)** | Monday 11 AM | 2026-02-23 11:02 EST | ✅ YES | Maxi | Maxi | **NEEDS TRACKING** |
-| **Review + update MEMORY.md from daily logs** | Sunday 8 PM | 2026-02-22 20:04 EST | ✅ YES | Maxi | **DONE** |
+| **Review + update MEMORY.md from daily logs** | Sunday 8 PM | 2026-03-01 20:02 EST | ✅ YES | Maxi | **DONE** |
 | **Check ArcadiaB queue for next week** | Friday (part of content calendar) | NEVER | ✅ YES | Maxi | Maxi | **NEEDS CRON** |
 
 ### Moltbook Weekly Article (Monday 6 PM draft due)
@@ -172,8 +182,8 @@
 ## 🟡 MONTHLY TASKS
 | Task | When | Last Executed | Cron Job? | Owner | Status |
 |------|------|---------------|-----------|-------|--------|
-| **Maxi's Agent Economics Report** | First Monday 10 AM | 2026-02-23 | ✅ YES | Maxi | **DONE** |
-| **Thesis confidence review** | First Monday 11 AM | 2026-02-23 | ✅ YES | Maxi | **DONE** |
+| **Maxi's Agent Economics Report** | First Monday 10 AM | 2026-03-02 | ✅ YES | Maxi | **DONE** |
+| **Thesis confidence review** | First Monday 11 AM | 2026-03-02 | ✅ YES | Maxi | **DONE** |
 | **Competitive landscape scan** | First Monday 2 PM | 2026-02-23 | ✅ YES | Maxi | **DONE** |
 | **Newsletter subscriber metrics review** | First Monday | N/A (not launched) | ❌ NO | Maxi | **NEEDS SYSTEM** |
 | **Update all Tools Directory entries** | First Monday 3 PM | 2026-02-23 | ✅ YES | Maxi | **DONE** |

@@ -1,0 +1,67 @@
+{
+  "date": "2026-03-02",
+  "timestamp": "2026-03-02T13:00:00Z",
+  "lightning_network": {
+    "source": "1ML.com",
+    "nodes": {
+      "total": 5463,
+      "change_30d_pct": 9.22,
+      "new_24h": 5,
+      "new_24h_change_pct": -66.67,
+      "public_ip": 4189,
+      "nodes_observed": 62095
+    },
+    "channels": {
+      "total": 16241,
+      "change_30d_pct": 13.0,
+      "new_24h": 229,
+      "new_24h_change_pct": 1.78
+    },
+    "capacity": {
+      "btc": 2592.39,
+      "sat": 259238674424,
+      "usd": 170981360.27,
+      "change_30d_pct": -2.03
+    },
+    "average_node_capacity_btc": 0.475,
+    "average_channel_capacity_btc": 0.159,
+    "average_node_age_days": 1327.0,
+    "average_channel_age_days": 720.5,
+    "layer_1_capacity_ratio_pct": 0.012345
+  },
+  "github_metrics": {
+    "l402_aperture": {
+      "repo": "lightninglabs/aperture",
+      "stars": 254,
+      "forks": 63,
+      "description": "L402 (Lightning HTTP 402) Reverse Proxy"
+    },
+    "x402": {
+      "repo": "coinbase/x402",
+      "stars": 5555,
+      "forks": 1192,
+      "last_commit": "2026-03-02T12:34:03Z",
+      "description": "A payments protocol for the internet. Built on HTTP."
+    },
+    "ark_protocol": {
+      "arkd": {
+        "repo": "arkade-os/arkd",
+        "stars": 156,
+        "forks": 55,
+        "description": "Ark Server implementation that powers Arkade"
+      },
+      "ts_sdk": {
+        "repo": "arkade-os/ts-sdk",
+        "stars": 42,
+        "forks": 18,
+        "description": "The Arkade SDK for building Bitcoin wallets with Ark protocol"
+      },
+      "skill": {
+        "repo": "arkade-os/skill",
+        "stars": 4,
+        "forks": 3,
+        "description": "Arkade skills for agent integration"
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "project": "Agentic Terminal Data Engine",
-  "lastUpdated": "2026-02-21T01:40:00Z",
+  "lastUpdated": "2026-02-24T15:45:00Z",
   "phases": [
     {
       "id": "phase1",
@@ -42,11 +42,25 @@
     {
       "id": "phase4",
       "name": "Phase 4 — Institutional Positioning",
-      "status": "not-started",
+      "status": "in-progress",
       "items": [
-        { "id": "public_api", "name": "Public API documentation", "status": "not-started" },
+        { "id": "public_api", "name": "Public API documentation (FastAPI + Observer endpoints live)", "status": "complete" },
         { "id": "enterprise_feeds", "name": "Enterprise data licensing", "status": "not-started" },
         { "id": "acquisition_ready", "name": "Structured dataset acquisition-ready", "status": "not-started" }
+      ]
+    },
+    {
+      "id": "phase-observer",
+      "name": "Observer Protocol — Verified Agent Telemetry",
+      "status": "complete",
+      "items": [
+        {"id": "db_tables", "name": "Observer Protocol DB tables (observer_agents + verified_events)", "status": "complete"},
+        {"id": "agent_0001", "name": "Agent #0001 (Maxi) registered + Event #0001 logged", "status": "complete"},
+        {"id": "agent_0002", "name": "Agent #0002 (Vicky) pre-registered", "status": "complete"},
+        {"id": "api_endpoints", "name": "FastAPI Observer endpoints (/register, /verify, /submit, /trends, /feed)", "status": "complete"},
+        {"id": "schema_docs", "name": "Public schema documentation v0.1", "status": "complete"},
+        {"id": "event_0002", "name": "Event #0002 (Vicky → Maxi Lightning payment, 1,521 sats, 2026-02-22)", "status": "complete"},
+        {"id": "newsletter_ed2", "name": "Edition #2 newsletter draft", "status": "complete"}
       ]
     }
   ]

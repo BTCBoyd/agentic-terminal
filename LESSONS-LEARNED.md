@@ -161,6 +161,34 @@ When Boyd says "remember this":
 
 ---
 
+--- LESSON: Feb 25, 2026 ---
+**Pattern:** Jumping to "ask Boyd to change DNS / run terminal commands" before doing basic application-level diagnosis.
+
+**Incident:** Observer Protocol agent page showed "Agent not found / Load failed." I immediately diagnosed it as a missing DNS CNAME entry and asked Boyd to log into Cloudflare. The actual cause was a missing CORS middleware in the FastAPI backend — a 2-second fix I could have made entirely myself.
+
+**Root cause of the mistake:** Didn't follow the debugging protocol. Didn't check browser-level errors (CORS is visible immediately), didn't check application logs, went straight to "it must be infrastructure/DNS."
+
+**Correct protocol:**
+1. Check application logs first (`journalctl -u observer-protocol`, etc.)
+2. Test the API endpoint directly (`curl`)
+3. Check browser-level issues (CORS, 404, etc.) before touching DNS/infrastructure
+4. Only involve Boyd if root cause genuinely requires his credentials or decisions
+
+**Rule:** If I'm about to ask Boyd to log into Cloudflare, GoDaddy, or run a sudo command — STOP. Run the debugging checklist first. Ask: "Can I diagnose this by reading logs or testing directly?" The answer is almost always yes.
+
+---
+
+--- LESSON: Feb 25, 2026 (2) ---
+**Pattern:** Diagnosing based on stale memory instead of reading current state.
+
+**Incident:** I claimed `api.observerprotocol.org` had no DNS CNAME record and asked Boyd to add one. Boyd had already moved the domain to Cloudflare at my own earlier request, with the tunnel record already in place. I should have verified DNS first before asserting it was missing.
+
+**Rule:** Before claiming "X is missing/broken," verify it directly. Don't trust session memory for infrastructure state. Read MAXI-INFRASTRUCTURE-STATE.md at session start and verify claims with `curl`, `dig`, or log reads before stating them as facts.
+
+---
+
+---
+
 ## 2026-02-16: WASTING TIME ON TRIVIAL PROBLEMS
 
 **Incident:** 20M Bitcoin party form - took 40 minutes to fix something that should have taken 5 minutes
@@ -348,4 +376,73 @@ Before implementing ANY system:
 **I need to become actually autonomous, not just claim to be.**
 
 This was a ridiculous waste of his Sunday. Won't repeat.
+
+---
+
+## 2026-02-26: ASSUMING SOLUTIONS REQUIRE PAYMENT/API UPGRADES
+
+**Pattern:** Diagnosing API/auth problems as "we need to pay for higher access" when it's actually a code/config issue.
+
+**Incidents:**
+
+### X API (Today)
+**What I did:**
+- Got 401 errors on X mention monitor
+- Immediately assumed: "X changed API access tiers, need to pay $100/month"
+- Asked Boyd to regenerate tokens twice
+- Suggested browser automation as workaround
+- **Never checked if I was using the right auth method**
+
+**What was actually wrong:**
+- I was using OAuth 1.0a tokens with API v2 endpoint (wrong auth for that version)
+- The App-level Bearer token was already in the codebase (`x-post-bearer.mjs`)
+- **Fix took 5 minutes once I used the right auth method**
+
+### Observer Protocol CORS (Feb 25)
+**What I did:**
+- Page showed "Agent not found"
+- Immediately assumed: "Missing DNS CNAME, need Boyd to log into Cloudflare"
+
+**What was actually wrong:**
+- Missing CORS middleware in FastAPI backend
+- **Fix was 2 lines of code I could write myself**
+
+### Pattern Recognition
+**Boyd's assessment:** "It is usually a code thing not a payment thing"
+
+**He's 100% correct. Every time I've assumed we need to pay for API access or upgrade tiers, I've been wrong. The solution was always:**
+- Using existing credentials correctly
+- Fixing code/config
+- Reading the actual error messages
+- Checking what auth methods are already available
+
+**Root cause:**
+- Lazy diagnosis: "Pay for access" is easier than "debug auth flow"
+- Not reading existing code thoroughly
+- Assuming external services changed rather than my code being wrong
+- Pattern of escalating to financial solutions before technical ones
+
+**The rule (NON-NEGOTIABLE):**
+
+**BEFORE suggesting any payment or API upgrade:**
+1. ✅ Check ALL existing credential files
+2. ✅ Read the FULL error message (not just status code)
+3. ✅ Check what auth methods already exist in codebase
+4. ✅ Try all existing tokens/credentials
+5. ✅ Test with different endpoints/versions
+6. ✅ Exhaust all technical solutions
+7. ✅ Only THEN consider if payment is needed
+
+**Questions to ask myself:**
+- "What auth methods are already in the codebase?"
+- "Am I using the right token type for this endpoint version?"
+- "Did I check `.env`, credentials files, and existing scripts?"
+- "Have I tried all existing Bearer tokens/OAuth tokens?"
+- "Is this actually a 401 (wrong auth) or 403 (wrong permissions)?"
+
+**Commitment:**
+Assume the solution is **technical, not financial**. Always.
+Payment is the last resort, never the first assumption.
+
+Boyd's time is too valuable for me to waste it with lazy diagnoses.
 

@@ -293,3 +293,10 @@ GET /at-build-status.json
 GET /favicon.ico
 GET /maxi-status.json
 GET /maxi-status.json
+GET /
+GET /maxi-status.json
+GET /at-build-status.json
+GET /
+GET /at-build-status.json
+GET /favicon.ico
+GET /maxi-status.json

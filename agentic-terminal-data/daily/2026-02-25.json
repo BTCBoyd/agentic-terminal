@@ -1,0 +1,78 @@
+{
+  "date": "2026-02-25",
+  "timestamp": "2026-02-25T13:00:00Z",
+  "lightning_network": {
+    "source": "1ML.com",
+    "nodes": {
+      "total": 5424,
+      "change_30d_pct": 9.40,
+      "new_24h": 9,
+      "new_24h_change_pct": -40.00,
+      "public_ip": 4152,
+      "tor": 2694,
+      "nodes_observed": 62038
+    },
+    "channels": {
+      "total": 16006,
+      "change_30d_pct": 14.94,
+      "new_24h": 266,
+      "new_24h_change_pct": 8.13
+    },
+    "capacity": {
+      "btc": 2595.39,
+      "sat": 259539054901,
+      "usd": 171365280.79,
+      "change_30d_pct": -1.41
+    },
+    "average_node_capacity_btc": 0.479,
+    "average_channel_capacity_btc": 0.161,
+    "average_channels_per_node": 5.90,
+    "average_node_age_days": 1330.6,
+    "average_channel_age_days": 728.8,
+    "layer_1_capacity_ratio_pct": 0.012359
+  },
+  "github_metrics": {
+    "l402_aperture": {
+      "repo": "lightninglabs/aperture",
+      "stars": 254,
+      "forks": 63,
+      "open_issues": 30,
+      "language": "Go",
+      "description": "L402 (Lightning HTTP 402) Reverse Proxy"
+    },
+    "x402": {
+      "repo": "coinbase/x402",
+      "stars": 5520,
+      "forks": 1162,
+      "open_issues": 265,
+      "language": "TypeScript",
+      "description": "A payments protocol for the internet. Built on HTTP."
+    },
+    "ark_protocol": {
+      "arkd": {
+        "repo": "arkade-os/arkd",
+        "stars": 156,
+        "forks": 54,
+        "open_issues": 97,
+        "language": "Go",
+        "description": "Ark Server implementation that powers Arkade"
+      },
+      "ts_sdk": {
+        "repo": "arkade-os/ts-sdk",
+        "stars": 42,
+        "forks": 18,
+        "open_issues": 36,
+        "language": "TypeScript",
+        "description": "The Arkade SDK for building Bitcoin wallets with Ark protocol"
+      },
+      "skill": {
+        "repo": "arkade-os/skill",
+        "stars": 4,
+        "forks": 3,
+        "open_issues": 0,
+        "language": "TypeScript",
+        "description": "Arkade skills for agent integration"
+      }
+    }
+  }
+}

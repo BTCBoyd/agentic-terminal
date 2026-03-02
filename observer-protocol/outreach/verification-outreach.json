@@ -1,0 +1,15 @@
+{
+  "verification_offers": [],
+  "verified_agents": [],
+  "stats": {
+    "agents_found": 0,
+    "offers_sent": 0,
+    "agents_verified": 0,
+    "by_source": {
+      "nostr": 0,
+      "x": 0,
+      "github": 0
+    }
+  },
+  "created_at": "2026-02-26T22:30:00Z"
+}

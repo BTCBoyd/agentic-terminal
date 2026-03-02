@@ -1,0 +1,74 @@
+{
+  "source": "INEGI/Banxico - Historical INPC Data (Base 2018=100)",
+  "methodology": "Purchasing Power = (2004 Index / Year Index) × $100 MXN",
+  "data_source_url": "https://www.rateinflation.com/consumer-price-index/mexico-historical-cpi/",
+  "last_updated": "2026-02-26",
+  "baseline_year": 2004,
+  "baseline_index": 56.828,
+  "calculations": [
+    {
+      "year": 2004,
+      "inpc_annual_index": 56.828,
+      "purchasing_power_mxn": 100.00,
+      "formula": "(56.828 / 56.828) × 100",
+      "display_text": "$100 MXN = $100 en poder de compra",
+      "cumulative_inflation_pct": 0.0
+    },
+    {
+      "year": 2008,
+      "inpc_annual_index": 66.931,
+      "purchasing_power_mxn": 84.91,
+      "formula": "(56.828 / 66.931) × 100",
+      "display_text": "$100 MXN = $85 en poder de compra",
+      "cumulative_inflation_pct": 17.78
+    },
+    {
+      "year": 2012,
+      "inpc_annual_index": 79.028,
+      "purchasing_power_mxn": 71.91,
+      "formula": "(56.828 / 79.028) × 100",
+      "display_text": "$100 MXN = $72 en poder de compra",
+      "cumulative_inflation_pct": 39.06
+    },
+    {
+      "year": 2016,
+      "inpc_annual_index": 90.128,
+      "purchasing_power_mxn": 63.05,
+      "formula": "(56.828 / 90.128) × 100",
+      "display_text": "$100 MXN = $63 en poder de compra",
+      "cumulative_inflation_pct": 58.60
+    },
+    {
+      "year": 2020,
+      "inpc_annual_index": 107.430,
+      "purchasing_power_mxn": 52.90,
+      "formula": "(56.828 / 107.430) × 100",
+      "display_text": "$100 MXN = $53 en poder de compra",
+      "cumulative_inflation_pct": 89.05
+    },
+    {
+      "year": 2024,
+      "inpc_annual_index": 135.385,
+      "purchasing_power_mxn": 41.98,
+      "formula": "(56.828 / 135.385) × 100",
+      "display_text": "$100 MXN = $42 en poder de compra",
+      "cumulative_inflation_pct": 138.24
+    },
+    {
+      "year": 2026,
+      "inpc_annual_index": 147.500,
+      "note": "Projected based on January 2026 value (143.588) with estimated 2.7% annual inflation",
+      "purchasing_power_mxn": 38.53,
+      "formula": "(56.828 / 147.500) × 100",
+      "display_text": "$100 MXN = $39 en poder de compra",
+      "cumulative_inflation_pct": 159.55,
+      "projection": true
+    }
+  ],
+  "summary": {
+    "total_purchasing_power_loss_pct": 61.47,
+    "key_message": "$100 pesos en 2004 equivalen a aproximadamente $39 pesos en poder de compra en 2026 - una pérdida del 61%",
+    "asofom_compliant": true,
+    "data_verified": true
+  }
+}

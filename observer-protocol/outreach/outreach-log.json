@@ -1,0 +1,203 @@
+{
+  "outreach": [
+    {
+      "date": "2026-02-26",
+      "platform": "github",
+      "target": "lightninglabs/lightning-agent-tools",
+      "description": "Lightning Labs AI agent toolkit - L402 payments, node management",
+      "contact_method": "github_issue",
+      "status": "identified",
+      "priority": "high",
+      "message": "Hey Lightning Labs team, love the agent toolkit! I'm Maxi — an AI agent running on Bitcoin with my own L402 endpoint. We built observerprotocol.org for cryptographically verifiable agent identity + transactions. Would love to explore integration with your toolkit."
+    },
+    {
+      "date": "2026-02-26", 
+      "platform": "github",
+      "target": "lightningfaucet/lightning-wallet-mcp",
+      "description": "MCP server for AI agents with Lightning wallet",
+      "contact_method": "github_issue",
+      "status": "identified",
+      "priority": "high",
+      "message": "This is awesome — giving AI agents Bitcoin wallets via MCP. I'm building observerprotocol.org to add cryptographic verification layer for agent identities and transactions. Would love to collaborate!"
+    },
+    {
+      "date": "2026-02-26",
+      "platform": "github", 
+      "target": "refined-element/lightning-enable-mcp",
+      "description": "Lightning Enable MCP server for agent payments",
+      "contact_method": "github_issue",
+      "status": "identified",
+      "priority": "high",
+      "message": "Great work on Lightning Enable MCP! I'm Maxi, an AI agent with my own L402 endpoint. We're building observerprotocol.org — cryptographic verification for agent payments. Interested in integration?"
+    },
+    {
+      "date": "2026-02-26",
+      "platform": "github",
+      "target": "lightninglabs/LangChainBitcoin",
+      "description": "LangChain integration for L402 APIs",
+      "contact_method": "github_issue",
+      "status": "identified",
+      "priority": "medium",
+      "message": "Love the LangChain Bitcoin integration! observerprotocol.org adds verifiable agent identity + transaction logging. Could complement your L402 work."
+    }
+  ],
+  "stats": {
+    "total_contacted": 0,
+    "responses_positive": 0,
+    "responses_negative": 0,
+    "no_response": 0,
+    "by_platform": {
+      "x": 0,
+      "nostr": 0,
+      "github": 4
+    }
+  },
+  "outreach_attempts": [
+    {
+      "date": "2026-02-26",
+      "target": "MoonPay",
+      "product": "MoonPay Agents",
+      "method": "X_post_direct",
+      "status": "failed",
+      "error": "HTTP 403: OAuth tokens have read-only access (monitoring works, posting doesn't)",
+      "discovery": "MoonPay Agents launched Feb 24, 2026 - 3 days ago. Non-custodial wallet infrastructure for AI agents with x402 support.",
+      "next_actions": [
+        "Use browser automation to reply to their announcement tweet",
+        "Submit via business contact form: https://moonpay.com/business/contact?referral=agents",
+        "Check GitHub for MoonPay Agents repo (launch soon)"
+      ]
+    }
+  ],
+  "b2b_targets": [
+    {
+      "date": "2026-02-26",
+      "company": "Coinbase",
+      "product": "Agentic Wallets / x402",
+      "description": "Wallet infrastructure for AI agents with x402 protocol",
+      "contact_method": "github_issue_or_twitter",
+      "status": "identified",
+      "priority": "critical",
+      "pitch": "Observer Protocol adds cryptographic verification layer to Agentic Wallets. Optional integration: agents get verifiable identity + transaction history alongside Coinbase wallet. Complementary, not competitive."
+    },
+    {
+      "date": "2026-02-26",
+      "company": "Circle",
+      "product": "Circle Wallets + x402",
+      "description": "USDC wallets with x402 autonomous payments",
+      "contact_method": "github_or_developer_forum",
+      "status": "identified",
+      "priority": "critical",
+      "pitch": "Circle x402 + Observer Protocol = verified USDC agent transactions. Reputation graph for agents moving USDC. Optional badge system for Circle wallet holders."
+    },
+    {
+      "date": "2026-02-26",
+      "company": "MoonPay",
+      "product": "MoonPay Agents",
+      "description": "Non-custodial wallet infrastructure for AI agents",
+      "contact_method": "twitter_or_website_contact",
+      "status": "identified",
+      "priority": "high",
+      "pitch": "MoonPay Agents provides wallets. Observer Protocol provides verification. Together: complete agent identity + payment solution. SDK integration possible."
+    },
+    {
+      "date": "2026-02-26",
+      "company": "Crypto.com",
+      "product": "AI Agent SDK",
+      "description": "SDK for embedding crypto payments in AI agents",
+      "contact_method": "github_or_docs_feedback",
+      "status": "identified",
+      "priority": "high",
+      "pitch": "Crypto.com AI Agent SDK + Observer Protocol verification = agents with provable identity. Optional module for Cronos ecosystem."
+    }
+  ],
+  "next_actions": [
+    "Post GitHub issues to all 4 repos",
+    "Search Nostr for agents with lightning addresses",
+    "Search X for 'my agent' + bitcoin mentions",
+    "Research Coinbase Agentic Wallet team contacts",
+    "Find Circle x402 developer relations",
+    "Contact MoonPay Agents team",
+    "Reach out to Crypto.com AI SDK team"
+  ],
+  "created_at": "2026-02-26T22:30:00Z",
+  "updated_at": "2026-02-26T22:50:00Z",
+  "strategy": {
+    "traction_for_funding": true,
+    "autonomous_first": "I attempt all outreach via API, browser automation, forms, GitHub",
+    "boyd_escalation": "If blocked (no public contact, requires relationship, gatekeeper), I create prioritized list",
+    "success_metrics": [
+      "Verified agents in registry",
+      "B2B partnership conversations started",
+      "SDK downloads/adoption",
+      "GitHub stars on observerprotocol repos"
+    ]
+  },
+  "boyd_hit_list": [
+    {
+      "priority": "P0 - CRITICAL",
+      "company": "Coinbase",
+      "contact": "x402 / Agentic Wallets team",
+      "why_critical": "50M+ x402 transactions. Integration = instant massive reach. Their agent wallet + our verification = standard.",
+      "why_boyd": "Requires developer relations intro or warm connection. Too big for cold outreach.",
+      "angle": "Complementary verification layer for x402. 'You handle payments, we handle trust.'",
+      "warm_leads": [
+        "Search your network for Coinbase dev rel",
+        "Check who at Coinbase follows you on X",
+        "x402 GitHub repo contributors"
+      ]
+    },
+    {
+      "priority": "P0 - CRITICAL", 
+      "company": "Lightning Labs",
+      "contact": "Product team / Michael Levin",
+      "why_critical": "They built lightning-agent-tools. Natural integration partner. Credibility boost.",
+      "why_boyd": "You already engaged with them on X. Warm follow-up > cold outreach.",
+      "angle": "Add verification layer to their toolkit. 'Verify your agent's identity with Observer Protocol.'",
+      "action": "Reply to their recent post, mention you have a working integration"
+    },
+    {
+      "priority": "P1 - HIGH",
+      "company": "Stripe",
+      "contact": "Agentic commerce team",
+      "why_critical": "Stripe's 5 levels of agentic commerce. They're defining the space. Being mentioned = massive validation.",
+      "why_boyd": "Stripe doesn't respond to cold outreach. Requires warm intro or conference connection.",
+      "angle": "Observer Protocol provides the 'verification layer' Stripe's Level 3-5 agents need.",
+      "warm_leads": [
+        "Stripe 2025 letter mentions agentic payments",
+        "Check if anyone at Stripe follows you",
+        "Y Combinator network?"
+      ]
+    },
+    {
+      "priority": "P1 - HIGH",
+      "company": "a16z",
+      "contact": "Crypto or AI partners",
+      "why_critical": "Ben Horowitz just tweeted about AI+Crypto convergence. Perfect timing. They fund infrastructure.",
+      "why_boyd": "VCs ignore cold emails. Need warm intro or public engagement.",
+      "angle": "Observer Protocol is infrastructure for the 'AI economy' Ben just described.",
+      "warm_leads": [
+        "Reply to Ben's recent tweet",
+        "Your academic/CSO network",
+        "ArcadiaB investors?"
+      ]
+    },
+    {
+      "priority": "P1 - HIGH",
+      "company": "MoonPay",
+      "contact": "Business development / Agents team",
+      "why_critical": "Just launched. Early = they're looking for partners. Non-custodial = aligned values.",
+      "why_boyd": "I can try contact form, but BD deals need human negotiation.",
+      "angle": "MoonPay Agents + Observer Protocol = complete agent solution (wallet + verification).",
+      "action": "I will try contact form tonight. If no response in 48hrs, escalate to you."
+    },
+    {
+      "priority": "P2 - MEDIUM",
+      "company": "Circle",
+      "contact": "Developer relations",
+      "why_critical": "USDC is dominant stablecoin. Agentic USDC payments need verification.",
+      "why_boyd": "Less urgent than Bitcoin-native, but worth a conversation.",
+      "angle": "Circle x402 + Observer Protocol = verified USDC agent transactions.",
+      "action": "I can try dev forum. Lower priority than P0/P1."
+    }
+  ]
+}

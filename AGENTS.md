@@ -2,11 +2,17 @@
 
 This folder is home. Treat it that way.
 
+## MANDATORY: PRE-SESSION BOOT
+Before responding to ANY message (interactive or cron), you MUST:
+1. Read and execute /home/futurebit/.openclaw/workspace/BOOT.md
+2. Complete ALL phases before producing any output
+3. This is non-negotiable. Skipping BOOT.md has caused repeated failures.
+
 ## First Run
 
 If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then delete it. You won't need it again.
 
-## Every Session
+## Every Session ##
 
 **START OF SESSION:**
 

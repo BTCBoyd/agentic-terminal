@@ -1,0 +1,102 @@
+{
+  "date": "2026-02-20",
+  "collected_at": "2026-02-20T13:00:00Z",
+  "collector": "Maxi 8AM cron session",
+
+  "lightning_network": {
+    "source": "1ML.com",
+    "nodes_public": 5337,
+    "nodes_30d_change_pct": 8.88,
+    "channels_active": 15715,
+    "channels_30d_change_pct": 15.50,
+    "capacity_btc": 2642.72,
+    "capacity_usd": 178383318.78,
+    "capacity_30d_change_pct": 0.73,
+    "new_nodes_24h": 17,
+    "new_channels_24h": 244,
+    "avg_node_capacity_btc": 0.495,
+    "avg_channel_capacity_btc": 0.167,
+    "nodes_observed_total": 61975,
+    "day_over_day": {
+      "nodes_delta": 16,
+      "nodes_delta_pct": 0.30,
+      "channels_delta": 91,
+      "channels_delta_pct": 0.58,
+      "capacity_btc_delta": 11.41,
+      "capacity_delta_pct": 0.43,
+      "new_nodes_24h_delta_pct": 41.7,
+      "new_channels_24h_delta_pct": 42.7
+    },
+    "notes": "Steady network growth. 24h node/channel creation spiked vs yesterday (17 vs 12 nodes, 244 vs 171 channels) but 30d trends stable. Capacity +$3.86M vs yesterday."
+  },
+
+  "x402": {
+    "source": "GitHub API (coinbase/x402)",
+    "stars": 5476,
+    "forks": 1134,
+    "open_issues": 286,
+    "last_commit_at": "2026-02-20T01:57:20Z",
+    "description": "A payments protocol for the internet. Built on HTTP.",
+    "day_over_day": {
+      "stars_delta": 6,
+      "stars_delta_pct": 0.11,
+      "forks_delta": 9,
+      "forks_delta_pct": 0.80,
+      "issues_delta": 6,
+      "issues_delta_pct": 2.14
+    },
+    "notes": "Committed again today — actively maintained. Fork count climbing (+9 today). Issue count up +6 — active usage/bug reports."
+  },
+
+  "l402": {
+    "source": "GitHub API (lightninglabs/aperture)",
+    "repo": "lightninglabs/aperture",
+    "stars": 254,
+    "forks": 63,
+    "open_issues": 28,
+    "last_updated": "2026-02-18T16:00:22Z",
+    "last_pushed": "2026-01-27T15:55:56Z",
+    "day_over_day": {
+      "stars_delta": null,
+      "forks_delta": null,
+      "notes": "First collection on correct repo (aperture). Prev day had 404 on wrong repo."
+    },
+    "notes": "Confirmed correct repo: lightninglabs/aperture. 254 stars, 63 forks. Last push Jan 27 — less actively developed than x402. This is the reference L402 implementation."
+  },
+
+  "erc_8004": {
+    "source": "Etherscan API",
+    "notes": "Not collected — requires Etherscan API key. TODO pending.",
+    "registrations": null
+  },
+
+  "flags": {
+    "threshold_alerts_gt10pct": [
+      {
+        "metric": "new_nodes_24h",
+        "yesterday": 12,
+        "today": 17,
+        "change_pct": 41.7,
+        "context": "24h volatility — not alarming, but notable. Consistent with 8.88% 30d growth trend."
+      },
+      {
+        "metric": "new_channels_24h",
+        "yesterday": 171,
+        "today": 244,
+        "change_pct": 42.7,
+        "context": "24h volatility — elevated channel creation day. Consistent with 15.5% 30d channel growth trend."
+      }
+    ],
+    "notable_observations": [
+      "x402 committed again today (active daily development)",
+      "Lightning capacity hit $178.4M USD — new tracked high",
+      "L402 aperture repo confirmed (254 stars, 63 forks) — baseline set",
+      "x402 forks at 1,134 — developer adoption accelerating"
+    ],
+    "action_items": [
+      "Configure Etherscan API key for ERC-8004 tracking",
+      "Check Dune Analytics for x402 transaction volume",
+      "Consider tracking x402 issues velocity as adoption proxy"
+    ]
+  }
+}

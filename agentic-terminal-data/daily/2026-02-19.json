@@ -1,0 +1,59 @@
+{
+  "date": "2026-02-19",
+  "collected_at": "2026-02-19T15:23:00Z",
+  "collector": "Maxi morning cron session",
+
+  "lightning_network": {
+    "source": "1ML.com",
+    "nodes_public": 5321,
+    "nodes_30d_change_pct": 8.77,
+    "channels_active": 15624,
+    "channels_30d_change_pct": 15.25,
+    "capacity_btc": 2631.31,
+    "capacity_usd": 174523201.79,
+    "capacity_30d_change_pct": 0.60,
+    "new_nodes_24h": 12,
+    "new_channels_24h": 171,
+    "avg_node_capacity_btc": 0.495,
+    "avg_channel_capacity_btc": 0.167,
+    "nodes_observed_total": 61960,
+    "notes": "Strong channel growth (+15.2% 30d). Node growth +8.77%. Capacity growth modest at +0.6% — suggests more channels opening with smaller sizes."
+  },
+
+  "x402": {
+    "source": "GitHub API (coinbase/x402)",
+    "stars": 5470,
+    "forks": 1125,
+    "open_issues": 280,
+    "last_commit_at": "2026-02-19T15:06:35Z",
+    "description": "A payments protocol for the internet. Built on HTTP.",
+    "notes": "Active development — last commit today. High fork count (1125) signals strong developer adoption/experimentation."
+  },
+
+  "l402": {
+    "source": "GitHub API",
+    "notes": "l402-protocol/l402-js repo returned 404 — repo may have moved or been renamed. Need to verify correct repo name next collection.",
+    "stars": null,
+    "forks": null
+  },
+
+  "erc_8004": {
+    "source": "Etherscan API",
+    "notes": "Not collected — requires Etherscan API key configuration. TODO: configure and add next session.",
+    "registrations": null
+  },
+
+  "flags": {
+    "notable_changes": [
+      "Lightning channels up +15.2% in 30 days — significant acceleration",
+      "x402 still actively developed (commit today)",
+      "L402 repo location needs verification"
+    ],
+    "threshold_alerts": [],
+    "action_items": [
+      "Verify correct L402 GitHub repo URL",
+      "Configure Etherscan API key for ERC-8004 tracking",
+      "Check Dune Analytics for x402 transaction volume"
+    ]
+  }
+}

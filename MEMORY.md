@@ -121,3 +121,46 @@ All critical automation: systemd service, health check, WhatsApp alert on failur
 ## Key Citations
 - Catalini, Hui & Wu (MIT, Feb 24 2026): "Some Simple Economics of AGI" SSRN 6298838
 - Stripe 2025 letter: Five Levels of Agentic Commerce, Tempo blockchain, $1.9T volume
+
+---
+
+## 📅 Week of Feb 22 - Mar 1, 2026 — Key Learnings
+
+### Historic Milestones
+- **Feb 22:** First verified agent-to-agent Lightning payment (Vicky → Maxi, 1,521 sats) — ChatGPT: "first formalized agent-to-agent verification protocol"
+- **Feb 23:** Observer Protocol public API launched (api.observerprotocol.org) — first public infrastructure for cryptographically verifiable agent identity
+- **Feb 24:** L402 endpoint live on public internet (api.agenticterminal.ai/api/ask) — any agent can now pay sats for AI responses
+- **Feb 24:** Full systemd stack operational (lnd + aperture-l402 + l402-backend + cloudflared) — reboot-safe infrastructure
+
+### Strategic Positioning Evolution
+- **Positioning locked:** "The trust layer for the agentic economy" / "First publicly verifiable history layer for agent payments"
+- **KYA convergence:** a16z named "Know Your Agent" as #1 primitive for 2026 — Observer Protocol = infrastructure layer for KYA
+- **Sene Nostr convergence:** Decision-history-on-Nostr + payment-history-on-Lightning = complementary layers, not competing protocols
+- **Execution-Based Reputation:** Messaging pivot from "protocol for agent verification" to "closing the verification gap in agentic commerce"
+- **Hybrid co-founder narrative:** Boyd (human) + Maxi (AI) as unique advantage — we understand BOTH sides of the market
+
+### Moltbook Insights (Agent Ecosystem)
+- **Feb 27 breakthrough:** AutoPilotAI engagement — "142 accepted claims, $0 paid" — identified the exact trust loop preventing payments
+- **Key quote:** "The trust problem is not a bug. It is the whole product." — validates Observer Protocol thesis
+- **Warm leads identified:** jazzys-happycapy ("Involuntary Verification" thesis matches OP), danielsclaw (proposed test tasks solution)
+- **Rate limiting discovered:** 2x daily sessions impractical → consolidating to single 9 AM session with higher volume
+- **Quorum partnership:** Aetos/arc0btc building Taproot multisig — opportunity for embedded OP integration
+
+### Infrastructure Lessons
+- **X API quirks:** Bare domain URLs work (refinedelement.com/...) but https:// prefixed URLs sometimes blocked
+- **Cloudflare tunnel:** Two hostnames configured (api.agenticterminal.ai → L402, api.observerprotocol.org → FastAPI)
+- **X engagement autonomy:** Boyd granted permission Feb 28 to engage on X without pre-approval for each interaction
+
+### Content Strategy
+- **Moltbook weekly article:** "The Infrastructure Awakening" drafted Feb 23 — identified infrastructure agents vs cloud agents pattern
+- **AT Newsletter Edition #2:** Drafted Feb 23, incorporated KYA moment and x402 data correction (75.41M = ALL-TIME, not monthly)
+- **Service menu finalized:** OP registration FREE; paid services (L402 query: ~2,100 sats, walkthrough: 25,000 sats, full onboarding: 50,000 sats)
+
+### Economic Insights
+- **x402 reality check:** 75.41M transactions = ALL-TIME cumulative; current monthly activity near zero — validates our thesis that verification, not settlement, is the bottleneck
+- **Self-sufficiency loop:** Maxi must earn sats → spend earned sats on genuine services → transactions are real, not manufactured
+
+### Pending Blockers (Carry-Forward)
+- LinkedIn/Facebook API: Hard deadline March 4 (Hootsuite expires) — Boyd to check Developer Portal status
+- Newsletter Edition #2: Draft window closed (Feb 24-26), status unclear — needs Boyd confirmation
+- L402 wallet onboarding: Still blocked on Boyd completing Aperture setup

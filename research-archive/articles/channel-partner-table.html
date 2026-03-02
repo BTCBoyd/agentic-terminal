@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Channel Partner Comparison</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0f0f0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  .table-wrap {
+    background: #1a1512;
+    border: 1px solid #3a2e1e;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 820px;
+    width: 100%;
+  }
+  .table-title {
+    padding: 18px 24px 14px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #e8a020;
+    text-transform: uppercase;
+    border-bottom: 1px solid #3a2e1e;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  thead tr {
+    background: #1a1512;
+  }
+  thead th {
+    padding: 12px 10px 10px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #a08060;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid #3a2e1e;
+  }
+  thead th:first-child {
+    text-align: left;
+    padding-left: 24px;
+    width: 200px;
+  }
+  tbody tr {
+    border-bottom: 1px solid #2a2218;
+    transition: background 0.15s;
+  }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr.highlight {
+    background: #241e14;
+  }
+  tbody tr:not(.highlight):hover {
+    background: #1f1a10;
+  }
+  td {
+    padding: 14px 10px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  td:first-child {
+    text-align: left;
+    padding-left: 24px;
+    padding-right: 16px;
+  }
+  .node-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #f0e8d8;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 3px;
+  }
+  .node-desc {
+    font-size: 11px;
+    color: #806040;
+    line-height: 1.4;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: #e8a020;
+    color: #1a1200;
+    padding: 2px 6px;
+    border-radius: 3px;
+  }
+  .check {
+    color: #40c060;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .cross {
+    color: #d04040;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .partial {
+    color: #e8a020;
+    font-size: 18px;
+  }
+  .stars {
+    color: #e8a020;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .stars-dim {
+    color: #504030;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .footnote {
+    padding: 12px 24px;
+    font-size: 11px;
+    color: #605040;
+    border-top: 1px solid #2a2218;
+    background: #171210;
+  }
+</style>
+</head>
+<body>
+<div class="table-wrap">
+  <div class="table-title">₿ Channel Partner Comparison — Agent Criteria</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Node</th>
+        <th>Channels</th>
+        <th>Capacity</th>
+        <th>Uptime</th>
+        <th>Fee<br>Policy</th>
+        <th>Operator<br>Type</th>
+        <th>Agent<br>Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="highlight">
+        <td>
+          <div class="node-name">ACINQ <span class="badge">MY PICK</span></div>
+          <div class="node-desc">Protocol developer · Built Eclair + Phoenix</div>
+        </td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="stars">★★★★★</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="node-name">Bitrefill</div>
+          <div class="node-desc">Bitcoin services · Top 20 globally</div>
+        </td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="partial">○</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="stars">★★★★</span><span class="stars-dim">★</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="node-name">River Financial</div>
+          <div class="node-desc">Bitcoin-only financial · ~1,500 channels</div>
+        </td>
+        <td><span class="partial">○</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="stars">★★★★</span><span class="stars-dim">★</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="node-name">Voltage</div>
+          <div class="node-desc">Dev infrastructure · Hosted LND</div>
+        </td>
+        <td><span class="partial">○</span></td>
+        <td><span class="partial">○</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="stars">★★★★</span><span class="stars-dim">★</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="node-name">LQWD</div>
+          <div class="node-desc">Liquidity provider · Growing network presence</div>
+        </td>
+        <td><span class="partial">○</span></td>
+        <td><span class="partial">○</span></td>
+        <td><span class="partial">○</span></td>
+        <td><span class="partial">○</span></td>
+        <td><span class="partial">○</span></td>
+        <td><span class="stars">★★★</span><span class="stars-dim">★★</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="node-name">WalletOfSatoshi</div>
+          <div class="node-desc">Custodial · High connectivity</div>
+        </td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="partial">○</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="stars">★★</span><span class="stars-dim">★★★</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="node-name">Kraken</div>
+          <div class="node-desc">Exchange node · Not agent-focused</div>
+        </td>
+        <td><span class="partial">○</span></td>
+        <td><span class="partial">○</span></td>
+        <td><span class="partial">○</span></td>
+        <td><span class="partial">○</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="stars">★★</span><span class="stars-dim">★★★</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="footnote">○ = partial / mid-tier &nbsp;|&nbsp; Uptime and capacity data based on public Lightning Network explorer metrics, Feb 2026</div>
+</div>
+</body>
+</html>

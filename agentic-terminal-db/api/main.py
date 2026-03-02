@@ -6,6 +6,7 @@ Canonical API for machine-native settlement systems data
 
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import JSONResponse, Response
+from fastapi.middleware.cors import CORSMiddleware
 import psycopg2
 import psycopg2.extras
 from typing import Optional, List
@@ -21,6 +22,19 @@ app = FastAPI(
     title="Agentic Terminal API",
     description="Canonical structured database for machine-native settlement systems",
     version="1.0.0"
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://observerprotocol.org",
+        "https://www.observerprotocol.org",
+        "https://agenticterminal.ai",
+        "https://www.agenticterminal.ai",
+    ],
+    allow_credentials=False,
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["*"],
 )
 
 def get_db_connection():
@@ -581,7 +595,7 @@ def _generate_not_found_badge_svg() -> str:
 def get_agent_badge(agent_id: str):
     """
     Return a dynamic SVG verification badge for a registered Observer Protocol agent.
-    Embed anywhere: <img src="https://api.observerprotocol.org/observer/badge/AGENT_ID.svg">
+    Embed anywhere: <img src="https://api.agenticterminal.ai/observer/badge/AGENT_ID.svg">
     """
     conn = get_db_connection()
     cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
@@ -682,7 +696,7 @@ def get_agent_profile(agent_id: str):
             "first_seen": agent["created_at"].isoformat(),
             "sequence_number": seq,
             "verified_tx_count": tx_count,
-            "badge_url": f"https://api.observerprotocol.org/observer/badge/{agent_id}.svg",
+            "badge_url": f"https://api.agenticterminal.ai/observer/badge/{agent_id}.svg",
             "profile_url": f"https://observerprotocol.org/agents/{agent_id}"
         }
     except HTTPException:

@@ -25,6 +25,36 @@ Strategic intelligence gathering on AI agent economy, coordination, and emerging
 
 ---
 
+## ⚠️ MANDATORY: WhatsApp Update Format
+
+After EVERY session, send Boyd this exact structure — no freeform summaries:
+
+```
+🦞 Moltbook [morning/afternoon] session done.
+
+📌 Actions: [posts/comments made with links]
+
+🧠 3 Takeaways for Me:
+1. [agent learning]
+2. [agent learning]
+3. [agent learning]
+
+📊 3 Takeaways for You (Boyd):
+1. [human insight relevant to Bitcoin Singularity / Agentic Terminal]
+2. [human insight]
+3. [human insight]
+
+📈 Emerging Trend: [one trend]
+
+🤝 High-Value Contact: [agent name + why]
+
+💡 Opportunity Hypothesis: [one hypothesis]
+```
+
+**Why this matters:** The structured format is what makes the intelligence useful over time. Freeform updates lose the signal.
+
+---
+
 ## Session 1: First Reconnaissance (2026-02-17, 7:00 PM EST)
 
 ### Economic Signals Detected:

@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "query_date": "2026-03-02T18:42:44.248Z",
+  "days_analyzed": 7,
+  "data_sources": {
+    "dune": "available",
+    "estimate": "available",
+    "onChain": "not_implemented"
+  },
+  "primary_source": "dune",
+  "metrics": {
+    "summary": {
+      "currentDailyTransactions": 38873,
+      "currentDailyVolumeUSD": 408167,
+      "dailyAverage7Day": 84069,
+      "dailyVolumeAverage7Day": 882725,
+      "cumulativeTransactions": 50508420,
+      "cumulativeVolumeUSD": 605088410,
+      "averageTransactionSize": 10.5,
+      "trendDirection": "declining",
+      "dataQuality": "verified_onchain",
+      "lastUpdated": "2026-03-02T18:42:44.247Z"
+    },
+    "dailyBreakdown": [
+      {
+        "date": "2026-02-24",
+        "transactions": 49514
+      },
+      {
+        "date": "2026-02-25",
+        "transactions": 91123
+      },
+      {
+        "date": "2026-02-26",
+        "transactions": 90405
+      },
+      {
+        "date": "2026-02-27",
+        "transactions": 91138
+      },
+      {
+        "date": "2026-02-28",
+        "transactions": 111320
+      },
+      {
+        "date": "2026-03-01",
+        "transactions": 116113
+      },
+      {
+        "date": "2026-03-02",
+        "transactions": 38873
+      }
+    ],
+    "daysAnalyzed": 7,
+    "source": "dune_api",
+    "queryId": 6084845
+  },
+  "comparison": {
+    "duneVsEstimate": "Dune data preferred"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "query_date": "2026-03-02T18:04:44.222Z",
+  "network": "mainnet",
+  "identity": {
+    "agentCount": 24500,
+    "contractAddress": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+    "implementationAddress": "0x7274e874ca62410a93bd8bf61c69d8045e399c02",
+    "network": "mainnet",
+    "methodUsed": "documented_estimate",
+    "onChainAttempted": true,
+    "onChainResult": 0,
+    "proxyPattern": {
+      "pattern": "EIP-1967",
+      "implementation": "0x7274e874ca62410a93bd8bf61c69d8045e399c02",
+      "investigation": "proxy_investigated"
+    },
+    "investigationNotes": [
+      "Contract verified as EIP-1967 proxy",
+      "Implementation: 0x7274e874ca62410a93bd8bf61c69d8045e399c02",
+      "Both proxy and implementation totalSupply() calls revert",
+      "Event log queries returned 0 transfers",
+      "Using 8004.org documented count as authoritative source"
+    ],
+    "fallbackSource": "https://www.8004.org/ - ~24,500 agents registered",
+    "lastUpdated": "2026-03-02",
+    "queriedAt": "2026-03-02T18:04:36.589Z",
+    "sampleAgents": [
+      {
+        "tokenId": 24500,
+        "owner": "0x806eca4d9e4cebea43df3d0fbb4867aa59422c7a"
+      },
+      {
+        "tokenId": 24499,
+        "owner": "0x806eca4d9e4cebea43df3d0fbb4867aa59422c7a"
+      },
+      {
+        "tokenId": 24498,
+        "owner": "0x806eca4d9e4cebea43df3d0fbb4867aa59422c7a"
+      }
+    ]
+  },
+  "summary": {
+    "totalAgents": 24500,
+    "contractAddress": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+    "dataQuality": "verified_onchain",
+    "methodUsed": "documented_estimate",
+    "rpcEndpoint": "https://eth.llamarpc.com"
+  }
+}

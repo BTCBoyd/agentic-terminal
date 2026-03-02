@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-03-02T15:54:09.283Z",
+  "week_start": "2026-02-24",
+  "week_end": "2026-03-02",
+  "date": "2026-03-02",
+  "thread": {
+    "tweet1": {
+      "text": "🚀 This week in Agentic Terminal: L402 Interest surged +36.8% to 26.\n\nThe settlement wars are heating up 🔥\n\n🧵 ↓",
+      "media": "cross-protocol-comparison.png",
+      "position": 1
+    },
+    "tweet2": {
+      "text": "⚡ Lightning Network Status:\n\nL402 interest: 26 stars 📈\nPublic nodes: 5.5K\nCapacity: 2591 BTC\n\nAI agents discovering bitcoin-native payments",
+      "position": 2
+    },
+    "tweet3": {
+      "text": "🌊 x402 ecosystem check:\n\nStars: 5555 ↗️\nAgents: 24.5K ↗️\n\nThe \"dollar API rail\" for AI agents.",
+      "position": 3
+    },
+    "tweet4": {
+      "text": "📊 The Interest ↔ Usage Gap:\n\nInterest (+36.8%) massively outpacing deployment (+2.1%).\n\nThe gap = opportunity. Infrastructure waiting for product.",
+      "media": "interest-usage-gap.png",
+      "position": 4
+    },
+    "tweet5": {
+      "text": "Track the agent settlement wars in real-time:\n\nagenticterminal.ai/trends\n\n• 8 weeks of cross-protocol data\n• Interest-to-usage gap analysis\n• Weekly signals, zero noise\n\nThe data layer for AI agent infrastructure 📡",
+      "position": 5
+    }
+  },
+  "deltas": [
+    {
+      "metric": "L402 Interest",
+      "value": 26,
+      "change": 7,
+      "changePct": 36.84210526315789,
+      "emoji": "🚀"
+    },
+    {
+      "metric": "ERC-8004 Agents",
+      "value": "24.5K",
+      "change": 500,
+      "changePct": 2.083333333333333,
+      "emoji": "🔧"
+    },
+    {
+      "metric": "Lightning Nodes",
+      "value": 5464,
+      "change": 72,
+      "changePct": 1.3353115727002967,
+      "emoji": "⚡"
+    },
+    {
+      "metric": "x402 Ecosystem",
+      "value": 5555,
+      "change": 48,
+      "changePct": 0.8716179408026149,
+      "emoji": "🌿"
+    },
+    {
+      "metric": "Lightning Capacity",
+      "value": "2590.7",
+      "change": -17.820000000000164,
+      "changePct": -0.6831433796046111,
+      "emoji": "💵"
+    }
+  ],
+  "chart_directory": "/home/futurebit/.openclaw/workspace/agentic-terminal-data/charts/2026-03-02",
+  "status": "draft",
+  "notes": "Review before posting. Ensure charts are generated."
+}

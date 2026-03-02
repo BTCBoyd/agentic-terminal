@@ -1,0 +1,72 @@
+{
+  "date": "2026-02-23",
+  "collected_at": "2026-02-23T13:00:00Z",
+  "lightning_network": {
+    "source": "1ML.com",
+    "capacity_btc": 2608.52,
+    "capacity_usd": 172838445.69,
+    "nodes": 994610,
+    "nodes_to_1m": 5390,
+    "top_nodes_by_capacity": [
+      {"name": "bfx-lnd0", "capacity_btc": 346.12, "channels": 158},
+      {"name": "LNBiG [Hub-1]", "capacity_btc": 270.94, "channels": 173},
+      {"name": "bfx-lnd1", "capacity_btc": 268.08, "channels": 124},
+      {"name": "ACINQ", "capacity_btc": 255.93, "channels": 536},
+      {"name": "Binance", "capacity_btc": 162.61, "channels": 63}
+    ],
+    "top_capacity_increase_24h": [
+      {"name": "ACINQ", "increase_btc": 41.709, "percent": 19.47},
+      {"name": "fixedfloat.com", "increase_btc": 22.000, "percent": 18.91},
+      {"name": "MyLightningNode", "increase_btc": 20.000, "percent": 37.05}
+    ]
+  },
+  "github_repos": {
+    "lightninglabs_aperture": {
+      "description": "L402 (Lightning HTTP 402) Reverse Proxy",
+      "stars": 254,
+      "forks": 63,
+      "open_issues": 28,
+      "language": "Go",
+      "updated_at": "2026-02-18T16:00:22Z"
+    },
+    "coinbase_x402": {
+      "description": "A payments protocol for the internet. Built on HTTP.",
+      "stars": 5507,
+      "forks": 1154,
+      "open_issues": 266,
+      "language": "TypeScript",
+      "updated_at": "2026-02-23T12:15:44Z"
+    },
+    "arkade_os_arkd": {
+      "description": "Ark Server implementation that powers Arkade",
+      "stars": 156,
+      "forks": 54,
+      "open_issues": 95,
+      "language": "Go",
+      "updated_at": "2026-02-20T16:36:40Z"
+    },
+    "arkade_os_ts_sdk": {
+      "description": "The Arkade SDK is a TypeScript library for building Bitcoin wallets with the Ark protocol",
+      "stars": 42,
+      "forks": 18,
+      "open_issues": 36,
+      "language": "TypeScript",
+      "updated_at": "2026-02-21T16:31:12Z"
+    },
+    "arkade_os_skill": {
+      "description": "Arkade skills for agent integration",
+      "stars": 4,
+      "forks": 3,
+      "open_issues": 1,
+      "language": "TypeScript",
+      "updated_at": "2026-02-14T00:27:52Z"
+    }
+  },
+  "change_flags": [],
+  "notes": [
+    "First data collection for 2026-02-23 - no prior day comparison available",
+    "Lightning Network approaching 1M nodes milestone (5,390 to go)",
+    "ACINQ leading 24h capacity increase with +41.7 BTC",
+    "x402 showing strong community interest with 5,507 stars"
+  ]
+}
