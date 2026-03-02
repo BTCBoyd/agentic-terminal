@@ -2,7 +2,7 @@
   "chart_type": "sparkline",
   "metric_path": "metrics.bitcoin_lightning.lightning_nodes",
   "label": "Lightning Nodes",
-  "generated_at": "2026-03-02T18:05:46.996Z",
+  "generated_at": "2026-03-02T18:57:16.066Z",
   "date_range": {
     "start": "2026-01-06",
     "end": "2026-03-02"

@@ -382,9 +382,9 @@
           "x402_github_forks": 1191,
           "x402_github_issues": 293,
           "x402_contributors": 30,
-          "x402_daily_transactions": 57000,
-          "x402_cumulative_transactions": 50500000,
-          "x402_cumulative_volume_usd": 605000000,
+          "x402_daily_transactions": 20547,
+          "x402_cumulative_transactions": 76383722,
+          "x402_cumulative_volume_usd": 26264997,
           "erc8004_agents_registered": 24500
         },
         "emerging_protocols": {
@@ -398,12 +398,12 @@
           "erc8004_total_agents": 24500,
           "erc8004_data_source": "on_chain_pending",
           "erc8004_contract_address": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
-          "x402_daily_transactions": 57000,
-          "x402_daily_volume_usd": 598500,
-          "x402_cumulative_transactions": 50500000,
-          "x402_cumulative_volume_usd": 605000000,
-          "x402_avg_transaction_size": 10.50,
-          "x402_data_source": "estimate",
+          "x402_daily_transactions": 20547,
+          "x402_daily_volume_usd": 118081,
+          "x402_cumulative_transactions": 76383722,
+          "x402_cumulative_volume_usd": 26264997,
+          "x402_avg_transaction_size": 1.81,
+          "x402_data_source": "dune_api_verified",
           "x402_trend_direction": "declining",
           "lightning_gossip_channels": 16257,
           "lightning_gossip_nodes": 5464,
@@ -411,9 +411,9 @@
         },
         "data_quality": {
           "erc8004_quality": "pending_onchain_verification",
-          "x402_quality": "estimated_from_historical",
+          "x402_quality": "verified_dune_api",
           "lightning_quality": "verified_1ml_api",
-          "overall": "mixed_verified_and_estimated"
+          "overall": "verified_dune_and_1ml"
         }
       },
       "wow_changes": {

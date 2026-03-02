@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "query_date": "2026-03-02T18:42:44.248Z",
+  "query_date": "2026-03-02T18:50:32.410Z",
   "days_analyzed": 7,
   "data_sources": {
     "dune": "available",
@@ -10,50 +10,58 @@
   "primary_source": "dune",
   "metrics": {
     "summary": {
-      "currentDailyTransactions": 38873,
-      "currentDailyVolumeUSD": 408167,
-      "dailyAverage7Day": 84069,
-      "dailyVolumeAverage7Day": 882725,
-      "cumulativeTransactions": 50508420,
-      "cumulativeVolumeUSD": 605088410,
-      "averageTransactionSize": 10.5,
+      "currentDailyTransactions": 20547,
+      "currentDailyVolumeUSD": 118081,
+      "dailyAverage7Day": 43984,
+      "dailyVolumeAverage7Day": 79754,
+      "cumulativeTransactions": 76383722,
+      "cumulativeVolumeUSD": 26264997.102362104,
+      "averageTransactionSize": 1.81,
       "trendDirection": "declining",
-      "dataQuality": "verified_onchain",
-      "lastUpdated": "2026-03-02T18:42:44.247Z"
+      "dataQuality": "verified_onchain_dune",
+      "querySource": "daily_by_token_all_facilitators",
+      "lastUpdated": "2026-03-02T18:50:32.408Z"
     },
     "dailyBreakdown": [
       {
         "date": "2026-02-24",
-        "transactions": 49514
+        "transactions": 26768,
+        "volume": 19855
       },
       {
         "date": "2026-02-25",
-        "transactions": 91123
+        "transactions": 36752,
+        "volume": 40681
       },
       {
         "date": "2026-02-26",
-        "transactions": 90405
+        "transactions": 44423,
+        "volume": 32205
       },
       {
         "date": "2026-02-27",
-        "transactions": 91138
+        "transactions": 46379,
+        "volume": 75584
       },
       {
         "date": "2026-02-28",
-        "transactions": 111320
+        "transactions": 69471,
+        "volume": 106160
       },
       {
         "date": "2026-03-01",
-        "transactions": 116113
+        "transactions": 63547,
+        "volume": 165714
       },
       {
         "date": "2026-03-02",
-        "transactions": 38873
+        "transactions": 20547,
+        "volume": 118081
       }
     ],
     "daysAnalyzed": 7,
     "source": "dune_api",
-    "queryId": 6084845
+    "queryId": 6094619
   },
   "comparison": {
     "duneVsEstimate": "Dune data preferred"
