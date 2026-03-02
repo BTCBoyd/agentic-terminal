@@ -41,9 +41,9 @@ const X402_CONTRACTS = {
 
 // Known Dune queries for x402 (from hashed_official dashboard)
 const DUNE_QUERIES = {
-  dailyTransactions: 6084845,  // Daily tx by project (hashed_official)
-  cumulativeTotals: 6054421,   // Cumulative totals by project
-  // Volume queries would need separate query ID
+  dailyByToken: 6094619,       // Daily tx by token (most comprehensive - aggregates all tokens)
+  dailyByProject: 6084845,     // Daily tx by project
+  cumulativeByProject: 6054421 // Cumulative totals by project
 };
 
 function log(level, message, data = null) {
@@ -120,8 +120,9 @@ async function queryDuneApi(days = 7) {
   log('INFO', 'Querying Dune API for x402 data...');
   
   try {
-    // Query daily transactions by project (hashed_official dashboard)
-    const dailyQueryId = DUNE_QUERIES.dailyTransactions;
+    // Query daily transactions by token (hashed_official dashboard)
+    // This aggregates ALL tokens (USDC, USDT, ETH, etc.) across all facilitators
+    const dailyQueryId = DUNE_QUERIES.dailyByToken;
     
     const response = await fetch(
       `${CONFIG.duneApiBase}/query/${dailyQueryId}/results?limit=1000`,
@@ -140,31 +141,36 @@ async function queryDuneApi(days = 7) {
     
     log('INFO', 'Dune API query successful', { rows: data.result.rows.length });
     
-    // Parse daily transaction data
+    // Parse daily transaction data - aggregate by date across all tokens
     const rows = data.result.rows;
     const dailyTotals = {};
     
-    // Aggregate transactions by day
+    // Aggregate transactions and volume by day (across all tokens)
     rows.forEach(row => {
-      const date = row.period.split(' ')[0]; // Extract YYYY-MM-DD
+      const date = row.block_date; // Format: YYYY-MM-DD
       const txs = parseInt(row.txs || 0);
+      const volume = parseFloat(row.volume || 0);
       
       if (!dailyTotals[date]) {
-        dailyTotals[date] = 0;
+        dailyTotals[date] = { transactions: 0, volume: 0 };
       }
-      dailyTotals[date] += txs;
+      dailyTotals[date].transactions += txs;
+      dailyTotals[date].volume += volume;
     });
     
     // Get last N days of data
     const sortedDates = Object.keys(dailyTotals).sort().slice(-days);
     const recentDailyData = sortedDates.map(date => ({
       date,
-      transactions: dailyTotals[date]
+      transactions: dailyTotals[date].transactions,
+      volume: Math.round(dailyTotals[date].volume)
     }));
     
     // Calculate totals
     const totalRecentTx = recentDailyData.reduce((sum, d) => sum + d.transactions, 0);
+    const totalRecentVol = recentDailyData.reduce((sum, d) => sum + d.volume, 0);
     const avgDailyTx = Math.round(totalRecentTx / days);
+    const avgDailyVol = Math.round(totalRecentVol / days);
     
     // Estimate volume (using $10.50 avg from historical data)
     const avgDailyVolume = Math.round(avgDailyTx * 10.5);
@@ -174,21 +180,26 @@ async function queryDuneApi(days = 7) {
     const previousDay = recentDailyData[recentDailyData.length - 2];
     const trendDirection = latestDay && previousDay && latestDay.transactions > previousDay.transactions ? 'increasing' : 'declining';
     
-    // Get cumulative from second query if available
-    let cumulativeTx = 50508420; // From earlier query - should be fetched dynamically
-    let cumulativeVol = 605088410;
+    // Calculate average transaction size from the data
+    const avgTxSize = avgDailyTx > 0 ? (avgDailyVol / avgDailyTx).toFixed(2) : 10.5;
+    
+    // Get cumulative totals - sum all historical data we have
+    const allDates = Object.keys(dailyTotals).sort();
+    const cumulativeTx = allDates.reduce((sum, date) => sum + dailyTotals[date].transactions, 0);
+    const cumulativeVol = allDates.reduce((sum, date) => sum + dailyTotals[date].volume, 0);
     
     return {
       summary: {
         currentDailyTransactions: latestDay ? latestDay.transactions : avgDailyTx,
-        currentDailyVolumeUSD: latestDay ? Math.round(latestDay.transactions * 10.5) : avgDailyVolume,
+        currentDailyVolumeUSD: latestDay ? latestDay.volume : avgDailyVol,
         dailyAverage7Day: avgDailyTx,
-        dailyVolumeAverage7Day: avgDailyVolume,
+        dailyVolumeAverage7Day: avgDailyVol,
         cumulativeTransactions: cumulativeTx,
         cumulativeVolumeUSD: cumulativeVol,
-        averageTransactionSize: 10.5,
+        averageTransactionSize: parseFloat(avgTxSize),
         trendDirection: trendDirection,
-        dataQuality: 'verified_onchain',
+        dataQuality: 'verified_onchain_dune',
+        querySource: 'daily_by_token_all_facilitators',
         lastUpdated: new Date().toISOString()
       },
       dailyBreakdown: recentDailyData,
