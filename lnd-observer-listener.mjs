@@ -13,6 +13,19 @@
 import { readFileSync, appendFileSync, existsSync, writeFileSync } from 'fs';
 import https from 'https';
 import crypto from 'crypto';
+import * as secp256k1 from '@noble/secp256k1';
+
+// Configure secp256k1 to use Node.js crypto for hashing
+secp256k1.hashes.sha256 = (...msgs) => {
+  const h = crypto.createHash('sha256');
+  msgs.forEach(m => h.update(m));
+  return h.digest();
+};
+secp256k1.hashes.hmacSha256 = (key, ...msgs) => {
+  const h = crypto.createHmac('sha256', key);
+  msgs.forEach(m => h.update(m));
+  return h.digest();
+};
 
 // Configuration
 const CONFIG = {
@@ -34,6 +47,14 @@ const LND_CONFIG = {
 // Load LND credentials
 const macaroonHex = Buffer.from(readFileSync(LND_CONFIG.macaroonPath)).toString('hex');
 const tlsCert = readFileSync(LND_CONFIG.tlsCertPath);
+
+// Maxi's secp256k1 private key (from Nostr identity)
+// This is used to cryptographically sign all attestations
+const PRIVATE_KEY_HEX = '9bdbc947e250e96244bfcbe260dacf141a5fe67e1e678b7e2f17709404439a45';
+
+// Derive public key from private key (ensures they match)
+const PUBLIC_KEY_BYTES = secp256k1.getPublicKey(Buffer.from(PRIVATE_KEY_HEX, 'hex'));
+const PUBLIC_KEY_HEX = Buffer.from(PUBLIC_KEY_BYTES).toString('hex');
 
 // Load or initialize state
 function loadState() {
@@ -128,33 +149,33 @@ async function getNewSettledInvoices(lastIndex) {
   }
 }
 
-// Create cryptographic attestation
-function createAttestation(invoice) {
+// Create cryptographic attestation with real secp256k1 signing
+async function createAttestation(invoice) {
   const timestamp = new Date(parseInt(invoice.settle_date) * 1000).toISOString();
   const paymentHash = Buffer.from(invoice.r_hash, 'base64').toString('hex');
   const preimage = invoice.r_preimage ? Buffer.from(invoice.r_preimage, 'base64').toString('hex') : null;
-  
+
   // Build attestation payload
   const attestation = {
     agent_id: CONFIG.agentId,
     protocol: 'lightning',
     transaction_reference: paymentHash,
     timestamp: timestamp,
-    preimage: preimage, // Cryptographic proof
+    preimage: preimage, // Cryptographic proof of payment
     direction: 'inbound',
     amount_sats: parseInt(invoice.amt_paid_sat || invoice.value),
     counterparty: extractCounterparty(invoice.memo),
     memo: invoice.memo,
     settle_index: invoice.settle_index,
+    public_key: PUBLIC_KEY_HEX, // Include public key for verification
   };
-  
-  // Sign the attestation
-  // NOTE: In production, this would use the agent's private key
-  // For now, we create a deterministic signature-like string for format validation
-  // Real ECDSA signature will be added when key management is implemented
+
+  // Sign the attestation with real secp256k1 ECDSA
   const message = JSON.stringify(attestation);
-  const signature = createDeterministicSignature(message);
-  
+  const signature = await createRealSignature(message);
+
+  log('info', `Created real secp256k1 signature: ${signature.substring(0, 32)}...`);
+
   return {
     ...attestation,
     signature: signature,
@@ -174,8 +195,26 @@ function extractCounterparty(memo) {
   return 'unknown';
 }
 
-// Create deterministic signature (placeholder for real ECDSA)
-// TODO: Replace with real secp256k1 signing when key management is ready
+// Create real secp256k1 ECDSA signature
+// Uses Maxi's Nostr private key for cryptographic proof of identity
+async function createRealSignature(message) {
+  try {
+    // Hash the message
+    const messageHash = crypto.createHash('sha256').update(message).digest();
+    
+    // Sign with secp256k1 (async)
+    const privateKeyBytes = Buffer.from(PRIVATE_KEY_HEX, 'hex');
+    const signature = await secp256k1.signAsync(messageHash, privateKeyBytes);
+    
+    // Return signature as hex string (signature is Uint8Array)
+    return Buffer.from(signature).toString('hex');
+  } catch (e) {
+    log('error', `Failed to create signature: ${e.message}`);
+    throw e;
+  }
+}
+
+// Legacy placeholder function - kept for reference but not used
 function createDeterministicSignature(message) {
   const hash = crypto.createHash('sha256').update(message).digest('hex');
   return `sig_placeholder_${hash.substring(0, 32)}_${Date.now()}`;
@@ -238,9 +277,9 @@ async function processInvoice(invoice, state) {
   log('info', `Processing settled invoice #${invoice.settle_index}: ${paymentHash.substring(0, 16)}...`);
   log('info', `  Amount: ${invoice.amt_paid_sat || invoice.value} sats`);
   log('info', `  Memo: ${invoice.memo || '(no memo)'}`);
-  
-  // Create attestation
-  const attestation = createAttestation(invoice);
+
+  // Create attestation with real cryptographic signing
+  const attestation = await createAttestation(invoice);
   log('info', `  Created attestation with signature: ${attestation.signature.substring(0, 50)}...`);
   
   // Submit to Observer Protocol
