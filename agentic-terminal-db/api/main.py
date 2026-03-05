@@ -408,6 +408,9 @@ def submit_transaction(
         message_bytes = message.encode('utf-8')
 
         # CRYPTGRAPHIC VERIFICATION: Verify signature against public key
+        # Note: verify_signature_simple expects the raw message (it hashes internally)
+        # The signature from noble-secp256k1 is over the SHA256 hash of the message
+        # So we pass the raw message and let the verification function handle the hashing
         is_signature_valid = verify_signature_simple(message_bytes, signature, public_key)
 
         if not is_signature_valid:

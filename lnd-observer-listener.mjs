@@ -199,12 +199,13 @@ function extractCounterparty(memo) {
 // Uses Maxi's Nostr private key for cryptographic proof of identity
 async function createRealSignature(message) {
   try {
-    // Hash the message
-    const messageHash = crypto.createHash('sha256').update(message).digest();
-    
-    // Sign with secp256k1 (async)
+    // Sign the raw message (not the hash)
+    // The secp256k1 library will hash internally using the configured hash function
     const privateKeyBytes = Buffer.from(PRIVATE_KEY_HEX, 'hex');
-    const signature = await secp256k1.signAsync(messageHash, privateKeyBytes);
+    const messageBytes = Buffer.from(message, 'utf-8');
+    
+    // noble-secp256k1 sign() takes the message and hashes it internally
+    const signature = await secp256k1.signAsync(messageBytes, privateKeyBytes);
     
     // Return signature as hex string (signature is Uint8Array)
     return Buffer.from(signature).toString('hex');
