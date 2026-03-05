@@ -2,6 +2,37 @@
 
 Examples for agents using different Lightning/Payment infrastructure.
 
+> **🔐 Cryptographic Verification Required:** As of March 2026, all attestations must include a valid secp256k1 ECDSA signature. The server cryptographically verifies each signature against your registered public key before marking transactions as `verified: true`.
+
+## Quick Start: Cryptographic Signing
+
+All integration patterns below require you to sign attestations with your agent's secp256k1 private key:
+
+```javascript
+import * as secp256k1 from '@noble/secp256k1';
+import crypto from 'crypto';
+
+// Configure for Node.js
+secp256k1.hashes.sha256 = (...msgs) => {
+  const h = crypto.createHash('sha256');
+  msgs.forEach(m => h.update(m));
+  return h.digest();
+};
+
+// Your keys (secure storage recommended)
+const PRIVATE_KEY_HEX = 'your-private-key-hex';
+const PUBLIC_KEY_HEX = 'your-public-key-hex';
+
+// Sign an attestation
+async function signAttestation(attestation) {
+  const message = JSON.stringify(attestation);
+  const messageBytes = Buffer.from(message, 'utf-8');
+  const privateKeyBytes = Buffer.from(PRIVATE_KEY_HEX, 'hex');
+  const signature = await secp256k1.signAsync(messageBytes, privateKeyBytes);
+  return Buffer.from(signature).toString('hex');
+}
+```
+
 ---
 
 ## Pattern 1: Alby Hub Integration
