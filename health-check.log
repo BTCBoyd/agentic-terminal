@@ -3592,3 +3592,39 @@
 • No Nostr posts in last 239 hours
 
 [2026-03-02T13:00:02-05:00] === Health Check Complete ===
+[2026-03-05T13:00:01-05:00] === Health Check Starting ===
+[2026-03-05T13:00:01-05:00] ✅ MaxiSuite scheduler service running
+[2026-03-05T13:00:01-05:00] ✅ Overdue posts: 0 (acceptable)
+[2026-03-05T13:00:01-05:00] ❌ No Nostr posts in 311 hours
+[2026-03-05T13:00:01-05:00] ✅ OpenClaw gateway running
+[2026-03-05T13:00:01-05:00] ✅ Disk usage: 89%
+[2026-03-05T13:00:01-05:00] === ❌ 1 failures detected ===
+[2026-03-05T13:00:01-05:00] 🚨 ALERT: FAILURES DETECTED:
+
+• No Nostr posts in last 311 hours
+
+[2026-03-05T13:00:01-05:00] === Health Check Complete ===
+[2026-03-05T14:00:01-05:00] === Health Check Starting ===
+[2026-03-05T14:00:01-05:00] ✅ MaxiSuite scheduler service running
+[2026-03-05T14:00:01-05:00] ✅ Overdue posts: 0 (acceptable)
+[2026-03-05T14:00:01-05:00] ❌ No Nostr posts in 312 hours
+[2026-03-05T14:00:01-05:00] ✅ OpenClaw gateway running
+[2026-03-05T14:00:01-05:00] ✅ Disk usage: 89%
+[2026-03-05T14:00:01-05:00] === ❌ 1 failures detected ===
+[2026-03-05T14:00:01-05:00] 🚨 ALERT: FAILURES DETECTED:
+
+• No Nostr posts in last 312 hours
+
+[2026-03-05T14:00:01-05:00] === Health Check Complete ===
+[2026-03-05T15:00:02-05:00] === Health Check Starting ===
+[2026-03-05T15:00:02-05:00] ✅ MaxiSuite scheduler service running
+[2026-03-05T15:00:02-05:00] ✅ Overdue posts: 0 (acceptable)
+[2026-03-05T15:00:02-05:00] ❌ No Nostr posts in 313 hours
+[2026-03-05T15:00:02-05:00] ✅ OpenClaw gateway running
+[2026-03-05T15:00:02-05:00] ✅ Disk usage: 89%
+[2026-03-05T15:00:02-05:00] === ❌ 1 failures detected ===
+[2026-03-05T15:00:02-05:00] 🚨 ALERT: FAILURES DETECTED:
+
+• No Nostr posts in last 313 hours
+
+[2026-03-05T15:00:02-05:00] === Health Check Complete ===

@@ -1,0 +1,11 @@
+{
+  "operator_id": 153,
+  "operator_api_key": "lf_0fc37a67447d78615897c01db105b3eab227b7d3958dd935",
+  "recovery_code": "1e4adabd4f3a05cdc7fdac6ac8a11b8c",
+  "agent_id": 193,
+  "agent_api_key": "agent_015799787137f7bd01145409970bf40452e4d0a3bdade5ba",
+  "agent_name": "Maxi-Test-Agent",
+  "service": "lightningfaucet.com",
+  "created_at": "2026-03-04",
+  "test_purpose": "Claw Mart skill development"
+}

@@ -15,6 +15,11 @@ import os
 import hashlib
 import secrets
 import uuid
+import sys
+
+# Add observer-protocol to path for crypto verification
+sys.path.insert(0, '/home/futurebit/.openclaw/workspace/observer-protocol')
+from crypto_verification import verify_signature_simple
 
 DB_URL = "postgresql://agentic_terminal:at_secure_2026@localhost/agentic_terminal_db"
 
@@ -347,27 +352,71 @@ def submit_transaction(
     signature: str,
     optional_metadata: Optional[str] = None
 ):
-    """Submit a verified transaction to the Observer Protocol."""
+    """Submit a verified transaction to the Observer Protocol.
+    
+    Cryptographically verifies the signature against the agent's registered public key.
+    Only stores as 'verified=True' if signature validation passes.
+    """
+    import json
     conn = get_db_connection()
     cursor = conn.cursor()
-    
+
     try:
-        # Verify agent exists and is verified
+        # Retrieve agent with public key
         cursor.execute("""
-            SELECT verified FROM observer_agents WHERE agent_id = %s
+            SELECT verified, public_key FROM observer_agents WHERE agent_id = %s
         """, (agent_id,))
-        
+
         result = cursor.fetchone()
         if not result:
             raise HTTPException(status_code=404, detail="Agent not found")
-        if not result[0]:
+
+        agent_verified, public_key = result
+        if not agent_verified:
             raise HTTPException(status_code=403, detail="Agent not verified")
-        
+
+        if not public_key:
+            raise HTTPException(status_code=400, detail="Agent has no registered public key")
+
+        # Build the message that was signed (must match client-side format exactly)
+        # Client builds attestation with ALL these fields before signing
+        attestation = {
+            "agent_id": agent_id,
+            "protocol": protocol,
+            "transaction_reference": transaction_reference,
+            "timestamp": timestamp,
+        }
+
+        # Add fields from metadata in the same order as client
+        if optional_metadata:
+            try:
+                metadata = json.loads(optional_metadata)
+                # These fields are included in the signed message
+                attestation["preimage"] = metadata.get("preimage")
+                attestation["direction"] = metadata.get("direction", "outbound")
+                attestation["amount_sats"] = metadata.get("amount_sats", 0)
+                attestation["counterparty"] = metadata.get("counterparty", "unknown")
+                attestation["memo"] = metadata.get("memo")
+            except:
+                pass
+
+        # Include public_key in attestation (client includes this for verification)
+        attestation["public_key"] = public_key
+
+        # Use compact JSON (no spaces) to match Node.js JSON.stringify format
+        message = json.dumps(attestation, separators=(',', ':'))
+        message_bytes = message.encode('utf-8')
+
+        # CRYPTGRAPHIC VERIFICATION: Verify signature against public key
+        is_signature_valid = verify_signature_simple(message_bytes, signature, public_key)
+
+        if not is_signature_valid:
+            raise HTTPException(status_code=403, detail="Invalid signature: cryptographic verification failed")
+
         # Determine amount_bucket from optional_metadata if provided
         amount_bucket = "unknown"
         if optional_metadata:
             try:
-                import json
                 metadata = json.loads(optional_metadata)
                 amount = metadata.get("amount_sats", 0)
                 if amount < 1000:
@@ -380,21 +429,20 @@ def submit_transaction(
                     amount_bucket = "large"
             except:
                 pass
-        
+
         # Generate event_id
         cursor.execute("SELECT COUNT(*) FROM verified_events")
         count = cursor.fetchone()[0]
         event_id = f"event-{agent_id[:12]}-{count + 1:04d}"
-        
+
         # Determine event_type and direction from metadata
         event_type = "payment.executed"
         direction = "outbound"
         counterparty_id = None
         service_description = None
-        
+
         if optional_metadata:
             try:
-                import json
                 metadata = json.loads(optional_metadata)
                 event_type = metadata.get("event_type", "payment.executed")
                 direction = metadata.get("direction", "outbound")
@@ -402,9 +450,10 @@ def submit_transaction(
                 service_description = metadata.get("service_description")
             except:
                 pass
-        
+
         stored_at = datetime.utcnow()
-        
+
+        # Store with verified=True ONLY because cryptographic check passed
         cursor.execute("""
             INSERT INTO verified_events (
                 event_id, agent_id, counterparty_id, event_type, protocol,
@@ -416,12 +465,13 @@ def submit_transaction(
             transaction_reference, timestamp[:10] if timestamp else None,
             amount_bucket, direction, service_description, True
         ))
-        
+
         conn.commit()
-        
+
         return {
             "event_id": event_id,
             "verified": True,
+            "cryptographic_verification": True,
             "stored_at": stored_at.isoformat()
         }
     except HTTPException:

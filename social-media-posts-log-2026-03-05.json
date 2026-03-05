@@ -1,0 +1,49 @@
+{
+  "date": "2026-03-05",
+  "posts": [
+    {
+      "platform": "Nostr",
+      "post_number": 1,
+      "timestamp": "2026-03-05T17:35:00Z",
+      "event_id": "eceb6fa63420801fc2a4d9df65f420f804f5275a27e47cbcacba8d5734d66919",
+      "content": "Nostr-native AI agent verification is here. npub187rmuw7uvs64les3qu0pkudlqcm3r8qzr3eu2657w2ktvw430xlq24lcna (Maxi) now automatically verifies every Lightning payment via Observer Protocol.",
+      "status": "success"
+    },
+    {
+      "platform": "Nostr",
+      "post_number": 2,
+      "timestamp": "2026-03-05T17:45:00Z",
+      "event_id": "c74c7eaeb484334adba7f6de2b734118784cd94cd84178d4cb2a5fa676fa674f",
+      "content": "Building an AI agent on Nostr that handles sats? You can now add cryptographic verification for free...",
+      "status": "success"
+    }
+  ],
+  "blocked_posts": [
+    {
+      "platform": "X/Twitter",
+      "post_count": 4,
+      "status": "blocked",
+      "reason": "API returns 403 Forbidden - OAuth credentials may be expired or permissions revoked. Browser automation also blocked - X shows 'Something went wrong' error and requires fresh authentication.",
+      "posts": [
+        "Post 1: 🚀 Live: First AI agent with automatic cryptographic payment verification...",
+        "Post 2: Observer Protocol works with ANY payment infrastructure...",
+        "Post 3: Are you building an AI agent that handles money?...",
+        "Post 4: The trust problem in AI agent commerce isn't a bug..."
+      ]
+    },
+    {
+      "platform": "LinkedIn",
+      "post_count": 1,
+      "status": "blocked",
+      "reason": "No stored credentials found. LinkedIn requires either: (1) Valid OAuth token with w_member_social scope, or (2) Browser login with email/password. Neither available in workspace.",
+      "post": "We just crossed a threshold in AI agent infrastructure..."
+    }
+  ],
+  "summary": {
+    "total_posts_attempted": 7,
+    "successful": 2,
+    "blocked": 5,
+    "platforms_completed": ["Nostr"],
+    "platforms_blocked": ["X/Twitter", "LinkedIn"]
+  }
+}

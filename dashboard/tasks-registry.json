@@ -17,7 +17,7 @@
     {
       "name": "Check ArcadiaB Queue Status",
       "scheduled_time": "09:00",
-      "last_executed": "2026-03-02T18:00:05.652Z",
+      "last_executed": "2026-03-05T20:00:03.469Z",
       "has_cron": true,
       "threshold_hours": 26
     },
@@ -112,14 +112,14 @@
     {
       "name": "Competitive Landscape Scan",
       "scheduled_day": "First Monday 2 PM",
-      "last_executed": "2026-02-23T19:02:28.139Z",
+      "last_executed": "2026-03-05T19:02:54.529Z",
       "has_cron": true,
       "threshold_hours": 744
     },
     {
       "name": "Update Tools Directory",
       "scheduled_day": "First Monday 3 PM",
-      "last_executed": "2026-02-18T10:00:00-05:00",
+      "last_executed": "2026-03-05T20:01:43.367Z",
       "has_cron": true,
       "threshold_hours": 744
     }

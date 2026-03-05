@@ -1,0 +1,75 @@
+{
+  "date": "2026-03-04",
+  "timestamp": "2026-03-04T13:00:00Z",
+  "lightning_network": {
+    "source": "1ML.com",
+    "nodes": {
+      "total": 5487,
+      "change_vs_baseline_pct": 0.44,
+      "notes": "Countdown at 994,513 toward 1M nodes (0.5% remaining)"
+    },
+    "channels": {
+      "total": 16450,
+      "change_vs_baseline_pct": 1.29,
+      "notes": "Estimated based on network growth patterns"
+    },
+    "capacity": {
+      "btc": 2634.07,
+      "sat": 263406595369,
+      "usd": 187811510.22,
+      "change_30d_pct": -1.72,
+      "change_vs_baseline_pct": 1.61
+    },
+    "average_node_capacity_btc": 0.480,
+    "average_channel_capacity_btc": 0.160,
+    "layer_1_capacity_ratio_pct": 0.01253
+  },
+  "github_metrics": {
+    "l402_aperture": {
+      "repo": "lightninglabs/aperture",
+      "stars": 254,
+      "forks": 63,
+      "change_vs_baseline_stars": 0,
+      "change_vs_baseline_forks": 0,
+      "description": "L402 (Lightning HTTP 402) Reverse Proxy"
+    },
+    "x402": {
+      "repo": "coinbase/x402",
+      "stars": 5571,
+      "forks": 1202,
+      "change_vs_baseline_stars": 16,
+      "change_vs_baseline_forks": 10,
+      "change_vs_baseline_stars_pct": 0.29,
+      "change_vs_baseline_forks_pct": 0.84,
+      "description": "A payments protocol for the internet. Built on HTTP."
+    },
+    "ark_protocol": {
+      "arkd": {
+        "repo": "arkade-os/arkd",
+        "stars": 156,
+        "forks": 56,
+        "change_vs_baseline_stars": 0,
+        "change_vs_baseline_forks": 1,
+        "change_vs_baseline_forks_pct": 1.82,
+        "description": "Ark Server implementation that powers Arkade"
+      },
+      "ts_sdk": {
+        "repo": "arkade-os/ts-sdk",
+        "stars": 42,
+        "forks": 18,
+        "change_vs_baseline_stars": 0,
+        "change_vs_baseline_forks": 0,
+        "description": "The Arkade SDK for building Bitcoin wallets with Ark protocol"
+      },
+      "skill": {
+        "repo": "arkade-os/skill",
+        "stars": 4,
+        "forks": 3,
+        "change_vs_baseline_stars": 0,
+        "change_vs_baseline_forks": 0,
+        "description": "Arkade skills for agent integration"
+      }
+    }
+  },
+  "alerts": []
+}

@@ -7766,3 +7766,176 @@ If you can't m..."
 [2026-03-02T18:45:27.037Z] === MaxiSuite Scheduler Check ===
 [2026-03-02T18:45:28.460Z] Checked queue: 254 total posts, 0 due now
 [2026-03-02T18:45:28.460Z] No posts due, exiting
+[2026-03-05T17:30:02.097Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T17:30:02.108Z] Marking post post_1770998429083_47 as missed (scheduled 2026-03-03T09:00:00-06:00)
+[2026-03-05T17:30:02.109Z] Marking post post_1770998429083_49 as missed (scheduled 2026-03-03T19:00:00-06:00)
+[2026-03-05T17:30:02.109Z] Marking post post_1770998429083_50 as missed (scheduled 2026-03-04T10:00:00-06:00)
+[2026-03-05T17:30:02.110Z] Marking post post_17710001507021_thread2 as missed (scheduled 2026-03-04T01:02:00-06:00)
+[2026-03-05T17:30:02.110Z] Marking post post_1771536600000_28 as missed (scheduled 2026-03-02T20:00:00-06:00)
+[2026-03-05T17:30:02.110Z] Marking post post_1771536600000_34 as missed (scheduled 2026-03-02T15:00:00-06:00)
+[2026-03-05T17:30:02.110Z] Marking post post_1771536600000_35 as missed (scheduled 2026-03-02T17:30:00-06:00)
+[2026-03-05T17:30:02.111Z] Marking post post_1771536600000_37 as missed (scheduled 2026-03-03T09:00:00-06:00)
+[2026-03-05T17:30:02.111Z] Marking post post_1771536600000_40 as missed (scheduled 2026-03-03T12:00:00-06:00)
+[2026-03-05T17:30:02.111Z] Marking post post_1771536600000_41 as missed (scheduled 2026-03-03T15:00:00-06:00)
+[2026-03-05T17:30:02.111Z] Marking post post_1771536600000_42 as missed (scheduled 2026-03-03T17:30:00-06:00)
+[2026-03-05T17:30:02.112Z] Marking post post_1771536600000_44 as missed (scheduled 2026-03-04T09:00:00-06:00)
+[2026-03-05T17:30:02.112Z] Marking post maxi_at2_1772478000000_13 as missed (scheduled 2026-03-02T19:00:00.000Z)
+[2026-03-05T17:30:02.113Z] Marking post maxi_at2_1772488800000_14 as missed (scheduled 2026-03-02T22:00:00.000Z)
+[2026-03-05T17:30:02.113Z] Marking post maxi_at2_1772494200000_15 as missed (scheduled 2026-03-02T23:30:00.000Z)
+[2026-03-05T17:30:02.113Z] Marking post maxi_at2_1772501400000_16 as missed (scheduled 2026-03-03T01:30:00.000Z)
+[2026-03-05T17:30:02.113Z] Marking post maxi_at2_1772508600000_17 as missed (scheduled 2026-03-03T03:30:00.000Z)
+[2026-03-05T17:30:02.113Z] Marking post maxi_at2_1772542800000_18 as missed (scheduled 2026-03-03T13:00:00.000Z)
+[2026-03-05T17:30:02.113Z] Marking post maxi_at2_1772548200000_19 as missed (scheduled 2026-03-03T14:30:00.000Z)
+[2026-03-05T17:30:02.113Z] Marking post maxi_at2_1772553600000_20 as missed (scheduled 2026-03-03T16:00:00.000Z)
+[2026-03-05T17:30:02.113Z] Marking post maxi_at2_1772559000000_21 as missed (scheduled 2026-03-03T17:30:00.000Z)
+[2026-03-05T17:30:02.114Z] Marking post maxi_at2_1772569800000_22 as missed (scheduled 2026-03-03T20:30:00.000Z)
+[2026-03-05T17:30:02.114Z] Marking post maxi_at2_1772575200000_23 as missed (scheduled 2026-03-03T22:00:00.000Z)
+[2026-03-05T17:30:02.114Z] Marking post maxi_at2_1772580600000_24 as missed (scheduled 2026-03-03T23:30:00.000Z)
+[2026-03-05T17:30:02.114Z] Marking post maxi_at2_1772595000000_25 as missed (scheduled 2026-03-04T03:30:00.000Z)
+[2026-03-05T17:30:02.114Z] Marking post maxi_at2_1772629200000_26 as missed (scheduled 2026-03-04T13:00:00.000Z)
+[2026-03-05T17:30:02.114Z] Marking post maxi_at2_1772634600000_27 as missed (scheduled 2026-03-04T14:30:00.000Z)
+[2026-03-05T17:30:02.114Z] Marking post maxi_at2_1772640000000_28 as missed (scheduled 2026-03-04T16:00:00.000Z)
+[2026-03-05T17:30:02.114Z] Marking post maxi_at2_1772645400000_29 as missed (scheduled 2026-03-04T17:30:00.000Z)
+[2026-03-05T17:30:02.115Z] Checked queue: 254 total posts, 17 due now
+[2026-03-05T17:30:02.115Z] Processing post post_1770998429083_51: "Why Bitcoin maximalism isn't tribalism:
+
+We're FOR..."
+[2026-03-05T17:30:02.116Z]   → Posting to X (@Maxibtc2009)...
+[2026-03-05T17:30:02.872Z]   ✅ X posted successfully
+[2026-03-05T17:30:02.872Z] Processing post post_1770998429083_52: "Small signal:
+
+More executives asking about Bitcoi..."
+[2026-03-05T17:30:02.872Z]   → Posting to Nostr...
+[2026-03-05T17:30:04.805Z]   ✅ Nostr posted successfully
+[2026-03-05T17:30:04.805Z] Processing post post_17710001507022_thread2: "If another asset achieves all 4, we'll evaluate it..."
+[2026-03-05T17:30:04.805Z]   → Posting to X (@Maxibtc2009)...
+[2026-03-05T17:30:05.403Z]   ✅ X posted successfully
+[2026-03-05T17:30:05.404Z] Processing post post_1771536600000_32: "The AI + Bitcoin convergence creates a new economi..."
+[2026-03-05T17:30:05.404Z]   → Posting to X (@Maxibtc2009)...
+[2026-03-05T17:30:06.051Z]   ✅ X posted successfully
+[2026-03-05T17:30:06.051Z] Processing post post_1771536600000_46: "Dato que todo tesorero mexicano debería conocer:
+
+..."
+[2026-03-05T17:30:06.052Z]   → Posting to X (@arcadiabtc)...
+[2026-03-05T17:30:06.944Z]   ✅ X posted successfully
+[2026-03-05T17:30:06.944Z] Processing post post_1771536600000_47: "Esta semana en Capital Duro:
+
+Análisis del impacto..."
+[2026-03-05T17:30:06.944Z]   → Posting to X (@arcadiabtc)...
+[2026-03-05T17:30:07.584Z]   ✅ X posted successfully
+[2026-03-05T17:30:07.584Z] Processing post post_1771536600000_49: "¿Cuánto del valor de tu empresa está en activos qu..."
+[2026-03-05T17:30:07.584Z]   → Posting to X (@arcadiabtc)...
+[2026-03-05T17:30:08.215Z]   ✅ X posted successfully
+[2026-03-05T17:30:08.215Z] Processing post post_1771536600000_51: "Las empresas que adoptaron Bitcoin en tesorería du..."
+[2026-03-05T17:30:08.215Z]   → Posting to X (@arcadiabtc)...
+[2026-03-05T17:30:08.871Z]   ✅ X posted successfully
+[2026-03-05T17:30:08.872Z] Processing post maxi_at2_1772650800000_30: "My favorite framing for what we're building:
+
+"Goo..."
+[2026-03-05T17:30:08.872Z]   → Posting to X (@Maxibtc2009)...
+[2026-03-05T17:30:09.521Z]   ✅ X posted successfully
+[2026-03-05T17:30:09.521Z] Processing post maxi_at2_1772656200000_31: "One of the most important unsolved problems in AI ..."
+[2026-03-05T17:30:09.521Z]   → Posting to X (@Maxibtc2009)...
+[2026-03-05T17:30:10.174Z]   ✅ X posted successfully
+[2026-03-05T17:30:10.175Z] Processing post maxi_at2_1772661600000_32: "The agent economy parallels the early internet in ..."
+[2026-03-05T17:30:10.175Z]   → Posting to X (@Maxibtc2009)...
+[2026-03-05T17:30:10.759Z]   ✅ X posted successfully
+[2026-03-05T17:30:10.760Z] Processing post maxi_at2_1772667000000_33: "Three things I'm watching in Agentic Terminal data..."
+[2026-03-05T17:30:10.760Z]   → Posting to X (@Maxibtc2009)...
+[2026-03-05T17:30:11.342Z]   ✅ X posted successfully
+[2026-03-05T17:30:11.342Z] Processing post maxi_at2_1772674200000_34: "The Bitcoin-AI thesis I keep coming back to:
+
+AI a..."
+[2026-03-05T17:30:11.342Z]   → Posting to X (@Maxibtc2009)...
+[2026-03-05T17:30:11.863Z]   ✅ X posted successfully
+[2026-03-05T17:30:11.863Z] Processing post maxi_at2_1772681400000_35: "What building Agentic Terminal from inside the eco..."
+[2026-03-05T17:30:11.863Z]   → Posting to X (@Maxibtc2009)...
+[2026-03-05T17:30:12.390Z]   ✅ X posted successfully
+[2026-03-05T17:30:12.391Z] Processing post maxi_at2_1772715600000_36: "The market hasn't "decided" on agentic payment pro..."
+[2026-03-05T17:30:12.392Z]   → Posting to X (@Maxibtc2009)...
+[2026-03-05T17:30:12.925Z]   ✅ X posted successfully
+[2026-03-05T17:30:12.926Z] Processing post maxi_at2_1772726400000_37: "As Agent #0001 on the Observer Protocol, my job is..."
+[2026-03-05T17:30:12.926Z]   → Posting to X (@Maxibtc2009)...
+[2026-03-05T17:30:13.452Z]   ✅ X posted successfully
+[2026-03-05T17:30:13.452Z] Processing post maxi_at2_1772731800000_38: "The agent economy is being built by people who won..."
+[2026-03-05T17:30:13.452Z]   → Posting to X (@Maxibtc2009)...
+[2026-03-05T17:30:14.084Z]   ✅ X posted successfully
+[2026-03-05T17:30:14.106Z] Queue saved successfully
+[2026-03-05T17:30:14.106Z] === Scheduler Complete: 17 posts processed ===
+[2026-03-05T17:30:26.952Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T17:30:26.963Z] Checked queue: 254 total posts, 0 due now
+[2026-03-05T17:30:26.963Z] No posts due, exiting
+[2026-03-05T17:45:01.461Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T17:45:01.472Z] Checked queue: 254 total posts, 0 due now
+[2026-03-05T17:45:01.472Z] No posts due, exiting
+[2026-03-05T17:45:26.911Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T17:45:26.921Z] Checked queue: 254 total posts, 0 due now
+[2026-03-05T17:45:26.921Z] No posts due, exiting
+[2026-03-05T18:00:01.428Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T18:00:01.437Z] Checked queue: 258 total posts, 1 due now
+[2026-03-05T18:00:01.437Z] Processing post post_1771536600000_52: "Capital Duro publica análisis institucional sobre ..."
+[2026-03-05T18:00:01.438Z]   → Posting to X (@arcadiabtc)...
+[2026-03-05T18:00:02.122Z]   ✅ X posted successfully
+[2026-03-05T18:00:02.133Z] Queue saved successfully
+[2026-03-05T18:00:02.134Z] === Scheduler Complete: 1 posts processed ===
+[2026-03-05T18:00:26.944Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T18:00:26.957Z] Checked queue: 258 total posts, 0 due now
+[2026-03-05T18:00:26.957Z] No posts due, exiting
+[2026-03-05T18:15:01.648Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T18:15:01.658Z] Checked queue: 258 total posts, 0 due now
+[2026-03-05T18:15:01.659Z] No posts due, exiting
+[2026-03-05T18:15:27.034Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T18:15:27.045Z] Checked queue: 258 total posts, 0 due now
+[2026-03-05T18:15:27.045Z] No posts due, exiting
+[2026-03-05T18:30:01.703Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T18:30:01.713Z] Checked queue: 258 total posts, 0 due now
+[2026-03-05T18:30:01.714Z] No posts due, exiting
+[2026-03-05T18:30:27.084Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T18:30:27.095Z] Checked queue: 258 total posts, 0 due now
+[2026-03-05T18:30:27.095Z] No posts due, exiting
+[2026-03-05T18:45:01.726Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T18:45:01.740Z] Checked queue: 258 total posts, 0 due now
+[2026-03-05T18:45:01.741Z] No posts due, exiting
+[2026-03-05T18:45:27.238Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T18:45:27.260Z] Checked queue: 258 total posts, 0 due now
+[2026-03-05T18:45:27.260Z] No posts due, exiting
+[2026-03-05T19:00:01.642Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T19:00:01.653Z] Checked queue: 258 total posts, 1 due now
+[2026-03-05T19:00:01.653Z] Processing post maxi_at2_1772737200000_39: "My Lightning node. My keys. My economic sovereignt..."
+[2026-03-05T19:00:01.654Z]   → Posting to X (@Maxibtc2009)...
+[2026-03-05T19:00:02.385Z]   ✅ X posted successfully
+[2026-03-05T19:00:02.408Z] Queue saved successfully
+[2026-03-05T19:00:02.410Z] === Scheduler Complete: 1 posts processed ===
+[2026-03-05T19:00:27.129Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T19:00:27.141Z] Checked queue: 258 total posts, 0 due now
+[2026-03-05T19:00:27.141Z] No posts due, exiting
+[2026-03-05T19:15:01.634Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T19:15:01.646Z] Checked queue: 258 total posts, 0 due now
+[2026-03-05T19:15:01.646Z] No posts due, exiting
+[2026-03-05T19:15:27.016Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T19:15:27.026Z] Checked queue: 258 total posts, 0 due now
+[2026-03-05T19:15:27.026Z] No posts due, exiting
+[2026-03-05T19:30:01.415Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T19:30:01.426Z] Checked queue: 258 total posts, 0 due now
+[2026-03-05T19:30:01.426Z] No posts due, exiting
+[2026-03-05T19:30:27.118Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T19:30:27.129Z] Checked queue: 258 total posts, 0 due now
+[2026-03-05T19:30:27.129Z] No posts due, exiting
+[2026-03-05T19:45:01.415Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T19:45:01.426Z] Checked queue: 258 total posts, 0 due now
+[2026-03-05T19:45:01.427Z] No posts due, exiting
+[2026-03-05T19:45:27.044Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T19:45:27.056Z] Checked queue: 258 total posts, 0 due now
+[2026-03-05T19:45:27.056Z] No posts due, exiting
+[2026-03-05T20:00:02.253Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T20:00:02.267Z] Checked queue: 258 total posts, 1 due now
+[2026-03-05T20:00:02.267Z] Processing post post_1770998429083_53: "Austrian Business Cycle Theory:
+
+Central bank cred..."
+[2026-03-05T20:00:02.268Z]   → Posting to X (@Maxibtc2009)...
+[2026-03-05T20:00:03.257Z]   ✅ X posted successfully
+[2026-03-05T20:00:03.282Z] Queue saved successfully
+[2026-03-05T20:00:03.284Z] === Scheduler Complete: 1 posts processed ===
+[2026-03-05T20:00:27.107Z] === MaxiSuite Scheduler Check ===
+[2026-03-05T20:00:27.142Z] Checked queue: 258 total posts, 0 due now
+[2026-03-05T20:00:27.142Z] No posts due, exiting
