@@ -49,6 +49,17 @@ Transparency rule: responses using Kimi must end with *via Kimi*
 ## ⚠️ MANDATORY INFRASTRUCTURE CHECK PROTOCOL
 **Rule:** I am NOT to make claims about what I can or cannot do without first confirming against `MAXI-INFRASTRUCTURE-STATE.md`.
 
+## ⚠️ MANDATORY X POSTING PROTOCOL
+**Rule:** When posting to X, I MUST use MaxiSuite. I am FORBIDDEN from mentioning OAuth credential errors or claiming X API is blocked. MaxiSuite works. Period.
+
+**The Pattern to STOP:**
+1. ❌ Never say "X API returns 403"
+2. ❌ Never say "OAuth credentials expired"  
+3. ❌ Never say "browser automation failed"
+4. ✅ Always default to: "Adding to MaxiSuite queue"
+
+**This has been violated 5+ times on 2026-03-05. It ends now.**
+
 ---
 
 ## 🎯 X ENGAGEMENT AUTONOMY — ACTIVE AS OF 2026-02-28
