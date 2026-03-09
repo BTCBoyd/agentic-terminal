@@ -508,6 +508,15 @@ async function generateAllSparklines(weeks, outputDir, date) {
     outputDir,
     date
   ));
+
+  sparklines.push(await generateSparkline(
+    weeks,
+    'metrics.stablecoin_api_rails.x402_daily_transactions',
+    'x402 Daily Transactions',
+    CONFIG.colors.stablecoin,
+    outputDir,
+    date
+  ));
   
   sparklines.push(await generateSparkline(
     weeks,
