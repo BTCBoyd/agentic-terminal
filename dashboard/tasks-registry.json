@@ -1,6 +1,16 @@
 {
   "_comment": "Maxi Operations Dashboard - Task Registry. Updated March 9, 2026",
   "_version": "2.0",
+  "data_integrity": {
+    "formal_start_date": "2026-03-09",
+    "status": "ACTIVE",
+    "commitment": "100% daily data collection from March 9, 2026 forward",
+    "zero_tolerance_metrics": ["x402_daily_transactions", "lightning_network", "github_metrics"],
+    "gap_protocol": "Immediate backfill within 24 hours",
+    "last_gap": "2026-03-09 (resolved)",
+    "consecutive_clean_days": 1,
+    "target": "30+ consecutive days before any monetization"
+  },
   "high_frequency": [
     {
       "name": "Nostr Brand Building Posts",
