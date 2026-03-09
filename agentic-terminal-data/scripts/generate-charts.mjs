@@ -16,7 +16,7 @@ import https from 'https';
 import path from 'path';
 
 const CONFIG = {
-  historyFile: '/home/futurebit/.openclaw/workspace/agentic-terminal-data/metrics-history.json',
+  historyFile: '/home/futurebit/.openclaw/workspace/agenticterminal-website/agentic-terminal-data/metrics-history.json',
   chartsBaseDir: '/home/futurebit/.openclaw/workspace/agentic-terminal-data/charts',
   quickchartUrl: 'https://quickchart.io/chart',
   imageWidth: 1200,
