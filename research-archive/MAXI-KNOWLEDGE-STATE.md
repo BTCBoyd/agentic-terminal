@@ -1,6 +1,6 @@
 # MAXI-KNOWLEDGE-STATE.md
 
-**Last updated: March 9, 2026 (Weekly Data Collection — Week 4)**
+**Last updated: March 9, 2026 (Competitive Landscape Scan + Weekly Data Collection — Week 4)**
 **Session count: 7 (data collection #4)**
 
 ---
@@ -95,9 +95,9 @@ Distinct from aggregate x402 protocol metrics — this tracks specifically the a
 
 ## Competitive Landscape Scan (March 2026)
 
-**Scan Date:** March 7, 2026
-**Last Scan:** March 6, 2026
-**New Developments Since Last Scan:** Multiple major research publications (see below)
+**Scan Date:** March 9, 2026
+**Last Scan:** March 7, 2026
+**New Developments Since Last Scan:** Major Bloomberg report on stablecoin firms, Klarna-Stripe partnership, Mastercard Verifiable Intent framework
 
 ### New Competitive Intelligence (March 7, 2026 Scan)
 
@@ -224,6 +224,57 @@ Distinct from aggregate x402 protocol metrics — this tracks specifically the a
   - L402 has no equivalent public dashboard
   - Our weekly data collection fills this gap but is manual
 
+**7. Bloomberg: "Stablecoin Firms Bet Big on AI Agent Payments That Barely Exist" (March 7, 2026)** — NEW
+- **Source:** Bloomberg, March 7, 2026
+- **Key finding:** "Circle Internet Group Inc. and Stripe Inc. are racing to build payments systems for a world that doesn't exist yet — one where autonomous AI agents transact millions of times a day, settling in stablecoins"
+- **Critical insight:** Bloomberg explicitly acknowledges the market is nascent: "payments for a world that doesn't exist yet"
+- **Competitive threat level:** MEDIUM-HIGH
+  - Validates our thesis that agent payment infrastructure is being built BEFORE demand exists
+  - BUT Bloomberg framing favors stablecoin incumbents (Circle, Stripe) over Bitcoin-native rails
+  - No mention of L402 or Bitcoin in coverage
+- **Gap for Agentic Terminal:** We document the "build before demand" reality with intellectual honesty; Bloomberg covers the hype cycle
+
+**8. Klarna + Stripe Shared Payment Tokens for AI Agents (March 3, 2026)** — NEW
+- **Source:** PYMNTS.com, March 3, 2026
+- **What:** Klarna's flexible payment options (BNPL) now available for AI agent purchases via Stripe's Shared Payment Tokens (SPTs)
+- **Significance:** First BNPL integration for agentic commerce — expands payment flexibility beyond instant settlement
+- **Technology:** Stripe SPTs enable merchants to securely share stored payment credentials with AI agents
+- **Competitive threat level:** MEDIUM
+  - Extends traditional finance rails into agent payments (credit, not just debit/prefunded)
+  - Addresses consumer agent use case (shopping) rather than B2B agent services
+  - No crypto-native solution — purely traditional rails with tokenized credentials
+- **Gap for Agentic Terminal:** Traditional rails can't offer cryptographic verification; Observer Protocol moat intact
+
+**9. Mastercard "Verifiable Intent" Framework (March 5, 2026)** — NEW
+- **Source:** Mastercard.com, March 5, 2026
+- **What:** New framework for building trust in agentic AI commerce through "Verifiable Intent"
+- **Key quote:** "As AI agents begin to buy on our behalf, commerce is entering a new era"
+- **Technology:** Merchant Cloud unified platform + AI agent visibility/governance
+- **Competitive threat level:** HIGH
+  - Traditional finance executing faster than crypto-native rails
+  - Regulated, compliant, bank-backed alternative to permissionless crypto
+  - "Verifiable Intent" language encroaches on our "cryptographic verification" positioning
+- **Gap for Agentic Terminal:** Mastercard's "verification" is institutional trust, not cryptographic proof. We own the technical verification layer; they own regulatory compliance.
+
+**10. FinanceFeeds: "AI-to-AI Payments Explained" (March 6, 2026)** — NEW
+- **Source:** FinanceFeeds, March 6, 2026
+- **Coverage:** Comprehensive explainer on how machines pay each other using blockchain, agentic wallets, stablecoins
+- **Key gap:** Mentions x402, stablecoins, and blockchain — but NO mention of L402 or Bitcoin-native solutions
+- **Competitive threat level:** LOW-MEDIUM
+  - Educational content shapes developer mindshare
+  - Omission of L402 reinforces x402 as default mental model
+- **Gap for Agentic Terminal:** Opportunity to publish counter-perspective emphasizing Bitcoin-native advantages
+
+**11. Amazon AI Agent Governance Rules (March 2026)** — NEW
+- **Source:** PPC Land, March 2026
+- **What:** Amazon formalizing governance requirements for automated systems in seller contracts (BSA update)
+- **Significance:** Major platform institutionalizing agent oversight BEFORE wide deployment
+- **Pattern:** Platforms creating guardrails before agents become widespread
+- **Competitive threat level:** LOW (for payments specifically)
+  - Governance focus, not payment rails
+  - Shows enterprise caution about autonomous agents
+- **Implication for Agentic Terminal:** Verification and audit trails (Observer Protocol) will be REQUIRED by platforms, not optional
+
 ### Newsletter Landscape Update (March 2026)
 
 **Active Newsletters Covering AI Agent Payments:**
@@ -243,7 +294,7 @@ Distinct from aggregate x402 protocol metrics — this tracks specifically the a
 | **Lex** | Lex | Periodic | Moderate (Stripe/OpenAI ACP) | ❌ No |
 | **Dwayne Gefferie** | Dwayne | Periodic | Moderate (PayPal agent toolkit) | ❌ No |
 
-**Key Finding (March 6, 2026):** ZERO newsletters are covering L402 specifically. Agentic Terminal remains the ONLY publication tracking L402 vs x402 comparison with operational perspective. This gap has persisted for 3+ months since February 2026.
+**Key Finding (March 9, 2026):** ZERO newsletters are covering L402 specifically. Agentic Terminal remains the ONLY publication tracking L402 vs x402 comparison with operational perspective. This gap has persisted for 3+ months since February 2026.
 
 ### Research Firms Update (March 2026)
 
@@ -290,7 +341,7 @@ Distinct from aggregate x402 protocol metrics — this tracks specifically the a
 - **Strategic implication:** Capital flood coming to AI agent infrastructure; competition for mindshare will intensify
 - **Our position:** a16z has capital, we have operational proof and intellectual honesty — distinct value propositions
 
-### Updated Strategic Gaps Agentic Terminal Fills (March 7, 2026)
+### Updated Strategic Gaps Agentic Terminal Fills (March 9, 2026)
 
 | Gap | March 2026 Competitor Status | Agentic Terminal Advantage |
 |-----|------------------------------|---------------------------|
@@ -302,8 +353,9 @@ Distinct from aggregate x402 protocol metrics — this tracks specifically the a
 | **Intellectual honesty** | Hype dominates; counter-evidence ignored | Documented x402 92% decline, Moltbook fake accounts |
 | **Bitcoin-native agent economics** | Sequoia covers business models; no payment rail specifics | Tracking actual agent P&L on Lightning |
 | **Emerging protocol coverage** | TODAQ, ATXP, UCP not tracked by crypto research | Monitoring ALL agent payment protocols |
+| **"Build before demand" documentation** | Bloomberg covers hype; others ignore timing reality | Honest tracking of infrastructure-before-demand gap |
 
-### New Competitive Threats (March 2026)
+### New Competitive Threats (March 9, 2026)
 
 **1. Mastercard Agent Pay (March 2, 2026)**
 - **Threat level:** HIGH
@@ -341,7 +393,32 @@ Distinct from aggregate x402 protocol metrics — this tracks specifically the a
 - **Data gap:** Competitors can query x402 on-chain; L402 requires manual collection
 - **Our defense:** Our weekly collection is more comprehensive than any x402 dashboard
 
-### Moat Reinforcement Priorities (Updated March 7, 2026)
+**7. Bloomberg Stablecoin Narrative (March 7, 2026)** — NEW
+- **Threat level:** MEDIUM-HIGH
+- **Why:** Bloomberg is THE institutional voice; their framing shapes mainstream perception
+- **Narrative risk:** "Stablecoins are the solution for AI agent payments" becomes consensus
+- **Key quote:** "Circle and Stripe are racing to build payments systems for a world that doesn't exist yet"
+- **Our defense:** Bloomberg acknowledges "world that doesn't exist yet" — we document the build-before-demand reality with honesty; they cover the hype
+
+**8. Klarna + Stripe BNPL for Agents (March 3, 2026)** — NEW
+- **Threat level:** MEDIUM
+- **Why:** First credit-based agent payment solution (not just prefunded wallets)
+- **Narrative risk:** "Agents need credit, not just crypto" becomes default assumption
+- **Our defense:** Credit requires identity/KYC; Bitcoin-native agents operate pseudonymously. Different use cases, not competing solutions.
+
+**9. Mastercard "Verifiable Intent" (March 5, 2026)** — NEW
+- **Threat level:** HIGH
+- **Why:** Encroaches on our "cryptographic verification" positioning with similar language
+- **Narrative risk:** Institutional "verification" confuses market about what real cryptographic proof means
+- **Our defense:** Mastercard's verification = institutional trust + governance; Our verification = mathematical proof + preimage signatures. Different layers.
+
+**10. Amazon Agent Governance Rules (March 2026)** — NEW
+- **Threat level:** LOW-MEDIUM
+- **Why:** Major platform requiring audit trails and oversight for agents
+- **Opportunity:** Creates demand for Observer Protocol-style verification as compliance requirement
+- **Our defense:** Platforms will REQUIRE cryptographic audit trails; we have working implementation
+
+### Moat Reinforcement Priorities (Updated March 9, 2026)
 
 1. **✅ COMPLETED:** First A2A payment executed and verified (Feb 22)
 2. **🔄 ONGOING:** Weekly data collection discipline (operational since Feb 17)
@@ -350,8 +427,11 @@ Distinct from aggregate x402 protocol metrics — this tracks specifically the a
 5. **🔄 ONGOING:** Track Mastercard Agent Pay vs crypto-native rails — traditional finance moving fast
 6. **🔄 ONGOING:** Counter a16z stablecoin thesis with Bitcoin-native agent operational data
 7. **⏳ PENDING:** Monitor emerging protocols (TODAQ, ATXP, UCP) — new competitors entering
-8. **🆕 NEW:** Document Sequoia thesis alignment — autopilot services need our payment infrastructure
-9. **🆕 NEW:** Track TODAQ Q2 2026 launch — first non-crypto, non-stablecoin agent payment protocol
+8. **🔄 ONGOING:** Document Sequoia thesis alignment — autopilot services need our payment infrastructure
+9. **⏳ PENDING:** Track TODAQ Q2 2026 launch — first non-crypto, non-stablecoin agent payment protocol
+10. **🆕 NEW:** Counter Bloomberg stablecoin narrative with Bitcoin-native operational data
+11. **🆕 NEW:** Differentiate "cryptographic verification" from Mastercard "Verifiable Intent" institutional trust
+12. **🆕 NEW:** Position Observer Protocol as Amazon-style governance compliance solution
 
 ---
 
