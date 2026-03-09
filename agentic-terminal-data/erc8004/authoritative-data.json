@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-03-09T18:00:00.000Z",
+  "source": "8004agents.ai (authoritative)",
+  "source_url": "https://8004agents.ai/",
+  "contract": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+  "standard": "ERC-8004 Trustless Agents",
+  "total_agents": 68208,
+  "by_chain": {
+    "ethereum": 16848,
+    "base": 32537,
+    "bnb": 8765,
+    "avalanche": 4234,
+    "polygon": 5824
+  },
+  "methodology": "ERC-721 Registered events (NFT mints)",
+  "note": "Previously reported 71 was incorrect - queried transactions instead of Registered events. Real number is 68,208+ agents per 8004agents.ai and 8004scan.io explorers.",
+  "status": "verified"
+}
