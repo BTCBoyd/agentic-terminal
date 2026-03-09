@@ -119,6 +119,73 @@ function normalizeTo100(values) {
 }
 
 /**
+ * Generate placeholder for insufficient data
+ */
+async function generateInsufficientDataPlaceholder(chartType, outputDir, date, weeksNeeded) {
+  log('INFO', `Generating insufficient data placeholder for ${chartType}`);
+  
+  const chartConfig = {
+    type: 'bar',
+    data: {
+      labels: ['Insufficient Data'],
+      datasets: [{
+        label: 'Data Collection In Progress',
+        data: [0],
+        backgroundColor: '#374151'
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        title: {
+          display: true,
+          text: chartType === 'interest-usage-gap' 
+            ? 'Interest ↔ Usage Gap: Building Historical Data'
+            : 'Cross-Protocol Comparison: Building Historical Data',
+          color: '#e5e7eb',
+          font: { size: 20, weight: 'bold' }
+        },
+        subtitle: {
+          display: true,
+          text: `Need ${weeksNeeded} more week${weeksNeeded > 1 ? 's' : ''} of data. Check back soon.`,
+          color: '#9ca3af',
+          font: { size: 16 },
+          padding: { bottom: 20 }
+        },
+        legend: { display: false }
+      },
+      scales: {
+        x: { display: false },
+        y: { display: false }
+      }
+    }
+  };
+  
+  const filename = chartType === 'interest-usage-gap' ? 'interest-usage-gap.png' : 'cross-protocol-comparison.png';
+  const outputPath = path.join(outputDir, filename);
+  await fetchChartImage(chartConfig, outputPath);
+  
+  const metadata = {
+    chart_type: chartType,
+    status: 'insufficient_data',
+    generated_at: new Date().toISOString(),
+    weeks_needed: weeksNeeded,
+    image_path: outputPath,
+    message: `Need ${weeksNeeded} more week${weeksNeeded > 1 ? 's' : ''} of data for meaningful visualization`
+  };
+  
+  const jsonFilename = chartType === 'interest-usage-gap' ? 'interest-usage-gap.json' : 'cross-protocol-comparison.json';
+  await writeFile(
+    path.join(outputDir, jsonFilename),
+    JSON.stringify(metadata, null, 2)
+  );
+  
+  log('SUCCESS', `Generated placeholder: ${outputPath}`);
+  return metadata;
+}
+
+/**
  * Calculate week-over-week growth rates
  */
 function calculateGrowthRates(values) {
@@ -138,6 +205,13 @@ function calculateGrowthRates(values) {
  */
 async function generateCrossProtocolChart(weeks, outputDir, date) {
   log('INFO', 'Generating Cross-Protocol Normalized Growth Comparison chart');
+  
+  // REQUIRE minimum 8 weeks for meaningful visualization
+  const MIN_WEEKS = 8;
+  if (weeks.length < MIN_WEEKS) {
+    log('WARN', `Insufficient data: ${weeks.length} weeks, need ${MIN_WEEKS}. Generating placeholder.`);
+    return generateInsufficientDataPlaceholder('cross-protocol-comparison', outputDir, date, MIN_WEEKS - weeks.length);
+  }
   
   // Extract data for each protocol
   const l402Stars = weeks.map(w => w.metrics.bitcoin_lightning.l402_github_stars);
@@ -268,6 +342,13 @@ async function generateCrossProtocolChart(weeks, outputDir, date) {
 async function generateInterestUsageGapChart(weeks, outputDir, date) {
   log('INFO', 'Generating Interest-to-Usage Gap chart');
   
+  // REQUIRE minimum 8 weeks for meaningful visualization
+  const MIN_WEEKS = 8;
+  if (weeks.length < MIN_WEEKS) {
+    log('WARN', `Insufficient data: ${weeks.length} weeks, need ${MIN_WEEKS}. Generating placeholder.`);
+    return generateInsufficientDataPlaceholder('interest-usage-gap', outputDir, date, MIN_WEEKS - weeks.length);
+  }
+  
   const labels = weeks.map(w => {
     const date = new Date(w.week_start);
     return `${date.getMonth() + 1}/${date.getDate()}`;
@@ -277,16 +358,25 @@ async function generateInterestUsageGapChart(weeks, outputDir, date) {
   const l402Stars = weeks.map(w => w.metrics.bitcoin_lightning.l402_github_stars);
   
   // Usage proxies: ERC-8004 agents (registered agents)
+  // NOTE: Currently estimated data - will show 0% growth until on-chain queries implemented
   const erc8004Agents = weeks.map(w => w.metrics.stablecoin_api_rails.erc8004_agents_registered);
   
-  // Normalize both to same scale for gap visualization
-  const maxStars = Math.max(...l402Stars);
-  const maxAgents = Math.max(...erc8004Agents);
+  // FIXED: Use baseline from first data point for consistent normalization
+  // This prevents both series from converging to 100
+  const baselineStars = l402Stars[0];
+  const baselineAgents = erc8004Agents[0];
   
-  const normalizedStars = l402Stars.map(v => (v / maxStars) * 100);
-  const normalizedAgents = erc8004Agents.map(v => (v / maxAgents) * 100);
+  // Calculate growth from baseline (percentage change)
+  const normalizedStars = l402Stars.map(v => ((v - baselineStars) / baselineStars) * 100);
+  const normalizedAgents = erc8004Agents.map(v => {
+    // If using static estimates, show as flat line at 0% growth
+    if (weeks[0].metrics?.stablecoin_api_rails?.erc8004_data_quality === 'estimated') {
+      return 0;
+    }
+    return ((v - baselineAgents) / baselineAgents) * 100;
+  });
   
-  // Calculate the gap
+  // Calculate the gap (Interest growth - Usage growth)
   const gap = normalizedStars.map((stars, i) => stars - normalizedAgents[i]);
   
   const chartConfig = {
