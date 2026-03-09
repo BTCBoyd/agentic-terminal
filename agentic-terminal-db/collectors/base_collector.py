@@ -49,9 +49,75 @@ class BaseCollector:
         result = self.cursor.fetchone()
         return result['id'] if result else None
         
-    def insert_metric(self, protocol_id, metric_name, timestamp, value, unit=None, source=None, source_url=None):
-        """Insert a metric record."""
+    def get_last_metric_value(self, protocol_id, metric_name):
+        """Get the most recent value for a metric to validate new data."""
         try:
+            self.cursor.execute("""
+                SELECT value, timestamp 
+                FROM metrics 
+                WHERE protocol_id = %s AND metric_name = %s
+                ORDER BY timestamp DESC 
+                LIMIT 1
+            """, (protocol_id, metric_name))
+            result = self.cursor.fetchone()
+            return result['value'] if result else None
+        except Exception:
+            return None
+    
+    def validate_metric_value(self, metric_name, new_value, last_value):
+        """
+        Validate a new metric value against data integrity rules.
+        
+        Rules:
+        1. Never insert zero/null/undefined if last known value was non-zero
+        2. Flag >50% variance for human review (log warning but still insert)
+        3. Reject negative values for counts/stars
+        
+        Returns: (is_valid, should_insert, warning_msg)
+        """
+        # Rule 1: Never overwrite non-zero with zero/null/undefined
+        if new_value is None or new_value == 0 or new_value == 'undefined':
+            if last_value is not None and last_value != 0:
+                warning = f"DATA INTEGRITY: Rejecting {metric_name}={new_value} (would overwrite last known value {last_value})"
+                self.errors.append(warning)
+                return False, False, warning
+        
+        # Rule 2: Check for >50% variance (flag but still insert)
+        variance_warning = None
+        if last_value is not None and last_value != 0:
+            variance_pct = abs(new_value - last_value) / last_value
+            if variance_pct > 0.5:
+                variance_warning = f"DATA INTEGRITY WARNING: {metric_name} changed {variance_pct*100:.1f}% ({last_value} -> {new_value})"
+        
+        # Rule 3: Reject negative values for count-based metrics
+        count_metrics = ['stars', 'forks', 'nodes', 'channels', 'issues', 'agents']
+        if any(m in metric_name.lower() for m in count_metrics):
+            if new_value is not None and new_value < 0:
+                warning = f"DATA INTEGRITY: Rejecting negative {metric_name}={new_value}"
+                self.errors.append(warning)
+                return False, False, warning
+        
+        return True, True, variance_warning
+    
+    def insert_metric(self, protocol_id, metric_name, timestamp, value, unit=None, source=None, source_url=None):
+        """Insert a metric record with data integrity validation."""
+        try:
+            # Get last known value for validation
+            last_value = self.get_last_metric_value(protocol_id, metric_name)
+            
+            # Validate the new value
+            is_valid, should_insert, warning = self.validate_metric_value(
+                metric_name, value, last_value
+            )
+            
+            if warning:
+                print(f"[DATA INTEGRITY] {warning}")
+            
+            if not should_insert:
+                print(f"[DATA INTEGRITY] Skipped insert for {metric_name}")
+                return False
+            
+            # Proceed with insert
             self.cursor.execute("""
                 INSERT INTO metrics (protocol_id, metric_name, timestamp, value, unit, source, source_url)
                 VALUES (%s, %s, %s, %s, %s, %s, %s)
@@ -60,6 +126,7 @@ class BaseCollector:
             self.conn.commit()
             self.rows_inserted += 1
             return True
+            
         except Exception as e:
             self.errors.append(f"Error inserting metric {metric_name}: {str(e)}")
             return False
