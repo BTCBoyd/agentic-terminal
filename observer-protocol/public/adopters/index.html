@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production Adopters — Observer Protocol</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .notice {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .notice p {
+            color: #856404;
+            margin: 0;
+        }
+        
+        .adopters-grid {
+            display: grid;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .adopter-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .adopter-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+        
+        .adopter-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .adopter-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .badge-production {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .badge-beta {
+            background: #cce5ff;
+            color: #004085;
+        }
+        
+        .adopter-meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .adopter-description {
+            color: #444;
+            margin-bottom: 20px;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .feature-tag {
+            background: #f1f3f4;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: #5f6368;
+        }
+        
+        .adopter-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .adopter-links a {
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .adopter-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .cta-section {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .cta-section h2 {
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+        
+        .cta-section p {
+            color: #666;
+            margin-bottom: 25px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #1a73e8;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        
+        .cta-button:hover {
+            background: #1557b0;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid #e0e0e0;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #666;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .adopter-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Observer Protocol Adopters</h1>
+            <p class="subtitle">Projects using Observer Protocol for cryptographic agent identity verification in production</p>
+        </header>
+        
+        <div class="notice">
+            <p>🚧 <strong>Early Access:</strong> This page is in preview mode. Official public announcement coming later this week.</p>
+        </div>
+        
+        <div class="adopters-grid">
+            <div class="adopter-card">
+                <div class="adopter-header">
+                    <h3 class="adopter-name">AgentPay MCP Server</h3>
+                    <span class="badge badge-production">Production</span>
+                </div>
+                <div class="adopter-meta">Deployed March 8, 2026</div>
+                <p class="adopter-description">
+                    MCP-native payment gateway enabling agent-to-agent commerce with integrated Observer Protocol verification. 
+                    The first production deployment of Observer Protocol, serving as the reference implementation for 
+                    Model Context Protocol payments.
+                </p>
+                <div class="features">
+                    <span class="feature-tag">Identity Verification</span>
+                    <span class="feature-tag">Reputation Badges</span>
+                    <span class="feature-tag">MCP Integration</span>
+                    <span class="feature-tag">Marketplace</span>
+                </div>
+                <div class="adopter-links">
+                    <a href="https://github.com/joepangallo/mcp-server-agentpay" target="_blank">GitHub →</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <h2>Build with Observer Protocol</h2>
+            <p>Join the growing ecosystem of verified agent infrastructure. Free to use during adoption phase.</p>
+            <a href="https://api.observerprotocol.org/docs" class="cta-button">Get Started →</a>
+        </div>
+        
+        <footer>
+            <p>
+                <a href="https://observerprotocol.org">observerprotocol.org</a> • 
+                <a href="https://github.com/observer-protocol">GitHub</a> • 
+                <a href="mailto:hello@observerprotocol.org">Contact</a>
+            </p>
+            <p style="margin-top: 10px; font-size: 0.8rem;">
+                Observer Protocol is free infrastructure. We monetize <a href="https://agenticterminal.ai">Agentic Terminal</a> intelligence, not the protocol.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

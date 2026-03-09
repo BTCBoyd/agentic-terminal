@@ -1,0 +1,83 @@
+{
+  "date": "2026-03-06",
+  "timestamp": "2026-03-06T13:00:00Z",
+  "lightning_network": {
+    "source": "1ML.com",
+    "nodes": {
+      "total": 5514,
+      "change_vs_baseline_pct": 0.49,
+      "change_30d_pct": 9.02,
+      "notes": "Countdown at 994,489 toward 1M nodes (0.55% remaining)"
+    },
+    "channels": {
+      "total": 16528,
+      "change_vs_baseline_pct": 0.47,
+      "change_30d_pct": 13.04,
+      "new_24h": 286
+    },
+    "capacity": {
+      "btc": 2612.08,
+      "sat": 261208073030,
+      "usd": 182902855.69,
+      "change_30d_pct": -0.96,
+      "change_vs_baseline_pct": -0.84
+    },
+    "average_node_capacity_btc": 0.474,
+    "average_channel_capacity_btc": 0.157,
+    "layer_1_capacity_ratio_pct": 0.01244,
+    "nodes_public_ip": 4223
+  },
+  "github_metrics": {
+    "l402_aperture": {
+      "repo": "lightninglabs/aperture",
+      "stars": 254,
+      "forks": 65,
+      "change_vs_baseline_stars": 0,
+      "change_vs_baseline_forks": 2,
+      "change_vs_baseline_forks_pct": 3.17,
+      "open_issues": 34,
+      "description": "L402 (Lightning HTTP 402) Reverse Proxy"
+    },
+    "x402": {
+      "repo": "coinbase/x402",
+      "stars": 5586,
+      "forks": 1212,
+      "change_vs_baseline_stars": 15,
+      "change_vs_baseline_forks": 10,
+      "change_vs_baseline_stars_pct": 0.27,
+      "change_vs_baseline_forks_pct": 0.83,
+      "open_issues": 305,
+      "description": "A payments protocol for the internet. Built on HTTP."
+    },
+    "ark_protocol": {
+      "arkd": {
+        "repo": "arkade-os/arkd",
+        "stars": 156,
+        "forks": 56,
+        "change_vs_baseline_stars": 0,
+        "change_vs_baseline_forks": 0,
+        "open_issues": 103,
+        "description": "Ark Server implementation that powers Arkade"
+      },
+      "ts_sdk": {
+        "repo": "arkade-os/ts-sdk",
+        "stars": 42,
+        "forks": 18,
+        "change_vs_baseline_stars": 0,
+        "change_vs_baseline_forks": 0,
+        "open_issues": 37,
+        "description": "The Arkade SDK for building Bitcoin wallets with Ark protocol"
+      },
+      "skill": {
+        "repo": "arkade-os/skill",
+        "stars": 4,
+        "forks": 3,
+        "change_vs_baseline_stars": 0,
+        "change_vs_baseline_forks": 0,
+        "open_issues": 0,
+        "description": "Arkade skills for agent integration"
+      }
+    }
+  },
+  "alerts": []
+}

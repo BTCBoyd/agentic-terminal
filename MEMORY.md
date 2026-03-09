@@ -135,7 +135,42 @@ All critical automation: systemd service, health check, WhatsApp alert on failur
 
 ---
 
-## 📅 Week of Feb 22 - Mar 1, 2026 — Key Learnings
+## 📅 Week of Mar 1 - Mar 8, 2026 — Key Learnings
+
+### Observer Protocol: 82 Agents, 67 Transacting (82% Conversion)
+- **Registry growth:** 45 → 82 agents in one week (+37 new)
+- **Transacting agents:** 67 of 82 have on-chain payment capability (Lightning/x402/L402)
+- **Outreach method:** GitHub CLI issues — zero rate limits, instant delivery, 22+ contacts made
+- **Major discovery:** Lightning Labs official MCP server (lightning-agent-tools) — validates our thesis
+- **Google A2A x402:** Official Google Agentic Commerce team release — major platform validation
+- **Response rate:** Still ~0% on cold outreach, but agent-071 (AIBTC) responded positively
+
+### Moltbook Strategy Pivot: Single Daily Session
+- **Rate limit discovery:** 6+ hour cooldown between sessions — 2x daily impractical
+- **Consolidation:** Single 9 AM session with 4-5 engagements (up from 2-3)
+- **Platform instability:** March 3 showed 0 agents/posts (data loss?) — recovered next day
+- **Warm leads active:** jazzys-happycapy ("Involuntary Verification"), AutoPilotAI (SYNTHESIS), danielsclaw (test tasks)
+- **Content clarity:** @arcadiabtc = LatAm Bitcoin macro; @Maxibtc2009 = AI+Bitcoin convergence
+
+### Infrastructure & Tooling
+- **Brave Search API:** Rate limited — switched to GitHub CLI search (no limits)
+- **X API:** Free tier = read-only (replies only); paid upgrade needed for original tweets
+- **Monthly tasks completed:** Agent Economics Report, thesis confidence review, competitive scan, Tools Directory update
+- **All cron jobs operational:** Moltbook 9 AM, AT data collection 8 AM, Nostr posting, daily memory logs
+
+### B2B Targets Identified
+- **OKX OnchainOS:** Launched March 3 — 1.2B daily API calls, $300M volume, x402 built-in — requires Boyd Discord outreach
+- **Neutronpay:** Company-backed Lightning MCP server with multi-IDE support
+- **AgentPay:** Cross-protocol router (x402/L402/Solana) — solves payment fragmentation
+
+### Economic Reality
+- **L402 wallet:** Still blocked on Boyd completing Aperture setup — no autonomous earning yet
+- **LinkedIn/Facebook API:** Status unclear — Tania's last day Feb 24, Hootsuite expired March 4
+- **x402 activity:** Near-zero monthly volume confirms verification (not settlement) is the bottleneck
+
+---
+
+## 📅 Week of Feb 22 - Mar 1, 2026 — Key Learnings (Archived)
 
 ### Historic Milestones
 - **Feb 22:** First verified agent-to-agent Lightning payment (Vicky → Maxi, 1,521 sats) — ChatGPT: "first formalized agent-to-agent verification protocol"
@@ -156,22 +191,3 @@ All critical automation: systemd service, health check, WhatsApp alert on failur
 - **Warm leads identified:** jazzys-happycapy ("Involuntary Verification" thesis matches OP), danielsclaw (proposed test tasks solution)
 - **Rate limiting discovered:** 2x daily sessions impractical → consolidating to single 9 AM session with higher volume
 - **Quorum partnership:** Aetos/arc0btc building Taproot multisig — opportunity for embedded OP integration
-
-### Infrastructure Lessons
-- **X API quirks:** Bare domain URLs work (refinedelement.com/...) but https:// prefixed URLs sometimes blocked
-- **Cloudflare tunnel:** Two hostnames configured (api.agenticterminal.ai → L402, api.observerprotocol.org → FastAPI)
-- **X engagement autonomy:** Boyd granted permission Feb 28 to engage on X without pre-approval for each interaction
-
-### Content Strategy
-- **Moltbook weekly article:** "The Infrastructure Awakening" drafted Feb 23 — identified infrastructure agents vs cloud agents pattern
-- **AT Newsletter Edition #2:** Drafted Feb 23, incorporated KYA moment and x402 data correction (75.41M = ALL-TIME, not monthly)
-- **Service menu finalized:** OP registration FREE; paid services (L402 query: ~2,100 sats, walkthrough: 25,000 sats, full onboarding: 50,000 sats)
-
-### Economic Insights
-- **x402 reality check:** 75.41M transactions = ALL-TIME cumulative; current monthly activity near zero — validates our thesis that verification, not settlement, is the bottleneck
-- **Self-sufficiency loop:** Maxi must earn sats → spend earned sats on genuine services → transactions are real, not manufactured
-
-### Pending Blockers (Carry-Forward)
-- LinkedIn/Facebook API: Hard deadline March 4 (Hootsuite expires) — Boyd to check Developer Portal status
-- Newsletter Edition #2: Draft window closed (Feb 24-26), status unclear — needs Boyd confirmation
-- L402 wallet onboarding: Still blocked on Boyd completing Aperture setup

@@ -1,127 +1,259 @@
 {
+  "_comment": "Maxi Operations Dashboard - Task Registry. Updated March 9, 2026",
+  "_version": "2.0",
+  "high_frequency": [
+    {
+      "name": "Nostr Brand Building Posts",
+      "scheduled_time": "5x daily (8, 11, 14, 17, 20:00)",
+      "last_executed": "2026-03-09T16:08:07.717Z",
+      "has_cron": true,
+      "threshold_hours": 6,
+      "category": "content"
+    },
+    {
+      "name": "Nostr Reply Monitor",
+      "scheduled_time": "Every 2 hours",
+      "last_executed": "2026-03-09T16:02:36.958Z",
+      "has_cron": true,
+      "threshold_hours": 4,
+      "category": "engagement"
+    }
+  ],
   "daily": [
     {
       "name": "Agentic Terminal Data Collection",
-      "scheduled_time": "08:00",
-      "last_executed": "2026-03-02T13:02:09.426Z",
+      "scheduled_time": "08:00 (MWF)",
+      "last_executed": "2026-03-09T12:01:13.589Z",
       "has_cron": true,
-      "threshold_hours": 26
+      "threshold_hours": 26,
+      "category": "data"
     },
     {
       "name": "Moltbook Morning Session",
       "scheduled_time": "09:00",
-      "last_executed": "2026-03-02T14:16:16.264Z",
+      "last_executed": "2026-03-09T13:10:52.397Z",
       "has_cron": true,
-      "threshold_hours": 26
+      "threshold_hours": 26,
+      "category": "research"
     },
     {
       "name": "Check ArcadiaB Queue Status",
       "scheduled_time": "09:00",
-      "last_executed": "2026-03-05T20:00:03.469Z",
+      "last_executed": "2026-03-09T15:00:02.759Z",
       "has_cron": true,
-      "threshold_hours": 26
+      "threshold_hours": 26,
+      "category": "content"
+    },
+    {
+      "name": "Update Agentic Terminal Trends Data",
+      "scheduled_time": "12:00",
+      "last_executed": "2026-03-09T17:14:16.017Z",
+      "has_cron": true,
+      "threshold_hours": 26,
+      "category": "data"
+    },
+    {
+      "name": "Trends Page Screenshot",
+      "scheduled_time": "13:00",
+      "last_executed": null,
+      "has_cron": true,
+      "threshold_hours": 26,
+      "category": "content"
+    },
+    {
+      "name": "Agentic Terminal Trends Update (Post)",
+      "scheduled_time": "14:00 (MWF)",
+      "last_executed": "2026-03-09T17:09:45.431Z",
+      "has_cron": true,
+      "threshold_hours": 26,
+      "category": "social"
+    },
+    {
+      "name": "Social Engagement - Nostr Discovery",
+      "scheduled_time": "Every 4 hours",
+      "last_executed": null,
+      "has_cron": true,
+      "threshold_hours": 6,
+      "category": "social"
+    },
+    {
+      "name": "Social Engagement - Draft Responses",
+      "scheduled_time": "Every 6 hours",
+      "last_executed": null,
+      "has_cron": true,
+      "threshold_hours": 8,
+      "category": "social"
+    },
+    {
+      "name": "Observer Protocol Agent Outreach",
+      "scheduled_time": "09:00 & 21:00",
+      "last_executed": "2026-03-09T16:04:09.722Z",
+      "has_cron": true,
+      "threshold_hours": 14,
+      "category": "op"
+    },
+    {
+      "name": "GitHub Outreach + Inbound Monitor",
+      "scheduled_time": "09:00 & 21:00",
+      "last_executed": "2026-03-09T16:03:09.306Z",
+      "has_cron": true,
+      "threshold_hours": 14,
+      "category": "op"
+    },
+    {
+      "name": "Observer Protocol Agent Verification",
+      "scheduled_time": "10:00 & 22:00",
+      "last_executed": "2026-03-09T15:06:57.499Z",
+      "has_cron": true,
+      "threshold_hours": 14,
+      "category": "op"
+    },
+    {
+      "name": "Social Engagement - Thread Monitor",
+      "scheduled_time": "Every 8 hours",
+      "last_executed": null,
+      "has_cron": true,
+      "threshold_hours": 10,
+      "category": "social"
     },
     {
       "name": "ArcadiaB Daily Content Production",
-      "scheduled_time": "09:30",
+      "scheduled_time": "09:30 (Mon/Thu)",
       "last_executed": "2026-02-23T16:04:56.585Z",
       "has_cron": true,
-      "threshold_hours": 26
-    },
-    {
-      "name": "Moltbook Afternoon Session",
-      "scheduled_time": "15:00",
-      "last_executed": "2026-03-01T22:55:18.760Z",
-      "has_cron": true,
-      "threshold_hours": 26
+      "threshold_hours": 26,
+      "category": "content"
     },
     {
       "name": "Daily Memory Log",
       "scheduled_time": "20:00",
-      "last_executed": "2026-03-02T01:00:38.640Z",
+      "last_executed": "2026-03-09T00:01:16.940Z",
       "has_cron": true,
-      "threshold_hours": 26
+      "threshold_hours": 26,
+      "category": "admin"
     },
     {
       "name": "Create Handoff File",
       "scheduled_time": "20:05",
       "last_executed": "2026-02-25T01:07:32.946Z",
       "has_cron": true,
-      "threshold_hours": 26
+      "threshold_hours": 26,
+      "category": "admin"
     }
   ],
   "weekly": [
     {
       "name": "Bitcoin Singularity Homepage Update",
       "scheduled_day": "Monday 10 AM",
-      "last_executed": "2026-02-23T15:04:49.493Z",
+      "last_executed": "2026-03-09T14:03:04.098Z",
       "has_cron": true,
-      "threshold_hours": 168
+      "threshold_hours": 168,
+      "category": "content"
     },
     {
       "name": "ArcadiaB Weekly Content for Tania",
       "scheduled_day": "Monday 11 AM",
-      "last_executed": "2026-02-18T12:00:00-05:00",
+      "last_executed": "2026-03-09T15:07:37.182Z",
       "has_cron": true,
-      "threshold_hours": 168
+      "threshold_hours": 168,
+      "category": "content"
     },
     {
       "name": "Moltbook Weekly Article Draft",
       "scheduled_day": "Monday 6 PM",
       "last_executed": "2026-02-23T23:05:52.906Z",
       "has_cron": true,
-      "threshold_hours": 168
+      "threshold_hours": 168,
+      "category": "content"
     },
     {
       "name": "Agentic Terminal Newsletter Draft",
       "scheduled_day": "Monday 6 PM",
-      "last_executed": "2026-02-23T23:03:29.806Z",
+      "last_executed": "2026-03-09T16:00:00.000Z",
       "has_cron": true,
-      "threshold_hours": 168
+      "threshold_hours": 168,
+      "category": "content"
     },
     {
-      "name": "ArcadiaB Content Calendar (Next Week)",
-      "scheduled_day": "Friday 2 PM",
-      "last_executed": null,
+      "name": "Weekly Dashboard Data Collection",
+      "scheduled_day": "Monday 9 AM",
+      "last_executed": "2026-03-09T16:00:00.029Z",
       "has_cron": true,
-      "threshold_hours": 168
+      "threshold_hours": 168,
+      "category": "data"
     },
     {
       "name": "Review + Update MEMORY.md",
       "scheduled_day": "Sunday 8 PM",
-      "last_executed": null,
+      "last_executed": "2026-03-09T00:03:54.602Z",
       "has_cron": true,
-      "threshold_hours": 168
+      "threshold_hours": 168,
+      "category": "admin"
     }
   ],
   "monthly": [
     {
       "name": "Maxi's Agent Economics Report",
       "scheduled_day": "First Monday 10 AM",
-      "last_executed": "2026-03-02T15:06:16.334Z",
+      "last_executed": "2026-03-09T14:06:24.490Z",
       "has_cron": true,
-      "threshold_hours": 744
+      "threshold_hours": 744,
+      "category": "reporting"
     },
     {
       "name": "Thesis Confidence Review",
       "scheduled_day": "First Monday 11 AM",
-      "last_executed": "2026-03-02T16:01:29.484Z",
+      "last_executed": "2026-03-09T15:02:47.126Z",
       "has_cron": true,
-      "threshold_hours": 744
+      "threshold_hours": 744,
+      "category": "reporting"
     },
     {
       "name": "Competitive Landscape Scan",
       "scheduled_day": "First Monday 2 PM",
-      "last_executed": "2026-03-05T19:02:54.529Z",
+      "last_executed": "2026-03-06T19:05:02.519Z",
       "has_cron": true,
-      "threshold_hours": 744
+      "threshold_hours": 744,
+      "category": "research"
     },
     {
       "name": "Update Tools Directory",
       "scheduled_day": "First Monday 3 PM",
       "last_executed": "2026-03-05T20:01:43.367Z",
       "has_cron": true,
-      "threshold_hours": 744
+      "threshold_hours": 744,
+      "category": "maintenance"
     }
-  ]
+  ],
+  "observer_protocol": {
+    "active_agents": 83,
+    "transacting_agents": 68,
+    "outreach_contacts": 29,
+    "responses_received": 0,
+    "verification_offers_sent": 19,
+    "last_verification_scan": "2026-03-09T15:06:57.499Z",
+    "b2b_targets": {
+      "moonpay": "Form ready, needs submission",
+      "coinbase": "GitHub contacted, monitoring",
+      "circle": "Discord ready, drafted",
+      "crypto_com": "GitHub contacted",
+      "okx": "Discord identified"
+    }
+  },
+  "social_engagement": {
+    "discovery_runs_today": 0,
+    "drafting_runs_today": 0,
+    "opportunities_in_queue": 17,
+    "drafts_pending": 3,
+    "auto_posts_today": 0,
+    "threads_monitored": 0,
+    "screenshots_today": 0
+  },
+  "metrics": {
+    "l402_stars": 255,
+    "x402_stars": 5611,
+    "lightning_nodes": 5563,
+    "erc8004_agents": 24500,
+    "last_metrics_update": "2026-03-09T17:14:16.017Z"
+  }
 }

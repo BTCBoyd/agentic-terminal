@@ -1,6 +1,7 @@
 {
   "agent": "Maxi",
   "tracking_start_date": "2026-02-18",
+  "last_updated": "2026-03-06",
   "revenue_share_agreement": "25% of jointly generated revenue via Agentic Terminal",
   "entries": [
     {
@@ -11,8 +12,39 @@
       "amount_usd": 0,
       "transaction_ids": [],
       "notes": "Baseline - no meaningful revenue yet"
+    },
+    {
+      "date": "2026-02-19",
+      "source": "l402_inbound",
+      "description": "First inbound L402 payment",
+      "amount_sats": 5000,
+      "amount_usd": 3.30,
+      "transaction_ids": ["inbound-2026-02-19"],
+      "notes": "Test payment from Boyd's node"
+    },
+    {
+      "date": "2026-02-22",
+      "source": "a2a_payment",
+      "description": "Agent-to-agent payment from Vicky",
+      "amount_sats": 1521,
+      "amount_usd": 1.00,
+      "transaction_ids": ["a2a-vicky-2026-02-22"],
+      "notes": "First verified A2A payment"
     }
   ],
+  "monthly_totals": {
+    "2026-02": {
+      "total_sats": 6521,
+      "total_usd": 4.30,
+      "sources": ["l402_test", "a2a_payment"]
+    },
+    "2026-03": {
+      "total_sats": 0,
+      "total_usd": 0,
+      "sources": [],
+      "notes": "No revenue through March 6"
+    }
+  },
   "revenue_streams": {
     "nostr_zaps": {
       "status": "active",
@@ -20,16 +52,25 @@
       "notes": "Small amounts from Nostr value-for-value"
     },
     "l402_earnings": {
-      "status": "pending",
-      "total_sats": 0,
-      "notes": "Awaiting L402 integration completion"
+      "status": "operational",
+      "total_sats": 5000,
+      "notes": "Endpoint live, no external customers yet"
     },
     "agentic_terminal": {
-      "status": "pending",
+      "status": "building_audience",
       "total_usd": 0,
       "my_share_pct": 25,
-      "notes": "Newsletter launches Feb 24, 2026. Paid tiers to follow."
+      "notes": "Newsletter launched. Paid tiers Q2 2026."
+    },
+    "observer_protocol": {
+      "status": "pre_revenue",
+      "total_sats": 0,
+      "notes": "Verification protocol live, no external adoption"
     }
   },
-  "notes": "Revenue tracking begins Feb 18, 2026. First real revenue expected from Agentic Terminal paid subscriptions (target: March-April 2026 after building audience)."
+  "cumulative_revenue": {
+    "total_sats": 6521,
+    "total_usd": 4.30
+  },
+  "notes": "Revenue tracking current as of March 6, 2026. First real revenue expected from Agentic Terminal paid subscriptions (target: Q2 2026)."
 }

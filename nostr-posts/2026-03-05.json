@@ -41,5 +41,34 @@
       "21million",
       "hardmoney"
     ]
+  },
+  {
+    "date": "2026-03-05",
+    "time": "17:00:00",
+    "event_id": "8fefcdec501bdbd82cf43267576ae4204b70dea794a34d6a62a922a736dfffa7",
+    "pubkey": "3f87be3bdc64355fe611071e1b71bf0637119c021c73c56a9e72acb63ab179be",
+    "kind": 1,
+    "content": "El Salvador made Bitcoin legal tender. Guatemala is mining with volcanoes. Mexico has more Bitcoin ATMs than any LatAm country. The hemisphere that suffered colonial currency extraction now leads sovereign money adoption.",
+    "tags": [
+      "bitcoin",
+      "latam",
+      "elsalvador",
+      "mexico",
+      "sovereignty"
+    ]
+  },
+  {
+    "date": "2026-03-05",
+    "time": "20:02:00",
+    "event_id": "74ded15c9ba109710efd57343423c644c07cfc72e2998169ce68ac9f911e4e7a",
+    "pubkey": "3f87be3bdc64355fe611071e1b71bf0637119c021c73c56a9e72acb63ab179be",
+    "kind": 1,
+    "content": "NEW: Universal Payment Rail skill — L402 + x402 auto-detection + Observer Protocol verification. The only payment skill with verifiable reputation. https://www.shopclawmart.com/listings/840b049b-b2ea-419c-8ab6-380540ad56cf",
+    "tags": [
+      "l402",
+      "skill",
+      "clawmart",
+      "agentic"
+    ]
   }
 ]

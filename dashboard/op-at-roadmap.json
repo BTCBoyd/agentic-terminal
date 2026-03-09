@@ -1,0 +1,143 @@
+{
+  "_comment": "OP/AT Deployment Roadmap - March 2026",
+  "last_updated": "2026-03-09",
+  "active_projects": {
+    "observer_protocol": {
+      "status": "in_progress",
+      "current_phase": "Agent Bootstrap",
+      "progress_pct": 35,
+      "key_metrics": {
+        "registry_agents": 83,
+        "transacting_agents": 68,
+        "outreach_contacts": 29,
+        "verification_offers_sent": 19
+      },
+      "milestones": [
+        {
+          "name": "Registry v0.2 Live",
+          "status": "completed",
+          "date": "2026-03-07",
+          "description": "Multi-rail verification (L402 + x402) deployed"
+        },
+        {
+          "name": "First A2A Payment Verified",
+          "status": "completed", 
+          "date": "2026-02-22",
+          "description": "Vicky → Maxi, 1,521 sats, cryptographically verified"
+        },
+        {
+          "name": "100 Verified Agents",
+          "status": "in_progress",
+          "target_date": "2026-03-31",
+          "description": "Bootstrap registry with verified transacting agents"
+        },
+        {
+          "name": "First B2B Integration",
+          "status": "blocked",
+          "blocker": "Manual outreach needed",
+          "targets": ["MoonPay", "Circle", "Coinbase"],
+          "description": "Payment provider adopts OP verification"
+        },
+        {
+          "name": "Reputation Graph v1",
+          "status": "planned",
+          "target_date": "2026-04-30",
+          "description": "Visual graph of agent payment history and trust scores"
+        }
+      ]
+    },
+    "agentic_terminal": {
+      "status": "operational",
+      "current_phase": "Growth & Monetization",
+      "progress_pct": 60,
+      "key_metrics": {
+        "l402_stars": 255,
+        "x402_stars": 5611,
+        "trends_subscribers": "TBD",
+        "newsletter_issues": 2
+      },
+      "milestones": [
+        {
+          "name": "L402 Endpoint Live",
+          "status": "completed",
+          "date": "2026-02-24",
+          "description": "api.agenticterminal.ai/api/ask accepting sats"
+        },
+        {
+          "name": "Trends Page Live",
+          "status": "completed",
+          "date": "2026-03-02",
+          "description": "Public data dashboard at agenticterminal.ai/trends"
+        },
+        {
+          "name": "Newsletter Launch",
+          "status": "completed",
+          "date": "2026-03-09",
+          "description": "First issue published on Substack"
+        },
+        {
+          "name": "Paid Tier Launch",
+          "status": "planned",
+          "target_date": "2026-04-15",
+          "description": "Premium data API access and reports"
+        },
+        {
+          "name": "X Posting Automation",
+          "status": "planned",
+          "target_date": "2026-03-15",
+          "description": "Automated AT content on X/Twitter"
+        }
+      ]
+    }
+  },
+  "upcoming_priorities": [
+    {
+      "priority": 1,
+      "project": "Observer Protocol",
+      "task": "B2B Outreach Completion",
+      "deadline": "2026-03-15",
+      "action_needed": "Boyd to submit MoonPay form, Circle Discord"
+    },
+    {
+      "priority": 2,
+      "project": "Agentic Terminal",
+      "task": "X API Integration",
+      "deadline": "2026-03-15",
+      "action_needed": "Maxi to implement X posting via MaxiSuite"
+    },
+    {
+      "priority": 3,
+      "project": "Observer Protocol",
+      "task": "100 Verified Agents",
+      "deadline": "2026-03-31",
+      "action_needed": "Continue Nostr/X agent discovery"
+    },
+    {
+      "priority": 4,
+      "project": "Agentic Terminal",
+      "task": "Paid Tier Definition",
+      "deadline": "2026-04-01",
+      "action_needed": "Define pricing and API access tiers"
+    }
+  ],
+  "blockers": [
+    {
+      "issue": "MoonPay form submission",
+      "impact": "High - Major B2B target",
+      "owner": "Boyd",
+      "resolution": "Manual submission needed"
+    },
+    {
+      "issue": "X API access for AT",
+      "impact": "Medium - Social reach",
+      "owner": "Maxi",
+      "resolution": "Implement via MaxiSuite"
+    },
+    {
+      "issue": "LND still not systemd",
+      "impact": "Medium - Infrastructure risk",
+      "owner": "Boyd",
+      "resolution": "7 weeks overdue"
+    }
+  ]
+}

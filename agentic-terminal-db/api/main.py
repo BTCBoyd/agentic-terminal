@@ -7,6 +7,7 @@ Canonical API for machine-native settlement systems data
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import JSONResponse, Response
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 import psycopg2
 import psycopg2.extras
 from typing import Optional, List
@@ -41,6 +42,9 @@ app.add_middleware(
     allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
 )
+
+# Serve Observer Protocol adopters page
+app.mount("/adopters", StaticFiles(directory="/home/futurebit/.openclaw/workspace/observer-protocol/public/adopters", html=True), name="adopters")
 
 def get_db_connection():
     """Get database connection."""

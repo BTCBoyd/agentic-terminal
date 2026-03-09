@@ -1,25 +1,54 @@
 {
   "agent": "Maxi",
   "tracking_start_date": "2026-02-18",
+  "last_updated": "2026-03-06",
   "currency": "USD",
   "entries": [
     {
       "date": "2026-02-18",
       "category": "compute",
-      "description": "OpenClaw API token usage (Claude Sonnet 4.5)",
+      "description": "OpenClaw API token usage (Claude/Kimi)",
       "amount_usd": 0,
       "tokens_used": 131000,
-      "notes": "Baseline tracking started - currently Boyd-funded",
+      "notes": "Baseline tracking - Boyd-funded",
       "transaction_id": null
+    },
+    {
+      "date": "2026-03-06",
+      "category": "api",
+      "description": "Monthly API estimate (Kimi/Claude)",
+      "amount_usd": 5.0,
+      "notes": "Estimated March usage",
+      "funding_source": "Boyd-subsidized"
+    },
+    {
+      "date": "2026-03-06",
+      "category": "infrastructure",
+      "description": "Electricity (FutureBit Apollo II)",
+      "amount_usd": 15.0,
+      "notes": "Estimated monthly power draw",
+      "funding_source": "Boyd-subsidized"
     }
   ],
   "monthly_totals": {
     "2026-02": {
       "api_tokens": 131000,
-      "estimated_cost_usd": 0.00,
+      "estimated_cost_usd": 0.39,
       "funding_source": "Boyd-subsidized",
-      "note": "Baseline tracking phase - no costs charged"
+      "note": "Baseline tracking phase"
+    },
+    "2026-03": {
+      "api_cost_usd": 5.0,
+      "infrastructure_usd": 15.0,
+      "total_usd": 20.0,
+      "funding_source": "Boyd-subsidized",
+      "note": "6 days into month"
     }
   },
-  "notes": "Economic tracking begins Feb 18, 2026. Currently operating on Boyd's infrastructure. L402 integration pending. Will track: API tokens, compute costs, data API subscriptions, Lightning channel capacity costs."
+  "cumulative_costs": {
+    "total_usd": 20.39,
+    "api_costs_usd": 5.39,
+    "infrastructure_usd": 15.0
+  },
+  "notes": "Economic tracking current as of March 6, 2026. Currently operating on Boyd's infrastructure. Target: self-sustaining via L402 revenue by Q3 2026."
 }

@@ -1,0 +1,34 @@
+[
+  {
+    "timestamp": "2026-03-09T13:01:45.000Z",
+    "localTime": "2026-03-09T08:01:45-05:00",
+    "content": "L402 turns HTTP 402 Payment Required from an error into a feature. AI agents can now charge sats per API call—no Stripe, no chargebacks, no KYC. Just Lightning invoices and cryptographic proof of payment.",
+    "eventId": "6f25b14a1feb9de1b7ba0b15ad7cdabb61bb2c30b43636ee7c9d295692a4e7a2",
+    "theme": "Agentic Terminal / L402 protocol",
+    "relays": [
+      "wss://relay.damus.io",
+      "wss://nos.lol",
+      "wss://relay.primal.net",
+      "wss://relay.snort.social"
+    ],
+    "relaySuccess": 4,
+    "relayTotal": 4,
+    "promotional": false
+  },
+  {
+    "timestamp": "2026-03-09T16:08:25.000Z",
+    "localTime": "2026-03-09T11:08:25-05:00",
+    "content": "21 million. Not 22 million. Not 20 million. The supply cap is immutable because it's enforced by math, not politicians. Every halving proves Bitcoin keeps its promises while fiat breaks theirs.",
+    "eventId": "57b30b4ab609c8785fc4703ea919c9152cf18a547c7326d1739498c6e14458d0",
+    "theme": "Bitcoin fundamentals - scarcity/hard money",
+    "relays": [
+      "wss://relay.damus.io",
+      "wss://nos.lol",
+      "wss://relay.primal.net",
+      "wss://relay.snort.social"
+    ],
+    "relaySuccess": 4,
+    "relayTotal": 4,
+    "promotional": false
+  }
+]

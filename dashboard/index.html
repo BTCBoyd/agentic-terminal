@@ -272,8 +272,12 @@ function renderDashboard(data) {
         renderNeedsBoyd(data.needs_boyd);
         renderAlerts(data, now);
         renderSummary(data, now);
+        renderMetrics(data.metrics);
         renderQueueSection(data.content_queue);
+        renderHighFrequencyTasks(data.tasks.high_frequency || [], now);
         renderTaskSections(data.tasks, now);
+        renderObserverProtocol(data.observer_protocol);
+        renderSocialEngagement(data.social_engagement);
         renderActivityLog(data.activity_log);
         console.log('Dashboard rendered successfully');
     } catch (err) {
@@ -487,66 +491,211 @@ function formatChannelName(key) {
     return names[key] || key;
 }
 
-// AT Build Tracker
-const BUILD_STATUS_URL = './at-build-status.json';
+// OP/AT Roadmap Tracker
+const ROADMAP_URL = './op-at-roadmap.json';
 
-function loadBuildTracker() {
-    fetch(BUILD_STATUS_URL)
+function loadRoadmap() {
+    fetch(ROADMAP_URL)
         .then(r => r.json())
-        .then(renderBuildTracker)
+        .then(renderRoadmap)
         .catch(err => {
             const el = document.getElementById('at-build-tracker');
-            if (el) el.innerHTML = '<p style="color:var(--text-muted);font-size:13px;">Build status unavailable</p>';
+            if (el) el.innerHTML = '<p style="color:var(--text-muted);font-size:13px;">Roadmap unavailable</p>';
         });
 }
 
-function renderBuildTracker(data) {
+function renderRoadmap(data) {
     const el = document.getElementById('at-build-tracker');
-    if (!el) return;
-    const statusColor = { 'complete': '#22c55e', 'in-progress': '#eab308', 'not-started': '#ef4444' };
-    const statusLabel = { 'complete': '✅', 'in-progress': '🟡', 'not-started': '🔴' };
-    const updated = new Date(data.lastUpdated).toLocaleDateString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+    if (!el || !data) return;
+    
+    const updated = new Date(data.last_updated).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    
     let html = `<div style="display:flex;align-items:baseline;gap:12px;margin-bottom:16px;">
-        <h2 style="color:var(--text);font-size:16px;">🏗️ Agentic Terminal Build Status</h2>
+        <h2 style="color:var(--text);font-size:16px;">🗺️ OP/AT Deployment Roadmap</h2>
         <span style="font-size:12px;color:var(--text-muted);">Updated: ${updated}</span>
     </div>`;
-    data.phases.forEach(phase => {
-        const dot = statusLabel[phase.status] || '⚪';
-        const total = phase.items.length;
-        const done = phase.items.filter(i => i.status === 'complete').length;
-        const inprog = phase.items.filter(i => i.status === 'in-progress').length;
-        html += `<div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin-bottom:10px;">
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
-                <span style="font-weight:600;font-size:14px;">${dot} ${phase.name}</span>
-                <span style="font-size:12px;color:var(--text-muted);">${done}/${total} complete${inprog ? ` · ${inprog} in progress` : ''}</span>
-            </div>
-            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px;">
-                ${phase.items.map(item => `
-                    <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:${item.status === 'complete' ? 'var(--text-muted)' : 'var(--text)'};">
-                        <span style="font-size:11px;">${statusLabel[item.status] || '⚪'}</span>
-                        <span${item.status === 'complete' ? ' style="text-decoration:line-through;opacity:0.6;"' : ''}>${item.name}</span>
-                    </div>`).join('')}
-            </div>
-        </div>`;
-    });
+    
+    // Observer Protocol Section
+    const op = data.active_projects?.observer_protocol;
+    if (op) {
+        html += renderProjectSection('🎯 Observer Protocol', op, '#22c55e');
+    }
+    
+    // Agentic Terminal Section
+    const at = data.active_projects?.agentic_terminal;
+    if (at) {
+        html += renderProjectSection('⚡ Agentic Terminal', at, '#f59e0b');
+    }
+    
+    // Blockers section
+    if (data.blockers && data.blockers.length > 0) {
+        html += `<div style="background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:8px;padding:14px 16px;margin-top:16px;">
+            <h3 style="font-size:14px;margin-bottom:10px;color:#ef4444;">⚠️ Blockers</h3>`;
+        data.blockers.forEach(blocker => {
+            html += `<div style="font-size:12px;margin-bottom:8px;">
+                <strong>${blocker.issue}</strong> — ${blocker.owner}<br/>
+                <span style="color:var(--text-muted)">${blocker.resolution}</span>
+            </div>`;
+        });
+        html += '</div>';
+    }
+    
     el.innerHTML = html;
 }
 
+function renderProjectSection(title, project, color) {
+    const progress = project.progress_pct || 0;
+    const statusColor = project.status === 'completed' ? '#22c55e' : 
+                       project.status === 'in_progress' ? '#eab308' : '#ef4444';
+    
+    let html = `<div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin-bottom:12px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+            <span style="font-weight:600;font-size:14px;">${title}</span>
+            <span style="font-size:12px;color:var(--text-muted);">${project.current_phase || project.status}</span>
+        </div>
+        <div style="background:var(--border);height:6px;border-radius:3px;margin-bottom:12px;">
+            <div style="background:${color};width:${progress}%;height:6px;border-radius:3px;"></div>
+        </div>
+        <div style="font-size:12px;color:var(--text-muted);margin-bottom:8px;">${progress}% complete</div>`;
+    
+    // Show active milestones (not completed)
+    const activeMilestones = project.milestones?.filter(m => m.status !== 'completed').slice(0, 3);
+    if (activeMilestones && activeMilestones.length > 0) {
+        html += '<div style="display:flex;flex-direction:column;gap:6px;">';
+        activeMilestones.forEach(m => {
+            const statusIcon = m.status === 'completed' ? '✅' : m.status === 'blocked' ? '⛔' : m.status === 'in_progress' ? '🟡' : '⚪';
+            const targetDate = m.target_date ? `(${m.target_date})` : '';
+            html += `<div style="font-size:12px;display:flex;align-items:center;gap:6px;">
+                <span>${statusIcon}</span>
+                <span${m.status === 'completed' ? ' style="text-decoration:line-through;opacity:0.6;"' : ''}>${m.name} ${targetDate}</span>
+            </div>`;
+        });
+        html += '</div>';
+    }
+    
+    html += '</div>';
+    return html;
+}
+
 checkUrlAuth();
-loadBuildTracker();
+loadRoadmap();
 </script>
 
 <!-- AT Build Tracker Section -->
 <script>
+// NEW: Render AT/OP Metrics
+function renderMetrics(metrics) {
+    if (!metrics) return;
+    const summaryEl = document.getElementById('summary-cards');
+    const existingMetrics = summaryEl.innerHTML;
+    summaryEl.innerHTML = existingMetrics + `
+        <div class="summary-card" style="border-left:3px solid var(--bitcoin-orange)">
+            <div class="label">L402 Stars</div>
+            <div class="value" style="font-size:24px">${metrics.l402_stars || 0}</div>
+        </div>
+        <div class="summary-card" style="border-left:3px solid var(--deep-blue)">
+            <div class="label">x402 Stars</div>
+            <div class="value" style="font-size:24px">${metrics.x402_stars || 0}</div>
+        </div>
+    `;
+}
+
+// NEW: Render High-Frequency Tasks
+function renderHighFrequencyTasks(tasks, now) {
+    if (!tasks || tasks.length === 0) return;
+    const container = document.getElementById('task-sections');
+    const sorted = [...tasks].sort((a, b) => {
+        const order = { red: 0, yellow: 1, green: 2 };
+        return order[getTaskStatus(a, now)] - order[getTaskStatus(b, now)];
+    });
+    const rowsHtml = sorted.map(task => {
+        const status = getTaskStatus(task, now);
+        const age = getTaskAge(task, now);
+        const lastExec = task.last_executed ? formatDateTime(task.last_executed) : 'NEVER';
+        const rowClass = status === 'red' ? 'overdue' : status === 'yellow' ? 'warning' : '';
+        return `
+            <div class="task-row ${rowClass}">
+                <div class="status-dot ${status}"></div>
+                <div class="task-name">${task.name}</div>
+                <div class="task-last">${task.scheduled_time}</div>
+                <div class="task-age ${status}">${age}</div>
+            </div>
+        `;
+    }).join('');
+    
+    const sectionHtml = `
+        <div class="task-section">
+            <h2>⚡ High-Frequency Tasks</h2>
+            ${rowsHtml}
+        </div>
+    `;
+    container.insertAdjacentHTML('afterbegin', sectionHtml);
+}
+
+// NEW: Render Observer Protocol Section
+function renderObserverProtocol(op) {
+    if (!op) return;
+    const container = document.getElementById('task-sections');
+    const lastScan = op.last_verification_scan ? formatDateTime(op.last_verification_scan) : 'Never';
+    const html = `
+        <div class="task-section" style="background:rgba(0,255,136,0.05);border-radius:8px;padding:16px;margin-bottom:28px">
+            <h2>🎯 Observer Protocol</h2>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:12px 0">
+                <div style="text-align:center;padding:12px;background:var(--surface);border-radius:6px">
+                    <div style="font-size:28px;font-weight:700;color:var(--electric-green)">${op.active_agents || 0}</div>
+                    <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase">Active Agents</div>
+                </div>
+                <div style="text-align:center;padding:12px;background:var(--surface);border-radius:6px">
+                    <div style="font-size:28px;font-weight:700;color:var(--electric-green)">${op.transacting_agents || 0}</div>
+                    <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase">Transacting</div>
+                </div>
+                <div style="text-align:center;padding:12px;background:var(--surface);border-radius:6px">
+                    <div style="font-size:28px;font-weight:700;color:var(--deep-blue)">${op.outreach_contacts || 0}</div>
+                    <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase">Outreach Made</div>
+                </div>
+                <div style="text-align:center;padding:12px;background:var(--surface);border-radius:6px">
+                    <div style="font-size:28px;font-weight:700;color:${op.responses_received > 0 ? 'var(--green)' : 'var(--text-muted)'}">${op.responses_received || 0}</div>
+                    <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase">Responses</div>
+                </div>
+            </div>
+            <div style="font-size:12px;color:var(--text-muted);margin-top:8px">Last scan: ${lastScan}</div>
+        </div>
+    `;
+    container.insertAdjacentHTML('beforeend', html);
+}
+
+// NEW: Render Social Engagement Section
+function renderSocialEngagement(se) {
+    if (!se) return;
+    const container = document.getElementById('task-sections');
+    const html = `
+        <div class="task-section" style="background:rgba(59,130,246,0.05);border-radius:8px;padding:16px;margin-bottom:28px">
+            <h2>💬 Social Engagement</h2>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin:12px 0">
+                <div style="text-align:center;padding:10px;background:var(--surface);border-radius:6px">
+                    <div style="font-size:24px;font-weight:700;color:var(--deep-blue)">${se.opportunities_in_queue || 0}</div>
+                    <div style="font-size:11px;color:var(--text-muted)">Queue</div>
+                </div>
+                <div style="text-align:center;padding:10px;background:var(--surface);border-radius:6px">
+                    <div style="font-size:24px;font-weight:700;color:var(--amber)">${se.drafts_pending || 0}</div>
+                    <div style="font-size:11px;color:var(--text-muted)">Drafts</div>
+                </div>
+                <div style="text-align:center;padding:10px;background:var(--surface);border-radius:6px">
+                    <div style="font-size:24px;font-weight:700;color:var(--green)">${se.auto_posts_today || 0}</div>
+                    <div style="font-size:11px;color:var(--text-muted)">Auto-Posted</div>
+                </div>
+                <div style="text-align:center;padding:10px;background:var(--surface);border-radius:6px">
+                    <div style="font-size:24px;font-weight:700;color:var(--purple)">${se.threads_monitored || 0}</div>
+                    <div style="font-size:11px;color:var(--text-muted)">Threads</div>
+                </div>
+            </div>
+        </div>
+    `;
+    container.insertAdjacentHTML('beforeend', html);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-    // Inject build tracker into dashboard after auth
-    const dashboard = document.getElementById('dashboard');
-    if (dashboard) {
-        const tracker = document.createElement('div');
-        tracker.id = 'at-build-tracker';
-        tracker.style.cssText = 'margin-top:32px;padding-top:24px;border-top:1px solid var(--border);';
-        dashboard.appendChild(tracker);
-    }
+    console.log('Dashboard ready');
 });
 </script>
 </body>
