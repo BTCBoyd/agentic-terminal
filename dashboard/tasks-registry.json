@@ -73,6 +73,15 @@
       "note": "Cross-chain agent counts from 8004agents.ai (Ethereum, Base, BNB, Avalanche, Polygon)"
     },
     {
+      "name": "GitHub Developer Velocity",
+      "scheduled_time": "10:00",
+      "last_executed": "2026-03-09T21:00:00.000Z",
+      "has_cron": true,
+      "threshold_hours": 26,
+      "category": "data",
+      "note": "Commits, PRs, velocity score for x402, L402, Ark repos"
+    },
+    {
       "name": "Trends Page Screenshot",
       "scheduled_time": "13:00",
       "last_executed": null,
@@ -281,7 +290,10 @@
     "l402_stars": 255,
     "x402_stars": 5611,
     "lightning_nodes": 5563,
-    "erc8004_agents": 24500,
-    "last_metrics_update": "2026-03-09T17:14:16.017Z"
+    "erc8004_agents": 68208,
+    "github_velocity_7d": 0,
+    "github_commits_7d": 0,
+    "github_prs_7d": 0,
+    "last_metrics_update": "2026-03-09T21:00:00.000Z"
   }
 }
