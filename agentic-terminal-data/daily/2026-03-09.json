@@ -12,7 +12,7 @@
     "channels": {
       "total": 16754,
       "change_vs_baseline_pct": 1.37,
-      "change_30d_pct": 13.30,
+      "change_30d_pct": 13.3,
       "new_24h": 215
     },
     "capacity": {
@@ -99,5 +99,12 @@
     "last_updated": "2026-03-09T17:34:33.710Z",
     "query_id": 6094619
   },
-  "alerts": []
+  "alerts": [],
+  "erc8004_multichain": {
+    "total_agents": 0,
+    "by_chain": {},
+    "source": "8004agents.ai",
+    "data_quality": "authoritative",
+    "collected_at": "2026-03-09T20:45:38.495Z"
+  }
 }

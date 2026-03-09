@@ -36,7 +36,8 @@
       "last_executed": "2026-03-09T12:01:13.589Z",
       "has_cron": true,
       "threshold_hours": 26,
-      "category": "data"
+      "category": "data",
+      "includes": ["Lightning", "GitHub", "x402 Dune", "ERC-8004 multi-chain"]
     },
     {
       "name": "Moltbook Morning Session",
@@ -61,6 +62,15 @@
       "has_cron": true,
       "threshold_hours": 26,
       "category": "data"
+    },
+    {
+      "name": "ERC-8004 Multi-Chain Data Collection",
+      "scheduled_time": "09:00",
+      "last_executed": null,
+      "has_cron": true,
+      "threshold_hours": 26,
+      "category": "data",
+      "note": "Cross-chain agent counts from 8004agents.ai (Ethereum, Base, BNB, Avalanche, Polygon)"
     },
     {
       "name": "Trends Page Screenshot",
