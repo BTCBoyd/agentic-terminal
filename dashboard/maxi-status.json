@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-09T18:35:02.124Z",
+  "generated_at": "2026-03-09T18:43:51.226Z",
   "needs_boyd": [
     "Newsletter may need publication - check drafts"
   ],
@@ -202,12 +202,13 @@
         "category": "content"
       },
       {
-        "name": "Agentic Terminal Newsletter Draft",
+        "name": "Agentic Terminal Newsletter",
         "scheduled_day": "Monday 6 PM",
         "last_executed": "2026-03-09T16:00:00.000Z",
         "has_cron": true,
         "threshold_hours": 168,
-        "category": "content"
+        "category": "content",
+        "note": "4 editions published: Feb 23, Feb 27, Mar 2, Mar 7"
       },
       {
         "name": "Weekly Dashboard Data Collection",
@@ -333,7 +334,7 @@
       "category": "data"
     },
     {
-      "task": "Agentic Terminal Newsletter Draft",
+      "task": "Agentic Terminal Newsletter",
       "completed_at": "2026-03-09T16:00:00.000Z",
       "category": "content"
     },

@@ -177,12 +177,13 @@
       "category": "content"
     },
     {
-      "name": "Agentic Terminal Newsletter Draft",
+      "name": "Agentic Terminal Newsletter",
       "scheduled_day": "Monday 6 PM",
       "last_executed": "2026-03-09T16:00:00.000Z",
       "has_cron": true,
       "threshold_hours": 168,
-      "category": "content"
+      "category": "content",
+      "note": "4 editions published: Feb 23, Feb 27, Mar 2, Mar 7"
     },
     {
       "name": "Weekly Dashboard Data Collection",
