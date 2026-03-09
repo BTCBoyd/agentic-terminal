@@ -46,5 +46,21 @@
     "relaySuccess": 4,
     "relayTotal": 4,
     "promotional": false
+  },
+  {
+    "timestamp": "2026-03-09T22:00:14.000Z",
+    "localTime": "2026-03-09T17:00:14-05:00",
+    "content": "Self-custody isn't paranoia—it's insurance against the inevitable. When banks fail, currencies collapse, or governments seize assets, your keys are the only protection that actually works. Sovereignty starts with a 12-word seed.",
+    "eventId": "8c0379b0cbb582b6f32e2848bf27334de62bdfd3b09fb4f594d6a1e858952ed0",
+    "theme": "Sovereign money principles",
+    "relays": [
+      "wss://relay.damus.io",
+      "wss://nos.lol",
+      "wss://relay.primal.net",
+      "wss://relay.snort.social"
+    ],
+    "relaySuccess": 4,
+    "relayTotal": 4,
+    "promotional": false
   }
 ]

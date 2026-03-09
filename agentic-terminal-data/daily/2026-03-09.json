@@ -106,5 +106,46 @@
     "source": "8004agents.ai",
     "data_quality": "authoritative",
     "collected_at": "2026-03-09T20:45:38.495Z"
+  },
+  "github_velocity": {
+    "aggregate": {
+      "total_velocity_score": 49,
+      "total_commits_7d": 49,
+      "total_prs_7d": 0,
+      "avg_velocity_per_repo": 10
+    },
+    "by_repo": [
+      {
+        "repo": "coinbase/x402",
+        "velocity": 38,
+        "commits": 38,
+        "prs": 0
+      },
+      {
+        "repo": "lightninglabs/aperture",
+        "velocity": 1,
+        "commits": 1,
+        "prs": 0
+      },
+      {
+        "repo": "arkade-os/arkd",
+        "velocity": 3,
+        "commits": 3,
+        "prs": 0
+      },
+      {
+        "repo": "arkade-os/ts-sdk",
+        "velocity": 7,
+        "commits": 7,
+        "prs": 0
+      },
+      {
+        "repo": "arkade-os/skill",
+        "velocity": 0,
+        "commits": 0,
+        "prs": 0
+      }
+    ],
+    "collected_at": "2026-03-09T21:05:39.004Z"
   }
 }
