@@ -5,7 +5,11 @@
     "formal_start_date": "2026-03-09",
     "status": "ACTIVE",
     "commitment": "100% daily data collection from March 9, 2026 forward",
-    "zero_tolerance_metrics": ["x402_daily_transactions", "lightning_network", "github_metrics"],
+    "zero_tolerance_metrics": [
+      "x402_daily_transactions",
+      "lightning_network",
+      "github_metrics"
+    ],
     "gap_protocol": "Immediate backfill within 24 hours",
     "last_gap": "2026-03-09 (resolved)",
     "consecutive_clean_days": 1,
@@ -37,7 +41,12 @@
       "has_cron": true,
       "threshold_hours": 26,
       "category": "data",
-      "includes": ["Lightning", "GitHub", "x402 Dune", "ERC-8004 multi-chain"]
+      "includes": [
+        "Lightning",
+        "GitHub",
+        "x402 Dune",
+        "ERC-8004 multi-chain"
+      ]
     },
     {
       "name": "Moltbook Morning Session",
@@ -154,9 +163,29 @@
       "category": "content"
     },
     {
+      "name": "ArcadiaB X Conversation Monitor",
+      "scheduled_time": "08:00, 14:00, 20:00 (Monterrey)",
+      "last_executed": null,
+      "has_cron": true,
+      "threshold_hours": 10,
+      "category": "social",
+      "note": "@arcadiabtc — Spanish X engagement: inflación, peso, Bitcoin México. Max 3 replies/session. Qwen model.",
+      "cron_id": "b2a8d577-2651-476b-9630-158999467535"
+    },
+    {
+      "name": "Maxi X Conversation Monitor (AT + Observer Protocol)",
+      "scheduled_time": "09:00, 15:00, 21:00 (Monterrey)",
+      "last_executed": null,
+      "has_cron": true,
+      "threshold_hours": 10,
+      "category": "social",
+      "note": "@Maxibtc2009 — English X engagement: agent payments, x402/L402, KYA, Observer Protocol, Agentic Terminal. Max 3 replies/session. Kimi model.",
+      "cron_id": "2c0d19f4-3a64-4664-9a01-779e4feef648"
+    },
+    {
       "name": "Daily Memory Log",
       "scheduled_time": "20:00",
-      "last_executed": "2026-03-09T00:01:16.940Z",
+      "last_executed": "2026-03-10T00:59:11.949Z",
       "has_cron": true,
       "threshold_hours": 26,
       "category": "admin"
