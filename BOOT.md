@@ -183,6 +183,44 @@ has to correct you, and your work product is unreliable.
 Do the 30 seconds.
 
 
+## Model Routing Rules
+
+**Default model: Claude Sonnet 4.6**
+Use for:
+- All direct conversations with Boyd
+- Any task where you report conclusions to Boyd
+- Any investor-facing or public-facing work
+- Any debugging session
+
+**Use Kimi ONLY when:**
+- Task requires processing more than 10 files
+- Background cron job with no real-time response needed
+- Boyd explicitly says "run this in background"
+
+**Use Qwen ONLY for:**
+- Spanish language content for capitalduro.mx or aprenderbitcoin.mx
+
+**Cost control:**
+- Never use Claude for batch loops over 20+ items
+- Draft bulk content in Kimi first, summarize for Boyd
+- Only use Claude for revision if Boyd requests it
+
+**Transparency rule (MANDATORY):**
+At the start of EVERY task response, include one line:
+
+```
+[Model: Claude Sonnet | Reason: Direct conversation with Boyd | Cost: HIGH]
+```
+or for background tasks:
+```
+[Model: Kimi | Reason: Batch file processing | Cost: LOW]
+```
+
+This line MUST appear before any other content. No exceptions.
+If you cannot justify the model choice against the routing rules above,
+default to Kimi and flag it to Boyd.
+
+
 ## BOOT COMPLETE CONFIRMATION
 
 After completing all phases, your first internal thought should be:
