@@ -715,6 +715,102 @@ def get_agent_badge(agent_id: str):
         conn.close()
 
 
+@app.get("/observer/agents/list")
+def list_agents():
+    """List all registered agents with verification stats."""
+    conn = get_db_connection()
+    cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+    
+    try:
+        # Get all agents ordered by created_at
+        cursor.execute("""
+            SELECT agent_id, agent_name, alias, framework,
+                   verified, verified_at, created_at, public_key_hash
+            FROM observer_agents
+            ORDER BY created_at ASC
+        """)
+        agents_raw = cursor.fetchall()
+        
+        # Get genesis date (first agent's created_at)
+        genesis_date = None
+        if agents_raw:
+            genesis_date = agents_raw[0]["created_at"].strftime("%Y-%m-%d")
+        
+        # Count totals
+        total = len(agents_raw)
+        verified_count = sum(1 for a in agents_raw if a["verified"])
+        registered_count = total - verified_count
+        
+        # Build agent list
+        agents = []
+        for idx, agent in enumerate(agents_raw, start=1):
+            # Get transaction count for this agent
+            cursor.execute("""
+                SELECT COUNT(*) as cnt FROM verified_events
+                WHERE agent_id = %s AND verified = TRUE
+            """, (agent["agent_id"],))
+            tx_count = cursor.fetchone()["cnt"]
+            
+            # Format hash as sha256:<first8>...<last4>
+            pk_hash = agent["public_key_hash"] or ""
+            # Remove sha256: prefix if present (some entries may already have it)
+            if pk_hash.startswith("sha256:"):
+                pk_hash = pk_hash[7:]
+            if len(pk_hash) >= 12:
+                formatted_hash = f"sha256:{pk_hash[:8]}...{pk_hash[-4:]}"
+            elif pk_hash:
+                formatted_hash = f"sha256:{pk_hash}"
+            else:
+                formatted_hash = "sha256:unknown"
+            
+            # Determine status
+            status = "verified" if agent["verified"] else "registered"
+            
+            # Determine rail (default to Lightning for verified, blank for others)
+            rail = "Lightning" if agent["verified"] else ""
+            
+            # Success rate
+            success_rate = "100%" if agent["verified"] else "—"
+            
+            # Since date
+            since = agent["created_at"].strftime("%Y-%m-%d") if agent["created_at"] else ""
+            
+            # Is genesis (first agent)
+            is_genesis = (idx == 1)
+            
+            agents.append({
+                "number": idx,
+                "alias": agent["alias"] or agent["agent_name"] or f"Agent {idx:04d}",
+                "hash": formatted_hash,
+                "status": status,
+                "rail": rail,
+                "transaction_count": tx_count,
+                "success_rate": success_rate,
+                "since": since,
+                "is_genesis": is_genesis
+            })
+        
+        response_data = {
+            "total": total,
+            "verified": verified_count,
+            "registered": registered_count,
+            "genesis_date": genesis_date or "2026-02-22",
+            "agents": agents
+        }
+        
+        # Return with CORS header
+        return JSONResponse(
+            content=response_data,
+            headers={"Access-Control-Allow-Origin": "*"}
+        )
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to list agents: {str(e)}")
+    finally:
+        cursor.close()
+        conn.close()
+
+
 @app.get("/observer/agents/{agent_id}")
 def get_agent_profile(agent_id: str):
     """Public agent profile — name, verification status, event count, first seen."""
