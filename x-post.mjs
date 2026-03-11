@@ -79,11 +79,13 @@ function generateOAuthHeader(method, url, params) {
   return oauthHeader;
 }
 
-function postTweet(text) {
+function postTweet(text, mediaIds = []) {
   return new Promise((resolve, reject) => {
     const url = 'https://api.twitter.com/2/tweets';
     const method = 'POST';
-    const body = JSON.stringify({ text });
+    const payload = { text };
+    if (mediaIds.length > 0) payload.media = { media_ids: mediaIds };
+    const body = JSON.stringify(payload);
 
     // Generate OAuth header (no query params for POST with JSON body)
     const oauthHeader = generateOAuthHeader(method, url, {});
@@ -129,15 +131,26 @@ function postTweet(text) {
   });
 }
 
-// Main execution
-const tweetText = process.argv[2];
+// Main execution — supports: node x-post.mjs "text"
+//                  or:      node x-post.mjs --media <id> --account <acct> "text"
+const args = process.argv.slice(2);
+let tweetText, mediaIds = [];
+
+if (args[0] === '--media') {
+  mediaIds = [args[1]];
+  // skip --account <acct> if present
+  const textStart = args[2] === '--account' ? 4 : 2;
+  tweetText = args.slice(textStart).join(' ');
+} else {
+  tweetText = args.join(' ');
+}
 
 if (!tweetText) {
   console.error('Usage: node x-post.mjs "Your tweet text here"');
   process.exit(1);
 }
 
-postTweet(tweetText)
+postTweet(tweetText, mediaIds)
   .then((response) => {
     console.log('✅ Tweet posted successfully!');
     console.log(`Tweet ID: ${response.data.id}`);

@@ -2153,11 +2153,17 @@
     },
     "scheduledFor": "2026-03-11T09:00:00-06:00",
     "requiresApproval": false,
-    "status": "scheduled",
+    "status": "posted",
     "createdAt": "2026-02-19T21:30:00.000Z",
-    "postedAt": null,
+    "postedAt": "2026-03-11T15:00:02.220Z",
     "account": "@Maxibtc2009",
-    "contentType": "market-commentary"
+    "contentType": "market-commentary",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "━━━ DEBUG OUTPUT ━━━\nTimestamp: 1773241201\nSystem time (UTC): 2026-03-11T15:00:01.758Z\nNonce: f81c84d4cf87fff9bd8edd22349926809cd4e810549a23b5255c92473aa45b74\nParameter string: oauth_consumer_key=ern3mimZMpHl4MvBlJnIrokqI&oauth_nonce=f81c84d4cf87fff9bd8edd22349926809cd4e810549a23b5255c92473aa45b74&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1773241201&oauth_token=2021647460758966273-qQW48HIRGxefjbDAMaEnNA9op5kPxH&oauth_version=1.0\nSignature base string: POST&https%3A%2F%2Fapi.twitter.com%2F2%2Ftweets&oauth_consumer_key%3Dern3mimZMpHl4MvBlJnIrokqI%26oauth_nonce%3Df81c84d4cf87fff9bd8edd22349926809cd4e810549a23b5255c92473aa45b74%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1773241201%26oauth_token%3D2021647460758966273-qQW48HIRGxefjbDAMaEnNA9op5kPxH%26oauth_version%3D1.0\nSigning key: BdMlZAjKSRJL4g0eIphrLWxoGLo3bI4Ru0FUR2R6mEwSWImzBv&xsUk0hsIewKaNpZKUj7TNrejC4rWmizPSbzBj9aoHfdK3\n━━━━━━━━━━━━━━━━━━━\nStatus: 201\nResponse: {\"data\":{\"text\":\"The peso story in brief:\\n\\n1988: 1,000:1 devaluation → new peso issued\\n1994: Tequila Crisis, -50%\\n2008: GFC, -25%\\n2020: COVID shock, -25%\\n2026: Tariff pressure, ongoing\\n\\nHard money doesn't have crises. It IS the crisis escape route.\",\"id\":\"2031746977118015784\",\"edit_history_tweet_ids\":[\"2031746977118015784\"]}}\n✅ SUCCESS: {\n  data: {\n    text: 'The peso story in brief:\\n' +\n      '\\n' +\n      '1988: 1,000:1 devaluation → new peso issued\\n' +\n      '1994: Tequila Crisis, -50%\\n' +\n      '2008: GFC, -25%\\n' +\n      '2020: COVID shock, -25%\\n' +\n      '2026: Tariff pressure, ongoing\\n' +\n      '\\n' +\n      \"Hard money doesn't have crises. It IS the crisis escape route.\",\n    id: '2031746977118015784',\n    edit_history_tweet_ids: [ '2031746977118015784' ]\n  }\n}\n"
+      }
+    }
   },
   {
     "id": "post_1771536600000_53",
@@ -5941,10 +5947,17 @@
     },
     "scheduledFor": "2026-03-11T09:00:00-06:00",
     "requiresApproval": false,
-    "status": "scheduled",
+    "status": "posted",
     "createdAt": "2026-03-09T20:05:00Z",
     "account": "@arcadiabtc",
-    "contentType": "product-value"
+    "contentType": "product-value",
+    "postedAt": "2026-03-11T15:00:02.877Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "Status: 201\nResponse: {\"data\":{\"edit_history_tweet_ids\":[\"2031746979777159351\"],\"id\":\"2031746979777159351\",\"text\":\"Ahorro Inteligente = DCA sin complicaciones \\uD83D\\uDCC5\\n\\n• Compras automáticas de BTC\\n• Desde $100 pesos/mes\\n• Promedias tu precio de entrada\\n• Sin timing el mercado\\n\\nStackea sats mientras duermes. \\uD83D\\uDE34₿\\n\\nhttps://t.co/JLwAApiFUK\"}}\n✅ SUCCESS: {\n  data: {\n    edit_history_tweet_ids: [ '2031746979777159351' ],\n    id: '2031746979777159351',\n    text: 'Ahorro Inteligente = DCA sin complicaciones 📅\\n' +\n      '\\n' +\n      '• Compras automáticas de BTC\\n' +\n      '• Desde $100 pesos/mes\\n' +\n      '• Promedias tu precio de entrada\\n' +\n      '• Sin timing el mercado\\n' +\n      '\\n' +\n      'Stackea sats mientras duermes. 😴₿\\n' +\n      '\\n' +\n      'https://t.co/JLwAApiFUK'\n  }\n}\n"
+      }
+    }
   },
   {
     "id": "arcadiab_urgent_004",
@@ -6150,10 +6163,17 @@
     },
     "scheduledFor": "2026-03-11T08:00:00-06:00",
     "requiresApproval": false,
-    "status": "scheduled",
+    "status": "posted",
     "createdAt": "2026-03-09T22:20:00Z",
     "account": "@arcadiabtc",
-    "contentType": "how-to"
+    "contentType": "how-to",
+    "postedAt": "2026-03-11T14:00:02.293Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "Status: 201\nResponse: {\"data\":{\"text\":\"3 pasos para proteger tu patrimonio con Bitcoin: \\uD83D\\uDD12\\n\\n1️⃣ Crea tu cuenta (2 minutos)\\n2️⃣ Conecta tu banco (SPEI o tarjeta)\\n3️⃣ Comienza a acumular sats\\n\\nSin comisiones en compras recurrentes. Soporte humano en México.\\n\\nhttps://t.co/JLwAApjdKi\",\"id\":\"2031731877879718359\",\"edit_history_tweet_ids\":[\"2031731877879718359\"]}}\n✅ SUCCESS: {\n  data: {\n    text: '3 pasos para proteger tu patrimonio con Bitcoin: 🔒\\n' +\n      '\\n' +\n      '1️⃣ Crea tu cuenta (2 minutos)\\n' +\n      '2️⃣ Conecta tu banco (SPEI o tarjeta)\\n' +\n      '3️⃣ Comienza a acumular sats\\n' +\n      '\\n' +\n      'Sin comisiones en compras recurrentes. Soporte humano en México.\\n' +\n      '\\n' +\n      'https://t.co/JLwAApjdKi',\n    id: '2031731877879718359',\n    edit_history_tweet_ids: [ '2031731877879718359' ]\n  }\n}\n"
+      }
+    }
   },
   {
     "id": "arcadiab_today_009",
@@ -6166,10 +6186,17 @@
     },
     "scheduledFor": "2026-03-11T11:00:00-06:00",
     "requiresApproval": false,
-    "status": "scheduled",
+    "status": "posted",
     "createdAt": "2026-03-09T22:20:00Z",
     "account": "@arcadiabtc",
-    "contentType": "education"
+    "contentType": "education",
+    "postedAt": "2026-03-11T17:00:02.859Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "Status: 201\nResponse: {\"data\":{\"edit_history_tweet_ids\":[\"2031777178724286509\"],\"text\":\"¿Nuevo en Bitcoin? \\uD83C\\uDD95\\n\\nhttps://t.co/OU3Zb3IctO es tu curso gratuito de 10 capítulos:\\n• Por qué existe Bitcoin\\n• Cómo funciona\\n• Cómo protege tu patrimonio\\n• Primeros pasos en México\\n\\nEducación de calidad, sin costo. En español. \\uD83C\\uDDF2\\uD83C\\uDDFD\\n\\nhttps://t.co/OU3Zb3IctO\",\"id\":\"2031777178724286509\"}}\n✅ SUCCESS: {\n  data: {\n    edit_history_tweet_ids: [ '2031777178724286509' ],\n    text: '¿Nuevo en Bitcoin? 🆕\\n' +\n      '\\n' +\n      'https://t.co/OU3Zb3IctO es tu curso gratuito de 10 capítulos:\\n' +\n      '• Por qué existe Bitcoin\\n' +\n      '• Cómo funciona\\n' +\n      '• Cómo protege tu patrimonio\\n' +\n      '• Primeros pasos en México\\n' +\n      '\\n' +\n      'Educación de calidad, sin costo. En español. 🇲🇽\\n' +\n      '\\n' +\n      'https://t.co/OU3Zb3IctO',\n    id: '2031777178724286509'\n  }\n}\n"
+      }
+    }
   },
   {
     "id": "arcadiab_today_010",

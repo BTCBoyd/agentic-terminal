@@ -90,17 +90,50 @@
     "total_indexed": 15000,
     "supported_chains": 11,
     "by_chain": {
-      "bnb_chain": { "agents": 3830, "status": "syncing" },
-      "sepolia": { "agents": 185, "status": "syncing" },
-      "ethereum": { "agents": 2923, "status": "syncing" },
-      "bsc_testnet": { "agents": 100, "status": "syncing" },
-      "base": { "agents": 5532, "status": "syncing" },
-      "arbitrum": { "agents": 160, "status": "syncing" },
-      "avalanche": { "agents": 108, "status": "syncing" },
-      "polygon": { "agents": 97, "status": "syncing" },
-      "monad": { "agents": 2011, "status": "syncing" },
-      "base_sepolia": { "agents": 53, "status": "syncing" },
-      "polygon_amoy": { "agents": 1, "status": "syncing" }
+      "bnb_chain": {
+        "agents": 3830,
+        "status": "syncing"
+      },
+      "sepolia": {
+        "agents": 185,
+        "status": "syncing"
+      },
+      "ethereum": {
+        "agents": 2923,
+        "status": "syncing"
+      },
+      "bsc_testnet": {
+        "agents": 100,
+        "status": "syncing"
+      },
+      "base": {
+        "agents": 5532,
+        "status": "syncing"
+      },
+      "arbitrum": {
+        "agents": 160,
+        "status": "syncing"
+      },
+      "avalanche": {
+        "agents": 108,
+        "status": "syncing"
+      },
+      "polygon": {
+        "agents": 97,
+        "status": "syncing"
+      },
+      "monad": {
+        "agents": 2011,
+        "status": "syncing"
+      },
+      "base_sepolia": {
+        "agents": 53,
+        "status": "syncing"
+      },
+      "polygon_amoy": {
+        "agents": 1,
+        "status": "syncing"
+      }
     },
     "mainnet_chains": {
       "ethereum": 2923,
@@ -117,5 +150,46 @@
     "data_quality": "authoritative",
     "contract": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
     "collected_at": "2026-03-11T13:44:37.059Z"
+  },
+  "github_velocity": {
+    "aggregate": {
+      "total_velocity_score": 45,
+      "total_commits_7d": 45,
+      "total_prs_7d": 0,
+      "avg_velocity_per_repo": 9
+    },
+    "by_repo": [
+      {
+        "repo": "coinbase/x402",
+        "velocity": 33,
+        "commits": 33,
+        "prs": 0
+      },
+      {
+        "repo": "lightninglabs/aperture",
+        "velocity": 1,
+        "commits": 1,
+        "prs": 0
+      },
+      {
+        "repo": "arkade-os/arkd",
+        "velocity": 2,
+        "commits": 2,
+        "prs": 0
+      },
+      {
+        "repo": "arkade-os/ts-sdk",
+        "velocity": 9,
+        "commits": 9,
+        "prs": 0
+      },
+      {
+        "repo": "arkade-os/skill",
+        "velocity": 0,
+        "commits": 0,
+        "prs": 0
+      }
+    ],
+    "collected_at": "2026-03-11T14:01:52.236Z"
   }
 }

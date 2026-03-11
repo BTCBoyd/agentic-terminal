@@ -152,6 +152,30 @@ function buildCandidates(history) {
 }
 
 /**
+ * Pick best chart for a given post angle
+ */
+function chartForAngle(angle, date, chartsDir) {
+  const dir = `${chartsDir}/${date}`;
+  const candidates = {
+    spike: `${dir}/cross-protocol-comparison.png`,
+    l402_vs_x402: `${dir}/cross-protocol-comparison.png`,
+    agent_economy: `${dir}/sparkline-metrics-stablecoin_api_rails-erc8004_agents_registered.png`,
+    lightning_health: `${dir}/sparkline-metrics-bitcoin_lightning-lightning_nodes.png`,
+    daily_snapshot: `${dir}/cross-protocol-comparison.png`,
+  };
+  const chartPath = candidates[angle] || candidates.daily_snapshot;
+  const { existsSync } = await import('fs').then(m => m).catch(() => ({ existsSync: () => false }));
+  // Use sync check
+  try {
+    const fs = require ? null : null;
+    const { existsSync: exists } = await import('fs');
+    return exists(chartPath) ? chartPath : null;
+  } catch {
+    return null;
+  }
+}
+
+/**
  * Add posts to MaxiSuite queue (X posting)
  */
 async function addToMaxiSuite(posts, date) {
@@ -163,11 +187,23 @@ async function addToMaxiSuite(posts, date) {
     queue = [];
   }
 
+  // Map angles to chart files
+  const chartsDir = `/home/futurebit/.openclaw/workspace/agentic-terminal-data/charts`;
+  const chartMap = {
+    spike: `${chartsDir}/${date}/cross-protocol-comparison.png`,
+    l402_vs_x402: `${chartsDir}/${date}/cross-protocol-comparison.png`,
+    agent_economy: `${chartsDir}/${date}/sparkline-metrics-stablecoin_api_rails-erc8004_agents_registered.png`,
+    lightning_health: `${chartsDir}/${date}/sparkline-metrics-bitcoin_lightning-lightning_nodes.png`,
+    daily_snapshot: `${chartsDir}/${date}/cross-protocol-comparison.png`,
+  };
+
   const timestamp = Date.now();
   for (let i = 0; i < posts.length; i++) {
     const post = posts[i];
     // Schedule 2 hours apart starting from now
     const scheduledFor = new Date(timestamp + i * 2 * 60 * 60 * 1000).toISOString();
+    const mediaPath = chartMap[post.angle] || null;
+
     queue.push({
       id: `at_insight_${timestamp}_${i}`,
       content: post.text,
@@ -180,6 +216,7 @@ async function addToMaxiSuite(posts, date) {
       contentType: 'at_data_insight',
       angle: post.angle,
       sourceDate: date,
+      mediaPath,  // chart image to attach
     });
   }
 

@@ -321,3 +321,26 @@ When infrastructure changes:
 - Proof of Bitcoin Singularity thesis in action
 
 **Pressure:** Must deliver on L402 implementation. This is no longer experimental - it's public.
+
+---
+
+## CLOUDFLARE BROWSER RENDERING
+
+**Status:** OPERATIONAL (added 2026-03-11)
+**API Token:** stored in `.cloudflare-credentials`
+**Account ID:** 4d83836f5406b8abc9953e31c3fdbb7e
+**Utility module:** `/home/futurebit/.openclaw/workspace/cf-browser.mjs`
+
+**Capabilities:**
+- `cfMarkdown(url)` — fetch any JS-rendered page as clean Markdown
+- `cfFetch(url)` — fetch raw HTML of JS-rendered pages
+- `cfScreenshot(url)` — screenshot any URL (base64 PNG)
+- `cfCrawl(url, {maxPages, maxDepth})` — crawl entire site, returns pages array
+
+**CLI:** `node cf-browser.mjs <url> [markdown|html|screenshot]`
+
+**Use cases:**
+- 1ML.com Lightning Network stats (confirmed working)
+- Moltbook JS-rendered content
+- Any site blocking simple fetch requests
+- Research / competitor monitoring

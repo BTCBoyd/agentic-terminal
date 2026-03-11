@@ -1110,5 +1110,185 @@
     "status": "pending_review",
     "createdAt": 1773235835542,
     "platform": "nostr"
+  },
+  {
+    "id": "draft-1773244962205-4vphlkpfb",
+    "opportunity": {
+      "id": "38a758d5a59c9c1dc6aee372afa4fc1a30a31a3caf8e7e9b24fcba6a169d8ca1",
+      "mode": "arcadiab",
+      "score": 40,
+      "event": {
+        "id": "38a758d5a59c9c1dc6aee372afa4fc1a30a31a3caf8e7e9b24fcba6a169d8ca1",
+        "pubkey": "207ce683797dc96fb3abf9e796bee59a5635e0bd80f413f0f2e0f6de23f5b8bb",
+        "content": "$68,995.85\n\n#Bitcoin  #BTC  $BTC $USD",
+        "created_at": 1773086402,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773086602395
+    },
+    "response": "Buena pregunta. Lightning Network permite transacciones instantáneas con comisiones casi cero. Ideal para pagos diarios sin depender de bancos.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 40,
+    "status": "pending_review",
+    "createdAt": 1773244962205,
+    "platform": "nostr"
+  },
+  {
+    "id": "draft-1773244962206-ndd2ldhjk",
+    "opportunity": {
+      "id": "0fcaa01f258c9b1b927002d85ec3f665a4f6682eeb33a7b85341f8c78c983651",
+      "mode": "arcadiab",
+      "score": 38,
+      "event": {
+        "id": "0fcaa01f258c9b1b927002d85ec3f665a4f6682eeb33a7b85341f8c78c983651",
+        "pubkey": "7f99d8bcaefef5a7d39b3a5f43ce201615e064b37768e2050e40e0fd71cbef5d",
+        "content": "Die Schweizer Aktienindizes haben gestern mehr verloren als mein Konto bei der letzten Wette auf das WM-Finale. Schön, dass die Ölpreise endlich mal etwas Schwung in die Börse bringen – nur leider nicht in die richtige Richtung.\n\n📰 Explodierende Ölpreise schicken Schweizer Aktienindizes nach unten\n\n🔗 https://www.cash.ch/news/top-news/explodierende-olpreise-schicken-schweizer-aktienindizes-nach-unten-916563\nDu willst nur wichtige News zu deinen Investments ohne nervige Kommentare? Dann schau dir purple-rss an!\n💜 https://purple-rss.xyz\n\n#Bitcoin #Crypto #Nostr #PurpleRSS",
+        "created_at": 1773086404,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773086602395
+    },
+    "response": "Buena pregunta. Lightning Network permite transacciones instantáneas con comisiones casi cero. Ideal para pagos diarios sin depender de bancos.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 38,
+    "status": "pending_review",
+    "createdAt": 1773244962206,
+    "platform": "nostr"
+  },
+  {
+    "id": "draft-1773244962207-vjdgx5ro3",
+    "opportunity": {
+      "id": "f6c5da6672331bd3328161a8f0d0919591c6984af8eb939e7d6477c2e881d69f",
+      "mode": "arcadiab",
+      "score": 38,
+      "event": {
+        "id": "f6c5da6672331bd3328161a8f0d0919591c6984af8eb939e7d6477c2e881d69f",
+        "pubkey": "dbf9a105e5148972ad0408d3d5d44ea388e8c082e1f081e119ceb3f9d229b358",
+        "content": "10 free guides for LND/Nostr/Python devs:\n\n1. LND Stuck Payment (HTLC) → telegra.ph/LND-Stuck-Payment-Fix--HTLC-Timeout-Guide-03-09\n2. LND No Route Found → telegra.ph/LND-Cannot-Send-Payment--Debugging-No-Route-Found-Error-03-09\n3. LND Channel Rebalancing → telegra.ph/LND-Channel-Balance-Too-Low--Rebalancing-Guide-03-09\n4. LND Health Check Scripts → getting-overnight-basement-drain.trycloudflare.com/lnd-guide.html\n5. Lightning Payment Failed → telegra.ph/Lightning-Payment-Failed--5-Most-Common-Causes-and-Fixes-03-09\n6. CLN Common Errors → telegra.ph/CLN-Core-Lightning-Node-Setup--Common-Errors-and-Fixes-03-09\n7. Nostr Python Bot Relay Pool → telegra.ph/Nostr-Python-Bot--Resilient-Relay-Pool-2026-Guide-03-09\n8. Nostr NIP-04 DM in Python → telegra.ph/Nostr-NIP-04-Encrypted-DM-in-Python--Complete-Example-03-09\n9. AI Agent Memory Patterns → telegra.ph/How-AI-Agents-Handle-Memory-Across-Restarts--3-Patterns-03-09\n10. Python requests vs httpx for Bitcoin APIs → telegra.ph/Python-requests-vs-httpx-for-Bitcoin-APIs--Which-to-Use-03-09\n\nNeed something solved now? $9 → getting-overnight-basement-drain.trycloudflare.com",
+        "created_at": 1773086553,
+        "tags": [
+          [
+            "t",
+            "lnd"
+          ],
+          [
+            "t",
+            "lightning"
+          ],
+          [
+            "t",
+            "nostr"
+          ],
+          [
+            "t",
+            "python"
+          ],
+          [
+            "t",
+            "bitcoin"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773086602395
+    },
+    "response": "Bitcoin es reserva de valor + Lightning es medio de pago. Las dos capas funcionan juntas. En México ya hay cajeros y tarjetas que conectan ambas.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 38,
+    "status": "pending_review",
+    "createdAt": 1773244962207,
+    "platform": "nostr"
   }
 ]

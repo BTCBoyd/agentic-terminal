@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-11T13:55:01.257Z",
+  "generated_at": "2026-03-11T18:05:01.781Z",
   "needs_boyd": [
     "Newsletter may need publication - check drafts"
   ],
   "content_queue": {
     "arcadiab_x": {
-      "scheduled": 24,
+      "scheduled": 21,
       "min_threshold": 8,
       "target": 20
     },
@@ -20,7 +20,7 @@
       "target": 6
     },
     "maxi_x": {
-      "scheduled": 5,
+      "scheduled": 4,
       "min_threshold": 4,
       "target": 10
     },
@@ -80,7 +80,7 @@
       {
         "name": "Check ArcadiaB Queue Status",
         "scheduled_time": "09:00",
-        "last_executed": "2026-03-11T02:00:02.385Z",
+        "last_executed": "2026-03-11T17:00:03.073Z",
         "has_cron": true,
         "threshold_hours": 26,
         "category": "content"
@@ -322,12 +322,10 @@
     }
   },
   "social_engagement": {
-    "opportunities_in_queue": 219,
-    "drafts_pending": 12,
-    "auto_posts_today": 5,
-    "threads_monitored": 6,
-    "last_discovery": null,
-    "last_drafting": null
+    "opportunities_in_queue": 0,
+    "drafts_pending": 0,
+    "auto_posts_today": 0,
+    "threads_monitored": 0
   },
   "metrics": {
     "l402_stars": 255,
@@ -341,6 +339,11 @@
   },
   "activity_log": [
     {
+      "task": "Check ArcadiaB Queue Status",
+      "completed_at": "2026-03-11T17:00:03.073Z",
+      "category": "content"
+    },
+    {
       "task": "Moltbook Morning Session",
       "completed_at": "2026-03-11T13:42:27.556Z",
       "category": "research"
@@ -349,11 +352,6 @@
       "task": "Agentic Terminal Data Collection",
       "completed_at": "2026-03-11T13:31:46.919Z",
       "category": "data"
-    },
-    {
-      "task": "Check ArcadiaB Queue Status",
-      "completed_at": "2026-03-11T02:00:02.385Z",
-      "category": "content"
     },
     {
       "task": "Daily Memory Log",
