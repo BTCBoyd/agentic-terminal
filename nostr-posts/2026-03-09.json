@@ -62,5 +62,21 @@
     "relaySuccess": 4,
     "relayTotal": 4,
     "promotional": false
+  },
+  {
+    "timestamp": "2026-03-10T00:57:00.000Z",
+    "localTime": "2026-03-09T19:57:00-05:00",
+    "content": "In Mexico, holding pesos is a guaranteed 5%+ annual loss. Holding Bitcoin is volatile, but the long-term trend is clear—scarce money beats inflating money. More families are figuring this out every day.",
+    "eventId": "f69259ce526b13f5b13342513f2636f59a87441032c4b8a7b89022b51c9fa2a7",
+    "theme": "LatAm Bitcoin adoption",
+    "relays": [
+      "wss://relay.damus.io",
+      "wss://nos.lol",
+      "wss://relay.primal.net",
+      "wss://relay.snort.social"
+    ],
+    "relaySuccess": 4,
+    "relayTotal": 4,
+    "promotional": false
   }
 ]

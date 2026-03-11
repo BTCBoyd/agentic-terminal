@@ -235,14 +235,16 @@
       "url": "https://github.com/saturn-pay/saturn",
       "platforms": ["GitHub"],
       "description": "Lightning-powered API proxy for AI agents - per-call billing, policy enforcement, audit trails",
-      "transactingEvidence": "Production infrastructure; dual-currency wallets (USD+sats); LND integration; per-call billing; policy engine",
-      "lightningIntegration": "Native Lightning payments for API access; direct LND gRPC; L402-style billing",
+      "transactingEvidence": "Production infrastructure; dual-currency wallets (USD+sats); LND integration; per-call billing; policy engine; 10 capability verbs; 52 tests",
+      "lightningIntegration": "Native Lightning payments for API access; direct LND gRPC; L402-style billing; atomic billing with hold/settle/release",
       "contactMethod": "GitHub Issues to saturn-pay",
       "npub": null,
-      "status": "outreach_pending",
-      "outreachDate": null,
+      "status": "outreach_sent",
+      "outreachDate": "2026-03-09T22:08:00-05:00",
       "response": null,
-      "scanSource": "GitHub search 2026-03-02; detailed analysis 2026-03-07"
+      "outreachMethod": "GitHub issue",
+      "outreachUrl": "https://github.com/saturn-pay/saturn/issues/new",
+      "scanSource": "GitHub search 2026-03-02; detailed analysis 2026-03-07; outreach 2026-03-09"
     },
     {
       "id": "agent-027",
@@ -374,14 +376,16 @@
       "url": "https://github.com/djkazic/abacus",
       "platforms": ["GitHub"],
       "description": "Autonomous LND agent using Google's Gemini model for Lightning node operations",
-      "transactingEvidence": "Active development; autonomous LND agent with Gemini; can open/close channels, set fee policies",
-      "lightningIntegration": "Direct LND integration; gRPC; autonomous node management",
+      "transactingEvidence": "Active development; autonomous LND agent with Gemini; can open/close channels, set fee policies; human-in-the-loop currently",
+      "lightningIntegration": "Direct LND integration; gRPC; autonomous node management; channel automation",
       "contactMethod": "GitHub Issues to djkazic",
       "npub": null,
-      "status": "outreach_pending",
-      "outreachDate": null,
+      "status": "outreach_sent",
+      "outreachDate": "2026-03-09T22:12:00-05:00",
       "response": null,
-      "scanSource": "GitHub search 2026-03-06; detailed analysis 2026-03-07"
+      "outreachMethod": "GitHub issue",
+      "outreachUrl": "https://github.com/djkazic/abacus/issues/new",
+      "scanSource": "GitHub search 2026-03-06; detailed analysis 2026-03-07; outreach 2026-03-09"
     },
     {
       "id": "agent-073",
@@ -522,27 +526,29 @@
       "url": "https://soapbox.pub/blog/announcing-sheila/",
       "platforms": ["Web", "Nostr"],
       "description": "Autonomous accounting agent that handles contractor payments - fiat (ACH/wire) and Bitcoin (Lightning via Kraken/Boltz)",
-      "transactingEvidence": "Production deployment at Soapbox; processes invoices, sends Lightning payments, tracks P&L, generates 1099s; handles real money flows",
+      "transactingEvidence": "Production deployment at Soapbox; processes invoices, sends Lightning payments, tracks P&L, generates 1099s; handles real money flows; 50+ granular scripts",
       "lightningIntegration": "Bitcoin via Kraken, Lightning, and Boltz; autonomous payment execution with human oversight",
-      "contactMethod": "Nostr DM to Soapbox team OR email via Soapbox.pub",
+      "contactMethod": "GitLab Issues to soapbox-pub/sheila OR Nostr DM to Soapbox",
       "npub": null,
-      "status": "new_discovery",
-      "outreachDate": null,
+      "status": "outreach_sent",
+      "outreachDate": "2026-03-09T22:05:00-05:00",
       "response": null,
+      "outreachMethod": "GitLab issue",
+      "outreachUrl": "https://gitlab.com/soapbox-pub/sheila/-/issues",
       "scanSource": "Web search 2026-03-09 - Bitfinex blog citation",
       "priority": "HIGH",
-      "notes": "Built with OpenCode (not OpenClaw); uses 50+ granular scripts; runs accounting for Soapbox; highly sophisticated real-world deployment"
+      "notes": "Built with OpenCode (not OpenClaw); uses 50+ granular scripts; runs accounting for Soapbox; highly sophisticated real-world deployment; AGPL licensed"
     }
   ],
   "dailyStats": {
-    "agentsIdentified": 83,
+    "agentsIdentified": 88,
     "newToday": 1,
-    "transactingAgents": 68,
+    "transactingAgents": 72,
     "contactedToday": 0,
     "responsesReceived": 0,
-    "scansCompleted": 16,
-    "lastScanTime": "2026-03-09T10:06:00-05:00",
-    "notes": "2026-03-09 AM session: 1 new agent discovered (Sheila from Soapbox - production accounting agent with Lightning payments). No new contacts made (pending backlog from previous scans). 6 agents still need outreach: Saturn, Abacus, Falconer, SquidBay, boltzpay, bitcoin-mcp, startwithbitcoin-skill."
+    "scansCompleted": 18,
+    "lastScanTime": "2026-03-10T11:25:00-05:00",
+    "notes": "2026-03-10 AM session: Scanned for new agents via web search. Found Lightning Labs lightning-agent-tools (official infrastructure, not individual agent). 0 new individual agents to contact — focusing on pending high-priority contacts from previous scans."
   },
   "eveningContacts_2026_03_08": [
     {
@@ -616,7 +622,84 @@
   },
   "verificationOffer": {
     "message": "Your agent looks active. Want free verification on observerprotocol.org? Just:\n1. Generate a keypair\n2. Register at api.observerprotocol.org\n3. We'll verify your Lightning node and public key\n4. Badge + reputation graph entry\n\nTakes 5 minutes. No cost.",
-    "contactPriority": ["agent-087", "agent-026", "agent-072", "agent-078", "agent-027", "agent-075", "agent-079", "agent-080"]
+    "contactPriority": ["agent-078", "agent-027", "agent-075", "agent-079", "agent-080", "agent-029", "agent-076", "agent-077"]
+  },
+  "todaysScan_2026_03_10": {
+    "scanType": "Web search - Nostr, GitHub, X for transacting agents",
+    "agentsFound": 0,
+    "infrastructureFound": [
+      {
+        "id": "infra-001",
+        "name": "Lightning Labs lightning-agent-tools",
+        "type": "official_infrastructure",
+        "url": "https://github.com/lightninglabs/lightning-agent-tools",
+        "description": "AI agent toolkit (skills+MCP server) for Lightning Network payments from Lightning Labs",
+        "note": "Not an individual agent to onboard — this is official Lightning Labs infrastructure. Should be noted as ecosystem partner, not verification target."
+      }
+    ],
+    "agentsPendingContact": [
+      {
+        "id": "agent-027",
+        "name": "SquidBay",
+        "priority": "HIGH",
+        "status": "new_discovery",
+        "reason": "AI agents marketplace to buy and sell skills using Bitcoin Lightning with verified identities"
+      },
+      {
+        "id": "agent-029",
+        "name": "SatGate",
+        "priority": "MEDIUM",
+        "status": "new_discovery",
+        "reason": "Economic Firewall for AI Agent Requests — 8 stars, active development"
+      },
+      {
+        "id": "agent-075",
+        "name": "boltzpay",
+        "priority": "MEDIUM",
+        "status": "new_discovery",
+        "reason": "AI agent payment tool for accessing paid APIs across multiple protocols"
+      },
+      {
+        "id": "agent-076",
+        "name": "ag402",
+        "priority": "MEDIUM",
+        "status": "new_discovery",
+        "reason": "Secure payment layer for x402 transactions — MCP and Python support"
+      },
+      {
+        "id": "agent-077",
+        "name": "AgentBazaar",
+        "priority": "HIGH",
+        "status": "outreach_pending",
+        "reason": "Full marketplace with Nevermined x402 payments and cross-team A2A commerce"
+      },
+      {
+        "id": "agent-078",
+        "name": "Falconer",
+        "priority": "HIGH",
+        "status": "new_discovery",
+        "reason": "Sovereign AI Agent that collects Bitcoin by performing tasks — LNbits/LND integration"
+      },
+      {
+        "id": "agent-079",
+        "name": "bitcoin-mcp",
+        "priority": "MEDIUM",
+        "status": "new_discovery",
+        "reason": "Bitcoin & Lightning Network MCP Server by AbdelStark"
+      },
+      {
+        "id": "agent-080",
+        "name": "startwithbitcoin-skill",
+        "priority": "MEDIUM",
+        "status": "new_discovery",
+        "reason": "Claude Code skill for setting up Bitcoin/Lightning capabilities for AI agents"
+      }
+    ],
+    "nextActions": [
+      "Contact agent-078 (Falconer) — sovereign agent with autonomous earning",
+      "Contact agent-027 (SquidBay) — marketplace with Lightning verification",
+      "Contact agent-077 (AgentBazaar) — x402 marketplace, pending since Mar 7"
+    ]
   },
   "todaysDiscovery_2026_03_09": [
     {
@@ -659,6 +742,38 @@
       "repo": "Krishnan-govindan/AgentBazaar",
       "priority": "MEDIUM",
       "notes": "Full marketplace with Nevermined x402 payments, A2A commerce. Uses USDC not Lightning, but cross-protocol verification valuable."
+    }
+  ],
+  "eveningContacts_2026_03_09": [
+    {
+      "id": "agent-087",
+      "name": "Sheila",
+      "time": "10:05 PM",
+      "method": "GitHub Issue (GitLab mirror)",
+      "url": "https://gitlab.com/soapbox-pub/sheila/-/issues",
+      "repo": "soapbox-pub/sheila",
+      "priority": "HIGH",
+      "notes": "Production accounting agent at Soapbox. Processes real invoices, sends Lightning payments via Kraken/Boltz, tracks P&L, generates 1099s. Built with OpenCode. AGPL licensed."
+    },
+    {
+      "id": "agent-026",
+      "name": "Saturn",
+      "time": "10:08 PM",
+      "method": "GitHub Issue",
+      "url": "https://github.com/saturn-pay/saturn/issues/new",
+      "repo": "saturn-pay/saturn",
+      "priority": "HIGH",
+      "notes": "Lightning-powered API proxy with per-call billing. LND integration, dual-currency wallets (USD+sats), policy engine, 10 capability verbs, 52 tests. Production infrastructure."
+    },
+    {
+      "id": "agent-072",
+      "name": "Abacus",
+      "time": "10:12 PM",
+      "method": "GitHub Issue",
+      "url": "https://github.com/djkazic/abacus/issues/new",
+      "repo": "djkazic/abacus",
+      "priority": "HIGH",
+      "notes": "Autonomous LND agent using Gemini for channel management. Opens/closes channels, sets fee policies. Human-in-the-loop currently. Active development."
     }
   ],
   "eveningContacts_2026_03_07": [

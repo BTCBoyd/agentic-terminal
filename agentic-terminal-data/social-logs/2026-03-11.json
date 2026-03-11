@@ -1,0 +1,26 @@
+{
+  "date": "2026-03-11",
+  "generated_at": "2026-03-11T13:58:51.972Z",
+  "candidates_count": 5,
+  "posted_count": 3,
+  "posts": [
+    {
+      "priority": 1,
+      "angle": "spike",
+      "text": "📡 @AgenticTerminal data — 2026-03-10\n\n↑ ERC-8004 Agents: 68.2K (+178.4% WoW)\n\nFull dashboard → agenticterminal.ai",
+      "nostr": "📡 Agentic Terminal data — 2026-03-10\n\n↑ ERC-8004 Agents: 68.2K (+178.4% week-over-week)\n\n\n\nDashboard: agenticterminal.ai"
+    },
+    {
+      "priority": 2,
+      "angle": "l402_vs_x402",
+      "text": "⚡ vs 🌊 Agent payment rails — 2026-03-10\n\nL402 (Bitcoin Lightning): 255 stars →\nx402 (Stablecoin): 5.6K stars ↑\n\n22x more interest in x402 right now. But Lightning settles in milliseconds.\n\nThe settlement wars are live → agenticterminal.ai #AgentPayments",
+      "nostr": "⚡ vs 🌊 Agent payment rails — 2026-03-10\n\nL402 (Bitcoin Lightning): 255 GitHub stars\nx402 (Stablecoin): 5.6K GitHub stars\n\n22x more developer interest in x402. But L402 settles in milliseconds, censorship-resistant.\n\nThe settlement wars are live. Track it: agenticterminal.ai"
+    },
+    {
+      "priority": 3,
+      "angle": "agent_economy",
+      "text": "🤖 AI agent economy — 2026-03-10\n\n68.2K agents registered on-chain (ERC-8004) ↑ +178.4% WoW\n8.5K x402 transactions/day\n\nAgents need money that works without permission.\n\nTrack the buildout → agenticterminal.ai #AgenticTerminal",
+      "nostr": "🤖 AI agent economy — 2026-03-10\n\n68.2K agents registered on-chain (ERC-8004)\n8.5K x402 transactions/day\n\nThe agentic economy is building. Agents need permissionless money.\n\nagenticterminal.ai"
+    }
+  ]
+}

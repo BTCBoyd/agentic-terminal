@@ -667,7 +667,22 @@ async function generateChartsAndContent(newEntry) {
     const { stdout: pulseOutput } = await execAsync(`node ${pulseScript} --date=${date} --days=7`);
     log('INFO', 'Daily pulse generation output:', pulseOutput);
     
-    // 4. Log to DAILY-OPERATIONS.md
+    // 4. Sync charts to website directory
+    log('INFO', 'Syncing charts to website directory...');
+    const chartsSourceDir = `/home/futurebit/.openclaw/workspace/agentic-terminal-data/charts/${date}`;
+    const chartsDestDir = `/home/futurebit/.openclaw/workspace/agenticterminal-website/agentic-terminal-data/charts/${date}`;
+    await execAsync(`mkdir -p "${chartsDestDir}" && cp -r "${chartsSourceDir}/"* "${chartsDestDir}/"`);
+    // Commit and push website charts
+    await execAsync(`cd /home/futurebit/.openclaw/workspace/agenticterminal-website && git add -A && git commit -m "charts: add ${date} charts" && git push`);
+    log('SUCCESS', `Charts synced and pushed to website for ${date}`);
+
+    // 5. Post data insights to X + Nostr
+    log('INFO', 'Generating and posting data insights...');
+    const insightsScript = path.join(scriptsDir, 'post-data-insights.mjs');
+    const { stdout: insightsOutput } = await execAsync(`node ${insightsScript} --date=${date}`);
+    log('INFO', 'Insights posting output:', insightsOutput);
+
+    // 6. Log to DAILY-OPERATIONS.md
     await logToDailyOperations(newEntry, date);
     
     log('SUCCESS', 'Phase 2 content generation complete');

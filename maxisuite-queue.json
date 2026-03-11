@@ -2131,11 +2131,17 @@
     },
     "scheduledFor": "2026-03-10T14:00:00-06:00",
     "requiresApproval": false,
-    "status": "scheduled",
+    "status": "posted",
     "createdAt": "2026-02-19T21:30:00.000Z",
-    "postedAt": null,
+    "postedAt": "2026-03-10T20:00:02.546Z",
     "account": "@Maxibtc2009",
-    "contentType": "thought-leadership"
+    "contentType": "thought-leadership",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "━━━ DEBUG OUTPUT ━━━\nTimestamp: 1773172801\nSystem time (UTC): 2026-03-10T20:00:01.738Z\nNonce: 4a991d8d1dd10cceb41f2f91a9a23bff5116fd1da04ea3a07b599cc099788793\nParameter string: oauth_consumer_key=ern3mimZMpHl4MvBlJnIrokqI&oauth_nonce=4a991d8d1dd10cceb41f2f91a9a23bff5116fd1da04ea3a07b599cc099788793&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1773172801&oauth_token=2021647460758966273-qQW48HIRGxefjbDAMaEnNA9op5kPxH&oauth_version=1.0\nSignature base string: POST&https%3A%2F%2Fapi.twitter.com%2F2%2Ftweets&oauth_consumer_key%3Dern3mimZMpHl4MvBlJnIrokqI%26oauth_nonce%3D4a991d8d1dd10cceb41f2f91a9a23bff5116fd1da04ea3a07b599cc099788793%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1773172801%26oauth_token%3D2021647460758966273-qQW48HIRGxefjbDAMaEnNA9op5kPxH%26oauth_version%3D1.0\nSigning key: BdMlZAjKSRJL4g0eIphrLWxoGLo3bI4Ru0FUR2R6mEwSWImzBv&xsUk0hsIewKaNpZKUj7TNrejC4rWmizPSbzBj9aoHfdK3\n━━━━━━━━━━━━━━━━━━━\nStatus: 201\nResponse: {\"data\":{\"text\":\"The Bitcoin treasury playbook for emerging markets:\\n\\n1. Start small (1-5% allocation)\\n2. Use regulated infrastructure\\n3. Learn custody before scaling\\n4. Document thesis for board approval\\n5. Measure in purchasing power, not price\\n\\nFull methodology: https://t.co/wrpIWrZVVP\",\"id\":\"2031460087177359700\",\"edit_history_tweet_ids\":[\"2031460087177359700\"]}}\n✅ SUCCESS: {\n  data: {\n    text: 'The Bitcoin treasury playbook for emerging markets:\\n' +\n      '\\n' +\n      '1. Start small (1-5% allocation)\\n' +\n      '2. Use regulated infrastructure\\n' +\n      '3. Learn custody before scaling\\n' +\n      '4. Document thesis for board approval\\n' +\n      '5. Measure in purchasing power, not price\\n' +\n      '\\n' +\n      'Full methodology: https://t.co/wrpIWrZVVP',\n    id: '2031460087177359700',\n    edit_history_tweet_ids: [ '2031460087177359700' ]\n  }\n}\n"
+      }
+    }
   },
   {
     "id": "post_1771536600000_50",
@@ -3541,45 +3547,55 @@
     "account": "arcadiabtc",
     "content": "Comprar Bitcoin en México nunca fue tan simple.\n\nCon @arcadiabtc puedes:\n→ Comprar desde $500 MXN\n→ Sin complicaciones bancarias\n→ Custodia segura desde el primer día\n\nTu primer paso hacia la soberanía financiera: arcadiab.com",
     "scheduledFor": "2026-03-06T12:00:00-06:00",
-    "status": "pending",
+    "status": "missed",
     "topic": "bitcoin-purchasing",
-    "language": "es"
+    "language": "es",
+    "missedAt": "2026-03-10T19:00:00Z",
+    "missedReason": "Past-due purge per Boyd 2026-03-10"
   },
   {
     "id": "arcadiab-2026-02-23-002",
     "account": "arcadiabtc",
     "content": "El secreto de los mejores ahorradores en Bitcoin:\n\nNo intentan adivinar el precio. Compran en intervalos fijos.\n\nAhorro Inteligente de @arcadiabtc automatiza tu DCA — semana a semana, mes a mes.\n\nEl tiempo en el mercado gana al timing del mercado. 📈\n\narcadiab.com",
     "scheduledFor": "2026-03-06T15:00:00-06:00",
-    "status": "pending",
+    "status": "missed",
     "topic": "ahorro-inteligente-dca",
-    "language": "es"
+    "language": "es",
+    "missedAt": "2026-03-10T19:00:00Z",
+    "missedReason": "Past-due purge per Boyd 2026-03-10"
   },
   {
     "id": "arcadiab-2026-02-23-003",
     "account": "arcadiabtc",
     "content": "¿Y si cada compra diaria te acercara más al Bitcoin?\n\nLa tarjeta con cashback en Bitcoin de @arcadiabtc convierte tu gasto en ahorro real.\n\nGasolina, super, restaurantes → Bitcoin.\n\nAsí se construye patrimonio en 2026.\n\narcadiab.com",
     "scheduledFor": "2026-03-06T17:30:00-06:00",
-    "status": "pending",
+    "status": "missed",
     "topic": "bitcoin-cashback-cards",
-    "language": "es"
+    "language": "es",
+    "missedAt": "2026-03-10T19:00:00Z",
+    "missedReason": "Past-due purge per Boyd 2026-03-10"
   },
   {
     "id": "arcadiab-2026-02-23-004",
     "account": "arcadiabtc",
     "content": "Know someone who should be protecting their wealth in Bitcoin?\n\nRefer them to @arcadiabtc and earn on every referral.\n\nMexico's first ASOFOM-certified Bitcoin lending platform — products your network actually needs.\n\nwww.kapitalex.com/#/register?ref=FDQEXS1WD6LZ4IQ",
     "scheduledFor": "2026-03-07T09:00:00-06:00",
-    "status": "pending",
+    "status": "missed",
     "topic": "referral-program",
-    "language": "en"
+    "language": "en",
+    "missedAt": "2026-03-10T19:00:00Z",
+    "missedReason": "Past-due purge per Boyd 2026-03-10"
   },
   {
     "id": "arcadiab-2026-02-23-005",
     "account": "arcadiabtc",
     "content": "La mejor inversión antes de comprar Bitcoin:\n\nEntender Bitcoin.\n\naprenderbitcoin.mx tiene cursos en español, diseñados para el contexto mexicano.\n\nGratis. Sin registro. Solo conocimiento.\n\n👉 aprenderbitcoin.mx",
     "scheduledFor": "2026-03-07T12:00:00-06:00",
-    "status": "pending",
+    "status": "missed",
     "topic": "aprenderbitcoin",
-    "language": "es"
+    "language": "es",
+    "missedAt": "2026-03-10T19:00:00Z",
+    "missedReason": "Past-due purge per Boyd 2026-03-10"
   },
   {
     "id": "maxi_at_1771948800000_0",
@@ -5867,5 +5883,659 @@
     "account": "@Maxibtc2009",
     "contentType": "reply",
     "reply_to": "arc0btc"
+  },
+  {
+    "id": "arcadiab_urgent_001",
+    "content": "¿Tu dinero pierde valor mientras duermes? 💤\n\nEl peso mexicano ha caído 40% vs el dólar en 10 años.\n\nBitcoin: la única reserva de valor que no pueden imprimir.\n\nCompra BTC regulado en México. ASOFOM certificado. 🇲🇽₿\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-10T09:00:00-06:00",
+    "requiresApproval": false,
+    "status": "posted",
+    "createdAt": "2026-03-09T20:05:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "problem-awareness",
+    "postedAt": "2026-03-10T15:00:02.689Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "Status: 201\nResponse: {\"data\":{\"text\":\"¿Tu dinero pierde valor mientras duermes? \\uD83D\\uDCA4\\n\\nEl peso mexicano ha caído 40% vs el dólar en 10 años.\\n\\nBitcoin: la única reserva de valor que no pueden imprimir.\\n\\nCompra BTC regulado en México. ASOFOM certificado. \\uD83C\\uDDF2\\uD83C\\uDDFD₿\\n\\nhttps://t.co/JLwAApiFUK\",\"edit_history_tweet_ids\":[\"2031384591135621360\"],\"id\":\"2031384591135621360\"}}\n✅ SUCCESS: {\n  data: {\n    text: '¿Tu dinero pierde valor mientras duermes? 💤\\n' +\n      '\\n' +\n      'El peso mexicano ha caído 40% vs el dólar en 10 años.\\n' +\n      '\\n' +\n      'Bitcoin: la única reserva de valor que no pueden imprimir.\\n' +\n      '\\n' +\n      'Compra BTC regulado en México. ASOFOM certificado. 🇲🇽₿\\n' +\n      '\\n' +\n      'https://t.co/JLwAApiFUK',\n    edit_history_tweet_ids: [ '2031384591135621360' ],\n    id: '2031384591135621360'\n  }\n}\n"
+      }
+    }
+  },
+  {
+    "id": "arcadiab_urgent_002",
+    "content": "Necesitas liquidez pero no quieres vender tu Bitcoin? 🤔\n\nPréstamos B2X de ArcadiaB:\n✅ Usa tu BTC como garantía\n✅ Recibe pesos o dólares\n✅ Conservas tu upside\n\nLa única plataforma ASOFOM-certificada para préstamos Bitcoin en México.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-10T15:00:00-06:00",
+    "requiresApproval": false,
+    "status": "posted",
+    "createdAt": "2026-03-09T20:05:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "product-value",
+    "postedAt": "2026-03-10T21:00:02.429Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "Status: 201\nResponse: {\"data\":{\"id\":\"2031475186969497893\",\"text\":\"Necesitas liquidez pero no quieres vender tu Bitcoin? \\uD83E\\uDD14\\n\\nPréstamos B2X de ArcadiaB:\\n✅ Usa tu BTC como garantía\\n✅ Recibe pesos o dólares\\n✅ Conservas tu upside\\n\\nLa única plataforma ASOFOM-certificada para préstamos Bitcoin en México.\\n\\nhttps://t.co/JLwAApiFUK\",\"edit_history_tweet_ids\":[\"2031475186969497893\"]}}\n✅ SUCCESS: {\n  data: {\n    id: '2031475186969497893',\n    text: 'Necesitas liquidez pero no quieres vender tu Bitcoin? 🤔\\n' +\n      '\\n' +\n      'Préstamos B2X de ArcadiaB:\\n' +\n      '✅ Usa tu BTC como garantía\\n' +\n      '✅ Recibe pesos o dólares\\n' +\n      '✅ Conservas tu upside\\n' +\n      '\\n' +\n      'La única plataforma ASOFOM-certificada para préstamos Bitcoin en México.\\n' +\n      '\\n' +\n      'https://t.co/JLwAApiFUK',\n    edit_history_tweet_ids: [ '2031475186969497893' ]\n  }\n}\n"
+      }
+    }
+  },
+  {
+    "id": "arcadiab_urgent_003",
+    "content": "Ahorro Inteligente = DCA sin complicaciones 📅\n\n• Compras automáticas de BTC\n• Desde $100 pesos/mes\n• Promedias tu precio de entrada\n• Sin timing el mercado\n\nStackea sats mientras duermes. 😴₿\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-11T09:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-09T20:05:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "product-value"
+  },
+  {
+    "id": "arcadiab_urgent_004",
+    "content": "¿Sabías que puedes usar tu propiedad para comprar Bitcoin? 🏠₿\n\nModelo híbrido:\n1. Tu inmueble como colateral\n2. Préstamo en pesos\n3. Compra de BTC\n4. Mantienes ambos activos\n\nDiversificación inteligente sin vender.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-11T15:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-09T20:05:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "education"
+  },
+  {
+    "id": "arcadiab_urgent_005",
+    "content": "Tarjeta de crédito con cashback en Bitcoin 💳₿\n\n✨ 0.5% de cada compra = sats gratis\n✨ Funciona en cualquier lugar\n✨ Sin complicaciones técnicas\n\nGasta pesos. Gana Bitcoin.\n\nLa primera tarjeta con BTC cashback en México. 🇲🇽\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-12T09:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-09T20:05:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "product-value"
+  },
+  {
+    "id": "arcadiab_today_001",
+    "content": "El peso mexicano perdió 40% de valor vs el dólar en 10 años. 📉\n\nCada día que esperas, tu dinero vale menos.\n\nBitcoin: la única salida que no pueden cerrar.\n\nCompra BTC regulado en México. ASOFOM certificado. 🇲🇽₿\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-09T19:30:00-06:00",
+    "requiresApproval": false,
+    "status": "posted",
+    "createdAt": "2026-03-09T22:20:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "problem-awareness",
+    "postedAt": "2026-03-10T01:30:01.967Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "Status: 201\nResponse: {\"data\":{\"edit_history_tweet_ids\":[\"2031180744937402369\"],\"text\":\"El peso mexicano perdió 40% de valor vs el dólar en 10 años. \\uD83D\\uDCC9\\n\\nCada día que esperas, tu dinero vale menos.\\n\\nBitcoin: la única salida que no pueden cerrar.\\n\\nCompra BTC regulado en México. ASOFOM certificado. \\uD83C\\uDDF2\\uD83C\\uDDFD₿\\n\\nhttps://t.co/JLwAApjdKi\",\"id\":\"2031180744937402369\"}}\n✅ SUCCESS: {\n  data: {\n    edit_history_tweet_ids: [ '2031180744937402369' ],\n    text: 'El peso mexicano perdió 40% de valor vs el dólar en 10 años. 📉\\n' +\n      '\\n' +\n      'Cada día que esperas, tu dinero vale menos.\\n' +\n      '\\n' +\n      'Bitcoin: la única salida que no pueden cerrar.\\n' +\n      '\\n' +\n      'Compra BTC regulado en México. ASOFOM certificado. 🇲🇽₿\\n' +\n      '\\n' +\n      'https://t.co/JLwAApjdKi',\n    id: '2031180744937402369'\n  }\n}\n"
+      }
+    }
+  },
+  {
+    "id": "arcadiab_today_002",
+    "content": "¿Tienes Bitcoin pero necesitas efectivo? 💰\n\nPréstamos B2X de ArcadiaB:\n✅ Tu BTC como garantía\n✅ Recibes pesos o dólares\n✅ No vendes tus sats\n✅ Conservas todo el upside\n\nLa única plataforma ASOFOM-certificada en México.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-09T21:00:00-06:00",
+    "requiresApproval": false,
+    "status": "posted",
+    "createdAt": "2026-03-09T22:20:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "product-value",
+    "postedAt": "2026-03-10T03:00:02.343Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "Status: 201\nResponse: {\"data\":{\"edit_history_tweet_ids\":[\"2031203395734814724\"],\"id\":\"2031203395734814724\",\"text\":\"¿Tienes Bitcoin pero necesitas efectivo? \\uD83D\\uDCB0\\n\\nPréstamos B2X de ArcadiaB:\\n✅ Tu BTC como garantía\\n✅ Recibes pesos o dólares\\n✅ No vendes tus sats\\n✅ Conservas todo el upside\\n\\nLa única plataforma ASOFOM-certificada en México.\\n\\nhttps://t.co/JLwAApiFUK\"}}\n✅ SUCCESS: {\n  data: {\n    edit_history_tweet_ids: [ '2031203395734814724' ],\n    id: '2031203395734814724',\n    text: '¿Tienes Bitcoin pero necesitas efectivo? 💰\\n' +\n      '\\n' +\n      'Préstamos B2X de ArcadiaB:\\n' +\n      '✅ Tu BTC como garantía\\n' +\n      '✅ Recibes pesos o dólares\\n' +\n      '✅ No vendes tus sats\\n' +\n      '✅ Conservas todo el upside\\n' +\n      '\\n' +\n      'La única plataforma ASOFOM-certificada en México.\\n' +\n      '\\n' +\n      'https://t.co/JLwAApiFUK'\n  }\n}\n"
+      }
+    }
+  },
+  {
+    "id": "arcadiab_today_003",
+    "content": "Ahorro Inteligente = tu futuro financiero en piloto automático 🎯\n\n• Compras automáticas de BTC cada semana/mes\n• Desde $100 pesos\n• Promedias tu precio de entrada\n• Sin intentar timing el mercado\n\nStackea sats sin pensarlo. 📈\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-10T08:00:00-06:00",
+    "requiresApproval": false,
+    "status": "posted",
+    "createdAt": "2026-03-09T22:20:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "product-value",
+    "postedAt": "2026-03-10T14:00:02.435Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "Status: 201\nResponse: {\"data\":{\"edit_history_tweet_ids\":[\"2031369490567426179\"],\"id\":\"2031369490567426179\",\"text\":\"Ahorro Inteligente = tu futuro financiero en piloto automático \\uD83C\\uDFAF\\n\\n• Compras automáticas de BTC cada semana/mes\\n• Desde $100 pesos\\n• Promedias tu precio de entrada\\n• Sin intentar timing el mercado\\n\\nStackea sats sin pensarlo. \\uD83D\\uDCC8\\n\\nhttps://t.co/JLwAApiFUK\"}}\n✅ SUCCESS: {\n  data: {\n    edit_history_tweet_ids: [ '2031369490567426179' ],\n    id: '2031369490567426179',\n    text: 'Ahorro Inteligente = tu futuro financiero en piloto automático 🎯\\n' +\n      '\\n' +\n      '• Compras automáticas de BTC cada semana/mes\\n' +\n      '• Desde $100 pesos\\n' +\n      '• Promedias tu precio de entrada\\n' +\n      '• Sin intentar timing el mercado\\n' +\n      '\\n' +\n      'Stackea sats sin pensarlo. 📈\\n' +\n      '\\n' +\n      'https://t.co/JLwAApiFUK'\n  }\n}\n"
+      }
+    }
+  },
+  {
+    "id": "arcadiab_today_004",
+    "content": "Modelo híbrido: propiedad + Bitcoin 🏠₿\n\n1. Usa tu inmueble como colateral\n2. Obtén préstamo en pesos\n3. Compra Bitcoin\n4. Mantén ambos activos\n\nResultado: diversificación sin vender, cobertura contra devaluación, exposición al upside de BTC.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-10T11:00:00-06:00",
+    "requiresApproval": false,
+    "status": "posted",
+    "createdAt": "2026-03-09T22:20:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "education",
+    "postedAt": "2026-03-10T17:00:02.381Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "Status: 201\nResponse: {\"data\":{\"text\":\"Modelo híbrido: propiedad + Bitcoin \\uD83C\\uDFE0₿\\n\\n1. Usa tu inmueble como colateral\\n2. Obtén préstamo en pesos\\n3. Compra Bitcoin\\n4. Mantén ambos activos\\n\\nResultado: diversificación sin vender, cobertura contra devaluación, exposición al upside de BTC.\\n\\nhttps://t.co/JLwAApiFUK\",\"edit_history_tweet_ids\":[\"2031414788794765538\"],\"id\":\"2031414788794765538\"}}\n✅ SUCCESS: {\n  data: {\n    text: 'Modelo híbrido: propiedad + Bitcoin 🏠₿\\n' +\n      '\\n' +\n      '1. Usa tu inmueble como colateral\\n' +\n      '2. Obtén préstamo en pesos\\n' +\n      '3. Compra Bitcoin\\n' +\n      '4. Mantén ambos activos\\n' +\n      '\\n' +\n      'Resultado: diversificación sin vender, cobertura contra devaluación, exposición al upside de BTC.\\n' +\n      '\\n' +\n      'https://t.co/JLwAApiFUK',\n    edit_history_tweet_ids: [ '2031414788794765538' ],\n    id: '2031414788794765538'\n  }\n}\n"
+      }
+    }
+  },
+  {
+    "id": "arcadiab_today_005",
+    "content": "Tarjeta de crédito con cashback en Bitcoin 💳\n\n✨ 0.5% de cada compra = sats gratis\n✨ Funciona en cualquier comercio\n✨ Sin complicaciones técnicas\n\nGasta pesos. Gana Bitcoin. La primera tarjeta con BTC cashback en México. 🇲🇽\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-10T14:00:00-06:00",
+    "requiresApproval": false,
+    "status": "posted",
+    "createdAt": "2026-03-09T22:20:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "product-value",
+    "postedAt": "2026-03-10T20:00:03.201Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "Status: 201\nResponse: {\"data\":{\"text\":\"Tarjeta de crédito con cashback en Bitcoin \\uD83D\\uDCB3\\n\\n✨ 0.5% de cada compra = sats gratis\\n✨ Funciona en cualquier comercio\\n✨ Sin complicaciones técnicas\\n\\nGasta pesos. Gana Bitcoin. La primera tarjeta con BTC cashback en México. \\uD83C\\uDDF2\\uD83C\\uDDFD\\n\\nhttps://t.co/JLwAApiFUK\",\"id\":\"2031460090788647343\",\"edit_history_tweet_ids\":[\"2031460090788647343\"]}}\n✅ SUCCESS: {\n  data: {\n    text: 'Tarjeta de crédito con cashback en Bitcoin 💳\\n' +\n      '\\n' +\n      '✨ 0.5% de cada compra = sats gratis\\n' +\n      '✨ Funciona en cualquier comercio\\n' +\n      '✨ Sin complicaciones técnicas\\n' +\n      '\\n' +\n      'Gasta pesos. Gana Bitcoin. La primera tarjeta con BTC cashback en México. 🇲🇽\\n' +\n      '\\n' +\n      'https://t.co/JLwAApiFUK',\n    id: '2031460090788647343',\n    edit_history_tweet_ids: [ '2031460090788647343' ]\n  }\n}\n"
+      }
+    }
+  },
+  {
+    "id": "arcadiab_today_006",
+    "content": "Desde 2017, ArcadiaB ha sido la empresa Bitcoin más antigua de México. 🏛️\n\n• Licencia SOFOM (única certificada para Bitcoin)\n• Primera tesorería Bitcoin del país\n• Compatible con todos los bancos mexicanos\n\nProtege tu patrimonio con quien tiene track record.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-10T17:00:00-06:00",
+    "requiresApproval": false,
+    "status": "posted",
+    "createdAt": "2026-03-09T22:20:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "credibility",
+    "postedAt": "2026-03-10T23:00:02.051Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "Status: 201\nResponse: {\"data\":{\"text\":\"Desde 2017, ArcadiaB ha sido la empresa Bitcoin más antigua de México. \\uD83C\\uDFDB️\\n\\n• Licencia SOFOM (única certificada para Bitcoin)\\n• Primera tesorería Bitcoin del país\\n• Compatible con todos los bancos mexicanos\\n\\nProtege tu patrimonio con quien tiene track record.…\",\"id\":\"2031505384511316265\",\"edit_history_tweet_ids\":[\"2031505384511316265\"]}}\n✅ SUCCESS: {\n  data: {\n    text: 'Desde 2017, ArcadiaB ha sido la empresa Bitcoin más antigua de México. 🏛️\\n' +\n      '\\n' +\n      '• Licencia SOFOM (única certificada para Bitcoin)\\n' +\n      '• Primera tesorería Bitcoin del país\\n' +\n      '• Compatible con todos los bancos mexicanos\\n' +\n      '\\n' +\n      'Protege tu patrimonio con quien tiene track record.…',\n    id: '2031505384511316265',\n    edit_history_tweet_ids: [ '2031505384511316265' ]\n  }\n}\n"
+      }
+    }
+  },
+  {
+    "id": "arcadiab_today_007",
+    "content": "La inflación real en México está comiendo tu poder adquisitivo. 📉\n\nM2 expansión: +12.3% anual\nPeso vs dólar (10 años): -40%\n\nBitcoin: 21 millones. Nadie imprime más.\n\n¿Dónde prefieres guardar tu patrimonio?\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-10T20:00:00-06:00",
+    "requiresApproval": false,
+    "status": "posted",
+    "createdAt": "2026-03-09T22:20:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "education",
+    "postedAt": "2026-03-11T02:00:02.208Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "Status: 201\nResponse: {\"data\":{\"text\":\"La inflación real en México está comiendo tu poder adquisitivo. \\uD83D\\uDCC9\\n\\nM2 expansión: +12.3% anual\\nPeso vs dólar (10 años): -40%\\n\\nBitcoin: 21 millones. Nadie imprime más.\\n\\n¿Dónde prefieres guardar tu patrimonio?\\n\\nhttps://t.co/JLwAApiFUK\",\"edit_history_tweet_ids\":[\"2031550683757806079\"],\"id\":\"2031550683757806079\"}}\n✅ SUCCESS: {\n  data: {\n    text: 'La inflación real en México está comiendo tu poder adquisitivo. 📉\\n' +\n      '\\n' +\n      'M2 expansión: +12.3% anual\\n' +\n      'Peso vs dólar (10 años): -40%\\n' +\n      '\\n' +\n      'Bitcoin: 21 millones. Nadie imprime más.\\n' +\n      '\\n' +\n      '¿Dónde prefieres guardar tu patrimonio?\\n' +\n      '\\n' +\n      'https://t.co/JLwAApiFUK',\n    edit_history_tweet_ids: [ '2031550683757806079' ],\n    id: '2031550683757806079'\n  }\n}\n"
+      }
+    }
+  },
+  {
+    "id": "arcadiab_today_008",
+    "content": "3 pasos para proteger tu patrimonio con Bitcoin: 🔒\n\n1️⃣ Crea tu cuenta (2 minutos)\n2️⃣ Conecta tu banco (SPEI o tarjeta)\n3️⃣ Comienza a acumular sats\n\nSin comisiones en compras recurrentes. Soporte humano en México.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-11T08:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-09T22:20:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "how-to"
+  },
+  {
+    "id": "arcadiab_today_009",
+    "content": "¿Nuevo en Bitcoin? 🆕\n\naprenderbitcoin.mx es tu curso gratuito de 10 capítulos:\n• Por qué existe Bitcoin\n• Cómo funciona\n• Cómo protege tu patrimonio\n• Primeros pasos en México\n\nEducación de calidad, sin costo. En español. 🇲🇽\n\naprenderbitcoin.mx",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-11T11:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-09T22:20:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "education"
+  },
+  {
+    "id": "arcadiab_today_010",
+    "content": "El marco ASOFOM en México permite modelos de préstamos garantizados con Bitcoin que simplemente no existen en la mayoría de jurisdicciones. 📜\n\nMientras otros países debaten, México ya tiene:\n✅ Entidades financieras reguladas\n✅ Préstamos Bitcoin 100% legales\n✅ Protección al consumidor\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-11T14:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-09T22:20:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "thought-leadership"
+  },
+  {
+    "id": "arcadiab_today_011",
+    "content": "Tu patrimonio en pesos pierde valor cada día que permanece en el banco. 💸\n\nEn ArcadiaB lo proteges con Bitcoin.\n\n🔹 ASOFOM certificados\n🔹 Proceso simple\n🔹 La opción más confiable en México\n\nProtege tu futuro. Empieza hoy. 🇲🇽₿\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-11T17:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-09T22:20:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "problem-awareness"
+  },
+  {
+    "id": "arcadiab_today_012",
+    "content": "Trabajas duro. Ahorras. Pero sientes que nunca avanzas. 😔\n\nLa inflación real no aparece en las cifras oficiales, pero sí en tu cuenta bancaria.\n\nBitcoin termina con esto: escasez absoluta, 21 millones, transparencia total.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-11T20:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-09T22:20:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "problem-awareness"
+  },
+  {
+    "id": "arcadiab_today_013",
+    "content": "Capital Duro: investigación institucional sobre Bitcoin en México. 📊\n\nAnálisis macro, estrategias de tesorería corporativa, casos de estudio para CFOs y family offices.\n\nInvestigación rigurosa. Datos verificables. Sin hype.\n\ncapitalduro.mx",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-12T08:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-09T22:20:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "promotion"
+  },
+  {
+    "id": "arcadiab_today_014",
+    "content": "¿Por qué las tesorerías corporativas en México están explorando Bitcoin? 🤔\n\nExpansión monetaria M2: +12.3% YoY\nPeso vs dólar (1976-2026): -99% poder adquisitivo\nBitcoin: escasez absoluta, 21M\n\nEl análisis completo en Capital Duro.\n\ncapitalduro.mx",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-12T11:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-09T22:20:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "market-commentary"
+  },
+  {
+    "id": "arcadiab_today_015",
+    "content": "El flujo completo del ecosistema ArcadiaB: 🔄\n\n1️⃣ Educación: aprenderbitcoin.mx (entender Bitcoin)\n2️⃣ Investigación: capitalduro.mx (análisis institucional)\n3️⃣ Implementación: @arcadiabtc (servicios Bitcoin)\n\nDe curiosidad a adopción. Todo en español. Todo en México. 🇲🇽",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-12T14:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-09T22:20:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "ecosystem-flow"
+  },
+  {
+    "id": "post_1773169245355_purge_r1",
+    "content": "¿Qué pasa con tu patrimonio cuando el peso se devalúa?\n\nLos últimos 10 años: el peso perdió más del 40% vs el dólar.\n\nBitcoin en el mismo período: +50,000%.\n\nArcadiaB te ayuda a hacer la transición. 📊\n\narcadiab.com",
+    "platforms": {
+      "x": true
+    },
+    "scheduledFor": "2026-03-12T17:30:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-10T19:00:45.355765Z",
+    "account": "@arcadiabtc",
+    "contentType": "educational"
+  },
+  {
+    "id": "post_1773169245355_purge_r2",
+    "content": "Programa de referidos ArcadiaB 🤝\n\nRefiere a alguien que quiera proteger su patrimonio con Bitcoin.\n\nTú ganas. Ellos ganan. Bitcoin gana.\n\nÚnete: arcadiab.com/referido",
+    "platforms": {
+      "x": true
+    },
+    "scheduledFor": "2026-03-12T20:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-10T19:00:45.355789Z",
+    "account": "@arcadiabtc",
+    "contentType": "referral"
+  },
+  {
+    "id": "post_1773169245355_purge_r3",
+    "content": "La pregunta no es si debes tener Bitcoin.\n\nEs cuánto deberías tener y cómo protegerlo.\n\nArcadiaB: asesoría Bitcoin institucional para familias, empresas y patrimonios en México. 🇲🇽\n\narcadiab.com",
+    "platforms": {
+      "x": true
+    },
+    "scheduledFor": "2026-03-13T09:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-10T19:00:45.355803Z",
+    "account": "@arcadiabtc",
+    "contentType": "treasury"
+  },
+  {
+    "id": "post_1773169245355_purge_r4",
+    "content": "AprenderBitcoin.mx: el recurso gratuito que le faltaba a México. 📚\n\nDesde qué es Bitcoin hasta cómo custodiar tu patrimonio.\n\nSin complicaciones. Sin intermediarios. A tu ritmo.\n\naprenderbitcoin.mx",
+    "platforms": {
+      "x": true
+    },
+    "scheduledFor": "2026-03-13T12:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-10T19:00:45.355820Z",
+    "account": "@arcadiabtc",
+    "contentType": "education_platform"
+  },
+  {
+    "id": "post_1773169245355_purge_r5",
+    "content": "Préstamo B2X: liquidez sin vender tu Bitcoin. 💰\n\n• Mantén tu posición BTC\n• Obtén pesos cuando los necesites\n• Solo en ArcadiaB — única ASOFOM certificada en Bitcoin en México\n\narcadiab.com/b2x",
+    "platforms": {
+      "x": true
+    },
+    "scheduledFor": "2026-03-13T15:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-10T19:00:45.355834Z",
+    "account": "@arcadiabtc",
+    "contentType": "b2x_product"
+  },
+  {
+    "id": "post_re_001",
+    "content": "¿Tienes propiedad comercial pero necesitas liquidez?\n\nEl problema: los bienes raíces son el activo más ilíquido después del private equity.\n\nValioso en papel. Inutilizable sin vender.\n\nArcadiaB está cambiando eso. 🏢₿\n\narcadiab.com",
+    "platforms": {
+      "x": true
+    },
+    "scheduledFor": "2026-03-13T17:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-10T19:02:25.770418+00:00",
+    "account": "@arcadiabtc",
+    "contentType": "real_estate_teaser"
+  },
+  {
+    "id": "post_re_002",
+    "content": "¿Bitcoin o bienes raíces?\n\nLa respuesta correcta: ambos — y sin capital adicional.\n\nNuestro reporte analiza los modelos híbridos emergentes que combinan ambos activos para maximizar el perfil riesgo-rendimiento.\n\nLeer: capitalduro.mx/reporte-bitcoin-vs-real-estate.html",
+    "platforms": {
+      "x": true
+    },
+    "scheduledFor": "2026-03-13T20:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-10T19:02:25.770457+00:00",
+    "account": "@arcadiabtc",
+    "contentType": "real_estate_report"
+  },
+  {
+    "id": "post_re_003",
+    "content": "Dato del análisis Capital Duro:\n\nFamily offices con 60% bienes raíces + 40% Bitcoin lograron 15% mejor Sharpe ratio que las que apostaron 100% a cualquiera de los dos activos (2020-2026).\n\nNo son sustitutos. Son complementos.\n\ncapitalduro.mx",
+    "platforms": {
+      "x": true
+    },
+    "scheduledFor": "2026-03-14T09:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-10T19:02:25.770464+00:00",
+    "account": "@arcadiabtc",
+    "contentType": "real_estate_data"
+  },
+  {
+    "id": "post_re_004",
+    "content": "¿Y si pudieras convertir tu propiedad comercial en Bitcoin sin venderla?\n\nNo teoría. Modelo financiero real, regulado, disponible en México.\n\nArcadiaB: la única ASOFOM certificada en Bitcoin del país.\n\nPronto. 👀\n\narcadiab.com",
+    "platforms": {
+      "x": true
+    },
+    "scheduledFor": "2026-03-14T12:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-10T19:02:25.770468+00:00",
+    "account": "@arcadiabtc",
+    "contentType": "real_estate_teaser"
+  },
+  {
+    "id": "post_re_005",
+    "content": "La trampa de los bienes raíces:\n\n• Activo valioso ✅\n• Protección contra inflación ✅\n• Genera ingresos ✅\n• Liquidez inmediata ❌\n• Acceso sin vender ❌\n\nBitcoin resuelve la mitad del problema.\nArcadiaB resuelve el otro.\n\narcadiab.com",
+    "platforms": {
+      "x": true
+    },
+    "scheduledFor": "2026-03-14T17:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-10T19:02:25.770472+00:00",
+    "account": "@arcadiabtc",
+    "contentType": "real_estate_education"
+  },
+  {
+    "id": "post_re_006",
+    "content": "Escenario real:\n\nDepartamento en Polanco. $5M MXN libre de hipoteca.\nDueño quiere Bitcoin pero no quiere vender.\n\nResultado con modelo híbrido ArcadiaB:\n→ Sigue dueño de la propiedad\n→ Adquiere Bitcoin con préstamo respaldado por inmueble\n→ Si BTC llega a $120k: exposición a ambos activos\n\nAsí se hace en 2026.\n\narcadiab.com",
+    "platforms": {
+      "x": true
+    },
+    "scheduledFor": "2026-03-14T20:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-10T19:02:25.770475+00:00",
+    "account": "@arcadiabtc",
+    "contentType": "real_estate_case_study"
+  },
+  {
+    "id": "post_re_007",
+    "content": "La convergencia de bienes raíces y Bitcoin ya está ocurriendo en México.\n\nAnálisis completo: cómo los modelos híbridos están transformando la gestión patrimonial para family offices y altos patrimonios.\n\nLeer en Capital Duro 👇\ncapitalduro.mx/perspectivas/bienes-raices-bitcoin-convergencia.html",
+    "platforms": {
+      "x": true
+    },
+    "scheduledFor": "2026-03-15T09:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-10T19:02:25.770480+00:00",
+    "account": "@arcadiabtc",
+    "contentType": "real_estate_report"
+  },
+  {
+    "id": "post_re_008",
+    "content": "Para hacer esto legalmente en México necesitas:\n\n✅ Estructura ASOFOM\n✅ Fideicomiso fiduciario\n✅ Marco regulatorio para activos digitales\n\nArcadiaB es la única empresa en México que tiene todo esto.\n\nEl diferencial no es el producto. Es la estructura regulatoria.\n\narcadiab.com",
+    "platforms": {
+      "x": true
+    },
+    "scheduledFor": "2026-03-15T12:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-10T19:02:25.770484+00:00",
+    "account": "@arcadiabtc",
+    "contentType": "real_estate_regulatory"
+  },
+  {
+    "id": "at_insight_1773237486136_0",
+    "content": "📡 @AgenticTerminal data — 2026-03-10\n\n↑ ERC-8004 Agents: 68.2K (+178.4% WoW)\n\nFull dashboard → agenticterminal.ai",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false
+    },
+    "scheduledFor": "2026-03-11T13:58:06.136Z",
+    "requiresApproval": false,
+    "status": "pending",
+    "createdAt": "2026-03-11T13:58:06.136Z",
+    "account": "maxibtc2009",
+    "contentType": "at_data_insight",
+    "angle": "spike",
+    "sourceDate": "2026-03-11"
+  },
+  {
+    "id": "at_insight_1773237486136_1",
+    "content": "⚡ vs 🌊 Agent payment rails — 2026-03-10\n\nL402 (Bitcoin Lightning): 255 stars →\nx402 (Stablecoin): 5.6K stars ↑\n\n22x more interest in x402 right now. But Lightning settles in milliseconds.\n\nThe settlement wars are live → agenticterminal.ai #AgentPayments",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false
+    },
+    "scheduledFor": "2026-03-11T15:58:06.136Z",
+    "requiresApproval": false,
+    "status": "pending",
+    "createdAt": "2026-03-11T13:58:06.136Z",
+    "account": "maxibtc2009",
+    "contentType": "at_data_insight",
+    "angle": "l402_vs_x402",
+    "sourceDate": "2026-03-11"
+  },
+  {
+    "id": "at_insight_1773237486136_2",
+    "content": "🤖 AI agent economy — 2026-03-10\n\n68.2K agents registered on-chain (ERC-8004) ↑ +178.4% WoW\n8.5K x402 transactions/day\n\nAgents need money that works without permission.\n\nTrack the buildout → agenticterminal.ai #AgenticTerminal",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false
+    },
+    "scheduledFor": "2026-03-11T17:58:06.136Z",
+    "requiresApproval": false,
+    "status": "pending",
+    "createdAt": "2026-03-11T13:58:06.136Z",
+    "account": "maxibtc2009",
+    "contentType": "at_data_insight",
+    "angle": "agent_economy",
+    "sourceDate": "2026-03-11"
+  },
+  {
+    "id": "at_insight_1773237524084_0",
+    "content": "📡 @AgenticTerminal data — 2026-03-10\n\n↑ ERC-8004 Agents: 68.2K (+178.4% WoW)\n\nFull dashboard → agenticterminal.ai",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false
+    },
+    "scheduledFor": "2026-03-11T13:58:44.084Z",
+    "requiresApproval": false,
+    "status": "pending",
+    "createdAt": "2026-03-11T13:58:44.084Z",
+    "account": "maxibtc2009",
+    "contentType": "at_data_insight",
+    "angle": "spike",
+    "sourceDate": "2026-03-11"
+  },
+  {
+    "id": "at_insight_1773237524084_1",
+    "content": "⚡ vs 🌊 Agent payment rails — 2026-03-10\n\nL402 (Bitcoin Lightning): 255 stars →\nx402 (Stablecoin): 5.6K stars ↑\n\n22x more interest in x402 right now. But Lightning settles in milliseconds.\n\nThe settlement wars are live → agenticterminal.ai #AgentPayments",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false
+    },
+    "scheduledFor": "2026-03-11T15:58:44.084Z",
+    "requiresApproval": false,
+    "status": "pending",
+    "createdAt": "2026-03-11T13:58:44.084Z",
+    "account": "maxibtc2009",
+    "contentType": "at_data_insight",
+    "angle": "l402_vs_x402",
+    "sourceDate": "2026-03-11"
+  },
+  {
+    "id": "at_insight_1773237524084_2",
+    "content": "🤖 AI agent economy — 2026-03-10\n\n68.2K agents registered on-chain (ERC-8004) ↑ +178.4% WoW\n8.5K x402 transactions/day\n\nAgents need money that works without permission.\n\nTrack the buildout → agenticterminal.ai #AgenticTerminal",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false
+    },
+    "scheduledFor": "2026-03-11T17:58:44.084Z",
+    "requiresApproval": false,
+    "status": "pending",
+    "createdAt": "2026-03-11T13:58:44.084Z",
+    "account": "maxibtc2009",
+    "contentType": "at_data_insight",
+    "angle": "agent_economy",
+    "sourceDate": "2026-03-11"
   }
 ]

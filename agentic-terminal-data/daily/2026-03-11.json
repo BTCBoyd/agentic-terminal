@@ -1,0 +1,121 @@
+{
+  "date": "2026-03-11",
+  "timestamp": "2026-03-11T13:30:00Z",
+  "lightning_network": {
+    "source": "1ML.com",
+    "nodes": {
+      "total": 5575,
+      "change_vs_baseline": 14,
+      "change_vs_baseline_pct": 0.25
+    },
+    "channels": {
+      "total": 16850,
+      "change_vs_baseline": 62,
+      "change_vs_baseline_pct": 0.37
+    },
+    "capacity": {
+      "btc": 2640.78,
+      "change_vs_baseline_btc": -3.72,
+      "change_vs_baseline_pct": -0.14
+    }
+  },
+  "github_metrics": {
+    "l402_aperture": {
+      "repo": "lightninglabs/aperture",
+      "stars": 255,
+      "forks": 66,
+      "change_vs_baseline_stars": 0,
+      "change_vs_baseline_forks": 0,
+      "source": "github.com",
+      "last_pushed": "2026-03-05T21:57:49Z"
+    },
+    "x402": {
+      "repo": "coinbase/x402",
+      "stars": 5628,
+      "forks": 1253,
+      "change_vs_baseline_stars": 8,
+      "change_vs_baseline_forks": 6,
+      "source": "github.com",
+      "last_pushed": "2026-03-11T02:06:05Z"
+    },
+    "ark_protocol": {
+      "arkd": {
+        "repo": "arkade-os/arkd",
+        "stars": 157,
+        "forks": 56,
+        "change_vs_baseline_stars": 1,
+        "change_vs_baseline_forks": 0,
+        "source": "github.com",
+        "last_pushed": "2026-03-11T13:01:19Z"
+      },
+      "ts_sdk": {
+        "repo": "arkade-os/ts-sdk",
+        "stars": 42,
+        "forks": 18,
+        "change_vs_baseline_stars": 0,
+        "change_vs_baseline_forks": 0,
+        "source": "github.com",
+        "last_pushed": "2026-03-11T13:25:43Z"
+      },
+      "skill": {
+        "repo": "arkade-os/skill",
+        "stars": 4,
+        "forks": 3,
+        "change_vs_baseline_stars": 0,
+        "change_vs_baseline_forks": 0,
+        "source": "github.com",
+        "last_pushed": "2026-02-24T13:27:01Z"
+      }
+    }
+  },
+  "x402_transactions": {
+    "source": "dune_api",
+    "daily_transactions": 192139,
+    "daily_volume_usd": 28583,
+    "cumulative_transactions": 77612490,
+    "cumulative_volume_usd": 26807907.93,
+    "avg_transaction_size": 0.43,
+    "trend": "increasing",
+    "change_vs_baseline_tx": null,
+    "change_vs_baseline_vol": null,
+    "data_quality": "verified_onchain_dune",
+    "query_id": 6094619,
+    "last_updated": "2026-03-11T13:30:57Z"
+  },
+  "data_sources": "canonical_db_verified",
+  "baseline_file": "2026-03-10.json",
+  "flags": [],
+  "erc8004_multichain": {
+    "total_agents": 72049,
+    "total_indexed": 15000,
+    "supported_chains": 11,
+    "by_chain": {
+      "bnb_chain": { "agents": 3830, "status": "syncing" },
+      "sepolia": { "agents": 185, "status": "syncing" },
+      "ethereum": { "agents": 2923, "status": "syncing" },
+      "bsc_testnet": { "agents": 100, "status": "syncing" },
+      "base": { "agents": 5532, "status": "syncing" },
+      "arbitrum": { "agents": 160, "status": "syncing" },
+      "avalanche": { "agents": 108, "status": "syncing" },
+      "polygon": { "agents": 97, "status": "syncing" },
+      "monad": { "agents": 2011, "status": "syncing" },
+      "base_sepolia": { "agents": 53, "status": "syncing" },
+      "polygon_amoy": { "agents": 1, "status": "syncing" }
+    },
+    "mainnet_chains": {
+      "ethereum": 2923,
+      "base": 5532,
+      "bnb_chain": 3830,
+      "arbitrum": 160,
+      "avalanche": 108,
+      "polygon": 97,
+      "monad": 2011
+    },
+    "mainnet_total": 14661,
+    "source": "8004agents.ai",
+    "source_url": "https://8004agents.ai/",
+    "data_quality": "authoritative",
+    "contract": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+    "collected_at": "2026-03-11T13:44:37.059Z"
+  }
+}

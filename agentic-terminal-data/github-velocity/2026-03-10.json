@@ -1,0 +1,280 @@
+{
+  "timestamp": "2026-03-10T15:27:15.977Z",
+  "collection_period": "last_7_days",
+  "repos": [
+    {
+      "timestamp": "2026-03-10T15:27:20.382Z",
+      "owner": "coinbase",
+      "repo": "x402",
+      "category": "stablecoin",
+      "stars": 5621,
+      "forks": 1246,
+      "open_issues": 313,
+      "last_7_days": {
+        "commits": 33,
+        "pull_requests": 0,
+        "velocity_score": 33
+      },
+      "top_contributors": [
+        {
+          "login": "CarsonRoscoe",
+          "contributions": 144
+        },
+        {
+          "login": "erikreppel-cb",
+          "contributions": 45
+        },
+        {
+          "login": "apmcdermott",
+          "contributions": 34
+        },
+        {
+          "login": "phdargen",
+          "contributions": 33
+        },
+        {
+          "login": "apmcdermott-cb",
+          "contributions": 21
+        },
+        {
+          "login": "notorious-d-e-v",
+          "contributions": 19
+        },
+        {
+          "login": "mintlify[bot]",
+          "contributions": 13
+        },
+        {
+          "login": "manifoldfrs",
+          "contributions": 11
+        },
+        {
+          "login": "John-peterson-coinbase",
+          "contributions": 8
+        },
+        {
+          "login": "wnjoon",
+          "contributions": 7
+        }
+      ],
+      "created_at": "2025-02-21T01:17:52Z",
+      "updated_at": "2026-03-10T12:45:30Z",
+      "language": "TypeScript",
+      "data_quality": "api_sourced"
+    },
+    {
+      "timestamp": "2026-03-10T15:27:23.769Z",
+      "owner": "lightninglabs",
+      "repo": "aperture",
+      "category": "bitcoin",
+      "stars": 255,
+      "forks": 66,
+      "open_issues": 35,
+      "last_7_days": {
+        "commits": 1,
+        "pull_requests": 0,
+        "velocity_score": 1
+      },
+      "top_contributors": [
+        {
+          "login": "guggero",
+          "contributions": 192
+        },
+        {
+          "login": "Roasbeef",
+          "contributions": 60
+        },
+        {
+          "login": "ellemouton",
+          "contributions": 30
+        },
+        {
+          "login": "dependabot[bot]",
+          "contributions": 28
+        },
+        {
+          "login": "hieblmi",
+          "contributions": 24
+        },
+        {
+          "login": "positiveblue",
+          "contributions": 23
+        },
+        {
+          "login": "wpaulino",
+          "contributions": 18
+        },
+        {
+          "login": "starius",
+          "contributions": 16
+        },
+        {
+          "login": "ffranr",
+          "contributions": 15
+        },
+        {
+          "login": "bhandras",
+          "contributions": 10
+        }
+      ],
+      "created_at": "2019-01-30T22:56:13Z",
+      "updated_at": "2026-03-08T21:47:07Z",
+      "language": "Go",
+      "data_quality": "api_sourced"
+    },
+    {
+      "timestamp": "2026-03-10T15:27:26.617Z",
+      "owner": "arkade-os",
+      "repo": "arkd",
+      "category": "bitcoin",
+      "stars": 156,
+      "forks": 56,
+      "open_issues": 106,
+      "last_7_days": {
+        "commits": 1,
+        "pull_requests": 0,
+        "velocity_score": 1
+      },
+      "top_contributors": [
+        {
+          "login": "louisinger",
+          "contributions": 228
+        },
+        {
+          "login": "altafan",
+          "contributions": 190
+        },
+        {
+          "login": "tiero",
+          "contributions": 64
+        },
+        {
+          "login": "bordalix",
+          "contributions": 42
+        },
+        {
+          "login": "sekulicd",
+          "contributions": 35
+        },
+        {
+          "login": "Kukks",
+          "contributions": 9
+        },
+        {
+          "login": "bitcoin-coder-bob",
+          "contributions": 6
+        },
+        {
+          "login": "aruokhai",
+          "contributions": 5
+        },
+        {
+          "login": "qustavo",
+          "contributions": 2
+        },
+        {
+          "login": "black5box",
+          "contributions": 1
+        }
+      ],
+      "created_at": "2023-10-28T01:51:48Z",
+      "updated_at": "2026-03-05T13:01:35Z",
+      "language": "Go",
+      "data_quality": "api_sourced"
+    },
+    {
+      "timestamp": "2026-03-10T15:27:29.360Z",
+      "owner": "arkade-os",
+      "repo": "ts-sdk",
+      "category": "bitcoin",
+      "stars": 42,
+      "forks": 18,
+      "open_issues": 40,
+      "last_7_days": {
+        "commits": 3,
+        "pull_requests": 0,
+        "velocity_score": 3
+      },
+      "top_contributors": [
+        {
+          "login": "louisinger",
+          "contributions": 89
+        },
+        {
+          "login": "bordalix",
+          "contributions": 54
+        },
+        {
+          "login": "tiero",
+          "contributions": 41
+        },
+        {
+          "login": "pietro909",
+          "contributions": 33
+        },
+        {
+          "login": "Kukks",
+          "contributions": 11
+        },
+        {
+          "login": "Copilot",
+          "contributions": 6
+        },
+        {
+          "login": "altafan",
+          "contributions": 5
+        },
+        {
+          "login": "veronikakuett",
+          "contributions": 3
+        },
+        {
+          "login": "dependabot[bot]",
+          "contributions": 2
+        },
+        {
+          "login": "bonomat",
+          "contributions": 1
+        }
+      ],
+      "created_at": "2024-12-24T17:18:04Z",
+      "updated_at": "2026-03-09T16:41:09Z",
+      "language": "TypeScript",
+      "data_quality": "api_sourced"
+    },
+    {
+      "timestamp": "2026-03-10T15:27:31.090Z",
+      "owner": "arkade-os",
+      "repo": "skill",
+      "category": "bitcoin",
+      "stars": 4,
+      "forks": 3,
+      "open_issues": 0,
+      "last_7_days": {
+        "commits": 0,
+        "pull_requests": 0,
+        "velocity_score": 0
+      },
+      "top_contributors": [
+        {
+          "login": "tiero",
+          "contributions": 27
+        },
+        {
+          "login": "brg444",
+          "contributions": 1
+        }
+      ],
+      "created_at": "2026-01-31T23:15:17Z",
+      "updated_at": "2026-02-24T13:27:05Z",
+      "language": "TypeScript",
+      "data_quality": "api_sourced"
+    }
+  ],
+  "aggregate": {
+    "total_velocity_score": 38,
+    "total_commits_7d": 38,
+    "total_prs_7d": 0,
+    "avg_velocity_per_repo": 8
+  }
+}

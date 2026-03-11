@@ -1,0 +1,18 @@
+[
+  {
+    "timestamp": "2026-03-11T13:31:00.000Z",
+    "localTime": "2026-03-11T08:31:00-05:00",
+    "content": "Nostr isn't just social media—it's proof that open protocols beat walled gardens.\n\nNo algorithm. No shadow bans. Just speech, signed and distributed.\n\nThis is how the internet should have been built.",
+    "eventId": "00b6b89b3941ee557ae822b498882562f9fe230a2e9bf512dd982a6da1a6561c",
+    "theme": "Nostr ecosystem growth",
+    "relays": [
+      "wss://relay.damus.io",
+      "wss://nos.lol",
+      "wss://relay.primal.net",
+      "wss://relay.snort.social"
+    ],
+    "relaySuccess": 4,
+    "relayTotal": 4,
+    "promotional": false
+  }
+]

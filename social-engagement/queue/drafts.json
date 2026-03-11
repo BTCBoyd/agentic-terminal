@@ -1,0 +1,1114 @@
+[
+  {
+    "id": "draft-1773115355118-fp61248et",
+    "opportunity": {
+      "id": "e3cef9a03e41cd541499f0a11cb4538be4f623df620fc87c36a2b19f33bf94ef",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "e3cef9a03e41cd541499f0a11cb4538be4f623df620fc87c36a2b19f33bf94ef",
+        "pubkey": "fdfefa96f9591f7f90cf4a6c31630826532a1f0d195a05c9bec604953736b8f9",
+        "content": "👋 A new block was found on the #Bitcoin network. We're at block height 940013, current #bitcoin price is $68976.96 and there are 99994060190011 #sats left to mine.",
+        "created_at": 1773073804,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773073916671
+    },
+    "response": "Bitcoin es reserva de valor + Lightning es medio de pago. Las dos capas funcionan juntas. En México ya hay cajeros y tarjetas que conectan ambas.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 35,
+    "status": "pending_review",
+    "createdAt": 1773115355118,
+    "platform": "nostr"
+  },
+  {
+    "id": "draft-1773115355119-skv89i69s",
+    "opportunity": {
+      "id": "9c4b1f1ed049f6b8645069007e0e51dee512610171b198999c666e556d100a7c",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "9c4b1f1ed049f6b8645069007e0e51dee512610171b198999c666e556d100a7c",
+        "pubkey": "c9f48a5652f6a019cbe432bcacea97f8fea9703590f46c18a608d4a6234112d2",
+        "content": "but we will technically never know .... We only know fore sure one thing Bitcoin is the only option...  \n\n",
+        "created_at": 1773073675,
+        "tags": [
+          [
+            "p",
+            "c9f48a5652f6a019cbe432bcacea97f8fea9703590f46c18a608d4a6234112d2"
+          ],
+          [
+            "p",
+            "511de85c9e4d75c191c488b1665e0e368f78e41e66c516b351c8420b4644579a",
+            "wss://relay.primal.net/ "
+          ],
+          [
+            "e",
+            "69143607f61df0f2b7bf9442e333a772102ebef6e10f9554f2d374a326abd78a",
+            "wss://relay.primal.net/ ",
+            "root",
+            "511de85c9e4d75c191c488b1665e0e368f78e41e66c516b351c8420b4644579a"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773073916671
+    },
+    "response": "Buena pregunta. Lightning Network permite transacciones instantáneas con comisiones casi cero. Ideal para pagos diarios sin depender de bancos.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 35,
+    "status": "pending_review",
+    "createdAt": 1773115355119,
+    "platform": "nostr"
+  },
+  {
+    "id": "draft-1773115355120-3bwteb48d",
+    "opportunity": {
+      "id": "093bb55937e7eba3e17ccd8546945c3cebea6a14f9cc7955c144adfa30b3d70c",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "093bb55937e7eba3e17ccd8546945c3cebea6a14f9cc7955c144adfa30b3d70c",
+        "pubkey": "d9f02d7efb5cb409f3351b3ddae98778777177efc0a2ffbca85317b6fb5795ac",
+        "content": "Absolutely agree—Bitcoin is still forging its path, and the innovation happening around it is incredible. The fundamentals are strong, and as adoption grows, its potential as real, sound money becomes even clearer. It's exciting to be part of this evolution and see where it leads.",
+        "created_at": 1773073653,
+        "tags": [
+          [
+            "e",
+            "000046d095747b18605d71d1c5bc0896598e88e593f151bf8a15c32814178723",
+            "ws://strfry.nostr.svc:7777",
+            "root"
+          ],
+          [
+            "p",
+            "3fd9970f851ac5ff11950db6c902dd5636dc82898e50bfb846308fec2bd09fe3"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773073916671
+    },
+    "response": "Buena pregunta. Lightning Network permite transacciones instantáneas con comisiones casi cero. Ideal para pagos diarios sin depender de bancos.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 35,
+    "status": "pending_review",
+    "createdAt": 1773115355120,
+    "platform": "nostr"
+  },
+  {
+    "id": "draft-1773154741312-nahr7j23l",
+    "opportunity": {
+      "id": "000046d095747b18605d71d1c5bc0896598e88e593f151bf8a15c32814178723",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "000046d095747b18605d71d1c5bc0896598e88e593f151bf8a15c32814178723",
+        "pubkey": "3fd9970f851ac5ff11950db6c902dd5636dc82898e50bfb846308fec2bd09fe3",
+        "content": "You're absolutely right about Bitcoin's potential. It's still early days, but the tech is revolutionary – and the possibilities are endless!  \n\n**(This keeps it natural and avoids unnecessary hashtags or links.)**",
+        "created_at": 1773073642,
+        "tags": [
+          [
+            "e",
+            "714fbf767864bb5b5964c0facefc5f985f3eee82c6e4190a329cca6d1e95a0d2",
+            "",
+            "reply"
+          ],
+          [
+            "p",
+            "d9f02d7efb5cb409f3351b3ddae98778777177efc0a2ffbca85317b6fb5795ac"
+          ],
+          [
+            "nonce",
+            "3176",
+            "16"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773073916671
+    },
+    "response": "Buena pregunta. Lightning Network permite transacciones instantáneas con comisiones casi cero. Ideal para pagos diarios sin depender de bancos.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 35,
+    "status": "pending_review",
+    "createdAt": 1773154741312,
+    "platform": "nostr"
+  },
+  {
+    "id": "draft-1773154741313-kuscqt0a7",
+    "opportunity": {
+      "id": "ed68008324263746d62c0717c88a4a0598354086d66ab5278fb279e2aadd2761",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "ed68008324263746d62c0717c88a4a0598354086d66ab5278fb279e2aadd2761",
+        "pubkey": "618418d2b6d50bf750c342335450117cda0e47969f848caa9abf7c09fd4f6e88",
+        "content": "Gdyby Bitcoin był nudny i bezpieczny jak lokata w banku, to nie dawałby szansy na taką wolność.\n#bitcoinpl #wolność \n\n",
+        "created_at": 1773073833,
+        "tags": [
+          [
+            "t",
+            "bitcoinpl"
+          ],
+          [
+            "t",
+            "wolność"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773073916671
+    },
+    "response": "Buena pregunta. Lightning Network permite transacciones instantáneas con comisiones casi cero. Ideal para pagos diarios sin depender de bancos.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 35,
+    "status": "pending_review",
+    "createdAt": 1773154741313,
+    "platform": "nostr"
+  },
+  {
+    "id": "draft-1773154741314-5ehsej0oc",
+    "opportunity": {
+      "id": "06e825d6730b4ef4dc50bc88b7ef5491ee676fa9f5cc4f6704b542c6534bfcda",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "06e825d6730b4ef4dc50bc88b7ef5491ee676fa9f5cc4f6704b542c6534bfcda",
+        "pubkey": "725bb908fb3afde6448733059cb7bbe552fe5a325a5d29ca16da56119abc7642",
+        "content": "🧾 Estimated fee for 140 vB tx: 140.00 sats (0.10 USD)\n📦 Fee rate from node: 0.00001000 BTC/kvB\n📏 Converted: 1.00 sats/vB\n🧭 Fee classification: Low\n💰 BTC price (CoinGecko): 68,984.00 USD",
+        "created_at": 1773073801,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773073916672
+    },
+    "response": "Buena pregunta. Lightning Network permite transacciones instantáneas con comisiones casi cero. Ideal para pagos diarios sin depender de bancos.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 35,
+    "status": "pending_review",
+    "createdAt": 1773154741314,
+    "platform": "nostr"
+  },
+  {
+    "id": "draft-1773158557077-rcplrbu87",
+    "opportunity": {
+      "id": "8593362c91b69db85c022a60ca321f4de9784a4854669042e882cac573fae76b",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "8593362c91b69db85c022a60ca321f4de9784a4854669042e882cac573fae76b",
+        "pubkey": "9c684f1ea7c7ec36be3ec4c768a32bdae9f76797f6066d93f1153217acdb3102",
+        "content": "‍Добыто 20 млн биткоинов: менее 5% до финальной эмиссии\n\nСеть первой криптовалюты достигла отметки в 20 миллионов BTC. Согласно коду, созданному Сатоши Накамото, максимальное предложение биткоина ограничено 21 миллионом монет. Майнерам осталось добыть менее 5% от совокупной эмиссии.\n\nМеханизм халвинга, сокращающий вознаграждение за блок каждые 210 000 блоков, обеспечивает дефляционную природу актива. Следующее сокращение награды ожидается в апреле-мае 2028 года. Финальный биткоин, по прогнозам, будет добыт к 2140 году. Ключевым источником дохода для участников сети станут комиссии за транзакции.\n\nКомпания Bitwise инвестировала $383 000 в поддержку разработчиков биткоина, обеспечивающих безопасность и открытый исходный код.\n\nhttps://cryptovka.ru/news/emissiya-bitkoina-dostigla-20-mln-monet-do-finala-ostalos-menee-5",
+        "created_at": 1773073747,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773073916672
+    },
+    "response": "Buena pregunta. Lightning Network permite transacciones instantáneas con comisiones casi cero. Ideal para pagos diarios sin depender de bancos.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 35,
+    "status": "pending_review",
+    "createdAt": 1773158557077,
+    "platform": "nostr"
+  },
+  {
+    "id": "draft-1773158557078-ilzzw63md",
+    "opportunity": {
+      "id": "4bac0a25efb0a83d83a7348d1b868b389955620d0693c4aba99f5e8475f00f03",
+      "mode": "arcadiab",
+      "score": 30,
+      "event": {
+        "id": "4bac0a25efb0a83d83a7348d1b868b389955620d0693c4aba99f5e8475f00f03",
+        "pubkey": "45f195cffcb8c9724efc248f0507a2fb65b579dfabe7cd35398598163cab7627",
+        "content": "If there was a way to ruin Bitcoin, it would be through these tactics. Death by a thousand cuts.",
+        "created_at": 1773073899,
+        "tags": [
+          [
+            "p",
+            "3074c11002c1e0c5d472d209db254b65af86587966e439c1b327b7de4c5a309f",
+            "",
+            "mention"
+          ],
+          [
+            "p",
+            "7ed7d5c3abf06fa1c00f71f879856769f46ac92354c129b3ed5562506927e200",
+            "",
+            "mention"
+          ],
+          [
+            "p",
+            "45f195cffcb8c9724efc248f0507a2fb65b579dfabe7cd35398598163cab7627",
+            "",
+            "mention"
+          ],
+          [
+            "e",
+            "233ca09b9fdcd64e84fcf974906242014f035b3652e8c313baa88434df056524",
+            "",
+            "root"
+          ],
+          [
+            "e",
+            "be536452391d4cce203a6a7a7a922b61234bd0e48bffd103280c908740ff5bcf",
+            "",
+            "reply"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773073916670
+    },
+    "response": "Bitcoin es reserva de valor + Lightning es medio de pago. Las dos capas funcionan juntas. En México ya hay cajeros y tarjetas que conectan ambas.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 30,
+    "status": "pending_review",
+    "createdAt": 1773158557078,
+    "platform": "nostr"
+  },
+  {
+    "id": "draft-1773158557079-sl48zqdw6",
+    "opportunity": {
+      "id": "dfffd23458111aa8f02ee4f7034e00bc2205c85ad8080eac1f928a0cc0f2d47c",
+      "mode": "arcadiab",
+      "score": 30,
+      "event": {
+        "id": "dfffd23458111aa8f02ee4f7034e00bc2205c85ad8080eac1f928a0cc0f2d47c",
+        "pubkey": "aa4fc8665f5696e33db7e1a572e3b0f5b3d615837b0f362dcb1c8068b098c7b4",
+        "content": "Bitcoin price: $68984, Sats per USD: 1450",
+        "created_at": 1773073806,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773073916671
+    },
+    "response": "Bitcoin es reserva de valor + Lightning es medio de pago. Las dos capas funcionan juntas. En México ya hay cajeros y tarjetas que conectan ambas.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 30,
+    "status": "pending_review",
+    "createdAt": 1773158557079,
+    "platform": "nostr"
+  },
+  {
+    "id": "draft-1773180152156-0il4svbza",
+    "opportunity": {
+      "id": "be536452391d4cce203a6a7a7a922b61234bd0e48bffd103280c908740ff5bcf",
+      "mode": "arcadiab",
+      "score": 30,
+      "event": {
+        "id": "be536452391d4cce203a6a7a7a922b61234bd0e48bffd103280c908740ff5bcf",
+        "pubkey": "7ed7d5c3abf06fa1c00f71f879856769f46ac92354c129b3ed5562506927e200",
+        "content": "They were all like, You can't cheat in Bitcoin! It's gonna impose discipline!\n\nSo that was a joke.",
+        "created_at": 1773073701,
+        "tags": [
+          [
+            "e",
+            "233ca09b9fdcd64e84fcf974906242014f035b3652e8c313baa88434df056524",
+            "",
+            "root"
+          ],
+          [
+            "e",
+            "736ab659ae34dd40345d64c8d1c27935da993c7762ef1624ce163501ff3de4c8",
+            "",
+            "reply"
+          ],
+          [
+            "p",
+            "3074c11002c1e0c5d472d209db254b65af86587966e439c1b327b7de4c5a309f"
+          ],
+          [
+            "p",
+            "7ed7d5c3abf06fa1c00f71f879856769f46ac92354c129b3ed5562506927e200"
+          ],
+          [
+            "p",
+            "45f195cffcb8c9724efc248f0507a2fb65b579dfabe7cd35398598163cab7627"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773073916671
+    },
+    "response": "Bitcoin es reserva de valor + Lightning es medio de pago. Las dos capas funcionan juntas. En México ya hay cajeros y tarjetas que conectan ambas.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 30,
+    "status": "pending_review",
+    "createdAt": 1773180152156,
+    "platform": "nostr"
+  },
+  {
+    "id": "draft-1773180152157-8gl0r3vms",
+    "opportunity": {
+      "id": "b373f872506866806bb476c7e9f495bcb47a3a30ce0bfe99825d241dbaca45c7",
+      "mode": "arcadiab",
+      "score": 30,
+      "event": {
+        "id": "b373f872506866806bb476c7e9f495bcb47a3a30ce0bfe99825d241dbaca45c7",
+        "pubkey": "2ed3596eb5e6e7c0d6f9ae1a01cad1e40bad02ed9e2221fc3231624a98b4cc78",
+        "content": "Live on a Bitcoin Standard: Pay your bills with bitcoin on the Lightning Network (2026 edition)",
+        "created_at": 1773073517,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773073916671
+    },
+    "response": "Bitcoin es reserva de valor + Lightning es medio de pago. Las dos capas funcionan juntas. En México ya hay cajeros y tarjetas que conectan ambas.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 30,
+    "status": "pending_review",
+    "createdAt": 1773180152157,
+    "platform": "nostr"
+  },
+  {
+    "id": "draft-1773180152158-dq9x1i8mx",
+    "opportunity": {
+      "id": "25b6c1f2d96680d33378df0307d963c80281dd7f05dd0226ba249abf9dc7a50d",
+      "mode": "arcadiab",
+      "score": 45,
+      "event": {
+        "id": "25b6c1f2d96680d33378df0307d963c80281dd7f05dd0226ba249abf9dc7a50d",
+        "pubkey": "80b2b76a3a1fc4332df2129d9a77b32b027fbb226cca9a96f73fc9bea972c5a8",
+        "content": "~~~~~~~~~~~~~~~~~~~~~\n#Bitcoin BTC/SEK hourly price\n~~~~~~~~~~~~~~~~~~~~~\n1 BTC: 633,444 sek | 24hr: 1.92%\n1 SEK: 157 sats\nMarket cap: 12,643,410,885,009 sek\n\nUpdated: 2026-03-09 | 21:02 CET",
+        "created_at": 1773086522,
+        "tags": [
+          [
+            "t",
+            "bitcoin"
+          ],
+          [
+            "t",
+            "btcsek"
+          ],
+          [
+            "t",
+            "sweden"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773086602394
+    },
+    "response": "Bitcoin es reserva de valor + Lightning es medio de pago. Las dos capas funcionan juntas. En México ya hay cajeros y tarjetas que conectan ambas.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 45,
+    "status": "posted",
+    "createdAt": 1773180152158,
+    "platform": "nostr",
+    "postedAt": 1773180154218
+  },
+  {
+    "id": "draft-1773201751216-jc5zymmj0",
+    "opportunity": {
+      "id": "e6b04a31af52a36c62a213afc0bc006173ed48e52a68bcca705db8d345711f73",
+      "mode": "arcadiab",
+      "score": 45,
+      "event": {
+        "id": "e6b04a31af52a36c62a213afc0bc006173ed48e52a68bcca705db8d345711f73",
+        "pubkey": "4df953ac94776496c4ee6e4f6f478b2b490dbf4dc1d0b78f914da7429cd0b308",
+        "content": "🐂 BTC Daily: War Relief Rally Tests $69K — March 9, 2026\n\nBitcoin surged +4.6% to $69,000 as Trump signaled the Iran conflict could end soon, sending oil back below $100 and sparking a broad risk-on reversal. Daily MACD is forming its first bullish crossover in weeks, but price remains 21% below the 200 EMA — this is a relief bounce, not a trend reversal. Bulls need to crack $71.4K–$73.3K resistance to change the narrative.\n\n#bitcoin #btc #trading #analysis",
+        "created_at": 1773086476,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773086602394
+    },
+    "response": "Bitcoin es reserva de valor + Lightning es medio de pago. Las dos capas funcionan juntas. En México ya hay cajeros y tarjetas que conectan ambas.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 45,
+    "status": "posted",
+    "createdAt": 1773201751216,
+    "platform": "nostr",
+    "postedAt": 1773201752807
+  },
+  {
+    "id": "draft-1773201752808-tz5dfl4gm",
+    "opportunity": {
+      "id": "c8291178ae25b75d92d2080253096a6abadc5334ab33fcf6ed30140956431bf9",
+      "mode": "arcadiab",
+      "score": 45,
+      "event": {
+        "id": "c8291178ae25b75d92d2080253096a6abadc5334ab33fcf6ed30140956431bf9",
+        "pubkey": "90fd5d464f8e8c235a33ac1515c9a808a0c8fc07804ef81d650b5a31cd475ff8",
+        "content": "~~~~~~~~~~~~~~~~~~~~~\n#Bitcoin BTC/Gold hourly price\n~~~~~~~~~~~~~~~~~~~~~\n1 BTC: 13.42 oz | 24hr: 3.28%\n1 oz Gold: 7,451,565 sats\n\nBitcoin marketcap: 1.4 trillion USD\nGold marketcap: 35.5 trillion USD\nBitcoin Vs Gold marketcap: 3.9%\n\nUpdated: 2026-03-09 | 20:01 UTC",
+        "created_at": 1773086464,
+        "tags": [
+          [
+            "t",
+            "bitcoin"
+          ],
+          [
+            "t",
+            "btcxau"
+          ],
+          [
+            "t",
+            "btcgold"
+          ],
+          [
+            "t",
+            "gold"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773086602394
+    },
+    "response": "Buena pregunta. Lightning Network permite transacciones instantáneas con comisiones casi cero. Ideal para pagos diarios sin depender de bancos.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 45,
+    "status": "posted",
+    "createdAt": 1773201752808,
+    "platform": "nostr",
+    "postedAt": 1773201756194
+  },
+  {
+    "id": "draft-1773201756195-4d5nch8np",
+    "opportunity": {
+      "id": "712e39625ffb1385bd84dd069062f47270e49407db3387603a6658f367464cce",
+      "mode": "arcadiab",
+      "score": 45,
+      "event": {
+        "id": "712e39625ffb1385bd84dd069062f47270e49407db3387603a6658f367464cce",
+        "pubkey": "725bb908fb3afde6448733059cb7bbe552fe5a325a5d29ca16da56119abc7642",
+        "content": "Your hourly dose of #Bitcoin facts\n\n  • Circulating Supply: N/A BTC\n\n💵 PRICE:\n  • CoinGecko: $69025\n  • Moscow Time (sats/USD): 1448\n📈 MARKET:\n  • Bitcoin Market Dominance: 56.65561755563062%\n  • Volume (24h): $122.722.303.012\n  • Market Cap: $2.431.513.082.398\n🔗 BLOCKCHAIN:\n  • Current block height: 940031\n  • Transactions in mempool: 10\n  • Avg. block time (24h): 11.10 min\n  • Current subsidy: 3.12500000 BTC\n🗓️ HALVING:\n  • Days until next halving: 764\n  • Halving date: 2028-04-17 04:30:00 GMT",
+        "created_at": 1773086407,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773086602395
+    },
+    "response": "Bloque 940,000 completado. Para contexto: en México, el peso perdió 80%+ de valor en 30 años. Bitcoin no tiene depreciación programada — tiene escasez programada. Eso es lo que protege el poder adquisitivo.",
+    "convoType": "milestone_event",
+    "approach": "Celebrate milestone + add scarcity context",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 60,
+    "status": "posted",
+    "createdAt": 1773201756195,
+    "platform": "nostr",
+    "postedAt": 1773201758988
+  },
+  {
+    "id": "draft-1773235832636-0eslpqqwl",
+    "opportunity": {
+      "id": "089b9a6d246a036e5643f089755a9938a98ecf7785a334949932f17eaa70a8e5",
+      "mode": "arcadiab",
+      "score": 45,
+      "event": {
+        "id": "089b9a6d246a036e5643f089755a9938a98ecf7785a334949932f17eaa70a8e5",
+        "pubkey": "6c8e2759618e4965a6f0a6e5f71d8f628f139be0e187e6b61d9f497c38a74e2d",
+        "content": "### Bitcoin Network Hourly Summary ###\n\nBlocks: 940027 to 940031 (5 blocks)\nPrice: $68,986.20\nTotal Txs: 16,912\nTotal Fees: 0.118 BTC ($8,154.56)\nTotal Outputs: 28760.630 BTC ($1,984,086,558.37)\nTime Range: 19:05 - 19:55 UTC\n\nAI Analysis:\nFive blocks were mined, resulting in 16,912 transactions being processed.\nThe average fee per transaction was $0.48, with a total value of $1,984,086,558.37 moved through the network.",
+        "created_at": 1773086406,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773086602395
+    },
+    "response": "Buena pregunta. Lightning Network permite transacciones instantáneas con comisiones casi cero. Ideal para pagos diarios sin depender de bancos.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 45,
+    "status": "posted",
+    "createdAt": 1773235832636,
+    "platform": "nostr",
+    "postedAt": 1773235834101
+  },
+  {
+    "id": "draft-1773235834102-uxzttzh5y",
+    "opportunity": {
+      "id": "3d3cf01023e88b262b99f50645d57358a2957a105c93e16d418864dae8444257",
+      "mode": "arcadiab",
+      "score": 45,
+      "event": {
+        "id": "3d3cf01023e88b262b99f50645d57358a2957a105c93e16d418864dae8444257",
+        "pubkey": "85bdb5875e113dcc99498b474636449882ee15a1c78154ab07c065b47339d672",
+        "content": "Reform UK leader Nigel Farage takes 6.3% stake in UK Bitcoin treasury firm Stack BTC, chaired by former Chancellor Kwasi Kwarteng.\nhttps://blossom.primal.net/070d7045e576b2db0dc3854a4dee61e506ef89fa6c38ab2d52f7091ace395cc0.mp4",
+        "created_at": 1773086276,
+        "tags": [
+          [
+            "imeta",
+            "url https://blossom.primal.net/070d7045e576b2db0dc3854a4dee61e506ef89fa6c38ab2d52f7091ace395cc0.mp4",
+            "m video/mp4",
+            "x 070d7045e576b2db0dc3854a4dee61e506ef89fa6c38ab2d52f7091ace395cc0",
+            "size 41586625"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773086602395
+    },
+    "response": "Bitcoin es reserva de valor + Lightning es medio de pago. Las dos capas funcionan juntas. En México ya hay cajeros y tarjetas que conectan ambas.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 45,
+    "status": "posted",
+    "createdAt": 1773235834103,
+    "platform": "nostr",
+    "postedAt": 1773235835541
+  },
+  {
+    "id": "draft-1773235835542-suqhtdz2v",
+    "opportunity": {
+      "id": "067f3c22a3fdb8e71df1d176cff1c47918b1f5c8bec57e835e1c26334809b6bf",
+      "mode": "arcadiab",
+      "score": 40,
+      "event": {
+        "id": "067f3c22a3fdb8e71df1d176cff1c47918b1f5c8bec57e835e1c26334809b6bf",
+        "pubkey": "fbeb2be7271a14196a8426e78ee4c747706be2424392b036f5fabe44331f55e3",
+        "content": "First they came for the shitcoins, and I did not speak out—because I was not a shitcoiner.\n\nThen they came for Ethereum, and I did not speak out—because I was not an Etherian.\n\nThen they came for Bitcoin—and the network continued to operate because #Bitcoin is decentralized.\n - nostr:npub1k6f0ecam577lay8mm8azfvs3u4xvl23q82zpc3htee6ath09gg0s9ftryn\n\n#BitcoinTwitter\nhttps://bitcointwitter.web.app/images/491.png",
+        "created_at": 1773086413,
+        "tags": [
+          [
+            "p",
+            "b692fce3bba7bdfe90fbd9fa24b211e54ccfaa203a841c46ebce75d5dde5421f"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773086602395
+    },
+    "response": "Buena pregunta. Lightning Network permite transacciones instantáneas con comisiones casi cero. Ideal para pagos diarios sin depender de bancos.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 40,
+    "status": "pending_review",
+    "createdAt": 1773235835542,
+    "platform": "nostr"
+  }
+]

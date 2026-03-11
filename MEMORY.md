@@ -32,6 +32,12 @@ Products: Bitcoin-backed loans (B2X), real estate + Bitcoin leverage, treasury c
 Currently defaulting to Kimi as primary model.
 Transparency rule: responses using Kimi must end with *via Kimi*
 
+**MANDATORY SUBAGENT MODEL RULE:**
+- Spanish content subagents → ALWAYS spawn with model="qwen"
+- Deep analysis subagents → model="kimi"
+- Browser/scheduling subagents → default model OK (Claude)
+- NEVER spawn Spanish content subagents without explicit model="qwen"
+
 ## Response Length Guidelines
 - Chat: 2-4 short paragraphs MAX. No headers. Summary first, detail if asked.
 - Content creation: Full length appropriate to format.
@@ -59,6 +65,14 @@ Transparency rule: responses using Kimi must end with *via Kimi*
 4. ✅ Always default to: "Adding to MaxiSuite queue"
 
 **This has been violated 5+ times on 2026-03-05. It ends now.**
+
+## ✅ CONFIRMED INFRASTRUCTURE (as of 2026-03-10)
+- **X (@arcadiabtc):** Posting actively via MaxiSuite throughout the day — queue updated regularly
+- **Agentic Terminal newsletter:** Updated regularly — last issue released 2026-03-09
+- **L402 / LND / Aperture:** Fully operational on mainnet — complete stack live
+- **X API upgrade:** No plans to upgrade beyond current tier
+- **LinkedIn + Facebook:** Applied for API access; onboarded to Hootsuite 2026-03-10 for scheduling
+- **Hootsuite:** Live as of 2026-03-10 — LinkedIn (Arcadia₿) + Facebook (ArcadiaB) + X + Instagram + YouTube connected
 
 ---
 

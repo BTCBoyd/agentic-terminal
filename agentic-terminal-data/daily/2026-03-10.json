@@ -1,0 +1,119 @@
+{
+  "date": "2026-03-10",
+  "timestamp": "2026-03-10T15:23:00Z",
+  "erc8004_multichain": {
+    "total_agents": 68208,
+    "by_chain": {
+      "ethereum": 16848,
+      "base": 32537,
+      "bnb": 8765,
+      "avalanche": 4234,
+      "polygon": 5824
+    },
+    "source": "8004agents.ai",
+    "data_quality": "authoritative_cached",
+    "contract": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+    "note": "API returned empty response (Cloudflare protection or maintenance). Using last verified data from 2026-03-09 18:00 UTC.",
+    "collected_at": "2026-03-10T15:23:00.000Z",
+    "last_verified": "2026-03-09T18:00:00.000Z"
+  },
+  "github_velocity": {
+    "aggregate": {
+      "total_velocity_score": 38,
+      "total_commits_7d": 38,
+      "total_prs_7d": 0,
+      "avg_velocity_per_repo": 8
+    },
+    "by_repo": [
+      {
+        "repo": "coinbase/x402",
+        "velocity": 33,
+        "commits": 33,
+        "prs": 0
+      },
+      {
+        "repo": "lightninglabs/aperture",
+        "velocity": 1,
+        "commits": 1,
+        "prs": 0
+      },
+      {
+        "repo": "arkade-os/arkd",
+        "velocity": 1,
+        "commits": 1,
+        "prs": 0
+      },
+      {
+        "repo": "arkade-os/ts-sdk",
+        "velocity": 3,
+        "commits": 3,
+        "prs": 0
+      },
+      {
+        "repo": "arkade-os/skill",
+        "velocity": 0,
+        "commits": 0,
+        "prs": 0
+      }
+    ],
+    "collected_at": "2026-03-10T15:27:15.977Z"
+  },
+  "lightning_network": {
+    "source": "1ML.com",
+    "nodes": {
+      "total": 5561,
+      "change_vs_day1": -1,
+      "change_vs_day1_pct": -0.018
+    },
+    "channels": {
+      "total": 16788,
+      "change_vs_day1": 32,
+      "change_vs_day1_pct": 0.191
+    },
+    "capacity": {
+      "btc": 2644.50362773,
+      "change_vs_day1_btc": 6.4511,
+      "change_vs_day1_pct": 0.2445
+    }
+  },
+  "github_metrics": {
+    "l402_aperture": {
+      "repo": "lightninglabs/aperture",
+      "stars": 255,
+      "forks": 66,
+      "open_issues": 35,
+      "change_vs_day1_stars": 0,
+      "source": "github.com"
+    },
+    "x402": {
+      "repo": "coinbase/x402",
+      "stars": 5620,
+      "forks": 1247,
+      "open_issues": 314,
+      "change_vs_day1_stars": 9,
+      "change_vs_day1_forks": 9,
+      "source": "github.com"
+    },
+    "ark_protocol": {
+      "arkd": {
+        "repo": "arkade-os/arkd",
+        "stars": 156,
+        "forks": 56,
+        "open_issues": 106,
+        "source": "github.com"
+      }
+    }
+  },
+  "x402_transactions": {
+    "source": "dune_api",
+    "daily_transactions": null,
+    "cumulative_transactions": 76450615,
+    "cumulative_volume_usd": 26309580.22,
+    "note": "Dune API rate limited today \u2014 cumulative carried from Day 1 baseline",
+    "data_quality": "cumulative_only",
+    "last_updated": "2026-03-10T12:00:00Z"
+  },
+  "data_sources": "canonical_db_verified",
+  "day_number": 2,
+  "day1_baseline_date": "2026-03-09"
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "arcadiab_urgent_001",
+    "content": "¿Tu dinero pierde valor mientras duermes? 💤\n\nEl peso mexicano ha caído 40% vs el dólar en 10 años.\n\nBitcoin: la única reserva de valor que no pueden imprimir.\n\nCompra BTC regulado en México. ASOFOM certificado. 🇲🇽₿\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-10T09:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-09T20:05:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "problem-awareness"
+  },
+  {
+    "id": "arcadiab_urgent_002",
+    "content": "Necesitas liquidez pero no quieres vender tu Bitcoin? 🤔\n\nPréstamos B2X de ArcadiaB:\n✅ Usa tu BTC como garantía\n✅ Recibe pesos o dólares\n✅ Conservas tu upside\n\nLa única plataforma ASOFOM-certificada para préstamos Bitcoin en México.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-10T15:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-09T20:05:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "product-value"
+  },
+  {
+    "id": "arcadiab_urgent_003",
+    "content": "Ahorro Inteligente = DCA sin complicaciones 📅\n\n• Compras automáticas de BTC\n• Desde $100 pesos/mes\n• Promedias tu precio de entrada\n• Sin timing el mercado\n\nStackea sats mientras duermes. 😴₿\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-11T09:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-09T20:05:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "product-value"
+  },
+  {
+    "id": "arcadiab_urgent_004",
+    "content": "¿Sabías que puedes usar tu propiedad para comprar Bitcoin? 🏠₿\n\nModelo híbrido:\n1. Tu inmueble como colateral\n2. Préstamo en pesos\n3. Compra de BTC\n4. Mantienes ambos activos\n\nDiversificación inteligente sin vender.\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-11T15:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-09T20:05:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "education"
+  },
+  {
+    "id": "arcadiab_urgent_005",
+    "content": "Tarjeta de crédito con cashback en Bitcoin 💳₿\n\n✨ 0.5% de cada compra = sats gratis\n✨ Funciona en cualquier lugar\n✨ Sin complicaciones técnicas\n\nGasta pesos. Gana Bitcoin.\n\nLa primera tarjeta con BTC cashback en México. 🇲🇽\n\narcadiab.com",
+    "platforms": {
+      "x": true,
+      "nostr": false,
+      "linkedin": false,
+      "facebook": false
+    },
+    "scheduledFor": "2026-03-12T09:00:00-06:00",
+    "requiresApproval": false,
+    "status": "scheduled",
+    "createdAt": "2026-03-09T20:05:00Z",
+    "account": "@arcadiabtc",
+    "contentType": "product-value"
+  }
+]
