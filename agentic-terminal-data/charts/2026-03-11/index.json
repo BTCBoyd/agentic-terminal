@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-11T17:00:32.428Z",
+  "generated_at": "2026-03-11T18:15:08.549Z",
   "date": "2026-03-11",
   "charts": {
     "cross_protocol_comparison": {
       "chart_type": "cross-protocol-comparison",
       "status": "insufficient_data",
-      "generated_at": "2026-03-11T17:00:25.312Z",
+      "generated_at": "2026-03-11T18:15:03.552Z",
       "weeks_needed": 4,
       "image_path": "/home/futurebit/.openclaw/workspace/agentic-terminal-data/charts/2026-03-11/cross-protocol-comparison.png",
       "message": "Need 4 more weeks of data for meaningful visualization"
@@ -13,7 +13,7 @@
     "interest_usage_gap": {
       "chart_type": "interest-usage-gap",
       "status": "insufficient_data",
-      "generated_at": "2026-03-11T17:00:26.170Z",
+      "generated_at": "2026-03-11T18:15:04.299Z",
       "weeks_needed": 4,
       "image_path": "/home/futurebit/.openclaw/workspace/agentic-terminal-data/charts/2026-03-11/interest-usage-gap.png",
       "message": "Need 4 more weeks of data for meaningful visualization"
@@ -23,7 +23,7 @@
         "chart_type": "sparkline",
         "metric_path": "metrics.bitcoin_lightning.l402_github_stars",
         "label": "L402 GitHub Stars",
-        "generated_at": "2026-03-11T17:00:26.801Z",
+        "generated_at": "2026-03-11T18:15:04.808Z",
         "date_range": {
           "start": "2026-02-17",
           "end": "2026-03-16"
@@ -48,7 +48,7 @@
         "chart_type": "sparkline",
         "metric_path": "metrics.bitcoin_lightning.lightning_nodes",
         "label": "Lightning Nodes",
-        "generated_at": "2026-03-11T17:00:27.395Z",
+        "generated_at": "2026-03-11T18:15:05.304Z",
         "date_range": {
           "start": "2026-02-17",
           "end": "2026-03-16"
@@ -73,7 +73,7 @@
         "chart_type": "sparkline",
         "metric_path": "metrics.bitcoin_lightning.lightning_capacity_btc",
         "label": "Lightning Capacity (BTC)",
-        "generated_at": "2026-03-11T17:00:27.931Z",
+        "generated_at": "2026-03-11T18:15:05.819Z",
         "date_range": {
           "start": "2026-02-17",
           "end": "2026-03-16"
@@ -98,7 +98,7 @@
         "chart_type": "sparkline",
         "metric_path": "metrics.stablecoin_api_rails.x402_github_stars",
         "label": "x402 GitHub Stars",
-        "generated_at": "2026-03-11T17:00:28.399Z",
+        "generated_at": "2026-03-11T18:15:06.261Z",
         "date_range": {
           "start": "2026-02-17",
           "end": "2026-03-16"
@@ -123,7 +123,7 @@
         "chart_type": "sparkline",
         "metric_path": "metrics.stablecoin_api_rails.x402_daily_transactions",
         "label": "x402 Daily Transactions",
-        "generated_at": "2026-03-11T17:00:31.338Z",
+        "generated_at": "2026-03-11T18:15:06.859Z",
         "date_range": {
           "start": "2026-02-17",
           "end": "2026-03-16"
@@ -148,7 +148,7 @@
         "chart_type": "sparkline",
         "metric_path": "metrics.stablecoin_api_rails.erc8004_agents_registered",
         "label": "ERC-8004 Agents",
-        "generated_at": "2026-03-11T17:00:31.833Z",
+        "generated_at": "2026-03-11T18:15:07.432Z",
         "date_range": {
           "start": "2026-02-17",
           "end": "2026-03-16"
@@ -173,7 +173,7 @@
         "chart_type": "sparkline",
         "metric_path": "metrics.emerging_protocols.ark_github_stars",
         "label": "Ark GitHub Stars",
-        "generated_at": "2026-03-11T17:00:32.427Z",
+        "generated_at": "2026-03-11T18:15:08.548Z",
         "date_range": {
           "start": "2026-02-17",
           "end": "2026-03-16"

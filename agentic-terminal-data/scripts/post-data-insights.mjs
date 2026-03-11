@@ -187,15 +187,28 @@ async function addToMaxiSuite(posts, date) {
     queue = [];
   }
 
-  // Map angles to chart files
+  // Map angles to chart files — use sparklines (always have data), avoid placeholders
   const chartsDir = `/home/futurebit/.openclaw/workspace/agentic-terminal-data/charts`;
+  const d = `${chartsDir}/${date}`;
   const chartMap = {
-    spike: `${chartsDir}/${date}/cross-protocol-comparison.png`,
-    l402_vs_x402: `${chartsDir}/${date}/cross-protocol-comparison.png`,
-    agent_economy: `${chartsDir}/${date}/sparkline-metrics-stablecoin_api_rails-erc8004_agents_registered.png`,
-    lightning_health: `${chartsDir}/${date}/sparkline-metrics-bitcoin_lightning-lightning_nodes.png`,
-    daily_snapshot: `${chartsDir}/${date}/cross-protocol-comparison.png`,
+    spike: `${d}/sparkline-metrics-stablecoin_api_rails-x402_daily_transactions.png`,
+    l402_vs_x402: `${d}/sparkline-metrics-bitcoin_lightning-l402_github_stars.png`,
+    agent_economy: `${d}/sparkline-metrics-stablecoin_api_rails-erc8004_agents_registered.png`,
+    lightning_health: `${d}/sparkline-metrics-bitcoin_lightning-lightning_nodes.png`,
+    daily_snapshot: `${d}/sparkline-metrics-stablecoin_api_rails-x402_github_stars.png`,
   };
+
+  // Validate — skip mediaPath if chart is a placeholder (status: insufficient_data)
+  for (const [angle, chartPath] of Object.entries(chartMap)) {
+    const jsonPath = chartPath.replace('.png', '.json');
+    try {
+      const { existsSync, readFileSync } = await import('fs');
+      if (existsSync(jsonPath)) {
+        const meta = JSON.parse(readFileSync(jsonPath, 'utf8'));
+        if (meta.status === 'insufficient_data') chartMap[angle] = null;
+      }
+    } catch { /* keep path */ }
+  }
 
   const timestamp = Date.now();
   for (let i = 0; i < posts.length; i++) {

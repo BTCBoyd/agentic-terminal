@@ -2,7 +2,7 @@
   "chart_type": "sparkline",
   "metric_path": "metrics.stablecoin_api_rails.erc8004_agents_registered",
   "label": "ERC-8004 Agents",
-  "generated_at": "2026-03-11T17:00:31.833Z",
+  "generated_at": "2026-03-11T18:15:07.432Z",
   "date_range": {
     "start": "2026-02-17",
     "end": "2026-03-16"

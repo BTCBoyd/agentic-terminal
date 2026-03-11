@@ -51,7 +51,9 @@ async function fetchChartImage(chartConfig, outputPath) {
       width: CONFIG.imageWidth,
       height: CONFIG.imageHeight,
       backgroundColor: CONFIG.colors.background,
-      format: 'png'
+      format: 'png',
+      devicePixelRatio: 2,
+      padding: 20
     });
 
     const options = {
@@ -494,20 +496,39 @@ async function generateSparkline(weeks, metricPath, label, color, outputDir, dat
   const change = previousValue ? ((currentValue - previousValue) / previousValue * 100).toFixed(1) : 0;
   const direction = change > 0 ? '↑' : change < 0 ? '↓' : '→';
   
+  // Format current value for display
+  const fmtVal = (v) => {
+    if (v >= 1_000_000) return `${(v/1_000_000).toFixed(2)}M`;
+    if (v >= 1_000) return `${(v/1_000).toFixed(1)}K`;
+    return v?.toString() ?? '0';
+  };
+
+  const maxVal = Math.max(...values.filter(v => v != null));
+  const yMax = maxVal * 1.40; // 40% headroom so line + dot never clips
+
+  // Add two null trailing points so the last real point isn't flush against the right edge
+  const paddedLabels = [...labels, '', ''];
+  const paddedValues = [...values, null, null];
+  const pointRadii = new Array(paddedLabels.length).fill(0);
+  pointRadii[values.length - 1] = 7; // dot on last real point
+
   const chartConfig = {
     type: 'line',
     data: {
-      labels,
+      labels: paddedLabels,
       datasets: [{
         label,
-        data: values,
+        data: paddedValues,
         borderColor: color,
-        backgroundColor: color + '30',
+        backgroundColor: color + '22',
         borderWidth: 3,
-        pointRadius: 0,
-        pointHoverRadius: 4,
+        pointRadius: pointRadii,
+        pointBackgroundColor: color,
+        pointBorderColor: color,
+        pointHoverRadius: 7,
         fill: true,
-        tension: 0.4
+        tension: 0.4,
+        spanGaps: false
       }]
     },
     options: {
@@ -515,15 +536,34 @@ async function generateSparkline(weeks, metricPath, label, color, outputDir, dat
       maintainAspectRatio: false,
       plugins: {
         legend: { display: false },
-        title: { display: false }
+        title: {
+          display: true,
+          text: [`${label}`, `${fmtVal(currentValue)} ${direction} ${Math.abs(change)}% week-over-week`],
+          color: CONFIG.colors.text,
+          font: { size: 20, weight: 'bold' },
+          padding: { top: 16, bottom: 12 }
+        }
       },
       scales: {
-        x: { display: false },
-        y: { display: false }
+        x: {
+          display: true,
+          ticks: { color: CONFIG.colors.text, font: { size: 13 }, maxRotation: 0 },
+          grid: { color: CONFIG.colors.grid + '40' },
+          offset: true
+        },
+        y: {
+          display: true,
+          max: yMax,
+          min: 0,
+          ticks: {
+            color: CONFIG.colors.text,
+            font: { size: 13 },
+            callback: (v) => fmtVal(v)
+          },
+          grid: { color: CONFIG.colors.grid + '40' }
+        }
       },
-      layout: {
-        padding: 10
-      }
+      layout: { padding: { top: 10, right: 20, bottom: 16, left: 10 } }
     }
   };
   
