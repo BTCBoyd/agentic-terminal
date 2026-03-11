@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-11T19:40:01.821Z",
+  "generated_at": "2026-03-11T21:20:02.127Z",
   "needs_boyd": [
     "Newsletter may need publication - check drafts"
   ],
   "content_queue": {
     "arcadiab_x": {
-      "scheduled": 21,
+      "scheduled": 19,
       "min_threshold": 8,
       "target": 20
     },
@@ -80,7 +80,7 @@
       {
         "name": "Check ArcadiaB Queue Status",
         "scheduled_time": "09:00",
-        "last_executed": "2026-03-11T17:00:03.073Z",
+        "last_executed": "2026-03-11T21:00:02.902Z",
         "has_cron": true,
         "threshold_hours": 26,
         "category": "content"
@@ -340,7 +340,7 @@
   "activity_log": [
     {
       "task": "Check ArcadiaB Queue Status",
-      "completed_at": "2026-03-11T17:00:03.073Z",
+      "completed_at": "2026-03-11T21:00:02.902Z",
       "category": "content"
     },
     {

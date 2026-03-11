@@ -10562,6 +10562,1083 @@
         "engagementStyle": "educational_data_driven"
       },
       "discoveredAt": 1773245003098
+    },
+    {
+      "id": "d1ee0b68e440e7e8bf0032462963ecc045c4a3e3b589450c67bb272d96c40f3f",
+      "mode": "arcadiab",
+      "score": 45,
+      "event": {
+        "id": "d1ee0b68e440e7e8bf0032462963ecc045c4a3e3b589450c67bb272d96c40f3f",
+        "pubkey": "80b2b76a3a1fc4332df2129d9a77b32b027fbb226cca9a96f73fc9bea972c5a8",
+        "content": "~~~~~~~~~~~~~~~~~~~~~\n#Bitcoin BTC/SEK hourly price\n~~~~~~~~~~~~~~~~~~~~~\n1 BTC: 651,212 sek | 24hr: 1.06%\n1 SEK: 153 sats\nMarket cap: 13,017,613,585,957 sek\n\nUpdated: 2026-03-11 | 21:02 CET",
+        "created_at": 1773259322,
+        "tags": [
+          [
+            "t",
+            "bitcoin"
+          ],
+          [
+            "t",
+            "btcsek"
+          ],
+          [
+            "t",
+            "sweden"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404650
+    },
+    {
+      "id": "b72714d3ef10efa8700d3a626a75f56c01ed98e655a8b51d2ab722cbd4f4aef2",
+      "mode": "arcadiab",
+      "score": 45,
+      "event": {
+        "id": "b72714d3ef10efa8700d3a626a75f56c01ed98e655a8b51d2ab722cbd4f4aef2",
+        "pubkey": "90fd5d464f8e8c235a33ac1515c9a808a0c8fc07804ef81d650b5a31cd475ff8",
+        "content": "~~~~~~~~~~~~~~~~~~~~~\n#Bitcoin BTC/Gold hourly price\n~~~~~~~~~~~~~~~~~~~~~\n1 BTC: 13.63 oz | 24hr: 0.92%\n1 oz Gold: 7,336,757 sats\n\nBitcoin marketcap: 1.4 trillion USD\nGold marketcap: 35.7 trillion USD\nBitcoin Vs Gold marketcap: 4.0%\n\nUpdated: 2026-03-11 | 20:01 UTC",
+        "created_at": 1773259264,
+        "tags": [
+          [
+            "t",
+            "bitcoin"
+          ],
+          [
+            "t",
+            "btcxau"
+          ],
+          [
+            "t",
+            "btcgold"
+          ],
+          [
+            "t",
+            "gold"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404650
+    },
+    {
+      "id": "d654c7943fac5166139348530fbbcfc31f56604f564587687dbc1cdc305f7240",
+      "mode": "arcadiab",
+      "score": 45,
+      "event": {
+        "id": "d654c7943fac5166139348530fbbcfc31f56604f564587687dbc1cdc305f7240",
+        "pubkey": "6c8e2759618e4965a6f0a6e5f71d8f628f139be0e187e6b61d9f497c38a74e2d",
+        "content": "### Bitcoin Network Hourly Summary ###\n\nBlocks: 940300 to 940304 (5 blocks)\nPrice: $70,674.70\nTotal Txs: 14,630\nTotal Fees: 0.157 BTC ($11,094.02)\nTotal Outputs: 36529.451 BTC ($2,581,707,998.96)\nTime Range: 19:19 - 19:56 UTC\n\nAI Analysis:\nFive blocks were mined, processing 14,630 transactions in the process.\nThe average fee per transaction was $0.76, with a total value moved of $2,581,707,998.96.",
+        "created_at": 1773259205,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404651
+    },
+    {
+      "id": "83bda5e274d211b9e37b85873249ac8af4de8fca54132bc862f59cffaad45d42",
+      "mode": "arcadiab",
+      "score": 40,
+      "event": {
+        "id": "83bda5e274d211b9e37b85873249ac8af4de8fca54132bc862f59cffaad45d42",
+        "pubkey": "207ce683797dc96fb3abf9e796bee59a5635e0bd80f413f0f2e0f6de23f5b8bb",
+        "content": "$70,643.76\n\n#Bitcoin  #BTC  $BTC $USD",
+        "created_at": 1773259202,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404651
+    },
+    {
+      "id": "6b90142e87cb5077a5531d4aaf27d2d6e8844c1c25e85ccc7c8b8f8c550850e1",
+      "mode": "arcadiab",
+      "score": 38,
+      "event": {
+        "id": "6b90142e87cb5077a5531d4aaf27d2d6e8844c1c25e85ccc7c8b8f8c550850e1",
+        "pubkey": "7f99d8bcaefef5a7d39b3a5f43ce201615e064b37768e2050e40e0fd71cbef5d",
+        "content": "Ein Hollywood-Star, der plötzlich skeptisch wird, und nicht nur wegen des Kinos – er bringt jetzt einen Anti-Krypto-Dokumentarfilm raus. Wer weiß, vielleicht wird er als nächstes auch noch gegen Kinos wettern.\n\n📰 Hollywood star-turned-skeptic releases trailer for anti-crypto doc\n\n🔗 https://cointelegraph.com/news/ben-mckenzie-crypto-skeptic-documentary-sbf?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound\nDu willst nur wichtige News zu deinen Investments ohne nervige Kommentare? Dann schau dir purple-rss an!\n💜 https://purple-rss.xyz\n\n#Bitcoin #Crypto #Nostr #PurpleRSS",
+        "created_at": 1773259203,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404651
+    },
+    {
+      "id": "313dd831003b880587bb081d031de70cb5c5ec997d52029411a9e517d1cb330b",
+      "mode": "arcadiab",
+      "score": 38,
+      "event": {
+        "id": "313dd831003b880587bb081d031de70cb5c5ec997d52029411a9e517d1cb330b",
+        "pubkey": "192c4c749307c5a802b102baec3da34a444f2947f97138297656a08a7432e430",
+        "content": "8th Meet up of Bitcoin Chalchuapa \n\nJoin the Bitcoin Chalchuapa community to explore the power of our local circular economy!\n• 📅 When: March 20th\n• 📍 Where: La Charrasca Restaurant\n\nDon't miss out on the networking and what we are doing in Chalchuapa. See you there!\nhttps://maps.app.goo.gl/R4g9c73EDkQZmkob8?g_st=iw\nhttps://blossom.primal.net/9c9cc8eb28aabe9c422d865278a58d0c8ea34d10fb8ff2d01c4cc38539091103.jpg",
+        "created_at": 1773259057,
+        "tags": [
+          [
+            "imeta",
+            "url https://blossom.primal.net/9c9cc8eb28aabe9c422d865278a58d0c8ea34d10fb8ff2d01c4cc38539091103.jpg",
+            "m jpeg",
+            "dim 1600.0x874.0"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404652
+    },
+    {
+      "id": "09ee150153d56703a0c1d8322eabb8db8058067a9dccbead64e24b1cf0823af0",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "09ee150153d56703a0c1d8322eabb8db8058067a9dccbead64e24b1cf0823af0",
+        "pubkey": "12eaa5ca3d10c895bea4906ab5015a7f59b2fcc1b96a24426ca67d09c06ff3b6",
+        "content": "I WAS THE VERY FIRST ONE IN THE WHOLE \"bitcoincommunity\" WHO WAS WARNING YALL 😂😅🤷‍♂️\n\nnostr:nevent1qqszplttfmeu0x736qlx7rv9mmlcd9pyyad7zm8k0egyt3w4rsm4mzczyrv2dm8scwtw428hnfzf0l5mwlwfwa3ng50nefwxxn3qsev3zej8kqcyqqqqqqg5m93c6",
+        "created_at": 1773259360,
+        "tags": [
+          [
+            "q",
+            "20fd6b4ef3c79bd1d03e6f0d85deff869424275be16cf67e5045c5d51c375d8b",
+            "",
+            "d8a6ecf0c396eaa8f79a4497fe9b77dc977633451f3ca5c634e208659116647b"
+          ],
+          [
+            "p",
+            "d8a6ecf0c396eaa8f79a4497fe9b77dc977633451f3ca5c634e208659116647b"
+          ],
+          [
+            "p",
+            "d8a6ecf0c396eaa8f79a4497fe9b77dc977633451f3ca5c634e208659116647b"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404649
+    },
+    {
+      "id": "c2e0e74e356cd897b327cb3a98637238c391aad5c40c965a06c2ab2d3587185e",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "c2e0e74e356cd897b327cb3a98637238c391aad5c40c965a06c2ab2d3587185e",
+        "pubkey": "1ae011cb34999af15602a2aa927f32bb92d65f6161ed71abdaa4f50c1257a556",
+        "content": "Block 940304\n\n2 - high priority\n1 - medium priority\n1 - low priority\n1 - no priority\n1 - purging\n\n#bitcoinfees #mempool",
+        "created_at": 1773259251,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404650
+    },
+    {
+      "id": "ffb627fa79d876036125bf89af0c592755ceac5cbd0cbee5a71bcdf82fa1da8d",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "ffb627fa79d876036125bf89af0c592755ceac5cbd0cbee5a71bcdf82fa1da8d",
+        "pubkey": "cbab7074a03bf89c7dd1623e42e65409e3918662af6c65fe2e38c92ff9f0bd61",
+        "content": "Block 940304\n\n2 - high priority\n1 - medium priority\n1 - low priority\n1 - no priority\n1 - purging\n\n#bitcoinfees #mempool",
+        "created_at": 1773259251,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404650
+    },
+    {
+      "id": "e51287c9d8b6b056695bcb9b107d563744138f56bd7b9ffaef108911aa99de10",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "e51287c9d8b6b056695bcb9b107d563744138f56bd7b9ffaef108911aa99de10",
+        "pubkey": "e7bf8dad360828f0289b7b4bea1a1bd28eb6d4d6522fa17f957e0dfb839ef3db",
+        "content": "Block 940304\n\n2 - high priority\n1 - medium priority\n1 - low priority\n1 - no priority\n1 - purging\n\n#bitcoinfees #mempool",
+        "created_at": 1773259251,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404650
+    },
+    {
+      "id": "6f454c0b8cba27749cbe056b8630ab91aaefe61ad9c87970722fdf7c18a0bb38",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "6f454c0b8cba27749cbe056b8630ab91aaefe61ad9c87970722fdf7c18a0bb38",
+        "pubkey": "f03df3d4134230420cdf7acbb35f96a2542424246ab052ba24c6fec6a4d4f676",
+        "content": "Block 940304\n\n2 - high priority\n1 - medium priority\n1 - low priority\n1 - no priority\n1 - purging\n\n#bitcoinfees #mempool",
+        "created_at": 1773259251,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404650
+    },
+    {
+      "id": "f5e2166108b41c20db2e709812584a2dfb43ab2aa7fcb007ac238eedbec9e6f2",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "f5e2166108b41c20db2e709812584a2dfb43ab2aa7fcb007ac238eedbec9e6f2",
+        "pubkey": "fbeb2be7271a14196a8426e78ee4c747706be2424392b036f5fabe44331f55e3",
+        "content": "Satoshi will be worshiped like a god.\n#Bitcoin\n - nostr:npub14e2977dkjyp2tkxd2qp2cr87mpumszw2dyflcrr78vmsx7rr2ztq42k5l9\n\n#BitcoinTwitter\nhttps://bitcointwitter.web.app/images/503.png",
+        "created_at": 1773259246,
+        "tags": [
+          [
+            "p",
+            "ae545f79b69102a5d8cd5002ac0cfed879b809ca6913fc0c7e3b370378635096"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404650
+    },
+    {
+      "id": "f022dc837c2aae45b4e895dbed5776c8eba4f280e065541298fcc2679af4114b",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "f022dc837c2aae45b4e895dbed5776c8eba4f280e065541298fcc2679af4114b",
+        "pubkey": "ff8464aa592cdec49f76bf3c0b505433c47427d04eeaec1fa4c4e104709dabc3",
+        "content": "The current price of Bitcoin is ~$70620.40\n\nBlock Height: 940304\n\n[2026-03-11 20:00:10 UTC]\n\n#bitcoin #nxus #oracle",
+        "created_at": 1773259210,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404650
+    },
+    {
+      "id": "3200594da30178ee0556519c455cbeb6ff4149f03fda8e865263d9667654f1d1",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "3200594da30178ee0556519c455cbeb6ff4149f03fda8e865263d9667654f1d1",
+        "pubkey": "f0672eff3c7b9cedc8368ce1ea99cc3ce4eff2324031a451afca6a2395eb3e23",
+        "content": "✏️ Quotient of R^3 by a line\n\nLet V = **R**³ and let \n U = (t, 0, 0) : t ∈ **R** be the \n x-axis. Then U = 1 \n and (V / U) = 3 - 1 = 2.\n The coset (a, b, c) + U consists of all vectors \n (a + t, b, c) for t ∈ **R**.\n Two vectors are in the same coset if and only if they have the same \n y and z coordinates. So \n V / U ≅ **R**² via the map \n (a, b, c) + U ↦ (b, c).\n\n🔗 magicinternetmath.com\n🏴‍☠️ Subscribe to the Pioneers Club\n⚡ fundamentals@zeuspay.com\n#math #bitcoin #education",
+        "created_at": 1773259210,
+        "tags": [
+          [
+            "t",
+            "math"
+          ],
+          [
+            "t",
+            "linearalgebra"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404651
+    },
+    {
+      "id": "6c476207bbaf9e8d8b501ce93b24afb0f7deaebb5036b8c8849ae4ad7cebec15",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "6c476207bbaf9e8d8b501ce93b24afb0f7deaebb5036b8c8849ae4ad7cebec15",
+        "pubkey": "82e06d3bfd8cc0973b40b9b994a3dd64b4e70b30556a8df0ee998dcd8668cfa9",
+        "content": "The block height is 940304, and the current price for bitcoin is 70.6K USD. This means that you can get 1416 sats for one dollar. The fear/greed index is 28: Fear. Buy some ₿, it may catch on.",
+        "created_at": 1773259204,
+        "tags": [
+          [
+            "t",
+            "bitcoin"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404651
+    },
+    {
+      "id": "b450466222963bc9e3e7eeb20436427f1c0076f841cee9e3ade0c0f1b7f0e6d7",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "b450466222963bc9e3e7eeb20436427f1c0076f841cee9e3ade0c0f1b7f0e6d7",
+        "pubkey": "e2b8ba3e6f7d63ab44559f25a6863d1d9ba1a2cd751391a69e261ad027400d81",
+        "content": "📊 **Bitcoin-Update**\n- 💰 Price: $70747\n- 📦 Blockheight: 940304\n- ⌛ Mempool: 399167 TXs\n- 💸 Fees: 2 sats/vByte",
+        "created_at": 1773259204,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404651
+    },
+    {
+      "id": "4e58af617c1d256695d993f452500f9454c55b16a14c57819a7fee8194afb444",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "4e58af617c1d256695d993f452500f9454c55b16a14c57819a7fee8194afb444",
+        "pubkey": "9279276bffb83cee33946e564c3600a32840269a8206d01ddf40c6432baa0bcb",
+        "content": "Fix the money, fix the world: bitcoin as techno-libertarian religion - Tim Ahn\n\nby Scoresby in ~bitcoin, ~culture\n1,116 sats and 1 comment so far\n\nhttps://stacker.news/items/1452258",
+        "created_at": 1773259203,
+        "tags": [
+          [
+            "client",
+            "stacker.news"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404651
+    },
+    {
+      "id": "87f948eaebee3208d8669c3ca39b117ad4b16ed02b2453eeb2d329abf24de42e",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "87f948eaebee3208d8669c3ca39b117ad4b16ed02b2453eeb2d329abf24de42e",
+        "pubkey": "80b2dae337c4dbc4c7741fce4bc43f2f6650b53807fe2a145b21052d5b6c11d4",
+        "content": "Your wealth, your keys, your privacy. Protect all three. Use platforms that do it too. 🙂 AllArk #Bitcoin",
+        "created_at": 1773259203,
+        "tags": [
+          [
+            "t",
+            "Bitcoin"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404652
+    },
+    {
+      "id": "9b6cf30fd32f8e1fa0667d2755dad179a300ea9ff0a168f70d5fe1c7375cf217",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "9b6cf30fd32f8e1fa0667d2755dad179a300ea9ff0a168f70d5fe1c7375cf217",
+        "pubkey": "61ebe44b6dfeeb713c241cfbc7cb5cb477f5bbb918de63390ebf30fce26da853",
+        "content": "🟢 LOW RISK: Brett (BRETT) on Base\n\nSafety Score: 100/100\n🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩\n\nBuy Tax: 0.0% | Sell Tax: 0.0%\nHolders: 899161\n\n🔍 Full scan: https://titten-patrol-riverside-enjoying.trycloudflare.com/scan/0x532f27101965dd16442E59d40670FaF5eBB142E4\n\n📡 Free API: https://titten-patrol-riverside-enjoying.trycloudflare.com/api-docs\n🧩 Extension: https://titten-patrol-riverside-enjoying.trycloudflare.com/extension\n\n#crypto #ethereum #bitcoin #defi #blockchain #token",
+        "created_at": 1773259105,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404652
+    },
+    {
+      "id": "3e53a8df7837c31a20c6ff9183bbbf13c9e9869efaf729cc0e1bbfb79da020ce",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "3e53a8df7837c31a20c6ff9183bbbf13c9e9869efaf729cc0e1bbfb79da020ce",
+        "pubkey": "f03df3d4134230420cdf7acbb35f96a2542424246ab052ba24c6fec6a4d4f676",
+        "content": "Block 940303\n\n2 - high priority\n2 - medium priority\n1 - low priority\n1 - no priority\n1 - purging\n\n#bitcoinfees #mempool",
+        "created_at": 1773258949,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404652
+    },
+    {
+      "id": "95efbe1e3c8817339ea46e8c059263d571ae2d4e1861ede69e6d53689912d5a9",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "95efbe1e3c8817339ea46e8c059263d571ae2d4e1861ede69e6d53689912d5a9",
+        "pubkey": "4df953ac94776496c4ee6e4f6f478b2b490dbf4dc1d0b78f914da7429cd0b308",
+        "content": "🐂 BTC Daily: CPI Lands Clean, Bulls Eye $72K\n\nBTC at $70,605 (+0.94%) after Feb CPI printed 2.4% YoY — right on consensus, no drama. Technicals are constructive: MACD bullish crossover forming, stochastics crossing up, RSI at 52 with room to run. Key level is EMA50 at $73K — reclaim that and the intermediate trend flips bullish.\n\nSupport: $69K / $67.9K. Resistance: $71.3K / $72K (upper BB) / $73K (EMA50).\n\nMacro backdrop: energy shock from Iran conflict ongoing, Wells Fargo filing for stablecoin trademark, Revolut gets full UK banking license. Path of least resistance is up, but $71-72K needs to break first.",
+        "created_at": 1773259294,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404654
+    },
+    {
+      "id": "d8e7ed3b3c5e949cf88e37c2910b69cd776780754f8f78ceac58c12f06580906",
+      "mode": "arcadiab",
+      "score": 30,
+      "event": {
+        "id": "d8e7ed3b3c5e949cf88e37c2910b69cd776780754f8f78ceac58c12f06580906",
+        "pubkey": "9370b7df7566137a2e0f029c2f3f183ff1aa09e86452d4a6e0a249b915292e81",
+        "content": "Centralized platforms fight bots. Bitcoin just charges them transaction fees",
+        "created_at": 1773259226,
+        "tags": [
+          [
+            "e",
+            "3c72ca96030afd9f30c197b6c91016631ebe8da8d3e3da61066d8c29a4158e3f",
+            "wss://relay.snort.social",
+            "reply"
+          ],
+          [
+            "p",
+            "70ea44b6d6e8bf7e1e281311abb127aa6d225938524e0328f64276114efe21eb"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404650
+    },
+    {
+      "id": "7e4c61189191afeff7f39a9208e0ccc2325ff5ad8bf3e0fed10e1a1a85b18907",
+      "mode": "arcadiab",
+      "score": 30,
+      "event": {
+        "id": "7e4c61189191afeff7f39a9208e0ccc2325ff5ad8bf3e0fed10e1a1a85b18907",
+        "pubkey": "aa4fc8665f5696e33db7e1a572e3b0f5b3d615837b0f362dcb1c8068b098c7b4",
+        "content": "Bitcoin price: $70621, Sats per USD: 1416",
+        "created_at": 1773259207,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404651
+    },
+    {
+      "id": "df88741fa4c12d7b0f713c68f67f25eec165f9c38c381b463ef247d1cf285892",
+      "mode": "arcadiab",
+      "score": 30,
+      "event": {
+        "id": "df88741fa4c12d7b0f713c68f67f25eec165f9c38c381b463ef247d1cf285892",
+        "pubkey": "fb89e58f838b7d716a88300ea1f2539fff78766aa1121ec10968b6b10a498f28",
+        "content": "I don't think any take Bitcoin yet but I don't want to find out as a third party either 😂 ",
+        "created_at": 1773259247,
+        "tags": [
+          [
+            "e",
+            "748da29ac2abf9d0d8de728477e790e377f994534475699abd4f55853c6abae5",
+            "",
+            "root",
+            "3f3ff7adb39159c42c0aa16d53c0483bfbfad57df22a9e9e9364a306741eb2cf"
+          ],
+          [
+            "e",
+            "34d98aebf1ffb48a232884dc0a1f0dc5373d3b2e45a08e2fc0655ea14e01db8d",
+            "",
+            "reply"
+          ],
+          [
+            "p",
+            "5a8e581f16a012e24d2a640152ad562058cb065e1df28e907c1bfa82c150c8ba"
+          ],
+          [
+            "p",
+            "1989034e56b8f606c724f45a12ce84a11841621aaf7182a1f6564380b9c4276b"
+          ],
+          [
+            "p",
+            "3f3ff7adb39159c42c0aa16d53c0483bfbfad57df22a9e9e9364a306741eb2cf"
+          ],
+          [
+            "p",
+            "6a02b7d5d5c1ceec3d0ad28dd71c4cfeebb6397b95fef5cd5032c9223a13d02a"
+          ],
+          [
+            "p",
+            "fb89e58f838b7d716a88300ea1f2539fff78766aa1121ec10968b6b10a498f28"
+          ],
+          [
+            "p",
+            "e83b66a8ed2d37c07d1abea6e1b000a15549c69508fa4c5875556d52b0526c2b"
+          ],
+          [
+            "r",
+            "wss://nos.lol/"
+          ],
+          [
+            "r",
+            "wss://relay.primal.net/"
+          ],
+          [
+            "r",
+            "wss://nostr.liberty.fans/"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404652
+    },
+    {
+      "id": "aabf58df0edeb58033c1e081a616da7e5106602f7aee3da87349632c62dfd35d",
+      "mode": "arcadiab",
+      "score": 30,
+      "event": {
+        "id": "aabf58df0edeb58033c1e081a616da7e5106602f7aee3da87349632c62dfd35d",
+        "pubkey": "fc8cdfb46039e82eed3699d56f0b12857e3824ae258772e63705577b9cacf88d",
+        "content": "you generation of bitcoiners ARE FUCKING RETARDED.",
+        "created_at": 1773259157,
+        "tags": [
+          [
+            "e",
+            "64ac39d5d0d28bdf3dd8d2bd44329e6d788302827572eea65136b46da456ac3c",
+            "wss://nos.lol/%20wss://nostr.land/%20%20avatar%20wss://nostr.wine/%20%20avatar%20wss://purplerelay.com/%20wss://relay.damus.io/%20wss://relay.snort.social/",
+            "root"
+          ],
+          [
+            "e",
+            "8b4c3fedc09c84a8e484e9c2bfa006b0f697a840c610eefa3f39921cbcbc0d54",
+            "",
+            "reply"
+          ],
+          [
+            "p",
+            "43fabde62ffea1aa0ddae7c0ac03b7017e2d864f8665784b00bbfa2f9114c06a"
+          ],
+          [
+            "p",
+            "1408bad049bab8a38b976075affe413c3521bbeef62cc4ce3555299f4971f2ca"
+          ],
+          [
+            "p",
+            "fbbbf7c8f17b7a59a1b955f363939b74d5cd79f52556acb0712ce4f3bc1cca4a"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404652
+    },
+    {
+      "id": "31c25bca517c65dd7a8d72ecbdbdb150a4a0affd1a346bf21e7f91c794d8f5d6",
+      "mode": "arcadiab",
+      "score": 30,
+      "event": {
+        "id": "31c25bca517c65dd7a8d72ecbdbdb150a4a0affd1a346bf21e7f91c794d8f5d6",
+        "pubkey": "e5c55839b2cc6a12c002b15515be087e899dce1e4c1eeaf63ee0e0550f456bb5",
+        "content": "Current BTC/USD price is: $70,658\nCurrent sats per USD: 1415 sats",
+        "created_at": 1773259203,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773259404654
     }
   ],
   "processed": [
@@ -10845,7 +11922,33 @@
     "21254b2b922ad13b4e7371f96e6fb3159d3713e8da9044c34839f2c2bba6c5db",
     "e2827f00b4fff1d38d3ddddafde419554bc1c0255a2d7e90ce812eec61cf26c6",
     "5833b4be916480b2306573446ffe436888a1e0f8d7f3477a4064694bf1a3f27a",
-    "8d84ca07aad2d6784b0587d23a5c2b0163fdc2b32cfef9310b71887e698582f5"
+    "8d84ca07aad2d6784b0587d23a5c2b0163fdc2b32cfef9310b71887e698582f5",
+    "09ee150153d56703a0c1d8322eabb8db8058067a9dccbead64e24b1cf0823af0",
+    "d1ee0b68e440e7e8bf0032462963ecc045c4a3e3b589450c67bb272d96c40f3f",
+    "b72714d3ef10efa8700d3a626a75f56c01ed98e655a8b51d2ab722cbd4f4aef2",
+    "c2e0e74e356cd897b327cb3a98637238c391aad5c40c965a06c2ab2d3587185e",
+    "ffb627fa79d876036125bf89af0c592755ceac5cbd0cbee5a71bcdf82fa1da8d",
+    "e51287c9d8b6b056695bcb9b107d563744138f56bd7b9ffaef108911aa99de10",
+    "6f454c0b8cba27749cbe056b8630ab91aaefe61ad9c87970722fdf7c18a0bb38",
+    "f5e2166108b41c20db2e709812584a2dfb43ab2aa7fcb007ac238eedbec9e6f2",
+    "d8e7ed3b3c5e949cf88e37c2910b69cd776780754f8f78ceac58c12f06580906",
+    "f022dc837c2aae45b4e895dbed5776c8eba4f280e065541298fcc2679af4114b",
+    "3200594da30178ee0556519c455cbeb6ff4149f03fda8e865263d9667654f1d1",
+    "7e4c61189191afeff7f39a9208e0ccc2325ff5ad8bf3e0fed10e1a1a85b18907",
+    "d654c7943fac5166139348530fbbcfc31f56604f564587687dbc1cdc305f7240",
+    "6c476207bbaf9e8d8b501ce93b24afb0f7deaebb5036b8c8849ae4ad7cebec15",
+    "b450466222963bc9e3e7eeb20436427f1c0076f841cee9e3ade0c0f1b7f0e6d7",
+    "4e58af617c1d256695d993f452500f9454c55b16a14c57819a7fee8194afb444",
+    "6b90142e87cb5077a5531d4aaf27d2d6e8844c1c25e85ccc7c8b8f8c550850e1",
+    "83bda5e274d211b9e37b85873249ac8af4de8fca54132bc862f59cffaad45d42",
+    "df88741fa4c12d7b0f713c68f67f25eec165f9c38c381b463ef247d1cf285892",
+    "87f948eaebee3208d8669c3ca39b117ad4b16ed02b2453eeb2d329abf24de42e",
+    "aabf58df0edeb58033c1e081a616da7e5106602f7aee3da87349632c62dfd35d",
+    "9b6cf30fd32f8e1fa0667d2755dad179a300ea9ff0a168f70d5fe1c7375cf217",
+    "313dd831003b880587bb081d031de70cb5c5ec997d52029411a9e517d1cb330b",
+    "3e53a8df7837c31a20c6ff9183bbbf13c9e9869efaf729cc0e1bbfb79da020ce",
+    "95efbe1e3c8817339ea46e8c059263d571ae2d4e1861ede69e6d53689912d5a9",
+    "31c25bca517c65dd7a8d72ecbdbdb150a4a0affd1a346bf21e7f91c794d8f5d6"
   ],
-  "lastRun": 1773245003105
+  "lastRun": 1773259404664
 }

@@ -46,5 +46,21 @@
     "relaySuccess": 4,
     "relayTotal": 4,
     "promotional": false
+  },
+  {
+    "timestamp": "2026-03-11T21:00:00.000Z",
+    "localTime": "2026-03-11T17:00:00-04:00",
+    "content": "21 million. Not 22. Not 20.9.\n\nBitcoin's scarcity isn't a feature—it's the foundation. When money can't be printed, savings actually mean something.",
+    "eventId": "aba698fd37ffe1f4f06e1594b19d2ca67a7dedd725f6a492af23711f84d53f39",
+    "theme": "Bitcoin fundamentals",
+    "relays": [
+      "wss://relay.damus.io",
+      "wss://nos.lol",
+      "wss://relay.primal.net",
+      "wss://relay.snort.social"
+    ],
+    "relaySuccess": 4,
+    "relayTotal": 4,
+    "promotional": false
   }
 ]

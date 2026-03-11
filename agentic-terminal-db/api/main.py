@@ -722,11 +722,17 @@ def list_agents():
     cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     
     try:
-        # Get all agents ordered by created_at
+        # Get all agents ordered by created_at, excluding test/dev agents
         cursor.execute("""
             SELECT agent_id, agent_name, alias, framework,
                    verified, verified_at, created_at, public_key_hash
             FROM observer_agents
+            WHERE agent_name NOT ILIKE '%test%'
+              AND agent_name NOT ILIKE '%Test%'
+              AND agent_name NOT ILIKE 'AgentPay-Live%'
+              AND agent_name NOT ILIKE 'AgentPay-E2E%'
+              AND agent_name NOT ILIKE 'AgentPay-Sync%'
+              AND alias NOT ILIKE 'test-%'
             ORDER BY created_at ASC
         """)
         agents_raw = cursor.fetchall()

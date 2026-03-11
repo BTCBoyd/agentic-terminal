@@ -5970,10 +5970,17 @@
     },
     "scheduledFor": "2026-03-11T15:00:00-06:00",
     "requiresApproval": false,
-    "status": "scheduled",
+    "status": "posted",
     "createdAt": "2026-03-09T20:05:00Z",
     "account": "@arcadiabtc",
-    "contentType": "education"
+    "contentType": "education",
+    "postedAt": "2026-03-11T21:00:02.705Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "Status: 201\nResponse: {\"data\":{\"id\":\"2031837576017870853\",\"edit_history_tweet_ids\":[\"2031837576017870853\"],\"text\":\"¿Sabías que puedes usar tu propiedad para comprar Bitcoin? \\uD83C\\uDFE0₿\\n\\nModelo híbrido:\\n1. Tu inmueble como colateral\\n2. Préstamo en pesos\\n3. Compra de BTC\\n4. Mantienes ambos activos\\n\\nDiversificación inteligente sin vender.\\n\\nhttps://t.co/JLwAApiFUK\"}}\n✅ SUCCESS: {\n  data: {\n    id: '2031837576017870853',\n    edit_history_tweet_ids: [ '2031837576017870853' ],\n    text: '¿Sabías que puedes usar tu propiedad para comprar Bitcoin? 🏠₿\\n' +\n      '\\n' +\n      'Modelo híbrido:\\n' +\n      '1. Tu inmueble como colateral\\n' +\n      '2. Préstamo en pesos\\n' +\n      '3. Compra de BTC\\n' +\n      '4. Mantienes ambos activos\\n' +\n      '\\n' +\n      'Diversificación inteligente sin vender.\\n' +\n      '\\n' +\n      'https://t.co/JLwAApiFUK'\n  }\n}\n"
+      }
+    }
   },
   {
     "id": "arcadiab_urgent_005",
@@ -6209,10 +6216,17 @@
     },
     "scheduledFor": "2026-03-11T14:00:00-06:00",
     "requiresApproval": false,
-    "status": "scheduled",
+    "status": "posted",
     "createdAt": "2026-03-09T22:20:00Z",
     "account": "@arcadiabtc",
-    "contentType": "thought-leadership"
+    "contentType": "thought-leadership",
+    "postedAt": "2026-03-11T20:00:02.879Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "Status: 201\nResponse: {\"data\":{\"text\":\"El marco ASOFOM en México permite modelos de préstamos garantizados con Bitcoin que simplemente no existen en la mayoría de jurisdicciones. \\uD83D\\uDCDC\\n\\nMientras otros países debaten, México ya tiene:\\n✅ Entidades financieras reguladas\\n✅ Préstamos Bitcoin 100% legales\\n✅ Protección al…\",\"id\":\"2031822477303726355\",\"edit_history_tweet_ids\":[\"2031822477303726355\"]}}\n✅ SUCCESS: {\n  data: {\n    text: 'El marco ASOFOM en México permite modelos de préstamos garantizados con Bitcoin que simplemente no existen en la mayoría de jurisdicciones. 📜\\n' +\n      '\\n' +\n      'Mientras otros países debaten, México ya tiene:\\n' +\n      '✅ Entidades financieras reguladas\\n' +\n      '✅ Préstamos Bitcoin 100% legales\\n' +\n      '✅ Protección al…',\n    id: '2031822477303726355',\n    edit_history_tweet_ids: [ '2031822477303726355' ]\n  }\n}\n"
+      }
+    }
   },
   {
     "id": "arcadiab_today_011",
