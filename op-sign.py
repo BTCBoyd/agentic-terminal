@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 Sign a message for Observer Protocol submission.
-Usage: python3 op-sign.py <message>
+Usage: echo '<message>' | python3 op-sign.py
+Or:    python3 op-sign.py '<message>'
 Outputs: hex signature (64 bytes, r||s)
 """
 import sys, json
@@ -20,5 +21,8 @@ def sign(message: str) -> str:
     return (r.to_bytes(32,'big') + s.to_bytes(32,'big')).hex()
 
 if __name__ == '__main__':
-    message = sys.argv[1] if len(sys.argv) > 1 else sys.stdin.read().strip()
+    if len(sys.argv) > 1:
+        message = sys.argv[1]
+    else:
+        message = sys.stdin.read().strip()
     print(sign(message))

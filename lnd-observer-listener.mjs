@@ -199,15 +199,16 @@ function extractCounterparty(memo) {
 // Uses Maxi's Nostr private key for cryptographic proof of identity
 async function createRealSignature(message) {
   try {
-    // Use Python cryptography library — exact match with backend ECDSA(SHA256) verification
-    // noble/secp256k1 produces signatures that Python cannot verify due to hashing differences
-    const { execSync } = await import('child_process');
-    const escaped = message.replace(/'/g, "'\\''");
-    const signature = execSync(
-      `python3 /home/futurebit/.openclaw/workspace/op-sign.py '${escaped}'`,
-      { encoding: 'utf-8', timeout: 5000 }
-    ).trim();
-    return signature;
+    // Use Python cryptography library via stdin pipe — avoids shell escaping issues
+    // Python backend verifies with ECDSA(SHA256); this produces exactly compatible signatures
+    const { spawnSync } = await import('child_process');
+    const result = spawnSync(
+      'python3',
+      ['/home/futurebit/.openclaw/workspace/op-sign.py'],
+      { input: message, encoding: 'utf-8', timeout: 5000 }
+    );
+    if (result.status !== 0) throw new Error(result.stderr || 'python signing failed');
+    return result.stdout.trim();
   } catch (e) {
     log('error', `Failed to create signature: ${e.message}`);
     throw e;
@@ -231,11 +232,11 @@ async function submitToObserverProtocol(attestation) {
       timestamp: attestation.timestamp,
       signature: attestation.signature,
       optional_metadata: JSON.stringify({
-        amount_sats: attestation.amount_sats,
+        preimage: attestation.preimage,   // must match what's signed
         direction: attestation.direction,
+        amount_sats: attestation.amount_sats,
         counterparty: attestation.counterparty,
         memo: attestation.memo,
-        preimage_available: !!attestation.preimage,
       }),
     });
     
