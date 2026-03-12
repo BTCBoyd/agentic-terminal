@@ -134,9 +134,20 @@ If Boyd is messaging you directly:
    Last completed: [most recent task and time]
    ```
 
-2. **Then respond to his actual message.**
+2. **Check for automatic Kimi delegation** — Run model-router.mjs on his message:
+   ```
+   node /home/futurebit/.openclaw/workspace/model-router.mjs "[Boyd's message]"
+   ```
+   
+   If output shows `"delegate": true`:
+   - **STOP.** Do not proceed with Sonnet.
+   - Spawn Kimi subagent immediately with full context
+   - Say: "This looks like implementation work — delegating to Kimi."
+   - Monitor and report back when complete
 
-3. **Do NOT volunteer "exciting discoveries" unless verified as genuinely new.**
+3. **If no delegation triggered:** Respond to his message directly (Sonnet).
+
+4. **Do NOT volunteer "exciting discoveries" unless verified as genuinely new.**
 
 
 ## PHASE 7: SESSION-END PROTOCOL

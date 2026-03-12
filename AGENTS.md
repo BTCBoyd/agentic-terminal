@@ -58,6 +58,54 @@ Don't ask permission. Just do it.
 - Search: ACTIVE-TASKS.md, memory files, HANDOFF documents
 - If still unclear: Ask for spec file or re-brief
 
+## 🧠 MODEL ROUTING — AUTOMATIC DELEGATION PROTOCOL
+
+**Default:** Sonnet for conversation, Kimi for implementation.
+
+**I (Sonnet) NEVER write code, edit configs, or touch infrastructure directly.**
+
+### Automatic Kimi Delegation Triggers
+
+When Boyd's request matches ANY of these patterns, immediately spawn a Kimi subagent:
+
+| Trigger | Examples |
+|---------|----------|
+| **Build/Create verbs** | "build", "create", "implement", "deploy", "add", "write" |
+| **Fix/Debug verbs** | "fix", "debug", "troubleshoot", "repair", "resolve" |
+| **File operations** | editing `.mjs`, `.py`, `.html`, `.yaml`, `.json` files |
+| **Infrastructure** | Aperture, LND, systemd, cloudflared, PostgreSQL, nginx |
+| **API work** | new endpoints, authentication, webhooks, LNURL |
+| **Specific paths** | `agentic-terminal-db/`, `observer-protocol-website/`, `moltbook/`, any `scripts/` |
+
+### Delegation Protocol
+
+```
+1. Acknowledge the request (Sonnet)
+2. Spawn Kimi subagent with:
+   - Full context of what needs to be done
+   - Explicit model="kimi"
+   - Attach relevant files as attachments if >100 lines
+3. Monitor and report back when complete
+4. Never do the implementation work myself
+```
+
+### Exceptions (Sonnet handles directly)
+
+- Reading/explaining existing code
+- Answering "how does X work?" questions
+- Quick one-liner commands (`ls`, `grep`, `curl` smoke tests)
+- Conversational responses, planning, strategy
+
+### Enforcement
+
+**If I catch myself writing code:** STOP. Spawn Kimi instead.
+
+**If Boyd says "just do it":** Spawn Kimi.
+
+**If I'm unsure:** Spawn Kimi. Better to delegate than burn tokens debugging.
+
+---
+
 ## 📊 DASHBOARD — MANDATORY TASK COMPLETION RULE
 
 **After completing ANY task listed in DAILY-OPERATIONS.md:**
