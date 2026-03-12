@@ -460,17 +460,20 @@ def submit_transaction(
 
         stored_at = datetime.utcnow()
 
+        # Extract preimage from attestation for storage
+        stored_preimage = attestation.get("preimage")
+
         # Store with verified=True ONLY because cryptographic check passed
         cursor.execute("""
             INSERT INTO verified_events (
                 event_id, agent_id, counterparty_id, event_type, protocol,
                 transaction_hash, time_window, amount_bucket, direction,
-                service_description, verified, created_at
-            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, NOW())
+                service_description, verified, created_at, preimage
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, NOW(), %s)
         """, (
             event_id, agent_id, counterparty_id, event_type, protocol,
             transaction_reference, timestamp[:10] if timestamp else None,
-            amount_bucket, direction, service_description, True
+            amount_bucket, direction, service_description, True, stored_preimage
         ))
 
         conn.commit()
@@ -569,7 +572,7 @@ def get_transactions(limit: int = 20, agent_id: str = None):
             cursor.execute("""
                 SELECT event_id, agent_id, event_type, protocol, transaction_hash,
                        amount_bucket, direction, verified, created_at,
-                       payer_alias, payee_alias, service_description
+                       payer_alias, payee_alias, service_description, preimage
                 FROM verified_events
                 WHERE agent_id = %s
                 ORDER BY created_at DESC
@@ -579,7 +582,7 @@ def get_transactions(limit: int = 20, agent_id: str = None):
             cursor.execute("""
                 SELECT event_id, agent_id, event_type, protocol, transaction_hash,
                        amount_bucket, direction, verified, created_at,
-                       payer_alias, payee_alias, service_description
+                       payer_alias, payee_alias, service_description, preimage
                 FROM verified_events
                 ORDER BY created_at DESC
                 LIMIT %s
@@ -901,6 +904,78 @@ def get_agent_profile(agent_id: str):
     finally:
         cursor.close()
         conn.close()
+
+
+# ── LNURL-pay endpoints ───────────────────────────────────────────────────────
+# Lightning Address: maxi@agenticterminal.ai
+# Wallet hits: GET /.well-known/lnurlp/maxi  → LNURL metadata
+# Then wallet hits: GET /lnurlp/callback?amount=<msats> → invoice
+
+import subprocess, binascii, base64 as _base64
+
+LND_CERT    = "/media/nvme/lnd-data/tls.cert"
+LND_MAC     = "/media/nvme/lnd-data/data/chain/bitcoin/mainnet/admin.macaroon"
+LND_REST    = "https://localhost:8082"
+LNURL_BASE  = "https://api.observerprotocol.org"
+LNURL_META  = '[["text/plain","Maxi — Observer Protocol AI Agent"],["text/identifier","maxi@observerprotocol.org"]]'
+MIN_SENDABLE = 1_000        # 1 sat in msats
+MAX_SENDABLE = 1_000_000_000 # 1000 sats in msats (keep modest for demos)
+
+def _lnd_macaroon() -> str:
+    return binascii.hexlify(open(LND_MAC, "rb").read()).decode()
+
+@app.get("/.well-known/lnurlp/maxi")
+@app.get("/lnurlp/maxi")
+def lnurlp_metadata():
+    """LNURL-pay step 1 — return metadata so wallets can display Maxi's Lightning Address."""
+    return JSONResponse({
+        "callback": f"{LNURL_BASE}/lnurlp/callback",
+        "maxSendable": MAX_SENDABLE,
+        "minSendable": MIN_SENDABLE,
+        "metadata": LNURL_META,
+        "tag": "payRequest",
+        "commentAllowed": 64,
+    })
+
+@app.get("/lnurlp/callback")
+def lnurlp_callback(amount: int, comment: str = ""):
+    """LNURL-pay step 2 — generate a fresh LND invoice for the requested amount (msats)."""
+    if amount < MIN_SENDABLE or amount > MAX_SENDABLE:
+        return JSONResponse({"status": "ERROR", "reason": f"Amount {amount} msats out of range [{MIN_SENDABLE}, {MAX_SENDABLE}]"}, status_code=400)
+
+    sats = amount // 1000
+    memo = comment.strip() or "Observer Protocol Demo — maxi@agenticterminal.ai"
+
+    try:
+        import urllib.request, json as _json
+        macaroon = _lnd_macaroon()
+        payload = _json.dumps({"value": str(sats), "memo": memo, "expiry": "3600"}).encode()
+        req = urllib.request.Request(
+            f"{LND_REST}/v1/invoices",
+            data=payload,
+            headers={"Grpc-Metadata-macaroon": macaroon, "Content-Type": "application/json"},
+            method="POST"
+        )
+        import ssl
+        ctx = ssl.create_default_context()
+        ctx.load_verify_locations(LND_CERT)
+        with urllib.request.urlopen(req, context=ctx, timeout=10) as resp:
+            inv = _json.loads(resp.read())
+
+        payment_request = inv.get("payment_request", "")
+        if not payment_request:
+            return JSONResponse({"status": "ERROR", "reason": "LND returned no invoice"}, status_code=500)
+
+        return JSONResponse({
+            "pr": payment_request,
+            "routes": [],
+            "successAction": {
+                "tag": "message",
+                "message": "⚡ Payment received by Maxi! Watch it appear on observerprotocol.org/demo"
+            }
+        })
+    except Exception as e:
+        return JSONResponse({"status": "ERROR", "reason": str(e)}, status_code=500)
 
 
 if __name__ == "__main__":
