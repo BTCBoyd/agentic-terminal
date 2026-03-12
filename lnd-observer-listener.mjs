@@ -165,9 +165,9 @@ async function createAttestation(invoice) {
     direction: 'inbound',
     amount_sats: parseInt(invoice.amt_paid_sat || invoice.value),
     counterparty: extractCounterparty(invoice.memo),
-    memo: invoice.memo,
-    settle_index: invoice.settle_index,
+    memo: invoice.memo ? invoice.memo.replace(/[^\x00-\x7F]/g, '-') : null, // sanitize non-ASCII for URL-safe signing
     public_key: PUBLIC_KEY_HEX, // Include public key for verification
+    // NOTE: settle_index intentionally excluded — backend doesn't include it in signature verification
   };
 
   // Sign the attestation with real secp256k1 ECDSA
@@ -199,16 +199,15 @@ function extractCounterparty(memo) {
 // Uses Maxi's Nostr private key for cryptographic proof of identity
 async function createRealSignature(message) {
   try {
-    // Sign the raw message (not the hash)
-    // The secp256k1 library will hash internally using the configured hash function
-    const privateKeyBytes = Buffer.from(PRIVATE_KEY_HEX, 'hex');
-    const messageBytes = Buffer.from(message, 'utf-8');
-    
-    // noble-secp256k1 sign() takes the message and hashes it internally
-    const signature = await secp256k1.signAsync(messageBytes, privateKeyBytes);
-    
-    // Return signature as hex string (signature is Uint8Array)
-    return Buffer.from(signature).toString('hex');
+    // Use Python cryptography library — exact match with backend ECDSA(SHA256) verification
+    // noble/secp256k1 produces signatures that Python cannot verify due to hashing differences
+    const { execSync } = await import('child_process');
+    const escaped = message.replace(/'/g, "'\\''");
+    const signature = execSync(
+      `python3 /home/futurebit/.openclaw/workspace/op-sign.py '${escaped}'`,
+      { encoding: 'utf-8', timeout: 5000 }
+    ).trim();
+    return signature;
   } catch (e) {
     log('error', `Failed to create signature: ${e.message}`);
     throw e;
