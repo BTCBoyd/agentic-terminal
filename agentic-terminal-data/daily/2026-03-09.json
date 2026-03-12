@@ -89,23 +89,19 @@
   },
   "x402_transactions": {
     "source": "dune_api",
-    "daily_transactions": 8474,
-    "daily_volume_usd": 1984,
-    "cumulative_transactions": 76450615,
-    "cumulative_volume_usd": 26309580.22,
-    "average_transaction_size": 1.74,
-    "trend_direction": "declining",
+    "daily_transactions": 178731,
+    "daily_volume_usd": 89458,
     "data_quality": "verified_onchain_dune",
-    "last_updated": "2026-03-09T17:34:33.710Z",
-    "query_id": 6094619
+    "note": "Backfilled 2026-03-12 from Dune 7-day breakdown query",
+    "collected_at": "2026-03-12T15:01:00.000Z"
   },
   "alerts": [],
   "erc8004_multichain": {
-    "total_agents": 0,
-    "by_chain": {},
-    "source": "8004agents.ai",
-    "data_quality": "authoritative",
-    "collected_at": "2026-03-09T20:45:38.495Z"
+    "total_agents": 67000,
+    "total_registered": 67000,
+    "data_quality": "estimated_backfill",
+    "note": "ERC-8004 cron not yet active on Mar 9. Estimated from Mar 10 value of 68,208.",
+    "supported_chains": 9
   },
   "github_velocity": {
     "aggregate": {

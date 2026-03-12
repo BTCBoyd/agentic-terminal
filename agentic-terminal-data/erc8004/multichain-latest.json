@@ -1,9 +1,59 @@
 {
-  "timestamp": "2026-03-11T13:44:37.059Z",
+  "timestamp": "2026-03-12T14:42:00.000Z",
   "source": "8004agents.ai",
   "source_url": "https://8004agents.ai/",
   "contract": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
-  "by_chain": {},
-  "total_agents": 0,
-  "data_quality": "authoritative"
+  "by_chain": {
+    "bnb_chain": {
+      "chain": "bnb_chain",
+      "agents": 9857,
+      "status": "syncing"
+    },
+    "base": {
+      "chain": "base",
+      "agents": 4075,
+      "status": "syncing"
+    },
+    "avalanche": {
+      "chain": "avalanche",
+      "agents": 498,
+      "status": "syncing"
+    },
+    "ethereum": {
+      "chain": "ethereum",
+      "agents": 364,
+      "status": "syncing"
+    },
+    "sepolia": {
+      "chain": "sepolia",
+      "agents": 113,
+      "status": "syncing"
+    },
+    "bsc_testnet": {
+      "chain": "bsc_testnet",
+      "agents": 49,
+      "status": "syncing"
+    },
+    "arbitrum": {
+      "chain": "arbitrum",
+      "agents": 28,
+      "status": "syncing"
+    },
+    "polygon": {
+      "chain": "polygon",
+      "agents": 14,
+      "status": "syncing"
+    },
+    "base_sepolia": {
+      "chain": "base_sepolia",
+      "agents": 2,
+      "status": "syncing"
+    }
+  },
+  "total_indexed": 15000,
+  "total_registered": 73965,
+  "supported_chains": 9,
+  "data_quality": "authoritative",
+  "collection_method": "browser_snapshot",
+  "notes": "73,965 total agents registered across all chains; 15,000 indexed by explorer"
 }

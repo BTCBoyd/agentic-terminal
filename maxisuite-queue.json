@@ -5993,10 +5993,17 @@
     },
     "scheduledFor": "2026-03-12T09:00:00-06:00",
     "requiresApproval": false,
-    "status": "scheduled",
+    "status": "posted",
     "createdAt": "2026-03-09T20:05:00Z",
     "account": "@arcadiabtc",
-    "contentType": "product-value"
+    "contentType": "product-value",
+    "postedAt": "2026-03-12T15:00:02.411Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "Status: 201\nResponse: {\"data\":{\"edit_history_tweet_ids\":[\"2032109365734314422\"],\"id\":\"2032109365734314422\",\"text\":\"Tarjeta de crédito con cashback en Bitcoin \\uD83D\\uDCB3₿\\n\\n✨ 0.5% de cada compra = sats gratis\\n✨ Funciona en cualquier lugar\\n✨ Sin complicaciones técnicas\\n\\nGasta pesos. Gana Bitcoin.\\n\\nLa primera tarjeta con BTC cashback en México. \\uD83C\\uDDF2\\uD83C\\uDDFD\\n\\nhttps://t.co/JLwAApiFUK\"}}\n✅ SUCCESS: {\n  data: {\n    edit_history_tweet_ids: [ '2032109365734314422' ],\n    id: '2032109365734314422',\n    text: 'Tarjeta de crédito con cashback en Bitcoin 💳₿\\n' +\n      '\\n' +\n      '✨ 0.5% de cada compra = sats gratis\\n' +\n      '✨ Funciona en cualquier lugar\\n' +\n      '✨ Sin complicaciones técnicas\\n' +\n      '\\n' +\n      'Gasta pesos. Gana Bitcoin.\\n' +\n      '\\n' +\n      'La primera tarjeta con BTC cashback en México. 🇲🇽\\n' +\n      '\\n' +\n      'https://t.co/JLwAApiFUK'\n  }\n}\n"
+      }
+    }
   },
   {
     "id": "arcadiab_today_001",
@@ -6239,10 +6246,17 @@
     },
     "scheduledFor": "2026-03-11T17:00:00-06:00",
     "requiresApproval": false,
-    "status": "scheduled",
+    "status": "posted",
     "createdAt": "2026-03-09T22:20:00Z",
     "account": "@arcadiabtc",
-    "contentType": "problem-awareness"
+    "contentType": "problem-awareness",
+    "postedAt": "2026-03-11T23:00:02.757Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "Status: 201\nResponse: {\"data\":{\"edit_history_tweet_ids\":[\"2031867775082238356\"],\"text\":\"Tu patrimonio en pesos pierde valor cada día que permanece en el banco. \\uD83D\\uDCB8\\n\\nEn ArcadiaB lo proteges con Bitcoin.\\n\\n\\uD83D\\uDD39 ASOFOM certificados\\n\\uD83D\\uDD39 Proceso simple\\n\\uD83D\\uDD39 La opción más confiable en México\\n\\nProtege tu futuro. Empieza hoy. \\uD83C\\uDDF2\\uD83C\\uDDFD₿\\n\\nhttps://t.co/JLwAApiFUK\",\"id\":\"2031867775082238356\"}}\n✅ SUCCESS: {\n  data: {\n    edit_history_tweet_ids: [ '2031867775082238356' ],\n    text: 'Tu patrimonio en pesos pierde valor cada día que permanece en el banco. 💸\\n' +\n      '\\n' +\n      'En ArcadiaB lo proteges con Bitcoin.\\n' +\n      '\\n' +\n      '🔹 ASOFOM certificados\\n' +\n      '🔹 Proceso simple\\n' +\n      '🔹 La opción más confiable en México\\n' +\n      '\\n' +\n      'Protege tu futuro. Empieza hoy. 🇲🇽₿\\n' +\n      '\\n' +\n      'https://t.co/JLwAApiFUK',\n    id: '2031867775082238356'\n  }\n}\n"
+      }
+    }
   },
   {
     "id": "arcadiab_today_012",
@@ -6255,10 +6269,17 @@
     },
     "scheduledFor": "2026-03-11T20:00:00-06:00",
     "requiresApproval": false,
-    "status": "scheduled",
+    "status": "posted",
     "createdAt": "2026-03-09T22:20:00Z",
     "account": "@arcadiabtc",
-    "contentType": "problem-awareness"
+    "contentType": "problem-awareness",
+    "postedAt": "2026-03-12T02:00:02.341Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "Status: 201\nResponse: {\"data\":{\"edit_history_tweet_ids\":[\"2031913071925739954\"],\"text\":\"Trabajas duro. Ahorras. Pero sientes que nunca avanzas. \\uD83D\\uDE14\\n\\nLa inflación real no aparece en las cifras oficiales, pero sí en tu cuenta bancaria.\\n\\nBitcoin termina con esto: escasez absoluta, 21 millones, transparencia total.\\n\\nhttps://t.co/JLwAApjdKi\",\"id\":\"2031913071925739954\"}}\n✅ SUCCESS: {\n  data: {\n    edit_history_tweet_ids: [ '2031913071925739954' ],\n    text: 'Trabajas duro. Ahorras. Pero sientes que nunca avanzas. 😔\\n' +\n      '\\n' +\n      'La inflación real no aparece en las cifras oficiales, pero sí en tu cuenta bancaria.\\n' +\n      '\\n' +\n      'Bitcoin termina con esto: escasez absoluta, 21 millones, transparencia total.\\n' +\n      '\\n' +\n      'https://t.co/JLwAApjdKi',\n    id: '2031913071925739954'\n  }\n}\n"
+      }
+    }
   },
   {
     "id": "arcadiab_today_013",
@@ -6271,10 +6292,17 @@
     },
     "scheduledFor": "2026-03-12T08:00:00-06:00",
     "requiresApproval": false,
-    "status": "scheduled",
+    "status": "posted",
     "createdAt": "2026-03-09T22:20:00Z",
     "account": "@arcadiabtc",
-    "contentType": "promotion"
+    "contentType": "promotion",
+    "postedAt": "2026-03-12T14:00:02.058Z",
+    "results": {
+      "x": {
+        "success": true,
+        "output": "Status: 201\nResponse: {\"data\":{\"edit_history_tweet_ids\":[\"2032094264558305295\"],\"text\":\"Capital Duro: investigación institucional sobre Bitcoin en México. \\uD83D\\uDCCA\\n\\nAnálisis macro, estrategias de tesorería corporativa, casos de estudio para CFOs y family offices.\\n\\nInvestigación rigurosa. Datos verificables. Sin hype.\\n\\nhttps://t.co/qVcbkBCNC7\",\"id\":\"2032094264558305295\"}}\n✅ SUCCESS: {\n  data: {\n    edit_history_tweet_ids: [ '2032094264558305295' ],\n    text: 'Capital Duro: investigación institucional sobre Bitcoin en México. 📊\\n' +\n      '\\n' +\n      'Análisis macro, estrategias de tesorería corporativa, casos de estudio para CFOs y family offices.\\n' +\n      '\\n' +\n      'Investigación rigurosa. Datos verificables. Sin hype.\\n' +\n      '\\n' +\n      'https://t.co/qVcbkBCNC7',\n    id: '2032094264558305295'\n  }\n}\n"
+      }
+    }
   },
   {
     "id": "arcadiab_today_014",

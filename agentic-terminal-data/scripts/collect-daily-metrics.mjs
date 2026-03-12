@@ -181,7 +181,7 @@ async function main() {
   const date = today();
   log('INFO', `=== collect-daily-metrics.mjs — ${date} ===`);
 
-  // Run Lightning and GitHub in parallel (different sources, no contention)
+  // Run Lightning, GitHub, and x402 — Lightning+GitHub in parallel, x402 after (Dune rate limits)
   const [lightningResult, githubResult] = await Promise.allSettled([
     collectLightningMetrics(),
     collectGitHubMetrics(),
@@ -190,8 +190,12 @@ async function main() {
   const lightning = lightningResult.status === 'fulfilled' ? lightningResult.value : null;
   const github = githubResult.status === 'fulfilled' ? githubResult.value : null;
 
+  // x402 after parallel batch (Dune API is sensitive to concurrent calls)
+  const x402 = await collectX402Metrics().catch(e => { log('ERROR', e.message); return null; });
+
   if (!lightning) log('WARN', 'Lightning metrics collection failed — daily file will lack lightning_network');
   if (!github)    log('WARN', 'GitHub metrics collection failed — daily file will lack github_metrics');
+  if (!x402)      log('WARN', 'x402 collection failed — daily file will lack x402_transactions');
 
   // Merge into existing daily file (don't overwrite ERC-8004 or velocity data)
   const existing = readDailyFile(date);
@@ -215,16 +219,22 @@ async function main() {
     log('INFO', `GitHub: x402=${x402Stars} stars, L402 agent tools=${l402Stars} stars`);
   }
 
+  if (x402) {
+    updated.x402_transactions = x402;
+    log('INFO', `x402: ${x402.daily_transactions} daily txns`);
+  }
+
   writeDailyFile(date, updated);
 
   // Summary
   console.log('\n=== Summary ===');
   console.log(`Lightning Network: ${lightning ? `✅ ${lightning.nodes?.total} nodes` : '❌ failed'}`);
-  console.log(`GitHub metrics: ${github ? `✅ ${Object.keys(github).length} repos` : '❌ failed'}`);
+  console.log(`GitHub metrics:    ${github ? `✅ ${Object.keys(github).length} repos` : '❌ failed'}`);
+  console.log(`x402 transactions: ${x402 ? `✅ ${x402.daily_transactions} txns/day` : '❌ failed'}`);
   console.log(`Daily file updated: agentic-terminal-data/daily/${date}.json`);
 
-  if (!lightning && !github) {
-    process.exit(1); // Signal failure to cron monitor
+  if (!lightning && !github && !x402) {
+    process.exit(1); // Signal total failure to cron monitor
   }
 }
 
@@ -232,3 +242,42 @@ main().catch(err => {
   console.error('Fatal error:', err);
   process.exit(1);
 });
+
+// ─── x402 Transactions (Dune API) ───────────────────────────────────────────
+// Added to ensure daily collection — no gaps in longitudinal data from Mar 9+
+
+async function collectX402Metrics() {
+  log('INFO', 'Collecting x402 transaction data via Dune...');
+  try {
+    const { aggregateX402Metrics } = await import('./query-x402-transactions.mjs');
+    const result = await aggregateX402Metrics();
+
+    // Result is nested: result.metrics.summary holds the key values
+    const summary = result?.metrics?.summary;
+    if (!summary) {
+      log('WARN', 'x402: no metrics.summary in response');
+      return null;
+    }
+
+    const todayStr = today();
+    const todayRow = result.metrics?.dailyBreakdown?.find(d => d.date === todayStr);
+
+    const flat = {
+      source: result.primary_source || 'dune_api',
+      daily_transactions: todayRow?.transactions ?? summary.currentDailyTransactions,
+      daily_volume_usd:   todayRow?.volume ?? summary.currentDailyVolumeUSD,
+      cumulative_transactions: summary.cumulativeTransactions,
+      cumulative_volume_usd:   summary.cumulativeVolumeUSD,
+      avg_transaction_size_usd: summary.averageTransactionSize,
+      trend_direction: summary.trendDirection,
+      data_quality: summary.dataQuality || 'dune_verified',
+      collected_at: new Date().toISOString(),
+    };
+
+    log('INFO', `x402: ${flat.daily_transactions} daily txns, ${flat.cumulative_transactions} cumulative (${flat.source})`);
+    return flat;
+  } catch (err) {
+    log('ERROR', `x402 collection failed: ${err.message}`);
+    return null;
+  }
+}

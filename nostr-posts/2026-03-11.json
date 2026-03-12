@@ -62,5 +62,21 @@
     "relaySuccess": 4,
     "relayTotal": 4,
     "promotional": false
+  },
+  {
+    "timestamp": "2026-03-12T00:00:00.000Z",
+    "localTime": "2026-03-11T19:00:00-05:00",
+    "content": "Bitcoin adoption in LatAm isn't about speculation—it's about survival.\n\nWhen your currency loses 10% annually to inflation, holding pesos is the real risk. Bitcoin is just math doing what math does.\n\nThe future is being built in Mexico, El Salvador, and Argentina. Not New York.",
+    "eventId": "1a8b1eb33f574e6c3716f2050faa7c5444341f4936e9888aeb8f2b728ac6b335",
+    "theme": "LatAm Bitcoin adoption",
+    "relays": [
+      "wss://relay.damus.io",
+      "wss://nos.lol",
+      "wss://relay.primal.net",
+      "wss://relay.snort.social"
+    ],
+    "relaySuccess": 4,
+    "relayTotal": 4,
+    "promotional": false
   }
 ]

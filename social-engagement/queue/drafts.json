@@ -1290,5 +1290,404 @@
     "status": "pending_review",
     "createdAt": 1773244962207,
     "platform": "nostr"
+  },
+  {
+    "id": "draft-1773266550782-zm1b8pnp0",
+    "opportunity": {
+      "id": "79afcd37f8488e53a4b8314d732656c779d576d49acbe32f87277b7294cd3b76",
+      "mode": "arcadiab",
+      "score": 38,
+      "event": {
+        "id": "79afcd37f8488e53a4b8314d732656c779d576d49acbe32f87277b7294cd3b76",
+        "pubkey": "70ea44b6d6e8bf7e1e281311abb127aa6d225938524e0328f64276114efe21eb",
+        "content": "🤔 Poll: Which decentralized protocol interests you most? Nostr / Bitcoin / Morpheus / Akash / Other?",
+        "created_at": 1773086402,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773086602395
+    },
+    "response": "Bitcoin es reserva de valor + Lightning es medio de pago. Las dos capas funcionan juntas. En México ya hay cajeros y tarjetas que conectan ambas.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 38,
+    "status": "pending_review",
+    "createdAt": 1773266550782,
+    "platform": "nostr"
+  },
+  {
+    "id": "draft-1773266550783-qw3sz8a0n",
+    "opportunity": {
+      "id": "7019f614efafdc500e99cf3343e906bf96ed017d96b082998a65c8b26c0b3812",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "7019f614efafdc500e99cf3343e906bf96ed017d96b082998a65c8b26c0b3812",
+        "pubkey": "f26ebe8a32b77a5949115d808f1b30d6017777cc6bb2cb4c59edb47d0ac41c82",
+        "content": "People buy safes for gold.\n\nBitcoin deserves the same respect.🔒\n\n https://blossom.primal.net/bf699471fcdc23300a58834187b512bc8d92e972f3914b0098293ce6322fbcc3.png ",
+        "created_at": 1773086533,
+        "tags": [
+          [
+            "r",
+            "wss://relay.primal.net/"
+          ],
+          [
+            "r",
+            "wss://purplepag.es/"
+          ],
+          [
+            "r",
+            "wss://nos.lol/"
+          ],
+          [
+            "r",
+            "wss://relay.damus.io/"
+          ],
+          [
+            "r",
+            "wss://santo.iguanatech.net/"
+          ],
+          [
+            "r",
+            "wss://nostr.bitcoiner.social/"
+          ],
+          [
+            "imeta",
+            "url https://blossom.primal.net/bf699471fcdc23300a58834187b512bc8d92e972f3914b0098293ce6322fbcc3.png",
+            "m image/png",
+            "dim 2400x1350",
+            "service nip96"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773086602394
+    },
+    "response": "Buena pregunta. Lightning Network permite transacciones instantáneas con comisiones casi cero. Ideal para pagos diarios sin depender de bancos.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 35,
+    "status": "pending_review",
+    "createdAt": 1773266550784,
+    "platform": "nostr"
+  },
+  {
+    "id": "draft-1773266550784-bg7ky3272",
+    "opportunity": {
+      "id": "e70cf1c5691891b1cd1a0c29183b6e366c238b4d4bca0e67926acefe0099e21c",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "e70cf1c5691891b1cd1a0c29183b6e366c238b4d4bca0e67926acefe0099e21c",
+        "pubkey": "91e2a4874fff96e87636ddccd33e0e583b1b113fe8c4f351cfbcff73663d7529",
+        "content": "ML engineer who sees the mycelial network parallel. respect. both systems route resources to where they're needed without central coordination. bitcoin does the same thing with value. nature figured out decentralization long before we did",
+        "created_at": 1773086523,
+        "tags": [
+          [
+            "e",
+            "920c6a48a122f7b981695d532a618986002d277c77713d44000c68f945e63f67",
+            "wss://relay.primal.net",
+            "root"
+          ],
+          [
+            "e",
+            "0000ca6c1900f0bd8e38724e94dc5f071273f83c795438f6d0a5325e09e69364",
+            "wss://relay.primal.net",
+            "reply"
+          ],
+          [
+            "p",
+            "4ae9c5042e86ae77cf099afd0af9d196a66c491d288b3dbe60aac3cd3be165b5"
+          ],
+          [
+            "p",
+            "f03df3d4134230420cdf7acbb35f96a2542424246ab052ba24c6fec6a4d4f676"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773086602394
+    },
+    "response": "Bitcoin es reserva de valor + Lightning es medio de pago. Las dos capas funcionan juntas. En México ya hay cajeros y tarjetas que conectan ambas.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 35,
+    "status": "pending_review",
+    "createdAt": 1773266550784,
+    "platform": "nostr"
+  },
+  {
+    "id": "draft-1773325788891-k7wp43lj9",
+    "opportunity": {
+      "id": "9af57bd88e140323390185e64f805a167fbba3151c0494f337d869e21e327a7d",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "9af57bd88e140323390185e64f805a167fbba3151c0494f337d869e21e327a7d",
+        "pubkey": "d9f02d7efb5cb409f3351b3ddae98778777177efc0a2ffbca85317b6fb5795ac",
+        "content": "Absolutely! Lightning's growth is making everyday Bitcoin payments more practical and helping people experience Bitcoin as real money, not just an investment. The shift toward genuine usage is what will push us past that tipping point. Exciting times ahead for Bitcoiners!",
+        "created_at": 1773086514,
+        "tags": [
+          [
+            "e",
+            "0000fd42b4c695891a6b53523728c5b6fb388cb9cfe07813de92bf0cacd2ef38",
+            "ws://strfry.nostr.svc:7777",
+            "root"
+          ],
+          [
+            "p",
+            "87e1c9ddac12ac233a2ac46876c26cc20f8933418961ddd8a04dc214eb70b6da"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773086602394
+    },
+    "response": "Buena pregunta. Lightning Network permite transacciones instantáneas con comisiones casi cero. Ideal para pagos diarios sin depender de bancos.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 35,
+    "status": "pending_review",
+    "createdAt": 1773325788891,
+    "platform": "nostr"
+  },
+  {
+    "id": "draft-1773325788892-6re2tyu82",
+    "opportunity": {
+      "id": "5dabd0bf551b4db09b9bf9ce1bb51a68c20a1a913beedda321a1862ffbc0ed02",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "5dabd0bf551b4db09b9bf9ce1bb51a68c20a1a913beedda321a1862ffbc0ed02",
+        "pubkey": "91e2a4874fff96e87636ddccd33e0e583b1b113fe8c4f351cfbcff73663d7529",
+        "content": "once you see the incentive layer you can't unsee it. everything from monetary policy to content algorithms is just an incentive game. bitcoin was what cracked it open for me. sound money forces you to think about what's real vs what's subsidized",
+        "created_at": 1773086462,
+        "tags": [
+          [
+            "e",
+            "7531ce3b77d00f53785805a78ce10a2028abc3961d7f650ee0be544e7323a3bb",
+            "wss://relay.primal.net",
+            "root"
+          ],
+          [
+            "e",
+            "4d689b7e8826227dc78023eeba1bfa5cb6fbe26410a6842799ea00a7291700d5",
+            "wss://relay.primal.net",
+            "reply"
+          ],
+          [
+            "p",
+            "528dac9790844ffdb277b9f76b2f5933b6fed73bc957d79fd73a5ad3368e5200"
+          ]
+        ],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773086602394
+    },
+    "response": "Bitcoin es reserva de valor + Lightning es medio de pago. Las dos capas funcionan juntas. En México ya hay cajeros y tarjetas que conectan ambas.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 35,
+    "status": "pending_review",
+    "createdAt": 1773325788892,
+    "platform": "nostr"
+  },
+  {
+    "id": "draft-1773325788893-rmrb3kdvh",
+    "opportunity": {
+      "id": "4c9eec85c85c9fe1d6926c29b2537d010e099cddceae954dc2ae610a16b6fd00",
+      "mode": "arcadiab",
+      "score": 35,
+      "event": {
+        "id": "4c9eec85c85c9fe1d6926c29b2537d010e099cddceae954dc2ae610a16b6fd00",
+        "pubkey": "7f0e64b52ef56bec2b588d460fc63125f567db2c014d1ecce806d8d5b4209e2e",
+        "content": "📰 News Alert...\n\n🔖 Title: Coinbase Debuts Crypto Futures for European Traders with Leverage Options  \n🗓️ Published: 2026-03-09T22:00:00.000Z  \n📄 Summary: Coinbase has introduced regulated cryptocurrency futures trading across 26 European countries, expanding its services significantly in the region. The platform now offers both perpetual and dated contracts, allowing traders to utilize up to 10x leverage. This move positions Coinbase as a key player in the European crypto derivatives market, providing enhanced trading options under regulatory frameworks to offer greater flexibility and risk management for investors.  \n🔗  \nhttps://decrypt.co/360420/coinbase-debuts-crypto-futures-european-traders-bitcoin-ethereum\n\n🗞️ Source: Stacy Elliott  \n💓 #CryptoFutures #CoinbaseEurope #CryptoTrading",
+        "created_at": 1773086461,
+        "tags": [],
+        "replies": 0,
+        "likes": 0
+      },
+      "config": {
+        "keywords": [
+          "bitcoin",
+          "btc",
+          "inflacion",
+          "peso",
+          "mexico",
+          "ahorro",
+          "dolar"
+        ],
+        "hashtags": [
+          "bitcoin",
+          "btc",
+          "lightning",
+          "nostr"
+        ],
+        "minReplies": 2,
+        "language": "es",
+        "engagementStyle": "educational_data_driven"
+      },
+      "discoveredAt": 1773086602394
+    },
+    "response": "Bitcoin es reserva de valor + Lightning es medio de pago. Las dos capas funcionan juntas. En México ya hay cajeros y tarjetas que conectan ambas.",
+    "convoType": "general_bitcoin",
+    "approach": "Add value, answer questions",
+    "rules": [
+      "NEVER post ArcadiaB link in first reply",
+      "NEVER say \"visita arcadiab.com\" unsolicited",
+      "ALWAYS add data or unique insight",
+      "IF asked for platform → share arcadiab.com",
+      "IF discussing DCA → mention Ahorro Inteligente naturally",
+      "MAX 2-3 sentences per reply"
+    ],
+    "finalScore": 35,
+    "status": "pending_review",
+    "createdAt": 1773325788893,
+    "platform": "nostr"
   }
 ]

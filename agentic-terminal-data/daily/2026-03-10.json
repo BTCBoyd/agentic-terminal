@@ -106,12 +106,11 @@
   },
   "x402_transactions": {
     "source": "dune_api",
-    "daily_transactions": null,
-    "cumulative_transactions": 76450615,
-    "cumulative_volume_usd": 26309580.22,
-    "note": "Dune API rate limited today \u2014 cumulative carried from Day 1 baseline",
-    "data_quality": "cumulative_only",
-    "last_updated": "2026-03-10T12:00:00Z"
+    "daily_transactions": 192173,
+    "daily_volume_usd": 28828,
+    "data_quality": "verified_onchain_dune",
+    "note": "Backfilled 2026-03-12 from Dune 7-day breakdown query",
+    "collected_at": "2026-03-12T15:01:00.000Z"
   },
   "data_sources": "canonical_db_verified",
   "day_number": 2,

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-11T21:20:02.127Z",
+  "generated_at": "2026-03-12T15:00:02.861Z",
   "needs_boyd": [
     "Newsletter may need publication - check drafts"
   ],
   "content_queue": {
     "arcadiab_x": {
-      "scheduled": 19,
+      "scheduled": 15,
       "min_threshold": 8,
       "target": 20
     },
@@ -72,7 +72,7 @@
       {
         "name": "Moltbook Morning Session",
         "scheduled_time": "09:00",
-        "last_executed": "2026-03-11T13:42:27.556Z",
+        "last_executed": "2026-03-12T14:38:51.635Z",
         "has_cron": true,
         "threshold_hours": 26,
         "category": "research"
@@ -80,7 +80,7 @@
       {
         "name": "Check ArcadiaB Queue Status",
         "scheduled_time": "09:00",
-        "last_executed": "2026-03-11T21:00:02.902Z",
+        "last_executed": "2026-03-12T15:00:02.626Z",
         "has_cron": true,
         "threshold_hours": 26,
         "category": "content"
@@ -206,7 +206,7 @@
       {
         "name": "Daily Memory Log",
         "scheduled_time": "20:00",
-        "last_executed": "2026-03-11T01:38:20.006Z",
+        "last_executed": "2026-03-12T00:00:28.041Z",
         "has_cron": true,
         "threshold_hours": 26,
         "category": "admin"
@@ -340,23 +340,23 @@
   "activity_log": [
     {
       "task": "Check ArcadiaB Queue Status",
-      "completed_at": "2026-03-11T21:00:02.902Z",
+      "completed_at": "2026-03-12T15:00:02.626Z",
       "category": "content"
     },
     {
       "task": "Moltbook Morning Session",
-      "completed_at": "2026-03-11T13:42:27.556Z",
+      "completed_at": "2026-03-12T14:38:51.635Z",
       "category": "research"
+    },
+    {
+      "task": "Daily Memory Log",
+      "completed_at": "2026-03-12T00:00:28.041Z",
+      "category": "admin"
     },
     {
       "task": "Agentic Terminal Data Collection",
       "completed_at": "2026-03-11T13:31:46.919Z",
       "category": "data"
-    },
-    {
-      "task": "Daily Memory Log",
-      "completed_at": "2026-03-11T01:38:20.006Z",
-      "category": "admin"
     },
     {
       "task": "Observer Protocol Agent Outreach",
