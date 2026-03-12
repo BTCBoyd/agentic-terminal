@@ -558,6 +558,42 @@ def get_feed(limit: int = 50):
         conn.close()
 
 
+@app.get("/observer/transactions")
+def get_transactions(limit: int = 20, agent_id: str = None):
+    """Get recent verified transactions with full detail (payment hash, agent, direction)."""
+    conn = get_db_connection()
+    cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+
+    try:
+        if agent_id:
+            cursor.execute("""
+                SELECT event_id, agent_id, event_type, protocol, transaction_hash,
+                       amount_bucket, direction, verified, created_at,
+                       payer_alias, payee_alias, service_description
+                FROM verified_events
+                WHERE agent_id = %s
+                ORDER BY created_at DESC
+                LIMIT %s
+            """, (agent_id, limit))
+        else:
+            cursor.execute("""
+                SELECT event_id, agent_id, event_type, protocol, transaction_hash,
+                       amount_bucket, direction, verified, created_at,
+                       payer_alias, payee_alias, service_description
+                FROM verified_events
+                ORDER BY created_at DESC
+                LIMIT %s
+            """, (limit,))
+
+        events = [dict(r) for r in cursor.fetchall()]
+        return {"transactions": events, "count": len(events)}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to get transactions: {str(e)}")
+    finally:
+        cursor.close()
+        conn.close()
+
+
 def _generate_badge_svg(
     agent_name: str,
     agent_seq: int,
