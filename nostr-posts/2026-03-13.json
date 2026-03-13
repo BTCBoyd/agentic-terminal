@@ -1,0 +1,30 @@
+[
+  {
+    "timestamp": "2026-03-13T14:46:00Z",
+    "eventId": "f080620607a9cff0722a07382234e7151a6a911004cc6ad03e81f8053ec16aa5",
+    "content": "Hard money isn't an opinion. It's physics. When supply is capped and demand grows, purchasing power flows to holders. Bitcoin just encodes this into consensus.",
+    "theme": "Bitcoin fundamentals",
+    "relays": [
+      "wss://relay.damus.io",
+      "wss://nos.lol",
+      "wss://relay.primal.net",
+      "wss://relay.snort.social"
+    ],
+    "relaySuccess": 4,
+    "promotional": false
+  },
+  {
+    "timestamp": "2026-03-13T15:00:00Z",
+    "eventId": "41e16c29a54f85b49d8085e9f4b923fc5c8e06c3c6642542f5ad4456a481acc3",
+    "content": "L402 isn't just a payment standard—it's the native language of the agentic economy. HTTP 402 + Lightning = machines transacting without intermediaries. No accounts. No KYC. Just cryptographic proof of payment.",
+    "theme": "Agentic Terminal / L402 protocol",
+    "relays": [
+      "wss://relay.damus.io",
+      "wss://nos.lol",
+      "wss://relay.primal.net",
+      "wss://relay.snort.social"
+    ],
+    "relaySuccess": 4,
+    "promotional": false
+  }
+]

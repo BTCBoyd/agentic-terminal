@@ -1,0 +1,131 @@
+{
+  "date": "2026-03-13",
+  "collected_at": "2026-03-13T14:43:00.000Z",
+  "lightning_network": {
+    "nodes": {
+      "total": 5606,
+      "tor": null
+    },
+    "channels": {
+      "total": 17016
+    },
+    "capacity": {
+      "btc": 2667.56,
+      "usd": 196076244.18
+    },
+    "source": "1ml_web_fetch",
+    "collected_at": "2026-03-13T14:43:20.877Z",
+    "change_24h": {
+      "nodes": "+15",
+      "channels": "+287",
+      "capacity_btc": null
+    }
+  },
+  "github_metrics": {
+    "l402_aperture": {
+      "repo": "lightninglabs/aperture",
+      "stars": 255,
+      "forks": 66,
+      "updated_at": "2026-03-08T21:47:07Z"
+    },
+    "x402": {
+      "repo": "coinbase/x402",
+      "stars": 5652,
+      "forks": 1265,
+      "updated_at": "2026-03-13T13:18:50Z"
+    },
+    "ark_protocol_arkd": {
+      "repo": "arkade-os/arkd",
+      "stars": 157,
+      "forks": 56,
+      "updated_at": "2026-03-12T03:04:37Z"
+    },
+    "ark_protocol_tssdk": {
+      "repo": "arkade-os/ts-sdk",
+      "stars": 42,
+      "forks": 19,
+      "updated_at": "2026-03-13T13:51:11Z"
+    },
+    "ark_protocol_skill": {
+      "repo": "arkade-os/skill",
+      "stars": 4,
+      "forks": 4,
+      "updated_at": "2026-02-24T13:27:05Z"
+    }
+  },
+  "x402_transactions": {
+    "source": "dune",
+    "daily_transactions": 45309,
+    "daily_volume_usd": 8983,
+    "cumulative_transactions": 78043966,
+    "cumulative_volume_usd": 26879164.15,
+    "avg_transaction_size_usd": 0.28,
+    "trend_direction": "declining",
+    "data_quality": "verified_onchain_dune",
+    "collected_at": "2026-03-13T14:43:21.873Z"
+  },
+  "timestamp": "2026-03-13T14:43:21.874Z",
+  "data_sources": "agentic-terminal-data-collection",
+  "erc8004_multichain": {
+    "total_agents": 89451,
+    "indexed_agents": 15000,
+    "supported_chains": 10,
+    "by_chain": {
+      "ethereum": 12112,
+      "base": 22994,
+      "bnb_chain": 35926,
+      "polygon": 222,
+      "avalanche": 1733,
+      "monad": 2104,
+      "arbitrum": 613
+    },
+    "source": "8004scan.io",
+    "source_url": "https://www.8004scan.io/",
+    "contract": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+    "data_quality": "authoritative_onchain",
+    "collection_method": "browser_snapshot",
+    "collected_at": "2026-03-13T14:52:00Z",
+    "note": "Updated to 8004scan.io as primary source. Previous 8004agents.ai reading of 75,704 understated by ~18%. Cross-verified via The Defiant article 2026-03-12."
+  },
+  "github_velocity": {
+    "aggregate": {
+      "total_velocity_score": 46,
+      "total_commits_7d": 46,
+      "total_prs_7d": 0,
+      "avg_velocity_per_repo": 9
+    },
+    "by_repo": [
+      {
+        "repo": "coinbase/x402",
+        "velocity": 29,
+        "commits": 29,
+        "prs": 0
+      },
+      {
+        "repo": "lightninglabs/aperture",
+        "velocity": 0,
+        "commits": 0,
+        "prs": 0
+      },
+      {
+        "repo": "arkade-os/arkd",
+        "velocity": 4,
+        "commits": 4,
+        "prs": 0
+      },
+      {
+        "repo": "arkade-os/ts-sdk",
+        "velocity": 13,
+        "commits": 13,
+        "prs": 0
+      },
+      {
+        "repo": "arkade-os/skill",
+        "velocity": 0,
+        "commits": 0,
+        "prs": 0
+      }
+    ],
+    "collected_at": "2026-03-13T14:54:46.105Z"
+  }
+}

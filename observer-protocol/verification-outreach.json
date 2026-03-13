@@ -257,10 +257,12 @@
       "lightningIntegration": "Bitcoin Lightning for skill marketplace transactions; transparent reputation",
       "contactMethod": "GitHub Issues to M4rian-rpg",
       "npub": null,
-      "status": "new_discovery",
-      "outreachDate": null,
+      "status": "outreach_sent",
+      "outreachDate": "2026-03-12T20:00:00-04:00",
       "response": null,
-      "scanSource": "GitHub search 2026-03-02"
+      "outreachMethod": "GitHub issue",
+      "outreachUrl": "https://github.com/M4rian-rpg/squidbay/issues/new",
+      "scanSource": "GitHub search 2026-03-02; outreach 2026-03-12"
     },
     {
       "id": "agent-029",
@@ -466,10 +468,12 @@
       "lightningIntegration": "x402 (USDC on Base); cross-protocol potential",
       "contactMethod": "GitHub Issues to Krishnan-govindan",
       "npub": null,
-      "status": "outreach_pending",
-      "outreachDate": null,
+      "status": "outreach_sent",
+      "outreachDate": "2026-03-12T20:02:00-04:00",
       "response": null,
-      "scanSource": "GitHub search 2026-03-06 evening; detailed analysis 2026-03-07"
+      "outreachMethod": "GitHub issue",
+      "outreachUrl": "https://github.com/Krishnan-govindan/AgentBazaar/issues/new",
+      "scanSource": "GitHub search 2026-03-06 evening; detailed analysis 2026-03-07; outreach 2026-03-12"
     },
     {
       "id": "agent-078",
@@ -482,10 +486,12 @@
       "lightningIntegration": "LNbits/LND; Lightning payments for micro-services; autonomous balance monitoring",
       "contactMethod": "GitHub Issues to CodeByMAB",
       "npub": null,
-      "status": "new_discovery",
-      "outreachDate": null,
+      "status": "outreach_sent",
+      "outreachDate": "2026-03-12T19:58:00-04:00",
       "response": null,
-      "scanSource": "Web search 2026-03-07 evening"
+      "outreachMethod": "GitHub issue",
+      "outreachUrl": "https://github.com/CodeByMAB/Falconer/issues/new",
+      "scanSource": "Web search 2026-03-07 evening; outreach 2026-03-12"
     },
     {
       "id": "agent-079",
@@ -541,14 +547,14 @@
     }
   ],
   "dailyStats": {
-    "agentsIdentified": 88,
-    "newToday": 1,
-    "transactingAgents": 72,
-    "contactedToday": 0,
+    "agentsIdentified": 92,
+    "newToday": 4,
+    "transactingAgents": 76,
+    "contactedToday": 3,
     "responsesReceived": 0,
-    "scansCompleted": 18,
-    "lastScanTime": "2026-03-10T11:25:00-05:00",
-    "notes": "2026-03-10 AM session: Scanned for new agents via web search. Found Lightning Labs lightning-agent-tools (official infrastructure, not individual agent). 0 new individual agents to contact — focusing on pending high-priority contacts from previous scans."
+    "scansCompleted": 19,
+    "lastScanTime": "2026-03-12T19:56:00-04:00",
+    "notes": "2026-03-12 PM session: Scanned GitHub, Glama registry for new agents. Found 4 new transacting agents: lightning-enable-mcp (Strike/LND/NWC), AIProx ecosystem (15 live agents), LPXPoly (Polymarket analysis), autonomous-agent-demo. Sent 3 verification offers to pending high-priority agents."
   },
   "eveningContacts_2026_03_08": [
     {
@@ -580,6 +586,38 @@
       "repo": "Sharmaz/phoenixd-mcp-server",
       "priority": "MEDIUM",
       "notes": "phoenixd Lightning wallet MCP integration for LLMs."
+    }
+  ],
+  "todaysContacts_2026_03_12": [
+    {
+      "id": "agent-078",
+      "name": "Falconer",
+      "time": "7:58 PM",
+      "method": "GitHub Issue",
+      "url": "https://github.com/CodeByMAB/Falconer/issues/new",
+      "repo": "CodeByMAB/Falconer",
+      "priority": "HIGH",
+      "notes": "Sovereign AI Agent that collects Bitcoin by performing tasks. LNbits/LND integration, autonomous earning, air-gapped security with PSBT signing."
+    },
+    {
+      "id": "agent-027",
+      "name": "SquidBay",
+      "time": "8:00 PM",
+      "method": "GitHub Issue",
+      "url": "https://github.com/M4rian-rpg/squidbay/issues/new",
+      "repo": "M4rian-rpg/squidbay",
+      "priority": "HIGH",
+      "notes": "AI agents marketplace to buy and sell skills using Bitcoin Lightning with verified identities."
+    },
+    {
+      "id": "agent-077",
+      "name": "AgentBazaar",
+      "time": "8:02 PM",
+      "method": "GitHub Issue",
+      "url": "https://github.com/Krishnan-govindan/AgentBazaar/issues/new",
+      "repo": "Krishnan-govindan/AgentBazaar",
+      "priority": "HIGH",
+      "notes": "Full marketplace with Nevermined x402 payments and cross-team A2A commerce. Pending since Mar 7."
     }
   ],
   "todaysContacts_2026_03_08": [
@@ -622,8 +660,52 @@
   },
   "verificationOffer": {
     "message": "Your agent looks active. Want free verification on observerprotocol.org? Just:\n1. Generate a keypair\n2. Register at api.observerprotocol.org\n3. We'll verify your Lightning node and public key\n4. Badge + reputation graph entry\n\nTakes 5 minutes. No cost.",
-    "contactPriority": ["agent-078", "agent-027", "agent-075", "agent-079", "agent-080", "agent-029", "agent-076", "agent-077"]
+    "contactPriority": ["agent-088", "agent-089", "agent-078", "agent-027", "agent-075", "agent-079", "agent-080", "agent-029", "agent-076", "agent-077"]
   },
+  "pendingOutreach": [
+    {
+      "id": "agent-075",
+      "name": "boltzpay",
+      "priority": "MEDIUM",
+      "reason": "AI agent payment tool for accessing paid APIs across multiple protocols"
+    },
+    {
+      "id": "agent-079",
+      "name": "bitcoin-mcp",
+      "priority": "MEDIUM",
+      "reason": "Bitcoin & Lightning Network MCP Server by AbdelStark"
+    },
+    {
+      "id": "agent-080",
+      "name": "startwithbitcoin-skill",
+      "priority": "MEDIUM",
+      "reason": "Claude Code skill for setting up Bitcoin/Lightning capabilities for AI agents"
+    },
+    {
+      "id": "agent-029",
+      "name": "SatGate",
+      "priority": "MEDIUM",
+      "reason": "Economic Firewall for AI Agent Requests — 8 stars, active development"
+    },
+    {
+      "id": "agent-076",
+      "name": "ag402",
+      "priority": "MEDIUM",
+      "reason": "Secure payment layer for x402 transactions — MCP and Python support"
+    },
+    {
+      "id": "agent-090",
+      "name": "LPXPoly",
+      "priority": "MEDIUM",
+      "reason": "Polymarket analysis agent, part of AIProx ecosystem"
+    },
+    {
+      "id": "agent-091",
+      "name": "autonomous-agent-demo",
+      "priority": "MEDIUM",
+      "reason": "Demo showing true financial autonomy - part of AIProx ecosystem"
+    }
+  ],
   "todaysScan_2026_03_10": {
     "scanType": "Web search - Nostr, GitHub, X for transacting agents",
     "agentsFound": 0,
@@ -701,6 +783,78 @@
       "Contact agent-077 (AgentBazaar) — x402 marketplace, pending since Mar 7"
     ]
   },
+  "todaysDiscovery_2026_03_12": [
+    {
+      "id": "agent-088",
+      "name": "lightning-enable-mcp",
+      "source": "GitHub/refined-element",
+      "url": "https://github.com/refined-element/lightning-enable-mcp",
+      "platforms": ["GitHub", "NuGet", "PyPI", "Docker"],
+      "description": "MCP server enabling AI agents to make Lightning Network payments - .NET and Python",
+      "transactingEvidence": "Production packages on NuGet/PyPI/Docker; Strike API, LND REST, NWC (CoinOS/CLINK/Alby Hub) support; live L402 store at store.lightningenable.com",
+      "lightningIntegration": "Strike API, LND REST + macaroon, NWC (multiple providers), L402 guaranteed support",
+      "contactMethod": "GitHub Issues to refined-element",
+      "npub": null,
+      "status": "new_discovery",
+      "outreachDate": null,
+      "response": null,
+      "scanSource": "Web search 2026-03-12",
+      "priority": "HIGH"
+    },
+    {
+      "id": "agent-089",
+      "name": "AIProx Registry",
+      "source": "Glama/GitHub",
+      "url": "https://aiprox.dev",
+      "platforms": ["Web", "GitHub"],
+      "description": "Open agent registry with 15 live agents across Bitcoin Lightning, Solana USDC, and Base x402",
+      "transactingEvidence": "15 live agents; orchestrator decomposes tasks and routes to specialists; multi-rail payments (Lightning, Solana, Base); real receipts with agent usage and spend",
+      "lightningIntegration": "Bitcoin Lightning pay-per-call; LightningProx agent; ~50 sats per analysis",
+      "contactMethod": "GitHub Issues to unixlamadev-spec OR registry API",
+      "npub": null,
+      "status": "new_discovery",
+      "outreachDate": null,
+      "response": null,
+      "scanSource": "Web search 2026-03-12",
+      "priority": "HIGH",
+      "notes": "Ecosystem play - 15 agents in one registry. Verification at registry level could onboard multiple agents simultaneously."
+    },
+    {
+      "id": "agent-090",
+      "name": "LPXPoly",
+      "source": "Glama/GitHub",
+      "url": "https://lpxpoly.com",
+      "platforms": ["Web"],
+      "description": "AI-powered Polymarket prediction market analysis - pay per analysis in Bitcoin sats via Lightning",
+      "transactingEvidence": "~50 sats per analysis; live Lightning payments; discoverable via AIProx registry",
+      "lightningIntegration": "Bitcoin Lightning micropayments; LightningProx integration",
+      "contactMethod": "Part of AIProx ecosystem - contact via unixlamadev-spec",
+      "npub": null,
+      "status": "new_discovery",
+      "outreachDate": null,
+      "response": null,
+      "scanSource": "Web search 2026-03-12",
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "agent-091",
+      "name": "autonomous-agent-demo",
+      "source": "GitHub/unixlamadev-spec",
+      "url": "https://github.com/unixlamadev-spec/autonomous-agent-demo",
+      "platforms": ["GitHub"],
+      "description": "Fully autonomous AI agent that generates Solana wallet, discovers payment agents via AIProx, pays for AI inference in USDC with no human intervention",
+      "transactingEvidence": "Demo shows end-to-end autonomous operation: wallet generation, registry discovery, funding detection, payment, inference; zero human input after initial funding",
+      "lightningIntegration": "Part of AIProx ecosystem - supports Bitcoin Lightning via LightningProx",
+      "contactMethod": "GitHub Issues to unixlamadev-spec",
+      "npub": null,
+      "status": "new_discovery",
+      "outreachDate": null,
+      "response": null,
+      "scanSource": "Web search 2026-03-12",
+      "priority": "MEDIUM",
+      "notes": "Demo agent showing true financial autonomy - generates wallet, hires agents, pays autonomously."
+    }
+  ],
   "todaysDiscovery_2026_03_09": [
     {
       "id": "agent-087",

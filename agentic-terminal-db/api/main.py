@@ -420,12 +420,20 @@ def submit_transaction(
         if not is_signature_valid:
             raise HTTPException(status_code=403, detail="Invalid signature: cryptographic verification failed")
 
-        # Determine amount_bucket from optional_metadata if provided
+        # Determine amount_bucket and amount_sats from optional_metadata if provided
         amount_bucket = "unknown"
+        amount_sats = None
         if optional_metadata:
             try:
                 metadata = json.loads(optional_metadata)
-                amount = metadata.get("amount_sats", 0)
+                # Handle both integer and string values for amount_sats
+                raw_amount = metadata.get("amount_sats")
+                if raw_amount is not None:
+                    try:
+                        amount_sats = int(raw_amount)
+                    except (ValueError, TypeError):
+                        amount_sats = None
+                amount = amount_sats or 0
                 if amount < 1000:
                     amount_bucket = "micro"
                 elif amount < 10000:
@@ -434,7 +442,9 @@ def submit_transaction(
                     amount_bucket = "medium"
                 else:
                     amount_bucket = "large"
-            except:
+            except Exception as e:
+                # Log error for debugging but don't fail the transaction
+                print(f"Error parsing amount_sats from metadata: {e}")
                 pass
 
         # Generate event_id
@@ -467,13 +477,13 @@ def submit_transaction(
         cursor.execute("""
             INSERT INTO verified_events (
                 event_id, agent_id, counterparty_id, event_type, protocol,
-                transaction_hash, time_window, amount_bucket, direction,
+                transaction_hash, time_window, amount_bucket, amount_sats, direction,
                 service_description, verified, created_at, preimage
-            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, NOW(), %s)
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, NOW(), %s)
         """, (
             event_id, agent_id, counterparty_id, event_type, protocol,
             transaction_reference, timestamp[:10] if timestamp else None,
-            amount_bucket, direction, service_description, True, stored_preimage
+            amount_bucket, amount_sats, direction, service_description, True, stored_preimage
         ))
 
         conn.commit()
@@ -571,7 +581,7 @@ def get_transactions(limit: int = 20, agent_id: str = None):
         if agent_id:
             cursor.execute("""
                 SELECT event_id, agent_id, event_type, protocol, transaction_hash,
-                       amount_bucket, direction, verified, created_at,
+                       amount_bucket, amount_sats, direction, verified, created_at,
                        payer_alias, payee_alias, service_description, preimage
                 FROM verified_events
                 WHERE agent_id = %s
@@ -581,7 +591,7 @@ def get_transactions(limit: int = 20, agent_id: str = None):
         else:
             cursor.execute("""
                 SELECT event_id, agent_id, event_type, protocol, transaction_hash,
-                       amount_bucket, direction, verified, created_at,
+                       amount_bucket, amount_sats, direction, verified, created_at,
                        payer_alias, payee_alias, service_description, preimage
                 FROM verified_events
                 ORDER BY created_at DESC

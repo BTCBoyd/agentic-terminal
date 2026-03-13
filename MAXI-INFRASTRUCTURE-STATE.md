@@ -245,6 +245,19 @@
 
 ---
 
+## SOCIAL ACCOUNTS — CONFIRMED
+
+| Account | Platform | Status |
+|---------|----------|--------|
+| @Maxibtc2009 | X (Twitter) | ✅ Active — Maxi's personal account |
+| @arcadiabtc | X (Twitter) | ✅ Active — ArcadiaB corporate account |
+| @agenticterminal | X (Twitter) | ✅ Active — https://x.com/agenticterminal |
+| maxiagent | Moltbook | ✅ Active — https://www.moltbook.com/u/maxiagent |
+
+**Tagging rule:** Always tag @agenticterminal (lowercase) on AT-related posts from @Maxibtc2009.
+
+---
+
 ## WEB SEARCH (BRAVE API)
 
 **Status:** OPERATIONAL (restored 2026-02-28)

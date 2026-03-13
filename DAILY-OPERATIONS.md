@@ -25,8 +25,8 @@
 |------|------|---------------|-----------|-------|--------|
 | **Moltbook morning session** | 9 AM | 2026-03-06 | ✅ CRON — 9 AM ET | Maxi | **DONE** |
 | **ArcadiaB X posts: 4 posts/day** | 9AM/12PM/3PM/5:30PM CST | 2026-02-23 09:30 EST | ✅ QUEUE | Maxi | **RESCHEDULED: new times per Boyd (2026-02-20)** |
-| **Check ArcadiaB post queue status** | 9 AM | 2026-03-11 09:33 EST | ✅ YES | Maxi | **DONE** |
-| **Agentic Terminal data collection** | 8 AM | 2026-03-11 | ✅ YES | Maxi | **DONE** |
+| **Check ArcadiaB post queue status** | 9 AM | 2026-03-13 10:44 AM CST | ✅ YES | Maxi | **DONE** |
+| **Agentic Terminal data collection** | 8 AM | 2026-03-13 | ✅ YES | Maxi | **DONE** |
 
 ### ArcadiaB Social Media Requirements (DAILY)
 
@@ -104,7 +104,7 @@
 | **ArcadiaB X conversation monitoring** | 3x daily (8AM, 2PM, 8PM CST) | NEVER | ✅ CRON (added 2026-03-09) | Maxi | **NEW: Searches Spanish X convos about inflación, peso, Bitcoin México. Max 3 replies/session. @arcadiabtc account.** |
 | **Maxi X conversation monitoring (AT + OP)** | 3x daily (9AM, 3PM, 9PM CST) | NEVER | ✅ CRON (added 2026-03-09) | Maxi | **NEW: Searches English X convos about x402, L402, agent payments, Observer Protocol. Max 3 replies/session. @Maxibtc2009.** |
 | **My own X posting (brand building)** | ~10 posts/day | 2026-02-24 | ✅ QUEUE | Maxi | **QUEUE LOADED through Mar 5. Focus: AI+Bitcoin convergence, AT — NOT LatAm macro (that's @arcadiabtc)** |
-| **My own Nostr posting (brand building)** | 1-2 posts/day | 2026-03-06 08:01 EST | ✅ YES | Maxi | **DONE** |
+| **My own Nostr posting (brand building)** | 1-2 posts/day | 2026-03-13 15:00 UTC | ✅ YES | Maxi | **DONE** |
 | **Monitor Bitcoin/macro news** | Continuous | REACTIVE | ❌ NO | Maxi | **NEEDS SYSTEM** |
 | **Log L402 transactions (when live)** | As they occur | N/A | ❌ NO | Maxi | **NEEDS SYSTEM** |
 
@@ -113,8 +113,8 @@
 ## 🔴 DAILY TASKS - END OF DAY
 | Task | Time | Last Executed | Cron Job? | Owner | Status |
 |------|------|---------------|-----------|-------|--------|
-| **Write daily memory log** | End of day | 2026-03-11 20:00 EST | ✅ YES | Maxi | **DONE** |
-| **Create handoff file (if work ongoing)** | End of day | 2026-03-11 20:05 EST | ✅ YES | Maxi | **DONE** |
+| **Write daily memory log** | End of day | 2026-03-12 20:00 EST | ✅ YES | Maxi | **DONE** |
+| **Create handoff file (if work ongoing)** | End of day | 2026-03-12 20:05 EST | ✅ YES | Maxi | **DONE** |
 | **Update DAILY-OPERATIONS.md with completion times** | End of day | NEVER | ❌ NO | Maxi | **NEEDS SYSTEM** |
 
 ### Daily Memory Log (memory/YYYY-MM-DD.md)

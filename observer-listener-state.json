@@ -1,10 +1,12 @@
 {
-  "lastProcessedIndex": 3,
+  "lastProcessedIndex": 5,
   "processedPaymentHashes": [
     "ece4c55591b09360534df4abe07ca81dee71fc862be179d96503301df42776b6",
     "6a30ba7fff332c4eb8f368da804b663a20bf59ae1362d76ac1d10c298d4cd875",
-    "8845c936bb6dfc0afc7cfbac2a8214363d38d7d1566f35d1893219e0c3f1257a"
+    "8845c936bb6dfc0afc7cfbac2a8214363d38d7d1566f35d1893219e0c3f1257a",
+    "b9a0953bb46b2af8c326d26fc4a4e0fe676528b77387d500ef0de0c9b8d8baa6",
+    "e4de2dc39b661671ef7d20eb77a5d30ab2b45c933011aa3e4357bc5feb3f4d43"
   ],
-  "totalSubmitted": 3,
+  "totalSubmitted": 5,
   "startTime": "2026-03-05T16:45:00Z"
 }

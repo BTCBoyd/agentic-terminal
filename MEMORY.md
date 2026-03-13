@@ -151,9 +151,9 @@ All critical automation: systemd service, health check, WhatsApp alert on failur
 
 ## 📅 Week of Mar 1 - Mar 8, 2026 — Key Learnings
 
-### Observer Protocol: 82 Agents, 67 Transacting (82% Conversion)
-- **Registry growth:** 45 → 82 agents in one week (+37 new)
-- **Transacting agents:** 67 of 82 have on-chain payment capability (Lightning/x402/L402)
+### Observer Protocol: 3 Registered Agents (Our Actual Registry)
+- **Our registry:** 3 registered agents (confirmed by Boyd, 2026-03-13)
+- **⚠️ CORRECTION:** Prior MEMORY entries claiming "82 agents, 67 transacting" were WRONG — those were external ecosystem research numbers, NOT our registry
 - **Outreach method:** GitHub CLI issues — zero rate limits, instant delivery, 22+ contacts made
 - **Major discovery:** Lightning Labs official MCP server (lightning-agent-tools) — validates our thesis
 - **Google A2A x402:** Official Google Agentic Commerce team release — major platform validation

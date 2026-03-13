@@ -58,11 +58,13 @@ function shouldDelegateToKimi(message) {
   return { delegate: false };
 }
 
-// Export for use in session
-module.exports = { shouldDelegateToKimi, DEV_TRIGGERS };
-
 // CLI usage: node model-router.mjs "your message here"
 if (process.argv[2]) {
   const result = shouldDelegateToKimi(process.argv[2]);
   console.log(JSON.stringify(result));
+}
+
+// Export for use in session (CommonJS compatibility)
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { shouldDelegateToKimi, DEV_TRIGGERS };
 }

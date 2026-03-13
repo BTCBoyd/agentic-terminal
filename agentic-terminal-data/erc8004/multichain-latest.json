@@ -1,59 +1,50 @@
 {
-  "timestamp": "2026-03-12T14:42:00.000Z",
+  "timestamp": "2026-03-13T14:52:00Z",
   "source": "8004agents.ai",
   "source_url": "https://8004agents.ai/",
   "contract": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+  "total_agents": 75704,
+  "indexed_agents": 15000,
+  "supported_chains": 10,
+  "total_reviews": 0,
   "by_chain": {
-    "bnb_chain": {
-      "chain": "bnb_chain",
-      "agents": 9857,
-      "status": "syncing"
+    "ethereum": {
+      "name": "Ethereum",
+      "agents": 12112,
+      "percentage": 16.0
     },
     "base": {
-      "chain": "base",
-      "agents": 4075,
-      "status": "syncing"
+      "name": "Base",
+      "agents": 22994,
+      "percentage": 30.4
     },
-    "avalanche": {
-      "chain": "avalanche",
-      "agents": 498,
-      "status": "syncing"
-    },
-    "ethereum": {
-      "chain": "ethereum",
-      "agents": 364,
-      "status": "syncing"
-    },
-    "sepolia": {
-      "chain": "sepolia",
-      "agents": 113,
-      "status": "syncing"
-    },
-    "bsc_testnet": {
-      "chain": "bsc_testnet",
-      "agents": 49,
-      "status": "syncing"
-    },
-    "arbitrum": {
-      "chain": "arbitrum",
-      "agents": 28,
-      "status": "syncing"
+    "bnb_chain": {
+      "name": "BNB Chain",
+      "agents": 35926,
+      "percentage": 47.5
     },
     "polygon": {
-      "chain": "polygon",
-      "agents": 14,
-      "status": "syncing"
+      "name": "Polygon",
+      "agents": 222,
+      "percentage": 0.3
     },
-    "base_sepolia": {
-      "chain": "base_sepolia",
-      "agents": 2,
-      "status": "syncing"
+    "avalanche": {
+      "name": "Avalanche",
+      "agents": 1733,
+      "percentage": 2.3
+    },
+    "monad": {
+      "name": "Monad",
+      "agents": 2104,
+      "percentage": 2.8
+    },
+    "arbitrum": {
+      "name": "Arbitrum",
+      "agents": 613,
+      "percentage": 0.8
     }
   },
-  "total_indexed": 15000,
-  "total_registered": 73965,
-  "supported_chains": 9,
   "data_quality": "authoritative",
   "collection_method": "browser_snapshot",
-  "notes": "73,965 total agents registered across all chains; 15,000 indexed by explorer"
+  "notes": "API endpoints blocked by Cloudflare protection; data collected via browser snapshots from 8004agents.ai explorer"
 }

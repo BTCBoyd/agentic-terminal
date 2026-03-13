@@ -489,3 +489,31 @@ Pushing to GitHub...
  3 files changed, 9 insertions(+), 9 deletions(-)
 ------------------------------------------------------------
 Export complete!
+/home/futurebit/.openclaw/workspace/agentic-terminal-db/collectors/lightning_collector.py:36: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow()
+/home/futurebit/.openclaw/workspace/agentic-terminal-db/collectors/lightning_collector.py:70: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  print(f"[{datetime.utcnow().isoformat()}] Lightning collector: {collector.rows_inserted} metrics inserted, status={status}")
+[2026-03-13T12:05:02.760994] Lightning collector: 3 metrics inserted, status=success
+/home/futurebit/.openclaw/workspace/agentic-terminal-db/collectors/github_collector.py:47: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow()
+/home/futurebit/.openclaw/workspace/agentic-terminal-db/collectors/github_collector.py:105: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  print(f"[{datetime.utcnow().isoformat()}] GitHub collector: {collector.rows_inserted} metrics inserted, status={status}")
+[2026-03-13T12:05:04.322884] GitHub collector: 9 metrics inserted, status=success
+/home/futurebit/.openclaw/workspace/agentic-terminal-db/export_to_json.py:153: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  generated_at = datetime.utcnow().isoformat() + "Z"
+Starting export at 2026-03-13T12:10:01.671513Z
+------------------------------------------------------------
+Fetching metrics...
+Fetching signals...
+Fetching protocols...
+------------------------------------------------------------
+✓ Wrote /home/futurebit/.openclaw/workspace/agenticterminal-website/at-metrics.json
+✓ Wrote /home/futurebit/.openclaw/workspace/agenticterminal-website/at-signals.json
+✓ Wrote /home/futurebit/.openclaw/workspace/agenticterminal-website/at-protocols.json
+------------------------------------------------------------
+Pushing to GitHub...
+✓ Git commit and push successful
+  Output: [main c5cbdf2] Daily DB export: 2026-03-13
+ 3 files changed, 9 insertions(+), 9 deletions(-)
+------------------------------------------------------------
+Export complete!
