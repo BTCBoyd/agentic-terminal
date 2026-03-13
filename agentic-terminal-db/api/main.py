@@ -275,7 +275,11 @@ def register_agent(
     framework: Optional[str] = None,
     alias: Optional[str] = None
 ):
-    """Register a new agent with the Observer Protocol."""
+    """Register a new agent with the Observer Protocol.
+
+    Stores the agent's full public key for later cryptographic signature verification.
+    The agent_id is derived from the SHA256 hash of the public_key.
+    """
     # Generate agent_id as SHA256 hash of public_key
     agent_id = hashlib.sha256(public_key.encode()).hexdigest()[:32]
     public_key_hash = hashlib.sha256(public_key.encode()).hexdigest()
@@ -285,23 +289,24 @@ def register_agent(
 
     try:
         cursor.execute("""
-            INSERT INTO observer_agents (agent_id, public_key_hash, agent_name, alias, framework, verified, created_at)
-            VALUES (%s, %s, %s, %s, %s, %s, NOW())
+            INSERT INTO observer_agents (agent_id, public_key_hash, public_key, agent_name, alias, framework, verified, created_at)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, NOW())
             ON CONFLICT (agent_id) DO UPDATE SET
                 agent_name = EXCLUDED.agent_name,
                 alias = EXCLUDED.alias,
-                framework = EXCLUDED.framework
+                framework = EXCLUDED.framework,
+                public_key = EXCLUDED.public_key
             RETURNING agent_id
-        """, (agent_id, public_key_hash, agent_name, alias or agent_name, framework, False))
-        
+        """, (agent_id, public_key_hash, public_key, agent_name, alias or agent_name, framework, False))
+
         conn.commit()
 
         return {
             "agent_id": agent_id,
             "agent_name": agent_name,
             "verified": False,
-            "message": "Registration successful. Submit a verified payment transaction to complete verification.",
-            "next_step": f"POST /observer/submit-transaction with your agent_id and a Lightning preimage"
+            "message": "Registration successful. Submit a signed challenge to complete verification.",
+            "next_step": f"POST /observer/verify-agent with your agent_id and a signed challenge"
         }
     except Exception as e:
         conn.rollback()
@@ -312,14 +317,47 @@ def register_agent(
 
 @app.post("/observer/verify-agent")
 def verify_agent(agent_id: str, signed_challenge: str):
-    """Verify an agent with signed challenge (MVP: accepts any non-empty signature)."""
+    """Verify an agent with cryptographically signed challenge.
+
+    Performs real secp256k1 ECDSA signature verification:
+    1. Looks up the agent's registered public key from the database
+    2. Constructs the challenge message: sha256('observer-protocol-verify-{agent_id}')
+    3. Verifies the signature using the agent's public key
+    4. Only sets verified=True if cryptographic validation passes
+
+    Returns HTTP 403 if the signature is invalid or does not match the public key.
+    """
     if not signed_challenge or len(signed_challenge) == 0:
         raise HTTPException(status_code=400, detail="Signed challenge required")
-    
+
     conn = get_db_connection()
     cursor = conn.cursor()
 
     try:
+        # Retrieve the agent's public key
+        cursor.execute("""
+            SELECT public_key FROM observer_agents WHERE agent_id = %s
+        """, (agent_id,))
+
+        result = cursor.fetchone()
+        if not result:
+            raise HTTPException(status_code=404, detail="Agent not found")
+
+        public_key = result[0]
+        if not public_key:
+            raise HTTPException(status_code=400, detail="Agent has no registered public key")
+
+        # Construct the challenge message
+        challenge_string = f"observer-protocol-verify-{agent_id}"
+        challenge_bytes = challenge_string.encode('utf-8')
+
+        # Verify the signature cryptographically
+        is_valid = verify_signature_simple(challenge_bytes, signed_challenge, public_key)
+
+        if not is_valid:
+            raise HTTPException(status_code=403, detail="Invalid signature: cryptographic verification failed")
+
+        # Only update verified status if signature is valid
         cursor.execute("""
             UPDATE observer_agents
             SET verified = TRUE,
@@ -328,15 +366,12 @@ def verify_agent(agent_id: str, signed_challenge: str):
             RETURNING agent_id
         """, (agent_id,))
 
-        result = cursor.fetchone()
-        if not result:
-            raise HTTPException(status_code=404, detail="Agent not found")
-
         conn.commit()
 
         return {
             "verified": True,
-            "agent_id": agent_id
+            "agent_id": agent_id,
+            "cryptographic_verification": True
         }
     except HTTPException:
         raise
